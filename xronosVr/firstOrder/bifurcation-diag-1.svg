@@ -1,9 +1,0 @@
- <!--l. 42--><p class="noindent" >figure<a 
- id="figure.\theHfigure "></a><img 
-src="./figures/Auto_bif_PL.png" alt="PIC"  
-width="144" height="144"  />
-<a 
- id="x1-106"></a>
-<br /> </p><div class="caption" 
-><span class="id">Figure 0: </span><span  
-class="content">Phase lines for the differential equation <script type="math/tex">\frac {dx}{dt} = x(x^2 - \alpha )</script> for <script type="math/tex">\alpha = -4,\ 0,\ 1</script>. <a class="ximera-label" id="autobif_plplot:fig"></a></span></div><!--tex4ht:label?: x1-105r -->                                                                                     
