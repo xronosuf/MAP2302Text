@@ -1,0 +1,80 @@
+\documentclass{ximera}
+
+\title{Practice for first PDE}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+    Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Solve
+    \begin{tasks}(2)
+        \task $u_t +9u_x = 0$, \enspace $u(x,0) = \sin(x)$,
+        \task $u_t -8u_x = 0$, \enspace $u(x,0) = \sin(x)$,
+        \task $u_t +\pi u_x = 0$, \enspace $u(x,0) = \sin(x)$,
+        \task $u_t + \pi u_x + u = 0$, \enspace $u(x,0) = \sin(x)$.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}%
+    Solve
+    \begin{tasks}(2)
+        \task $u_t - 5u_x = 0$, $u(x,0) = \frac{1}{1+x^2}$,
+        \task $u_t + 2u_x = 0$, $u(x,0) = \cos(x)$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $u = \frac{1}{1+{(x+5t)}^2}$
+%\quad
+%b) $u = \cos(x-2t)$
+%}
+
+\begin{exercise}
+    Solve $u_t +3u_x = 1$, $u(x,0) = x^2$.
+\end{exercise}
+
+\begin{exercise}%
+    Solve $u_x+u_t+tu = 0$, $u(x,0) = \cos(x)$.
+\end{exercise}
+%\exsol{%
+%$u = \cos(x-t)e^{-t^2/2}$
+%}
+
+\begin{exercise}
+    Solve $u_t +3u_x = x$, $u(x,0) = e^x$.
+\end{exercise}
+
+\begin{exercise}
+    Solve $u_x+u_t+xu = 0$, $u(x,0) = \cos(x)$.
+\end{exercise}
+
+\begin{exercise}%
+    Solve $u_x+u_t = 5$, $u(x,0) = x$.
+\end{exercise}
+%\exsol{%
+%$u = x + 4t$
+%}
+
+\begin{exercise}    
+    \begin{tasks}
+        \task Find the characteristic coordinates for the following equations:\\
+        1)~~$u_x+u_t + u = 1$,~~$u(x,0) = \cos(x)$,
+        \qquad
+        2)~~$2u_x+2u_t +2u = 2$,~~$u(x,0) = \cos(x)$.
+        \task Solve the two equations using the coordinates.
+        \task Explain why you got the same solution, although the characteristic coordinates you found were different.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Solve $(1+x^2) u_t + x^2 u_x + e^x u = 0$, $u(x,0) = 0$. Hint: Think a little out of the box.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass{ximera}
+\input{../preamble}
+\title{Slope fields}
+\author{Matthew Charnley and Jason Nowell}
+
+
+\outcome{Identify or sketch a slope field for a first order differential equation}
+\outcome{Use the slope field to determine the trajectory of a solution to a differential equation.}
+
+
+\begin{document}
+\begin{abstract}
+    Stuff about Separable equations
+\end{abstract}
+\maketitle
+
+
+\label{slopefields:section}
+
+
+% \sectionnotes{0.5 lecture\EPref{, \S1.3 in \cite{EP}}\BDref{,
+% \S1.1 in \cite{BD}}}
+
+%At this point it may be good to first try the
+%Lab I\index{IODE software!Lab I} and/or Project I\index{IODE software!Project I} from the
+%IODE website: \url{http://www.math.uiuc.edu/iode/}.
+%
+%\medskip
+
+As we said, the general first order equation we are studying looks like
+\begin{equation*}
+    y' = f(x,y).
+\end{equation*}
+A lot of the time, we cannot simply solve these kinds of equations explicitly, because our direct integration method only works when the equation is of the form $y' = f(x),$ which we could integrate directly. In these more complicated cases, it would be nice if we could at least figure out the shape and behavior of the solutions, or find approximate solutions.
+
+\subsection{Slope fields}
+
+%As you have seen in IODE Lab I (if you did it),
+\begin{mywrapfig}{2.75in}
+    \capstart
+    \diffyincludegraphics{width=2.5in}{width=4in}{figures/1-3-xysl-one.pdf}
+    \caption{The slope $y'=xy$ at $(2,1.5)$.\label{1.3:fig0}}
+\end{mywrapfig}
+
+Suppose that we have a solution to the equation $y' = f(x,y)$ with $y(x_0) = y_0$. What does the fact that this solves the differential equation tell us about the solution?
+ It tells us that the derivative of the solution at this point will be $f(x_0, y_0)$. Graphically, the derivative gives the slope of the solution, so it means that the solution will pass through the point $(x_0, y_0)$ and will have slope $f(x_0, y_0)$. For example, if $f(x,y) = xy$, then at point $(2,1.5)$ we draw a short line of slope $xy = 2 \times 1.5 = 3$.  So, if $y(x)$ is a solution and $y(2) = 1.5$, then the equation mandates that $y'(2) = 3$. See \figurevref{1.3:fig0}.
+
+To get an idea of how solutions behave, we draw such lines at lots of points in the plane, not just the point $(2,1.5)$.  We would ideally want to see the slope at every point, but that is just not possible.  Usually we pick a grid of points fine enough so that it shows the behavior, but not too fine so that we can still recognize the individual lines. We call this picture the \emph{slope field} of the equation. See \figurevref{1.3:fig1} for the slope field of the equation $y' = xy$. Usually in practice, one does not do this by hand, but has a computer do the drawing.
+
+The idea of a slope field is that it tells us how the graph of the solution should be sloped, or should curve, if it passed through a given point. Having a wide variety of slopes plotted in our slope field gives an idea of how all of the solutions behave for a bunch of different initial conditions. Which curve we want in particular, and where we should start the curve, depends on the initial condition. 
+
+Suppose we are given a specific initial condition $y(x_0) = y_0$. A solution, that is, the graph of the solution, would be a curve that follows the slopes we drew, starting from the point $(x_0, y_0)$.  For a few sample solutions, see \figurevref{1.3:fig2}.  It is easy to roughly sketch (or at least imagine) possible solutions in the slope field, just from looking at the slope field itself.  You simply sketch a line that roughly fits the little line segments and goes through your initial condition. The graph should ``flow'' along the little slopes that are on the slope field. 
+
+\begin{myfig}
+    \parbox[t]{2.5in}{\capstart%
+     \diffyincludegraphics{width=2.5in}{width=4.5in}{figures/1-3-xysl.pdf}
+     \caption{Slope field of $y' = xy$.\label{1.3:fig1}} 
+     }
+    \quad \qquad
+    \parbox[t]{2.5in}{ \capstart
+     \diffyincludegraphics{width=2.5in}{width=4.5in}{figures/1-3-xysl-sol.pdf}
+     \caption{Slope field of $y' = xy$ with a graph of solutions satisfying
+     $y(0) = 0.2$, $y(0) = 0$, and $y(0) = -0.2$.\label{1.3:fig2}}
+    }
+\end{myfig}
+
+By looking at the slope field we get a lot of information about the behavior of solutions without having to solve the equation.  For example, in \figurevref{1.3:fig2} we see what the solutions do when the initial conditions are $y(0) > 0$, $y(0) = 0$ and $y(0) < 0$. A small change in the initial condition causes quite different behavior. We see this behavior just from the slope field and imagining what solutions ought to do.
+
+We see a different behavior for the equation $y' = -y$.  The slope field and a few solutions is in see \figurevref{1.3:fig3}. If we think of moving from left to right (perhaps $x$ is time and time is usually increasing), then we see that no matter what $y(0)$ is, all solutions tend to zero as $x$ tends to infinity. Again that behavior is clear from simply looking at the slope field itself.
+
+\begin{myfig}
+    \capstart
+    \diffyincludegraphics{width=2.5in}{width=4in}{figures/1-3-mysl-sol.pdf}
+    \caption{Slope field of $y' = -y$ with a graph of a few solutions.\label{1.3:fig3}}
+\end{myfig}
+
+
+\end{document}

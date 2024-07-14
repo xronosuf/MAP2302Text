@@ -1,0 +1,777 @@
+\documentclass{ximera}
+
+\title{Practice for Advanced Linear Algebra}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    For the following matrices, find a basis for the kernel (nullspace).
+    \begin{tasks}(4)
+        \task
+        $\begin{bmatrix}
+            1 & 1 & 1 \\
+            1 & 1 & 5 \\
+            1 & 1 & -4
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            2 & -1 & -3 \\
+            4 & 0 & -4 \\
+            -1 & 1 & 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            -4 & 4 & 4 \\
+            -1 & 1 & 1 \\
+            -5 & 5 & 5
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            -2 & 1 & 1 & 1 \\
+            -4 & 2 & 2 & 2 \\
+            1 & 0 & 4 & 3
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $\left\{\left[\begin{smallmatrix} -1 \\ 1 \\ 0 \end{smallmatrix}\right]\right\}$ \quad b)~ $\left\{ \left[\begin{smallmatrix} -1 \\ 1 \\-1 \end{smallmatrix}\right] \right\}$ \quad c)~ $\left\{\left[\begin{smallmatrix} 1 \\1 \\0 \end{smallmatrix}\right],\ \left[\begin{smallmatrix}  0 \\ -1 \\ 1 \end{smallmatrix}\right]\right\}$ \quad d)~ $\left\{ \left[\begin{smallmatrix} -3 \\ -7 \\ 0 \\ 1 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} -4 \\ -9 \\ 1 \\ 0 \end{smallmatrix}\right]\right\}$
+%}
+
+\begin{exercise}%
+    For the following matrices, find a basis for the kernel (nullspace).
+    \begin{tasks}(4)
+        \task
+        $\begin{bmatrix}
+            2 & 6 & 1 & 9 \\
+            1 & 3 & 2 & 9 \\
+            3 & 9 & 0 & 9
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            2 & -2 & -5 \\
+            -1 & 1 & 5 \\
+            -5 & 5 & -3
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & -5 & -4 \\
+            2 & 3 & 5 \\
+            -3 & 5 & 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            0 & 4 & 4 \\
+            0 & 1 & 1 \\
+            0 & 5 & 5
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix} 3 \\ -1 \\ 0 \\ 0 \end{smallmatrix}\right]$, $\left[\begin{smallmatrix} 3 \\
+%0 \\ 3 \\ -1 \end{smallmatrix}\right]$
+%\quad
+%b)~$\left[\begin{smallmatrix} -1 \\ -1 \\ 0 \end{smallmatrix}\right]$
+%\quad
+%c)~$\left[\begin{smallmatrix} 1 \\ 1 \\ -1 \end{smallmatrix}\right]$
+%\quad
+%d)~$\left[\begin{smallmatrix} -1 \\ 0 \\ 0 \end{smallmatrix}\right]$, $\left[\begin{smallmatrix} 0 \\ 1 \\ -1 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    Suppose a $5 \times 5$ matrix $A$ has rank 3.  What is the nullity?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%2
+%}
+
+\begin{exercise}
+    Consider a square matrix $A$, and suppose that $\vec{x}$ is a nonzero vector such that $A \vec{x} = \vec{0}$.  What does the Fredholm alternative say about invertibility of $A$?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$A$ must be non-invertible.
+%}
+
+\begin{exercise}%
+    Compute the rank of the matrix $A$ below.
+    \[ A =  \begin{bmatrix} 0 & -3 & 2 & 4 \\ -5 & -4 &-5 & -1 \\ 1&4&-3 & -5\\ -2 & -3 &-2&1\end{bmatrix} \]
+    What does this tell you about the invertibility of $A$? How about the solutions to $A\vec{x} = \vec{0}$? 
+\end{exercise}
+%\exsol{%
+%Rank is 3. Therefore $A$ is not invertible (since the rank is not $4$), and there are non-zero solutions to $A \vec{x} = \vec{0}$. 
+%}
+
+\begin{exercise}%
+    Compute the rank of the matrix $A$ below.
+    \[ A =  \begin{bmatrix} 3 & -5 & 5 \\ 2 &-3 & 3\\ 4 & 0 & -1 \end{bmatrix} \]
+    What does this tell you about the invertibility of $A$? How about the solutions to $A\vec{x} = \begin{bmatrix} 1\\1\\1 \end{bmatrix}$? 
+\end{exercise}
+%\exsol{%
+%Rank is 3. Therefore $A$ is invertible, and there is exactly one solution to $A \vec{x} = \left[\begin{smallmatrix} 1 \\ 1 \\ 1\end{smallmatrix}\right]$, namely $A^{-1}\left[\begin{smallmatrix}1 \\ 1 \\ 1 \end{smallmatrix}\right]$.
+%}
+
+
+\begin{exercise}
+    Consider
+    \begin{equation*}
+        M =
+        \begin{bmatrix}
+            1 & 2 & 3 \\
+            2 & ? & ? \\
+            -1 & ? & ?
+        \end{bmatrix} .
+    \end{equation*}
+    If the nullity of this matrix is 2, fill in the question marks.  Hint: What is the rank?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$M = \left[\begin{smallmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ -1 & -2 & -3 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    Suppose the column space of a $9 \times 5$ matrix $A$ of dimension 3.  Find
+    \begin{tasks}(2)
+        \task Rank of $A$.
+        \task Nullity of $A$.
+        \task Dimension of the row space of $A$.
+        \task Dimension of the nullspace of $A$.
+        \task Size of the maximum subset of linearly independent rows of $A$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~3 \quad b)~2 \quad c)~3 \quad d)~2 \quad e)~3
+%}
+
+
+\begin{exercise} \label{exercise:rankmatrix}
+    Compute the rank of the given matrices
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+            6 & 3 & 5 \\
+            1 & 4 & 1 \\
+            7 & 7 & 6
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            5 & -2 & -1 \\
+            3 & 0 & 6 \\
+            2 & 4 & 5
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & 2 & 3 \\
+            -1 & -2 & -3 \\
+            2 & 4 & 6
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ 2 \quad b)~ 3 \quad c)~ 1
+%}
+
+\begin{exercise} \label{exercise:rankmatrixans}%
+    Compute the rank of the given matrices
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+            7 & -1 & 6 \\
+            7 & 7 & 7 \\
+            7 & 6 & 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & 1 & 1 \\
+            1 & 1 & 1 \\
+            2 & 2 & 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            0 & 3 & -1 \\
+            6 & 3 & 1 \\
+            4 & 7 & -1
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) 3 \quad b) 1 \quad c) 2
+%}
+
+
+\begin{exercise}
+    For the matrices in \exerciseref{exercise:rankmatrix}, find a linearly independent set of row vectors that span the row space (they don't need to be rows of the matrix).
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $[1, 4, 1],\ [0, -21, 1]$ \quad b)~$[1,0,0],\ [0,1,0],\ [0,0,1]$ \quad c)~$[1,2,3]$
+%}
+
+\begin{exercise}
+    For the matrices in \exerciseref{exercise:rankmatrix}, find a linearly independent set of columns that span the column space. That is, find the pivot columns of the matrices.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$\left[\begin{smallmatrix} 6 \\ 1 \\ 7 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} 3 \\ 4 \\ 7 \end{smallmatrix}\right]$ \quad b)~ $\left[\begin{smallmatrix} 5 \\ 3 \\2 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} -2 \\ 0 \\ 4 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} -1 \\ 6 \\ 5 \end{smallmatrix}\right]$ \quad c)~ $\left[\begin{smallmatrix} 1 \\ -1 \\2 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    For the matrices in \exerciseref{exercise:rankmatrixans}, find a linearly independent set of row vectors that span the row space (they don't need to be rows of the matrix).
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix} 1 & 0 & 0\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} 0 & 1 & 0\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} 0 & 0 & 1\end{smallmatrix}\right]$
+%\quad
+%b)~$\left[\begin{smallmatrix} 1 & 1 & 1\end{smallmatrix}\right]$
+%\quad
+%c)~$\left[\begin{smallmatrix} 1 & 0 & \nicefrac{1}{3}\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} 0 & 1 & \nicefrac{-1}{3}\end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    For the matrices in \exerciseref{exercise:rankmatrixans}, find a linearly independent set of columns that span the column space. That is, find the pivot columns of the matrices.
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix} 7 \\ 7 \\ 7\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} -1 \\ 7 \\ 6\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} 7 \\ 6 \\ 2\end{smallmatrix}\right]$
+%\quad
+%b)~$\left[\begin{smallmatrix} 1 \\ 1 \\ 2\end{smallmatrix}\right]$
+%\quad
+%c)~$\left[\begin{smallmatrix} 0 \\ 6 \\ 4\end{smallmatrix}\right]$,
+%$\left[\begin{smallmatrix} 3 \\ 3 \\ 7\end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    Compute the rank of the matrix
+    \begin{equation*}
+        \begin{bmatrix}
+            10 & -2 & 11 & -7 \\ 
+            -5 & -2 & -5 & 5 \\
+            1 & 0 & -4 & -4 \\
+            1 & 2 & 2 & -1
+        \end{bmatrix} 
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%3
+%}%
+
+\begin{exercise}
+    Compute the rank of the matrix
+    \begin{equation*}
+        \begin{bmatrix}
+            4 & -2 & 0 & -4 \\
+            3 & -5 & 2 & 0 \\
+            1 & -2 & 0 & 1 \\
+            -1 & 1 & 3 & -3
+        \end{bmatrix} 
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%4
+%}%
+
+\begin{exercise}
+    Find a linearly independent subset of the following vectors that has the same span.
+    \begin{equation*}
+        \begin{bmatrix}
+            -1 \\ 
+            1 \\ 
+            2
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+            2 \\ 
+            -2 \\ 
+            -4
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+            -2 \\ 
+            4 \\ 
+            1
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+            -1 \\ 
+            3 \\ 
+            -2
+        \end{bmatrix}
+    \end{equation*}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\left[\begin{smallmatrix} -1\\ 1\\ 2 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} -2 \\4  \\1 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    Find a linearly independent subset of the following vectors that has the same span.
+    \begin{equation*}
+    \begin{bmatrix}
+        0 \\ 0 \\ 0
+    \end{bmatrix}
+    , \quad
+    \begin{bmatrix}
+        3 \\ 1 \\ -5
+    \end{bmatrix}
+    , \quad
+    \begin{bmatrix}
+        0 \\ 3 \\ -1
+    \end{bmatrix}
+    , \quad
+    \begin{bmatrix}
+        -3 \\ 2 \\ 4
+    \end{bmatrix}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$\left[\begin{smallmatrix}
+%3 \\ 1 \\ -5
+%\end{smallmatrix}\right]
+%, 
+%\left[\begin{smallmatrix}
+%0 \\ 3 \\ -1
+%\end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    For the following sets of vectors, determine if the set is linearly independent. Then find a basis for the subspace spanned by the vectors, and find the dimension of the subspace.
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+        1 \\ 1 \\ 1
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        -1 \\ -1 \\ -1
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 0 \\ 5
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        0 \\ 1 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        0 \\ -1 \\ 0
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        -4 \\ -3 \\ 5
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 3 \\ 3
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 0 \\ 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 3 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        0 \\ 2 \\ 2
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        -1 \\ -1 \\ 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 3
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        0 \\ 2
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        -1 \\ -1
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        3 \\ 1 \\ 3
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 4 \\ -4
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        -5 \\ -5 \\ -2
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~No, $\left[\begin{smallmatrix}  1 \\ 1 \\ 1 \end{smallmatrix}\right]$, Dimension 1 \quad b)~No, $\left[\begin{smallmatrix} 1 \\ 0 \\ 5 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} 0 \\ 1 \\ 0 \end{smallmatrix}\right]$, Dimension 2 \quad c)~Yes, All 3, Dimension 3 \quad  d)~No, $\left[\begin{smallmatrix} 1 \\ 3 \\ 0 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} 0 \\ 2 \\ 2 \end{smallmatrix}\right]$, Dimension 2 \quad 
+%e)~No, $\left[\begin{smallmatrix}  1 \\ 3 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} 0 \\ 2 \end{smallmatrix}\right]$, Dimension 2 \quad f)~ Yes, All 3, Dimension 3
+%}
+
+\begin{exercise}%
+    For the following sets of vectors, determine if the set is linearly independent. Then find a basis for the subspace spanned by the vectors, and find the dimension of the subspace.
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+        1 \\ 2
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        1 \\ 1
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 1 \\ 1
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 2 \\ 2
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        1 \\ 1 \\ 2
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        5 \\ 3 \\ 1
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        5 \\ -1 \\ 5
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        -1 \\ 3 \\ -4
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        2 \\ 2 \\ 4
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 2 \\ 3
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        4 \\ 4 \\ -3
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        3 \\ 0
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+        1 \\ 0 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        2 \\ 0 \\ 0
+        \end{bmatrix}
+        , \quad
+        \begin{bmatrix}
+        0 \\ 1 \\ 2
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix}
+%1 \\ 2
+%\end{smallmatrix}\right]
+%, 
+%\left[\begin{smallmatrix}
+%1 \\ 1
+%\end{smallmatrix}\right]$ dimension 2,
+%\quad
+%b)~$
+%\left[\begin{smallmatrix}
+%1 \\ 1 \\ 1
+%\end{smallmatrix}\right]
+%,
+%\left[\begin{smallmatrix}
+%1 \\ 1 \\ 2
+%\end{smallmatrix}\right]$ dimension 2,
+%\quad
+%c)~$
+%\left[\begin{smallmatrix}
+%5 \\ 3 \\ 1
+%\end{smallmatrix}\right]
+%,
+%\left[\begin{smallmatrix}
+%5 \\ -1 \\ 5
+%\end{smallmatrix}\right]
+%,
+%\left[\begin{smallmatrix}
+%-1 \\ 3 \\ -4
+%\end{smallmatrix}\right]
+%$ dimension 3,
+%\quad
+%d)~$
+%\left[\begin{smallmatrix}
+%2 \\ 2 \\ 4
+%\end{smallmatrix}\right]
+%,
+%\left[\begin{smallmatrix}
+%2 \\ 2 \\ 3
+%\end{smallmatrix}\right]
+%$ dimension 2,
+%\quad
+%e)~$\left[\begin{smallmatrix}
+%1 \\ 0
+%\end{smallmatrix}\right]$ dimension 1,
+%\quad
+%f)~$\left[\begin{smallmatrix}
+%1 \\ 0 \\ 0
+%\end{smallmatrix}\right]
+%,
+%\left[\begin{smallmatrix}
+%0 \\ 1 \\ 2
+%\end{smallmatrix}\right]
+%$ dimension~2
+%}
+
+\begin{exercise}
+    Suppose that $X$ is the set of all the vectors of ${\mathbb{R}}^3$ whose third component is zero.  Is $X$ a subspace?  And if so, find a basis and the dimension.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Yes. Basis: $\left\{\left[\begin{smallmatrix} 1 \\ 0 \\ 0 \end{smallmatrix}\right],\ \left[\begin{smallmatrix} 0 \\ 1 \\ 0 \end{smallmatrix}\right]\right\}$ Dimension 2
+%}
+
+\begin{exercise}%
+    Consider a set of 3 component vectors.
+    \begin{tasks}
+        \task How can it be shown if these vectors are linearly independent?
+        \task Can a set of 4 of these 3 component vectors be linearly independent? Explain your answer.
+        \task Can a set of 2 of these 3 component vectors be linearly independent? Explain.
+        \task How would it be shown if these vectors make up a spanning set for all 3 component vectors?
+        \task Can 4 vectors be a spanning set? Explain.
+        \task Can 2 vectors be a spanning set? Explain.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~ Put the vectors as the columns of a matrix and row reduce. If there are any non-pivot columns, the vectors are linearly dependent. \quad b)~No, there can be at most three pivot columns, so with four columns, one must be non-pivot. \quad c)~ Yes, there is no reason you can't have all of the two columns being pivot columns. \quad d)~ Put the vectors as the columns of a matrix, and look for solutions to $A\vec{x} = \vec{b}$. We need the rank of this matrix to be at least 3.  \quad e)~ Yes, the matrix with four columns can have rank three. \quad f)~ No, it is impossible for a matrix with only two columns to have rank three. 
+%}
+
+\begin{exercise}\label{ex:MatReductions}%
+    Consider the vectors
+    \begin{equation*}
+        \vec{v}_1 = \begin{bmatrix} 4 \\ 2 \\ -1 \end{bmatrix} \quad \vec{v}_2 = \begin{bmatrix} 3 \\ 5 \\ 1 \end{bmatrix} \qquad \begin{bmatrix} 1 \\ -1 \\ -1 \end{bmatrix}. 
+    \end{equation*}
+    Let $A$ be the matrix with these vectors as columns and $\vec{b}$ the vector $[1\ 0 \ 0]$. 
+    \begin{tasks}
+        \task Compute the rank of $A$ to determine how many of these vectors are linearly independent.
+        \task Determine if $\vec{b}$ is in the span of the given vectors by using row reduction to try to solve $A\vec{x} = \vec{b}$.
+        \task Look at the columns of the row-reduced form of $A$. Is $\vec{b}$ in the span of those vectors?
+        \task What do these last two parts tell you about the span of the columns of a matrix, and the span of the columns of the row-reduced matrix?
+        \task Now, build a matrix $D$ with these vectors as rows. Row-reduce this matrix to get a matrix $D_2$. 
+        \task Is $\vec{b}$ in the span of the rows of $D_2$? You can't check this in using the matrix form; instead, just brute force it based on the form of $D_2$. What does this potentially say about the span of the rows of $D$ and the rows of $D_2$?
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~ The rank is 2. \quad b)~No, it is not in the span. \quad c)~ Yes, it is in the span, because the first vector is exactly $\vec{b}$. \quad d)~This says that these two spans are not the same. We can not use the row-reduced matrix in order to figure out if something is in the span. We need to use the pivot columns to go back to the original vectors to simplify the span. \quad e)~$ D_2 = \left[\begin{smallmatrix}
+%1 & -1 & -1 \\ 0 & 1 & 1/2 \\ 0 & 0 & 0
+%\end{smallmatrix}\right] $ \quad f)~No, it is not. If we add the two rows together, we get $[1\ 0 \ -1/2]$ and we have no way to cancel out that last term. This suggests that we can use either the rows of the original matrix or the rows of the row-reduced form in order to work out the span of the rows.
+%}%
+
+\begin{exercise}
+    Complete \exerciseref{ex:MatReductions} with
+    \begin{equation*}
+        \vec{v}_1 = \begin{bmatrix} 1 \\ 0 \\ -1 \\ 0 \end{bmatrix} \quad \vec{v}_2 = \begin{bmatrix} -6 \\ 2 \\ 3 \\ -1 \end{bmatrix} \qquad \begin{bmatrix} -13 \\ 3 \\ 1 \\ 1 \end{bmatrix} \quad \vec{v}_4 \begin{bmatrix} 11 \ -1 \\ -5 \\ -1 \end{bmatrix} \quad \vec{b} = \begin{bmatrix} 1 \\ 0 \\ 0 \\ 0 \end{bmatrix}. 
+    \end{equation*}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ 3 \quad b)~No \quad c)~ Yes \quad d)~They are not the same \quad
+%e)~ $\left[\begin{smallmatrix} 1 & 0 & -1 & 0 \\ 0 & 1 & -6 & 1 \\ 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 \end{smallmatrix}\right]$ \quad f)~ No
+%}
+
+\begin{exercise}
+    Compute the inverse of the given matrices
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 0 & 1 \\
+            0 & 1 & 0
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & 1 & 1 \\
+            0 & 2 & 1 \\
+            0 & 0 & 1
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & 2 & 3 \\
+            2 & 0 & 1 \\
+            0 & 2 & 1
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $\left[\begin{smallmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{smallmatrix}\right]$ \quad b)~ $\left[\begin{smallmatrix} 1 & -1/2 & -1/2 \\ 0 & 1/2 & -1/2 \\ 0 & 0 & 1 \end{smallmatrix}\right]$ \quad c)~$\left[\begin{smallmatrix} -1/3 & 2/3 & 1/3 \\ -1/3 & 1/6 & 5/6 \\ 2/3 & -1/3 & -2/3 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    Compute the inverse of the given matrices
+    \begin{tasks}(3)
+        \task
+        $\begin{bmatrix}
+            0 & 1 & 0 \\
+            -1 & 0 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            1 & 1 & 1 \\
+            1 & 1 & 0 \\
+            1 & 0 & 0
+        \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            2 & 4 & 0 \\
+            2 & 2 & 3 \\
+            2 & 4 & 1
+        \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix}
+%0 & -1 & 0 \\
+%1 & 0 & 0 \\
+%0 & 0 & 1
+%\end{smallmatrix}\right]$
+%\quad
+%b)~$\left[\begin{smallmatrix}
+%0 & 0 & 1 \\
+%0 & 1 & -1 \\
+%1 & -1 & 0
+%\end{smallmatrix}\right]$
+%\quad
+%c)~$\left[\begin{smallmatrix}
+%\nicefrac{5}{2} & 1 & -3 \\
+%-1 & \nicefrac{-1}{2} & \nicefrac{3}{2} \\
+%-1 & 0 & 1
+%\end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    By computing the inverse, solve the following systems for $\vec{x}$.
+    \begin{tasks}(2)
+        \task
+        $\begin{bmatrix}
+            4 & 1 \\
+            -1 & 3
+        \end{bmatrix} \vec{x} =
+        \begin{bmatrix} 13 \\ 26 \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            3 & 3 \\
+            3 & 4
+        \end{bmatrix} \vec{x} =
+        \begin{bmatrix} 2 \\ -1 \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $\left[\begin{smallmatrix}  1 \\ 9 \end{smallmatrix}\right]$ \quad b)~$\left[\begin{smallmatrix} 11/3 \\ -3 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    By computing the inverse, solve the following systems for $\vec{x}$.
+    \begin{tasks}(2)
+        \task
+        $\begin{bmatrix}
+            -1 & 1 \\
+            3 & 3
+        \end{bmatrix} \vec{x} =
+        \begin{bmatrix} 4 \\ 6 \end{bmatrix}$
+        \task
+        $\begin{bmatrix}
+            2 & 7 \\
+            1 & 6
+        \end{bmatrix} \vec{x} =
+        \begin{bmatrix} 1 \\ 3 \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$\left[\begin{smallmatrix} -1 \\ 3 \end{smallmatrix}\right]$ \quad
+%b)~$\left[\begin{smallmatrix} -3 \\ 1 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    For each of the following matrices below:
+    \begin{tasks}
+        \task Compute the trace and determinant of the matrix, and
+        \task Find the eigenvalues of the matrix and verify that the trace is the sum of the eigenvalues and the determinant is the product. 
+    \end{tasks}
+    \begin{equation*}
+        (i) \ \begin{bmatrix} -4 & 2 \\ -9 & 5 \end{bmatrix} \qquad (ii) \ \begin{bmatrix} 2 & -3 \\ 6 & -4 \end{bmatrix} \qquad (iii)  \ \begin{bmatrix} -10& -12 \\ 6 & 8\end{bmatrix}. \qquad (iv) \ \begin{bmatrix} -7 & -9 \\ 1 & -1 \end{bmatrix}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%(i) Trace is 1, determinant is -2. Eigenvalues are -1 and 2. \\
+%(ii) Trace is -2, determinant is 10. Eigenvalues are $-1 \pm 3i$. \\
+%(iii) Trace is -2, determinant is -8. Eigenvalues are -4 and 2. \\
+%(iv) Trace is -8, determinant is 16. Eigenvalue is $-4$ repeated.
+%}%
+
+\begin{exercise}%
+    For each of the following matrices below:
+    \begin{tasks}
+        \task Compute the trace and determinant of the matrix, and
+        \task Find the eigenvalues of the matrix and verify that the trace is the sum of the eigenvalues and the determinant is the product. 
+    \end{tasks}
+    \begin{equation*}
+        (i) \ \begin{bmatrix} -1 & -16 & -4 \\ 1 & 6 & 1 \\ -2 & -4 & 1  \end{bmatrix} \qquad (ii) \ \begin{bmatrix} 1 & 2 & 0 \\ -12 & -13 & -4 \\ 16 & 14 & 3  \end{bmatrix} \qquad (iii)\ \begin{bmatrix} 10 & -7 & -14 \\ 0 & 5 & 6 \\ 7 & -8 & -14 \end{bmatrix}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%(i) Trace is 6, determinant is 6. Eigenvalues are 1, 2, and 3. \\
+%(ii) Trace is -9, determinant is -39. Eigenvalues are -3 and $-3 \pm 2i$. \\ 
+%(iii) Trace is 1, determinant is -24. Eigenvalues are 2, 3, -4.
+%}%
+
+%
+%\setcounter{exercise}{100}
+
+
+\end{document}

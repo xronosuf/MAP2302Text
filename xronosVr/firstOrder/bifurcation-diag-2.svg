@@ -1,0 +1,10 @@
+ <!--l. 51--><p class="noindent" >figure<a 
+ id="figure.\theHfigure "></a><img 
+src="./figures/BifDiag_ex1.png" alt="PIC"  
+width="216" height="216"  />
+<a 
+ id="x1-108"></a>
+<br /> </p><div class="caption" 
+><span class="id">Figure 0: </span><span  
+class="content">Bifurcation Diagram for the differential equation <script type="math/tex">\frac {dx}{dt} = x(x^2 - \alpha )</script>. In this figure, a blue region means the solution will be
+increasing and red indicates decreasing. <a class="ximera-label" id="bifdiag_ex1:fig"></a></span></div><!--tex4ht:label?: x1-107r -->                                                                                                          
