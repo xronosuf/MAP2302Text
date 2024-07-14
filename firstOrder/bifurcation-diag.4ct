@@ -1,9 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-106}{}{\numberline {0}{\ignorespaces Phase lines for the differential equation $\frac  {dx}{dt} = x(x^2 - \alpha )$ for $\alpha = -4,\relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x0,\relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x1$. \relax }}}{5}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-108}{}{\numberline {0}{\ignorespaces Bifurcation Diagram for the differential equation $\frac  {dx}{dt} = x(x^2 - \alpha )$. In this figure, a blue region means the solution will be increasing and red indicates decreasing. \relax }}}{8}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-112}{}{\numberline {0}{\ignorespaces The slope field and some solutions of $x' = 0.1\tmspace  +\thinmuskip {.1667em}x\tmspace  +\thinmuskip {.1667em}(8-x)-1$.\relax }}}{11}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-114}{}{\numberline {0}{\ignorespaces The slope field and some solutions of $x' = 0.1\tmspace  +\thinmuskip {.1667em}x\tmspace  +\thinmuskip {.1667em}(8-x)-1.6$.\relax }}}{11}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-116}{}{\numberline {0}{\ignorespaces The slope field and some solutions of $x' = 0.1\tmspace  +\thinmuskip {.1667em}x\tmspace  +\thinmuskip {.1667em}(8-x)-2$.\relax }}}{14}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-118}{}{\numberline {0}{\ignorespaces Bifurcation diagram for the differential equation $x' = 0.1\tmspace  +\thinmuskip {.1667em}x\tmspace  +\thinmuskip {.1667em}(8-x)-h$.\relax }}}{17}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-120}{}{\numberline {0}{\ignorespaces Graph of $f_\alpha (x) = 0.1x(8-x) - \alpha $ for $\alpha = 0$, $1.0$, $1.6$, $2.0$.\relax }}}{20}\relax 
-\par 
