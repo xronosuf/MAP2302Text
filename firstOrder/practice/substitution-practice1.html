@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en"><head> <title>Practice for Substitution</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="substitution-practice1.tex"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="f8971e832c788a87c4697f63d5f205610fe51462 firstOrder/practice/substitution-practice1.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 9--><p class="noindent">Why?
+</p></div>   <div class="maketitle"></div>
+Hint: Answers need not always be in closed form.
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-103r1"></a> Solve <script type="math/tex">y'+ y(x^2-1)+xy^6 = 0</script>, with <script type="math/tex">y(1)=1</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem2"><a id="x1-104r2"></a>Solve <script type="math/tex">xy'+y+y^2 = 0</script>, <script type="math/tex">y(1)=2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem3"><a id="x1-105r3"></a> Solve <script type="math/tex">2yy' + 1 = y^2 + x</script>, with <script type="math/tex">y(0)=1</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem4"><a id="x1-106r4"></a>Solve <script type="math/tex">xy'+y +x = 0</script>, <script type="math/tex">y(1)=1</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem5"><a id="x1-107r5"></a> Solve <script type="math/tex">y' + xy = y^4</script>, with <script type="math/tex">y(0)=1</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem6"><a id="x1-108r6"></a> Solve <script type="math/tex">y' + 3y = 2xy^4</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem7"><a id="x1-109r7"></a> Solve <script type="math/tex">xy' - 2y = (3x^2 - x^{-3})y^5</script> with <script type="math/tex">y(1) = 2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem8"><a id="x1-110r8"></a> Solve <script type="math/tex">y' + 5y = \frac {e^{2x}}{y^2}</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem9"><a id="x1-111r9"></a>Solve <script type="math/tex">y^2y' = y^3-3x</script>, <script type="math/tex">y(0)=2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem10"><a id="x1-112r10"></a> Solve <script type="math/tex">yy' + x = \sqrt {x^2 + y^2}</script>. (Hint: What is <script type="math/tex">\frac {d}{dx}(x^2 + y^2)</script>)
+</div>
+<div role="article" class="problem-environment exercise" id="problem11"><a id="x1-113r11"></a> Solve <script type="math/tex">y' = {(x+y-1)}^2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem12"><a id="x1-114r12"></a> Solve <script type="math/tex">y' = \frac {x^2-y^2}{x y}</script>, with <script type="math/tex">y(1) = 2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem13"><a id="x1-115r13"></a> Solve <script type="math/tex">2yy' = e^{y^2-x^2} + 2x</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem14"><a id="x1-116r14"></a> Consider the DE <script type="math/tex; mode=display"> \begin{equation} 
+             \frac{dy}{dt}=\left( y -\frac{1}{t} \right)^2 - \frac{1}{t^2}. \label{eq:subsEx1}
+    \end{equation}</script>
+<a id="x1-117r1"></a>
+<!--l. 132--><p class="noindent">     <!--l. 132--></p><p class="noindent">Explain why (<a class="reference" href="#eq:subsEx1">eq:subsEx1</a>) is not a linear equation.                                                                                                   </p><!--l. 132--><p class="noindent">a)
+<a id="x1-118r2"></a>
+</p><!--l. 132--><p class="noindent">     </p><!--l. 132--><p class="noindent">Use a Bernoulli substitution to solve (<a class="reference" href="#eq:subsEx1">eq:subsEx1</a>).                                                                                                   </p><!--l. 132--><p class="noindent">b)
+</p>
+</div>
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</body></html>

@@ -1,0 +1,7 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Separable equations}}{3}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Implicit solutions}}{4}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-2002}{}{\numberline {0}{\ignorespaces The implicit solution $y^2+2\qopname  \relax o{ln}|y|=x^2$ to $y'=\frac  {xy}{y^2+1}$.\relax }}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Examples of separable equations}}{8}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-3004}{}{\numberline {0}{\ignorespaces Graphs of the coffee temperature function $T(t)$. On the left, horizontal lines are drawn at temperatures 60, 85, and 89. Vertical lines are drawn at $t=1$ and $t=9.21$. Notice that the temperature of the coffee hits 85 at $t=1$, and 60 at $t \approx 9.21$. On the right, the graph is over a longer period of time, with a horizontal line at the ambient temperature 22.\relax }}}{11}\relax 
+\par 

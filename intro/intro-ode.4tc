@@ -1,0 +1,7 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Differential equations}}{3}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Solutions of differential equations}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Differential equations in practice}}{5}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-2002}{}{\numberline {0}{\ignorespaces Few solutions of $\frac  {dx}{dt} + x = 2 \qopname  \relax o{cos}t$.\relax }}}{5}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Four fundamental equations}}{6}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-3003}{}{\numberline {0}{\ignorespaces Bacteria growth in the first 60 seconds.\relax }}}{7}\relax 

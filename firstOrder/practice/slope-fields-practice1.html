@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en"><head> <title>Practice for Slope Fields</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="slope-fields-practice1.tex"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="2dfeae51743d66570220248ee195a1f9de3d25e2 firstOrder/practice/slope-fields-practice1.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 9--><p class="noindent">Why?
+</p></div>   <div class="maketitle"></div>
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-103r1"></a> Sketch slope field for <script type="math/tex">y'=e^{x-y}</script>. How do the solutions behave as <script type="math/tex">x</script> grows? Can you guess a particular solution by looking at the slope
+field?
+</div>
+<div role="article" class="problem-environment exercise" id="problem2"><a id="x1-104r2"></a>Sketch the slope field of <script type="math/tex">y'=y^3</script>. Can you visually find the solution that satisfies <script type="math/tex">y(0)=0</script>?
+</div>
+<div role="article" class="problem-environment exercise" id="problem3"><a id="x1-105r3"></a> Sketch slope field for <script type="math/tex">y'=x^2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem4"><a id="x1-106r4"></a> Sketch slope field for <script type="math/tex">y'=y^2</script>.
+</div>
+<div role="article" class="problem-environment exercise" id="problem5"><a id="x1-107r5"></a> For each of the following differential equations, sketch out a slope field on <script type="math/tex">-3 < x < 3</script> and <script type="math/tex">-3 < y < 3</script> and determine the overall behavior of the
+solutions to the equation as <script type="math/tex">t \rightarrow \infty </script>. If this fact depends on the value of the solution at <script type="math/tex">t=0</script>, explain how it changes.
+<a id="x1-108r1"></a>
+<!--l. 60--><p class="noindent">     <!--l. 60--></p><p class="noindent"><script type="math/tex">\displaystyle \frac {dy}{dx} = 3 - 2y</script>                                </p><!--l. 60--><p class="noindent">a)<a id="x1-109r2"></a>     </p><!--l. 60--><p class="noindent"><script type="math/tex">\displaystyle \frac {dy}{dx} = 1 + y</script>                                </p><!--l. 60--><p class="noindent">b)<a id="x1-110r3"></a>     </p><!--l. 60--><p class="noindent"><script type="math/tex">\displaystyle \frac {dy}{dx} = y - 1</script>                                </p><!--l. 60--><p class="noindent">c)<a id="x1-111r4"></a>     </p><!--l. 60--><p class="noindent"><script type="math/tex">\displaystyle \frac {dy}{dx} = -2 - y</script>                                </p><!--l. 60--><p class="noindent">d)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem6"><a id="x1-112r6"></a> Which of the following slope fields corresponds to the differential equation <script type="math/tex">\frac {dy}{dt} = t(y-1)</script>. Explain your reasoning.
+<a id="x1-113r1"></a>
+<!--l. 79--><p class="noindent">     <!--l. 79--></p><p class="noindent"><img src="./../figures/yprimetyp1slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 79--><p class="noindent">a)<a id="x1-114r2"></a>     </p><!--l. 79--><p class="noindent"><img src="./../figures/yprimetsqym1slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 79--><p class="noindent">b)<a id="x1-115r3"></a>     </p><!--l. 79--><p class="noindent"><img src="./../figures/yprimetym1slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 79--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem7"><a id="x1-116r7"></a> Which of the following slope fields corresponds to the differential equation <script type="math/tex">\frac {dy}{dt} = (2-t)(y^2 - 9)</script>. Explain your reasoning.
+<a id="x1-117r1"></a>
+<!--l. 93--><p class="noindent">     <!--l. 93--></p><p class="noindent"><img src="./../figures/yprimetm2ysqm9slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 93--><p class="noindent">a)<a id="x1-118r2"></a>     </p><!--l. 93--><p class="noindent"><img src="./../figures/yprimeyp1tsqm9slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 93--><p class="noindent">b)<a id="x1-119r3"></a>     </p><!--l. 93--><p class="noindent"><img src="./../figures/yprime2mtysqm9slope.png" alt="PIC" width="126" height="126"/>                                        </p><!--l. 93--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem8"><a id="x1-120r8"></a> Match equations <script type="math/tex">y'=1-x</script>, <script type="math/tex">y'=x-2y</script>, <script type="math/tex">y' = x(1-y)</script> to slope fields. Justify.
+<a id="x1-121r1"></a>
+<!--l. 108--><p class="noindent">     <!--l. 108--></p><p class="noindent">                                             </p><!--l. 108--><p class="noindent">a)<a id="x1-122r2"></a>     </p><!--l. 108--><p class="noindent">                                             </p><!--l. 108--><p class="noindent">b)<a id="x1-123r3"></a>     </p><!--l. 108--><p class="noindent">                                             </p><!--l. 108--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem9"><a id="x1-124r9"></a>Match equations <script type="math/tex">y'=\sin x</script>, <script type="math/tex">y'=\cos y</script>, <script type="math/tex">y' = y\cos (x)</script> to slope fields. Justify.
+<a id="x1-125r1"></a>
+<!--l. 123--><p class="noindent">     <!--l. 123--></p><p class="noindent">                                             </p><!--l. 123--><p class="noindent">a)<a id="x1-126r2"></a>     </p><!--l. 123--><p class="noindent">                                             </p><!--l. 123--><p class="noindent">b)<a id="x1-127r3"></a>     </p><!--l. 123--><p class="noindent">                                             </p><!--l. 123--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem10"><a id="x1-128r10"></a> Match equations <script type="math/tex">y'=y(y-2)</script>, <script type="math/tex">y'=y-1</script>, <script type="math/tex">y' = y(2-y)</script> to slope fields. Justify.
+                                                                                                     
+                                                                                                     
+<a id="x1-129r1"></a>
+<!--l. 138--><p class="noindent">     <!--l. 138--></p><p class="noindent"><img src="./../figures/quivym1.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 138--><p class="noindent">a)<a id="x1-130r2"></a>     </p><!--l. 138--><p class="noindent"><img src="./../figures/quivy2my.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 138--><p class="noindent">b)<a id="x1-131r3"></a>     </p><!--l. 138--><p class="noindent"><img src="./../figures/quivyym2.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 138--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem11"><a id="x1-132r11"></a> Match equations <script type="math/tex">y'=t(y^2 + 1)</script>, <script type="math/tex">y'=t(y^2 - 1)</script>, <script type="math/tex">y' = t^2(y^2 - 1)</script> to slope fields. Justify.
+<a id="x1-133r1"></a>
+<!--l. 152--><p class="noindent">     <!--l. 152--></p><p class="noindent"><img src="./../figures/yprimetysqm1slope.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 152--><p class="noindent">a)<a id="x1-134r2"></a>     </p><!--l. 152--><p class="noindent"><img src="./../figures/yprimetsqysqm1slope.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 152--><p class="noindent">b)<a id="x1-135r3"></a>     </p><!--l. 152--><p class="noindent"><img src="./../figures/yprimetysqp1slope.png" alt="PIC" width="144" height="144"/>                                        </p><!--l. 152--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem12"><a id="x1-136r12"></a><a class="ximera-label" id="ex:3myyp2"></a> The slope field for the differential equation <script type="math/tex">y' = (3-y)(y+2)</script> is below. If we find the solution to this differential equation with initial condition, <script type="math/tex">y(0) = 1</script>,
+what will happen to the solution as <script type="math/tex">t \rightarrow \infty </script>? Use the slope field and your knowledge of the equation to determine the long-time behavior
+of this solution.
+</div>
+<div role="article" class="problem-environment exercise" id="problem13"><a id="x1-137r13"></a><a class="ximera-label" id="ex:tm2yp4ym3"></a> The slope field for the differential equation <script type="math/tex">y' = (t-2)(y+4)(y-3)</script> is below. If we find the solution to this differential equation with initial condition, <script type="math/tex">y(0) = 1</script>,
+what will happen to the solution as <script type="math/tex">t \rightarrow \infty </script>? Use the slope field and your knowledge of the equation to determine the long-time behavior
+of this solution.
+</div>
+<div role="article" class="problem-environment exercise" id="problem14"><a id="x1-138r14"></a><a class="ximera-label" id="ex:yp1yp4"></a> The slope field for the differential equation <script type="math/tex">y' = (y+1)(y+4)</script> is below. If we find the solution to this differential equation with initial condition, <script type="math/tex">y(0) = 1</script>,
+what will happen to the solution as <script type="math/tex">t \rightarrow \infty </script>? Use the slope field and your knowledge of the equation to determine the long-time behavior
+of this solution.
+</div>
+<div class="minipage"><!--l. 188--><p class="noindent"><img src="./../figures/yprime3myyp2slope.png" alt="PIC" width="169" height="169"/> <a id="x1-139r1"></a>
+<a id="x1-140"></a>
+<br/> </p><div class="caption"><span class="id">Figure 1: </span><span class="content"><a class="reference" href="#ex:3myyp2">ex:3myyp2</a></span></div><!--tex4ht:label?: x1-139r -->
+</div><div class="minipage"><img src="./../figures/yprimetm2yp4ym3slope.png" alt="PIC" width="169" height="169"/> <a id="x1-141r2"></a>
+<a id="x1-142"></a>
+<br/> <div class="caption"><span class="id">Figure 2: </span><span class="content"><a class="reference" href="#ex:tm2yp4ym3">ex:tm2yp4ym3</a></span></div><!--tex4ht:label?: x1-141r -->
+</div><div class="minipage"><img src="./../figures/yprimeyp1yp4slope.png" alt="PIC" width="169" height="169"/> <a id="x1-143r3"></a>
+<a id="x1-144"></a>
+<br/> <div class="caption"><span class="id">Figure 3: </span><span class="content"><a class="reference" href="#ex:yp1yp4">ex:yp1yp4</a></span></div><!--tex4ht:label?: x1-143r -->
+</div>
+<div role="article" class="problem-environment exercise" id="problem15"><a id="x1-145r15"></a>[challenging] Take <script type="math/tex">y' = f(x,y)</script>, <script type="math/tex">y(0) = 0</script>, where <script type="math/tex">f(x,y) > 1</script> for all <script type="math/tex">x</script> and <script type="math/tex">y</script>. If the solution exists for all <script type="math/tex">x</script>, can you say what happens to <script type="math/tex">y(x)</script> as <script type="math/tex">x</script> goes to positive infinity?
+Explain.
+</div>
+<div role="article" class="problem-environment exercise" id="problem16"><a id="x1-146r16"></a> Suppose <script type="math/tex">y' = f(x,y)</script>. What will the slope field look like, explain and sketch an example, if you know the following about
+<script type="math/tex">f(x,y)</script>:
+<a id="x1-147r1"></a>
+<!--l. 216--><p class="noindent">     <!--l. 216--></p><p class="noindent"><script type="math/tex">f</script> does not depend on <script type="math/tex">y</script>.                                           </p><!--l. 216--><p class="noindent">a)<a id="x1-148r2"></a>     </p><!--l. 216--><p class="noindent"><script type="math/tex">f</script> does not depend on <script type="math/tex">x</script>.                                           </p><!--l. 216--><p class="noindent">b)
+<a id="x1-149r3"></a>
+</p><!--l. 216--><p class="noindent">     </p><!--l. 216--><p class="noindent"><script type="math/tex">f(t,t) = 0</script> for any number <script type="math/tex">t</script>.                                                 </p><!--l. 216--><p class="noindent">c)<a id="x1-150r4"></a>     </p><!--l. 216--><p class="noindent"><script type="math/tex">f(x,0) = 0</script> and <script type="math/tex">f(x,1) = 1</script> for all <script type="math/tex">x</script>.                                                      </p><!--l. 216--><p class="noindent">d)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem17"><a id="x1-151r17"></a> Describe what each of the following facts about the function <script type="math/tex">f(x,y)</script> tells you about the slope field for the differential equation
+<script type="math/tex">y' = f(x,y)</script>.
+<a id="x1-152r1"></a>
+                                                                                                     
+                                                                                                     
+<!--l. 234--><p class="noindent">     <!--l. 234--></p><p class="noindent"><script type="math/tex">f(2,y) = 0</script> for all <script type="math/tex">y</script>                                                                                                                                             </p><!--l. 234--><p class="noindent">a)
+<a id="x1-153r2"></a>
+</p><!--l. 234--><p class="noindent">     </p><!--l. 234--><p class="noindent"><script type="math/tex">f(x,-x) = 0</script> for all <script type="math/tex">x</script>                                                                                                                                             </p><!--l. 234--><p class="noindent">b)
+<a id="x1-154r3"></a>
+</p><!--l. 234--><p class="noindent">     </p><!--l. 234--><p class="noindent"><script type="math/tex">f(x,x) = 1</script> for all <script type="math/tex">x</script>                                                                                                                                             </p><!--l. 234--><p class="noindent">c)
+<a id="x1-155r4"></a>
+</p><!--l. 234--><p class="noindent">     </p><!--l. 234--><p class="noindent"><script type="math/tex">f(x, -1) = 0</script> for all <script type="math/tex">x</script>                                                                                                                                             </p><!--l. 234--><p class="noindent">d)
+</p>
+</div>
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</body></html>

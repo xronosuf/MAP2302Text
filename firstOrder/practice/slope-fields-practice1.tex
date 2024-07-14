@@ -1,0 +1,249 @@
+\documentclass{ximera}
+
+\title{Practice for Slope Fields}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+    Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Sketch slope field for $y'=e^{x-y}$.  How do the solutions behave as $x$ grows?  Can you guess a particular solution by looking at the slope field?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%\includegraphics[width=2in]{slopefieldexpxmy.png}
+%
+%$y=x$ is a solution.
+%}
+
+\begin{exercise}%
+    Sketch the slope field of $y'=y^3$.  Can you visually find the solution that satisfies $y(0)=0$?
+\end{exercise}
+%\exsol{%
+%\\[6pt]
+%\includegraphics[width=2in]{yprimey3slope}
+%\\
+%$y=0$ is a solution such that $y(0)=0$.
+%}
+
+
+\begin{exercise}
+    Sketch slope field for $y'=x^2$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%\includegraphics[width=2in]{slopefieldx2.png}
+%}
+
+\begin{exercise}
+    Sketch slope field for $y'=y^2$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%\includegraphics[width=2in]{slopefieldy2.png}
+%}
+
+\begin{exercise}
+    For each of the following differential equations, sketch out a slope field on $-3 < x < 3$ and $-3 < y < 3$ and determine the overall behavior of the solutions to the equation as $t \rightarrow \infty$. If this fact depends on the value of the solution at $t=0$, explain how it changes.
+    \begin{tasks}(4)
+        \task $\displaystyle \frac{dy}{dx} = 3 - 2y$
+        \task $\displaystyle \frac{dy}{dx} = 1 + y$
+        \task $\displaystyle \frac{dy}{dx} = y - 1$
+        \task $\displaystyle \frac{dy}{dx} = -2 - y$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~\parbox[c]{1.2in}{\includegraphics[width=1.2in]{slopefield3m2y.png}} \quad b)~\parbox[c]{1.2in}{\includegraphics[width=1.2in]{slopefield1py.png}} \quad c)~\parbox[c]{1.2in}{\includegraphics[width=1.2in]{slopefieldym1.png}} \quad d)~\parbox[c]{1.2in}{\includegraphics[width=1.2in]{slopefieldm2my.png}}
+%
+%a)~Solutions tend to $3/2$.
+%b)~Solutions go to $\infty$ if $y(0) > -1$, goes to $-\infty$ is $y(0) < -1$. Constant if $y(0) = -1$. 
+%c)~Solutions go to $\infty$ if $y(0) > 1$, goes to $-\infty$ is $y(0) < 1$. Constant if $y(0) = 1$. 
+%d)~Solutions tend to $-2$.
+%}
+
+\begin{exercise}
+    Which of the following slope fields corresponds to the differential equation $\frac{dy}{dt} = t(y-1)$. Explain your reasoning.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetyp1slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetsqym1slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetym1slope}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%b)
+%}
+
+\begin{exercise}
+    Which of the following slope fields corresponds to the differential equation $\frac{dy}{dt} = (2-t)(y^2 - 9)$. Explain your reasoning.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetm2ysqm9slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimeyp1tsqm9slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprime2mtysqm9slope}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%c)
+%}
+
+
+\begin{exercise}
+    Match equations $y'=1-x$, $y'=x-2y$, $y' = x(1-y)$ to slope fields. Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimex1minusyslope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprime1minusxslope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimexminus2yslope}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$y' = x(1-y)$ \quad b)~$y' = 1-x$ \quad c)~$y'=x-2y$
+%}
+
+
+\begin{exercise}%
+    Match equations $y'=\sin x$, $y'=\cos y$, $y' = y\cos(x)$ to slope fields. Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimecosyslope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimecosxyslope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimesinxslope}}
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $y'=\cos y$, \quad
+%b) $y' = y\cos(x)$, \quad
+%c) $y'=\sin x$. \quad
+%Justification left to reader.
+%}
+
+\begin{exercise}
+    Match equations $y'=y(y-2)$, $y'=y-1$, $y' = y(2-y)$ to slope fields. Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivym1}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivy2my}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivyym2}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$y'=y-1$\quad b)~$y'=y(2-y)$\quad c)~$y'=y(y-2)$
+%}
+
+\begin{exercise}
+    Match equations $y'=t(y^2 + 1)$, $y'=t(y^2 - 1)$, $y' = t^2(y^2 - 1)$ to slope fields. Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetysqm1slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetsqysqm1slope}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetysqp1slope}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$y'=t(y^2 -1)$ \quad b)~$y'=t^2(y^2 - 1)$ \quad c)~$y'=t(y^2 + 1)$
+%}
+
+\begin{exercise}\label{ex:3myyp2}
+    The slope field for the differential equation $y' = (3-y)(y+2)$ is below.  If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Tends to 3
+%}
+
+\begin{exercise}\label{ex:tm2yp4ym3}
+    The slope field for the differential equation $y' = (t-2)(y+4)(y-3)$ is below. If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Tends to -4
+%}
+
+\begin{exercise}\label{ex:yp1yp4}
+    The slope field for the differential equation $y' = (y+1)(y+4)$ is below. If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Goes to $\infty$. Will not exist for all positive $t$ values.
+%}
+
+\begin{minipage}{0.32\textwidth}
+    \includegraphics[width=\textwidth]{yprime3myyp2slope}
+    \captionof{figure}{\exerciseref{ex:3myyp2}}
+\end{minipage}%
+\begin{minipage}{0.32\textwidth}
+    \includegraphics[width=\textwidth]{yprimetm2yp4ym3slope}
+    \captionof{figure}{\exerciseref{ex:tm2yp4ym3}}
+\end{minipage}%
+\begin{minipage}{0.32\textwidth}
+    \includegraphics[width=\textwidth]{yprimeyp1yp4slope}
+    \captionof{figure}{\exerciseref{ex:yp1yp4}}
+\end{minipage}
+
+\begin{exercise}[challenging]
+    Take $y' = f(x,y)$, $y(0) = 0$, where $f(x,y) > 1$ for all $x$ and $y$.  If the solution exists for all $x$, can you say what happens to $y(x)$ as $x$ goes to positive infinity?  Explain.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Yes, it will go to $\infty$.
+%}
+
+\begin{exercise}
+    Suppose $y' = f(x,y)$.  What will the slope field look like, explain and sketch an example, if you know the following about $f(x,y)$:
+    \begin{tasks}(2)
+        \task $f$ does not depend on $y$.
+        \task $f$ does not depend on $x$.
+        \task $f(t,t) = 0$ for any number $t$.
+        \task $f(x,0) = 0$ and $f(x,1) = 1$ for all $x$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~Slopes are independent of $y$. On a vertical line, the slopes are all the same. \\
+%b)~Slopes are independent of $x$. Horizontal invariance. \\
+%c)~Horizontal tangents along the line $y=x$.\\
+%d)~Horizontal tangents along the $x$-axis, so $x=0$ is a solution. Slope $1$ along $y=1$. 
+%}
+
+\begin{exercise}
+    Describe what each of the following facts about the function $f(x,y)$ tells you about the slope field for the differential equation $y' = f(x,y)$.
+    \begin{tasks}
+        \task $f(2,y) = 0$ for all $y$
+        \task $f(x,-x) = 0$ for all $x$
+        \task $f(x,x) = 1$ for all $x$
+        \task $f(x, -1) = 0$ for all $x$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~Horizontal tangents along $x=2$.\\
+%b)~Horizontal tangents along the line $y=-x$.\\
+%c)~Slope one along the line $y=x$. Also $y=x$ is a solution.\\
+%d)~Horizontal tangents along the line $y=-1$.
+%}
+
+%\setcounter{exercise}{100}
+
+
+
+\end{document}

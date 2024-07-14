@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head> <title>Practice for Using the EU-Thm</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="EUThm-practice1.tex"/> 
+<meta name="author" content=""/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="68fa19576ca39380e69c8b2fd97a963a088f0b31 firstOrder/practice/EUThm-practice1.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 9--><p class="noindent">Why?
+</p></div>   <div class="maketitle"></div>
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-103r1"></a> Is it possible to solve the equation <script type="math/tex">y' = \frac {xy}{\cos x}</script> for <script type="math/tex">y(0) = 1</script>? Justify.
+</div>
+<div role="article" class="problem-environment exercise" id="problem2"><a id="x1-104r2"></a> Is it possible to solve the equation <script type="math/tex">y' = y\sqrt {\lvert x\rvert }</script> for <script type="math/tex">y(0) = 0</script>? Is the solution unique? Justify.
+</div>
+<div role="article" class="problem-environment exercise" id="problem3"><a id="x1-105r3"></a> Consider the differential equation <script type="math/tex">y' + \frac {1}{t-2}y = \frac {1}{t+3}</script>.
+<a id="x1-106r1"></a>
+<!--l. 38--><p class="noindent">     <!--l. 38--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 38--><p class="noindent">a)
+<a id="x1-107r2"></a>
+</p><!--l. 38--><p class="noindent">     </p><!--l. 38--><p class="noindent">What is the maximum guaranteed interval of existence for the solution to this equation with initial condition <script type="math/tex">y(0) = 3</script>?     </p><!--l. 38--><p class="noindent">b)
+<a id="x1-108r3"></a>
+</p><!--l. 38--><p class="noindent">     </p><!--l. 38--><p class="noindent">What if we start with the initial condition <script type="math/tex">y(4) = 0</script>?                                                                                             </p><!--l. 38--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem4"><a id="x1-109r4"></a> Consider the differential equation <script type="math/tex">y' + \frac {1}{t+2}y = \frac {\ln (|t|)}{t-4}</script>.
+<a id="x1-110r1"></a>
+<!--l. 53--><p class="noindent">     <!--l. 53--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 53--><p class="noindent">a)
+<a id="x1-111r2"></a>
+</p><!--l. 53--><p class="noindent">     </p><!--l. 53--><p class="noindent">What is the maximum guaranteed interval of existence for the solution to this equation with initial condition <script type="math/tex">y(-3) = 1</script>?     </p><!--l. 53--><p class="noindent">b)
+<a id="x1-112r3"></a>
+</p><!--l. 53--><p class="noindent">     </p><!--l. 53--><p class="noindent">What if we start with the initial condition <script type="math/tex">y(2) = 5</script>?                                                                                             </p><!--l. 53--><p class="noindent">c)
+<a id="x1-113r4"></a>
+</p><!--l. 53--><p class="noindent">     </p><!--l. 53--><p class="noindent">What happens if we want to start with <script type="math/tex">y(4) = 3</script>?                                                                                                 </p><!--l. 53--><p class="noindent">d)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem5"><a id="x1-114r5"></a> Consider the differential equation <script type="math/tex">(t+3)y' + t^2 y = \frac {1}{t-2}</script>.
+<a id="x1-115r1"></a>
+<!--l. 68--><p class="noindent">     <!--l. 68--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 68--><p class="noindent">a)
+<a id="x1-116r2"></a>
+</p><!--l. 68--><p class="noindent">     </p><!--l. 68--><p class="noindent">What is the maximum guaranteed interval of existence for the solution to this equation with initial condition <script type="math/tex">y(-2) = 1</script>?     </p><!--l. 68--><p class="noindent">b)
+<a id="x1-117r3"></a>
+</p><!--l. 68--><p class="noindent">     </p><!--l. 68--><p class="noindent">What if we start with the initial condition <script type="math/tex">y(-4) = 5</script>?                                                                                             </p><!--l. 68--><p class="noindent">c)
+<a id="x1-118r4"></a>
+</p><!--l. 68--><p class="noindent">     </p><!--l. 68--><p class="noindent">What happens if we want to start with <script type="math/tex">y(4) = 2</script>?                                                                                                 </p><!--l. 68--><p class="noindent">d)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem6"><a id="x1-119r6"></a> Consider the differential equation <script type="math/tex">y' = y^2</script>.
+                                                                                                     
+                                                                                                     
+<a id="x1-120r1"></a>
+<!--l. 85--><p class="noindent">     <!--l. 85--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 85--><p class="noindent">a)
+<a id="x1-121r2"></a>
+</p><!--l. 85--><p class="noindent">     </p><!--l. 85--><p class="noindent">What is the most we can say about the interval of existence for the solution to this equation with initial condition
+<script type="math/tex">y(0) = 1</script>?                                                                                                                                                      </p><!--l. 85--><p class="noindent">b)
+<a id="x1-122r3"></a>
+</p><!--l. 85--><p class="noindent">     </p><!--l. 85--><p class="noindent">Find the solution to this differential equation with <script type="math/tex">y(0) = 1</script>. Over what values of <script type="math/tex">x</script> does this solution exist?                      </p><!--l. 85--><p class="noindent">c)
+<a id="x1-123r4"></a>
+</p><!--l. 85--><p class="noindent">     </p><!--l. 85--><p class="noindent">Find the solution to this differential equation with <script type="math/tex">y(0) = 4</script>. Over what values of <script type="math/tex">x</script> does this solution exist?                      </p><!--l. 85--><p class="noindent">d)
+<a id="x1-124r5"></a>
+</p><!--l. 85--><p class="noindent">     </p><!--l. 85--><p class="noindent">Find the solution to this differential equation with <script type="math/tex">y(0) = -2</script>. Over what values of <script type="math/tex">x</script> does this solution exist?                      </p><!--l. 85--><p class="noindent">e)
+<a id="x1-125r6"></a>
+</p><!--l. 85--><p class="noindent">     </p><!--l. 85--><p class="noindent">Do any of these contradict your answer in (b)?                                                                                          </p><!--l. 85--><p class="noindent">f)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem7"><a id="x1-126r7"></a> Consider the differential equation <script type="math/tex">y' = y^2 + 4</script>.
+<a id="x1-127r1"></a>
+<!--l. 100--><p class="noindent">     <!--l. 100--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 100--><p class="noindent">a)
+<a id="x1-128r2"></a>
+</p><!--l. 100--><p class="noindent">     </p><!--l. 100--><p class="noindent">What is the most we can say about the interval of existence for the solution to this equation with initial condition
+<script type="math/tex">y(0) = 0</script>?                                                                                                                                                      </p><!--l. 100--><p class="noindent">b)
+<a id="x1-129r3"></a>
+</p><!--l. 100--><p class="noindent">     </p><!--l. 100--><p class="noindent">Find the solution to this differential equation with <script type="math/tex">y(0) = 0</script>. Over what values of <script type="math/tex">x</script> does this solution exist?                      </p><!--l. 100--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem8"><a id="x1-130r8"></a> Consider the differential equation <script type="math/tex">y' = x(y+1)^2</script>.
+<a id="x1-131r1"></a>
+<!--l. 115--><p class="noindent">     <!--l. 115--></p><p class="noindent">Is this equation linear or non-linear?                                                                                                       </p><!--l. 115--><p class="noindent">a)
+<a id="x1-132r2"></a>
+</p><!--l. 115--><p class="noindent">     </p><!--l. 115--><p class="noindent">If we set <script type="math/tex">f(x,y) = x(y+1)^2</script>, for what values of <script type="math/tex">x</script> and <script type="math/tex">y</script> are <script type="math/tex">f</script> and <script type="math/tex">\frac {\partial f}{\partial y}</script> continuous?                                                                             </p><!--l. 115--><p class="noindent">b)
+<a id="x1-133r3"></a>
+</p><!--l. 115--><p class="noindent">     </p><!--l. 115--><p class="noindent">What is the most we can say about the interval of existence for the solution to this equation with initial condition
+<script type="math/tex">y(0) = 1</script>?                                                                                                                                                      </p><!--l. 115--><p class="noindent">c)
+<a id="x1-134r4"></a>
+</p><!--l. 115--><p class="noindent">     </p><!--l. 115--><p class="noindent">Find the solution to this differential equation with <script type="math/tex">y(0) = 1</script>. Over what values of <script type="math/tex">x</script> does this solution exist?                      </p><!--l. 115--><p class="noindent">d)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem9"><a id="x1-135r9"></a>Take <script type="math/tex">(y-x)y' = 0</script>, <script type="math/tex">y(0) = 0</script>.
+<a id="x1-136r1"></a>
+<!--l. 129--><p class="noindent">     <!--l. 129--></p><p class="noindent">Find two distinct solutions.                                                                                                                   </p><!--l. 129--><p class="noindent">a)
+<a id="x1-137r2"></a>
+</p><!--l. 129--><p class="noindent">     </p><!--l. 129--><p class="noindent">Explain why this does not violate Picard’s theorem.                                                                                   </p><!--l. 129--><p class="noindent">b)
+                                                                                                     
+                                                                                                     
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem10"><a id="x1-138r10"></a> Find a solution to <script type="math/tex">y' = \lvert y \rvert </script>, <script type="math/tex">y(0) = 0</script>. Does Picard’s theorem apply?
+</div>
+<div role="article" class="problem-environment exercise" id="problem11"><a id="x1-139r11"></a> Consider the IVP <script type="math/tex">y'\cos t+y\sin t=1; \, y(\pi /6)=1</script>.
+<a id="x1-140r1"></a>
+<!--l. 151--><p class="noindent">     <!--l. 151--></p><p class="noindent">The Existence and Uniqueness Theorem guarantees a unique solution to this IVP on what interval?                    </p><!--l. 151--><p class="noindent">a)
+<a id="x1-141r2"></a>
+</p><!--l. 151--><p class="noindent">     </p><!--l. 151--><p class="noindent">Find this solution explicitly.                                                                                                                  </p><!--l. 151--><p class="noindent">b)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem12"><a id="x1-142r12"></a> Take an equation <script type="math/tex">y' = (y-2x) g(x,y) + 2</script> for some function <script type="math/tex">g(x,y)</script>. Can you solve the problem for the initial condition <script type="math/tex">y(0) = 0</script>, and if so what is the
+solution?
+</div>
+<div role="article" class="problem-environment exercise" id="problem13"><a id="x1-143r13"></a> Consider the differential equation <script type="math/tex">y' = e^x(2-y)</script>.
+<a id="x1-144r1"></a>
+<!--l. 174--><p class="noindent">     <!--l. 174--></p><p class="noindent">Verify that <script type="math/tex">y = 2</script> is a solution to this differential equation.                                                                                 </p><!--l. 174--><p class="noindent">a)
+<a id="x1-145r2"></a>
+</p><!--l. 174--><p class="noindent">     </p><!--l. 174--><p class="noindent">Assume that we look for the solution with <script type="math/tex">y(0) = 0</script>. Is it possible that <script type="math/tex">y(x) = 3</script> for some later time <script type="math/tex">x</script>? Why or why not?                </p><!--l. 174--><p class="noindent">b)
+<a id="x1-146r3"></a>
+</p><!--l. 174--><p class="noindent">     </p><!--l. 174--><p class="noindent">Based on this, what do we know about the solution with <script type="math/tex">y(0) = 5</script>?                                                                          </p><!--l. 174--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem14"><a id="x1-147r14"></a>Suppose <script type="math/tex">y' = f(x,y)</script> is such that <script type="math/tex">f(x,1) = 0</script> for every <script type="math/tex">x</script>, <script type="math/tex">f</script> is continuous and <script type="math/tex">\frac {\partial f}{\partial y}</script> exists and is continuous for every <script type="math/tex">x</script> and <script type="math/tex">y</script>.
+<a id="x1-148r1"></a>
+<!--l. 188--><p class="noindent">     <!--l. 188--></p><p class="noindent">Guess a solution given the initial condition <script type="math/tex">y(0) = 1</script>.                                                                                             </p><!--l. 188--><p class="noindent">a)
+<a id="x1-149r2"></a>
+</p><!--l. 188--><p class="noindent">     </p><!--l. 188--><p class="noindent">Can graphs of two solutions of the equation for different initial conditions ever intersect?                                  </p><!--l. 188--><p class="noindent">b)
+<a id="x1-150r3"></a>
+</p><!--l. 188--><p class="noindent">     </p><!--l. 188--><p class="noindent">Given <script type="math/tex">y(0) = 0</script>, what can you say about the solution. In particular, can <script type="math/tex">y(x) > 1</script> for any <script type="math/tex">x</script>? Can <script type="math/tex">y(x) = 1</script> for any <script type="math/tex">x</script>? Why or why not?          </p><!--l. 188--><p class="noindent">c)
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem15"><a id="x1-151r15"></a> Consider the differential equation <script type="math/tex">y' = y^2 - 4</script>.
+<a id="x1-152r1"></a>
+<!--l. 203--><p class="noindent">     <!--l. 203--></p><p class="noindent">Verify that <script type="math/tex">y=2</script> and <script type="math/tex">y=-2</script> are both solutions to this differential equation.                                                                   </p><!--l. 203--><p class="noindent">a)
+<a id="x1-153r2"></a>
+</p><!--l. 203--><p class="noindent">     </p><!--l. 203--><p class="noindent">Verify that the hypotheses of Picard’s theorem are satisfies for this equation.                                                  </p><!--l. 203--><p class="noindent">b)
+<a id="x1-154r3"></a>
+</p><!--l. 203--><p class="noindent">     </p><!--l. 203--><p class="noindent">Assume that we solve this differential equation with <script type="math/tex">y(0) = 1</script>. Is it possible for the solution to reach <script type="math/tex">y=3</script> at any point? Why or
+why not?                                                                                                                                           </p><!--l. 203--><p class="noindent">c)
+<a id="x1-155r4"></a>
+</p><!--l. 203--><p class="noindent">     </p><!--l. 203--><p class="noindent">Assume that we solve this differential equation with <script type="math/tex">y(0) = -1</script>. Is it possible for the solution to reach <script type="math/tex">y=-4</script> at any point? Why or
+why not?                                                                                                                                           </p><!--l. 203--><p class="noindent">d)
+                                                                                                     
+                                                                                                     
+</p>
+</div>
+<div role="article" class="problem-environment exercise" id="problem16"><a id="x1-156r16"></a>Is it possible to solve <script type="math/tex">y' = xy</script> for <script type="math/tex">y(0) = 0</script>? Is the solution unique?
+</div>
+<div role="article" class="problem-environment exercise" id="problem17"><a id="x1-157r17"></a>Is it possible to solve <script type="math/tex">y' = \frac {x}{x^2-1}</script> for <script type="math/tex">y(1) = 0</script>?
+</div>
+<div role="article" class="problem-environment exercise" id="problem18"><a id="x1-158r18"></a>[tricky]Suppose <script type="math/tex; mode=display"> \begin{equation*} 
+             f(y) =
+        \begin{cases}
+            0 & \text{ if $y > 0$}, \\
+            1 & \text{ if $y \leq 0$} .
+        \end{cases}
+    \end{equation*}</script>
+Does <script type="math/tex">y' = f(y)</script>, <script type="math/tex">y(0) = 0</script> have a continuously differentiable solution? Does Picard apply? Why, or why not?
+</div>
+<div role="article" class="problem-environment exercise" id="problem19"><a id="x1-159r19"></a>Consider an equation of the form <script type="math/tex">y' = f(x)</script> for some continuous function <script type="math/tex">f</script>, and an initial condition <script type="math/tex">y(x_0) = y_0</script>. Does a solution exist for all <script type="math/tex">x</script>? Why or
+why not?
+</div>
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</body></html>

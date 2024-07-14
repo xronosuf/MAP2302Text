@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en"><head> <title>Classification of differential equations</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="classification.tex"/> 
+<meta name="author" content="Matthew Charnley and Jason
+                                                                                                     
+                                                                                                     
+Nowell"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Classify equation as ordinary or partial differential equations"/> 
+<meta name="learning-outcome" content="Identify whether an equation is linear or non-linear"/> 
+<meta name="learning-outcome" content="Classify linear equations as homogenoeus, non-homogenoeus, or constant coefficient, as appropriate"/> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="14641e17655bf0fcb484b675cc412bf29afa1104 firstOrder/classification.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 12--><p class="noindent">We introduce how to classify various properties of differential equations.
+</p></div>   <div class="maketitle"></div>
+<a class="ximera-label" id="classification:section"></a>
+<!--l. 20--><p class="noindent">There are many types of differential equations, and we classify them into different categories based on their properties. Let us
+quickly go over the most basic classification. We already saw the distinction between ordinary and partial differential
+equations:
+</p>
+<div class="theorem-like problem-environment definition" id="problem1"><a id="x1-103r1"></a>
+     <ul class="itemize1">
+     <li class="itemize"><em>Ordinary differential equations</em> or (ODE) are equations where the derivatives are taken with respect to only one
+     variable. That is, there is only one independent variable.
+     </li>
+     <li class="itemize"><em>Partial differential equations</em> or (PDE) are equations that depend on partial derivatives of several variables. That is,
+     there are several independent variables.</li></ul>
+<!--l. 27--></div>
+<!--l. 29--><p class="noindent">Let us see some examples of ordinary differential equations: </p><script type="math/tex; mode=display"> \begin{align*} 
+      & \frac{d y}{dt} = ky , & & \text{(Exponential growth\index{exponential growth})} \\
+    & \frac{d y}{dt} = k(A-y) , & & \text{(Newton's law of cooling)} \\
+    & m \frac{d^2 x}{dt^2} + c \frac{dx}{dt} + kx = f(t) . & &
+    \text{(Mechanical vibrations\index{mechanical vibrations})}
+\end{align*}</script>
+<!--l. 36--><p class="noindent">And of partial differential equations: </p><script type="math/tex; mode=display"> \begin{align*} 
+      & \frac{\partial y}{\partial t} + c \frac{\partial y}{\partial x} = 0 , & &
+    \text{(Transport equation\index{transport equation})} \\
+    & \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2} , & &
+    \text{(Heat equation\index{heat equation})} \\
+    & \frac{\partial^2 u}{\partial t^2} = \frac{\partial^2 u}{\partial x^2} +
+    \frac{\partial^2 u}{\partial y^2} . & &
+    \text{(Wave equation in 2 dimensions\index{wave equation in 2 dimensions})}
+\end{align*}</script>
+<!--l. 47--><p class="noindent">If there are several equations working together, we have a so-called <em>system of differential equations</em>. For example,
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    y' = x , \qquad x' = y
+\end{equation*}</script>
+is a simple system of ordinary differential equations. Maxwell’s equations for electromagnetics,
+<script type="math/tex; mode=display"> \begin{align*} 
+    & \nabla \cdot \vec{D} = \rho, & & \nabla \cdot \vec{B} = 0 , \\
+    & \nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}, &
+    & \nabla \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t} ,
+\end{align*}</script>
+<!--l. 57--><p class="noindent">are a system of partial differential equations. The divergence operator <script type="math/tex">\nabla \cdot </script> and the curl operator <script type="math/tex">\nabla \times </script> can be written out in partial
+derivatives of the functions involved in the <script type="math/tex">x</script>, <script type="math/tex">y</script>, and <script type="math/tex">z</script> variables.
+</p><!--l. 74--><p class="noindent">In the first chapter, we will start attacking first order ordinary differential equations, that is, equations of the form <script type="math/tex">\frac {dy}{dx} = f(x,y)</script>.
+In general, lower order equations are easier to work with and have simpler behavior, which is why we start with
+them.
+</p><!--l. 76--><p class="noindent">We also distinguish how the dependent variables appear in the equation (or system). </p><div class="theorem-like problem-environment definition" id="problem2"><a id="x1-104r2"></a>We say an equation is <em>linear</em> if the
+                                                                                                     
+                                                                                                     
+dependent variable (or variables) and their derivatives appear linearly, that is only as first powers, they are not
+multiplied together, and no other functions of the dependent variables appear. Otherwise, the equation is called
+<em>nonlinear</em>.
+</div>
+<!--l. 81--><p class="noindent">Another way to determine if a differential equation is linear is if the equation is a sum of terms, where each term is some function
+of the independent variables or some function of the independent variables multiplied by a dependent variable or its derivative.
+That is, an ordinary differential equation is linear if it can be put into the form </p><script type="math/tex; mode=display"> \begin{equation} 
+\label{classification:eqlingen}
+    a_n(x) \frac{d^n y}{dx^n} + a_{n-1}(x) \frac{d^{n-1} y}{dx^{n-1}} + \cdots + a_{1}(x) \frac{dy}{dx} + a_{0}(x) y = b(x) .
+\end{equation}</script>
+The functions <script type="math/tex">a_0</script>, <script type="math/tex">a_1</script>, …, <script type="math/tex">a_n</script> are called the <em>coefficients</em>. The equation is allowed to depend arbitrarily on the independent variable. So
+<script type="math/tex; mode=display"> \begin{equation} 
+\label{classification:eqlinex}
+    e^x \frac{d^2 y}{dx^2} + \sin(x) \frac{d y}{dx} + x^2 y = \frac{1}{x}
+\end{equation}</script>
+is still a linear equation as <script type="math/tex">y</script> and its derivatives only appear linearly. The equation <script type="math/tex; mode=display"> \cos (x) \frac {d^2y}{dx^2} - xy + \frac {e^x}{x} = 0 </script> is also linear, even though it is not initially in
+the correct form. From this equation, we can move the last term over to the right-hand side as a <script type="math/tex">-\frac {e^x}{x}</script>, and then it is in the correct form,
+with the <script type="math/tex">\frac {dy}{dx}</script> term missing (or has coefficient zero).
+<!--l. 95--><p class="noindent">All the equations and systems above as examples are linear. It may not be immediately obvious for Maxwell’s equations unless you write
+out the divergence and curl in terms of partial derivatives. Let us see some nonlinear equations. For example Burger’s equation,
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    \frac{\partial y}{\partial t} + y \frac{\partial y}{\partial x} = \nu \frac{\partial^2 y}{\partial x^2} ,
+\end{equation*}</script>
+is a nonlinear second order partial differential equation. It is nonlinear because <script type="math/tex">y</script> and <script type="math/tex">\frac {\partial y}{\partial x}</script> are multiplied together. The equation
+<script type="math/tex; mode=display"> \begin{equation} 
+\label{classification:eqnonlinode}
+    \frac{dx}{dt} = x^2
+\end{equation}</script>
+is a nonlinear first order differential equation as there is a second power of the dependent variable <script type="math/tex">x</script>.
+<div class="theorem-like problem-environment definition" id="problem3"><a id="x1-105r3"></a>A linear equation may further be called <em>homogeneous</em> if all terms depend on the dependent variable. That is, if
+no term is a function of the independent variables alone. Otherwise, the equation is called <em>nonhomogeneous</em> or
+<em>inhomogeneous</em>.
+</div>
+<!--l. 109--><p class="noindent">For example, the exponential growth equation, the wave equation, or the transport equation above are homogeneous. The
+mechanical vibrations equation above is nonhomogeneous as long as <script type="math/tex">f(t)</script> is not the zero function. Similarly, if the ambient temperature
+<script type="math/tex">A</script> is nonzero, Newton’s law of cooling is nonhomogeneous. A homogeneous linear ODE can be put into the form
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    a_n(x) \frac{d^n y}{dx^n} + a_{n-1}(x) \frac{d^{n-1} y}{dx^{n-1}} +  \cdots + a_{1}(x) \frac{dy}{dx} + a_{0}(x) y = 0 .
+\end{equation*}</script>
+Compare to (<a class="reference" href="#classification:eqlingen">classification:eqlingen</a>) and notice there is no function <script type="math/tex">b(x)</script>.
+<!--l. 116--><p class="noindent">If the coefficients of a linear equation are actually constant functions, then the equation is said to have <em>constant
+coefficients</em>. The coefficients are the functions multiplying the dependent variable(s) or one of its derivatives,
+not the function <script type="math/tex">b(x)</script> standing alone. A constant coefficient nonhomogeneous ODE is an equation of the form
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    a_n \frac{d^n y}{dx^n} + a_{n-1} \frac{d^{n-1} y}{dx^{n-1}} +  \cdots + a_{1} \frac{dy}{dx} + a_{0} y = b(x) ,
+\end{equation*}</script>
+where <script type="math/tex">a_0, a_1, \ldots , a_n</script> are all constants, but <script type="math/tex">b</script> may depend on the independent variable <script type="math/tex">x</script>. The mechanical vibrations equation above is a constant
+coefficient nonhomogeneous second order ODE. The same nomenclature applies to PDEs, so the transport equation, heat equation
+and wave equation are all examples of constant coefficient linear PDEs.
+<!--l. 123--><p class="noindent">Finally, an equation (or system) is called <em>autonomous</em> if the equation does not explicitly depend on the independent variable. For
+autonomous ordinary differential equations, the independent variable is then thought of as time. Autonomous equation means an
+equation that does not change with time. For example, Newton’s law of cooling is autonomous, so is equation (<a class="reference" href="#classification:eqnonlinode">classification:eqnonlinode</a>). On the other
+hand, mechanical vibrations or (<a class="reference" href="#classification:eqlinex">classification:eqlinex</a>) are not autonomous.
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</p></body></html>

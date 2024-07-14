@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="en"><head> <title>Existence and Uniqueness of Solutions</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="first-existence.tex"/> 
+<meta name="author" content="Matthew Charnley and Jason
+                                                                                                     
+                                                                                                     
+Nowell"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Understand the terms existence and uniqueness as they apply to differential equations"/> 
+<meta name="learning-outcome" content="Find the maximum guaranteed interval of existence for the solution to an initial value problem."/> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="fd4c36f8fdd8bbf39a57a748bc3f32cd98eece2e firstOrder/first-existence.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 12--><p class="noindent">Stuff about Existence and Uniqueness of Solutions
+</p></div>   <div class="maketitle"></div>
+<a class="ximera-label" id="existunique:section"></a>
+<!--l. 20--><p class="noindent">If we take the differential equation <script type="math/tex; mode=display"> y' = f(x,y) \qquad y(x_0) = y_0, </script> there are two main questions we want to answer about this equation.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem">Does a solution exist to the differential equation?
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem">Is there only one solution to the differential equation?</dd></dl>
+<!--l. 31--><p class="noindent">These are more commonly referred to as (a) existence of the solution and (b) uniqueness of the solution. These are especially
+crucial for equations that we are using to model a physical situation. For physical situations, the solution definitely exists (because
+the system does something and continues to exist) and the solution is unique, because a given system will always do the same thing
+given the same setup. Since we know that physical systems obey these properties, the equations we use to model them should have
+these properties as well. These properties do not necessarily hold for all differential equations, as shown in the examples
+below.
+</p>
+<div class="theorem-like problem-environment example" id="problem1"><a id="x1-105r1"></a>Attempt to solve: <script type="math/tex; mode=display"> \begin{equation*} 
+             y' = \frac{1}{x}, \qquad y(0) = 0 .
+    \end{equation*}</script>
+<!--l. 39--><p class="noindent">Integrate to find the general solution <script type="math/tex">y = \ln \, \lvert x \rvert + C</script>. The solution does not exist at <script type="math/tex">x=0</script>. See  Normally a reference to a previous figure goes
+here.. The equation may have been written as the seemingly harmless <script type="math/tex">x y' = 1</script>.
+</p>
+<hr class="figure"/><div class="figure">
+                                                                                                     
+                                                                                                     
+<a id="x1-106r0"></a><a id="x1-108r0"></a>
+                                                                                                     
+                                                                                                     
+<img src="first-existence0x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfigure"/>
+<!--l. 54--></div>
+
+<div class="theorem-like problem-environment example" id="problem2"><a id="x1-110r2"></a><a class="ximera-label" id="ex:nonuniqueness"></a> Solve: <script type="math/tex; mode=display"> \begin{equation*} 
+             y' = 2 \sqrt{\lvert y \rvert}, \qquad y(0) = 0 .
+    \end{equation*}</script>
+<!--l. 62--><p class="noindent">See  Normally a reference to a previous figure goes here.. Note that <script type="math/tex">y=0</script> is a solution. But another solution is the function
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+        y(x) =
+        \begin{cases}
+            x^2 & \text{if } \; x \geq 0,\\
+            -x^2 & \text{if } \; x < 0.
+        \end{cases}
+    \end{equation*}</script>
+</div>
+<!--l. 72--><p class="noindent">What we see here is a significant problem for trying to represent physical situations. In the first there is no solution at <script type="math/tex">x=0</script>, so if our
+physical scenario had wanted one, that would be an issue. Similarly, for the second, we do have solutions, but we have two of them,
+so we can’t use this to predict what is going to happen to a physical situation modeled by this equation over time. So, we need
+both existence and uniqueness to hold for our modeling equation in order to use differential equations to accurately model
+situations. Thankfully, these properties do apply to most equations, and we have fairly straight-forward criteria that can be used to
+determine if these properties are true for a given differential equation. For a first-order linear differential equation, the theorem is
+fairly straight-forward.
+</p>
+<div class="theorem-like problem-environment theorem" id="problem3"><a id="x1-111r3"></a><span class="theorem-like-title">exist:lin1thm</span>Existence and Uniqueness Theorem Assume that we have the first-order linear differential equation given by
+<script type="math/tex; mode=display"> \begin{equation*} 
+        y' + p(x)y = g(x).
+    \end{equation*}</script>
+If <script type="math/tex">p(x)</script> and <script type="math/tex">g(x)</script> are continuous functions on an interval <script type="math/tex">I</script> that contains a point <script type="math/tex">x_0</script>, then for any <script type="math/tex">y</script>-value <script type="math/tex">y_0</script>, the initial value problem
+<script type="math/tex; mode=display"> \begin{equation*} 
+        y' + p(x)y = g(x) \qquad y(x_0) = y_0
+    \end{equation*}</script>
+has a unique solution. This solution exists and is unique on the entire interval <script type="math/tex">I</script>.
+</div>
+<!--l. 86--><p class="noindent">The idea and proof of this theorem comes from the fact that we have an explicit method for solving these equations no
+matter what <script type="math/tex">p</script> and <script type="math/tex">g</script> are. We can always find an integrating factor for the equation, convert the left-hand side into a
+product rule term, take a definite integral of both sides, and then solve for <script type="math/tex">y</script>. Since we have this explicit formula,
+the solution will exist and be defined on the entire interval where the functions <script type="math/tex">p</script> and <script type="math/tex">g</script> are continuous. This also
+means that we can answer questions about where and for what values of <script type="math/tex">x</script> the solution to a differential equation
+exists.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a id="x1-112r4"></a>Consider the differential equation <script type="math/tex; mode=display"> \begin{equation*} 
+             (x-1)y' + \frac{1}{x-5} y = e^x
+    \end{equation*}</script>
+What do the existence and uniqueness theorems say about the solution to this differential equation with the initial condition <script type="math/tex">y(2) = 6</script>?
+What about the solution with initial condition <script type="math/tex">y(-3) = 1</script>?
+</div>
+<!--l. 97--><p class="noindent">Solution: To apply the existence and uniqueness theorem, we need to get the <script type="math/tex">y'</script> term by itself. This results in the differential
+equation </p><script type="math/tex; mode=display"> \begin{equation*} 
+             y' + \frac{1}{(x-1)(x-5)} y = \frac{e^x}{x-1}.
+    \end{equation*}</script>
+In order to figure out where this solution exists and is unique, we need to determine where the coefficient functions <script type="math/tex">p(x)</script> and <script type="math/tex">g(x)</script> are
+continuous. The only two points that we have discontinuities are at <script type="math/tex">x=1</script> and <script type="math/tex">x=5</script>. Therefore, if we have the initial condition <script type="math/tex">y(2) = 6</script>, we start at
+the <script type="math/tex">x</script> value of <script type="math/tex">2</script>. Because this equation is linear, it will exist everywhere that these two functions are both continuous containing the
+point <script type="math/tex">x=2</script>, and since the only discontinuities are at <script type="math/tex">1</script> and <script type="math/tex">5</script>, we know that they are both continuous on <script type="math/tex">(1,5)</script>. This means that we
+can take <script type="math/tex">(1,5)</script> as the interval <script type="math/tex">I</script> in the theorem, and know that this solution will exist and be unique on the interval
+                                                                                                     
+                                                                                                     
+<script type="math/tex">(1,5)</script>.
+<!--l. 103--><p class="noindent">For the other initial condition, <script type="math/tex">y(-3) = 1</script>, we now want an interval where these functions are continuous that contains <script type="math/tex">-3</script>. Again, we only have
+to avoid <script type="math/tex">x=1</script> and <script type="math/tex">x=5</script>, so we can take the interval <script type="math/tex">(-\infty , 1)</script> as the interval <script type="math/tex">I</script> in the theorem, and so we know the solution with this initial condition
+will exist and be unique on <script type="math/tex">(-\infty , 1)</script>.
+</p><!--l. 105--><p class="noindent">A convenient way to represent this situation is with a number line like that presented in  Normally a reference to a previous
+figure goes here.. On this number line, we mark the places where the functions <script type="math/tex">p(x)</script> or <script type="math/tex">g(x)</script> are discontinuous.
+</p>
+<hr class="figure"/><div class="figure">
+                                                                                                     
+                                                                                                     
+<a id="x1-113r0"></a>
+                                                                                                     
+                                                                                                     
+<img src="first-existence1x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfigure"/>
+<!--l. 114--><p class="noindent">To interpret this image, we can mark the initial point on the number line, where the point that we mark is the <em>x</em> coordinate of the
+initial condition. All of the intervals are in terms of <script type="math/tex">x</script>. Then, the existence and uniqueness theorem says that the solution will exist
+on the entire interval between any marked points on this number line. From that, we can see that the interval of existence for the
+initial condition <script type="math/tex">y(2) = 6</script> is <script type="math/tex">(1,5)</script>, and the interval for <script type="math/tex">y(-3) = 1</script> is <script type="math/tex">(-\infty , 1)</script>.
+</p><!--l. 115--><p class="noindent">                                                                                                   ___
+</p><!--l. 117--><p class="noindent">For non-linear equations, we don’t have an explicit method of getting a solution that works for all equations. This means that we
+can’t fall back on this formula to guarantee existence or uniqueness of solutions. For this reason, we expect to get a result that is
+not as strong for non-linear equations. Thankfully, we do still get a result, which is known as Picard’s theorem <script type="text/javascript"> function footnotefunction(ID) { var x = document.getElementById(ID); if (x.style.display === "none") { x.style.color = "##002db3"; x.style.display = "inline"; } else { x.style.display = "none"; } } </script>   <span style="position=relative; vertical-align=baseline;"> <button onclick="footnotefunction(&#39;footnotei&#39;)" style="background:none!important; color:inherit; border:none; padding:0!important; font: inherit; cursor: pointer;"> <sup>[1]</sup></button>   <span id="footnotei" style="display:none; min-width:20em; position:relative; left:2px; padding:5px; color:##002db3; word-wrap:break-word; z-index=9999; overflow=auto;">  <span style="color:#4D00B2;">(Named after
+the French mathematician <a href="https://en.wikipedia.org/wiki/Charles_%C3%89mile_Picard">Charles Émile Picard</a> (1856–1941))</span></span></span> .
+</p>
+<div class="theorem-like problem-environment theorem" id="problem5"><a id="x1-115r5"></a><span class="theorem-like-title">slope:picardthm</span>Picard’s theorem on existence and uniquenessExistence and uniqueness, Picard’s theorem: If <script type="math/tex">f(x,y)</script> is continuous (as a
+function of two variables) and <script type="math/tex">\frac {\partial f}{\partial y}</script> exists and is continuous near some <script type="math/tex">(x_0,y_0)</script>, then a solution to <script type="math/tex; mode=display"> \begin{equation*} 
+             y' = f(x,y), \qquad y(x_0) = y_0,
+    \end{equation*}</script>
+exists (at least for some small interval of <script type="math/tex">x</script>’s) and is unique.
+</div>
+<!--l. 128--><p class="noindent">The main fact that is “not as strong” about this result is the interval that we get from the theorem. For the linear theorem, we got
+existence and uniqueness on the entire interval <script type="math/tex">I</script> where <script type="math/tex">p</script> and <script type="math/tex">g</script> are continuous. For the non-linear theorem, we only get existence
+on <em>some</em> interval around the point <script type="math/tex">x_0</script>. Even if <script type="math/tex">f(x,y)</script> and <script type="math/tex">\frac {\partial f}{\partial y}</script> are really nice functions that are continuous everywhere, we
+can still only guarantee existence on a small interval (that can depend on the initial condition) around the point
+<script type="math/tex">x_0</script>.
+</p>
+<div class="theorem-like problem-environment example" id="problem6"><a id="x1-116r6"></a>For some constant <script type="math/tex">A</script>, solve: <script type="math/tex; mode=display"> \begin{equation*} 
+             y' = y^2, \qquad y(0) = A .
+    \end{equation*}</script>
+</div>
+<!--l. 138--><p class="noindent">Solution: We know how to solve this equation. First assume that <script type="math/tex">A \not = 0</script>, so <script type="math/tex">y</script> is not equal to zero at least for some <script type="math/tex">x</script> near 0. So <script type="math/tex">x' = \nicefrac {1}{y^2}</script>, so <script type="math/tex">x = \nicefrac {-1}{y} + C</script>, so <script type="math/tex">y = \frac {1}{C-x}</script>. If
+<script type="math/tex">y(0) = A</script>, then <script type="math/tex">C = \nicefrac {1}{A}</script> so </p><script type="math/tex; mode=display"> \begin{equation*} 
+             y = \frac{1}{\nicefrac{1}{A} - x} .
+    \end{equation*}</script>
+If <script type="math/tex">A=0</script>, then <script type="math/tex">y=0</script> is a solution.
+<!--l. 144--><p class="noindent">For example, when <script type="math/tex">A=1</script> the solution is </p><script type="math/tex; mode=display"> \begin{equation*} 
+             y = \frac{1}{1-x}
+    \end{equation*}</script>
+which goes to infinity, and so “blows up”, at <script type="math/tex">x=1</script>. This solution here exists only on the interval <script type="math/tex">(-\infty , 1)</script>, and hence, the solution does not exist
+for all <script type="math/tex">x</script> even if the equation is nice everywhere. The equation <script type="math/tex">y' = y^2</script> certainly looks nice.
+<!--l. 150--><p class="noindent">However, this fact does not contradict our existence and uniqueness theorem for non-linear equations. The theorem only guarantees
+that the solution to </p><script type="math/tex; mode=display"> \begin{equation*} 
+             y' = y^2
+    \end{equation*}</script>
+exists and is unique on <em>some</em> interval containing 0. It does not guarantee that the solution exists everywhere that <script type="math/tex">y^2</script> and its
+derivative are continuous, only that at each point where this happens, the solution will exist for some interval around that point.
+The interval <script type="math/tex">(-\infty , 1)</script> is “some interval containing 0”, so the theorem still applies and holds here. See the exercises for more detail on how
+this process works and how we can illustrate the fact that the interval of existence ise “some interval containing
+0”.
+<!--l. 155--><p class="noindent">                                                                                                   ___
+</p><!--l. 157--><p class="noindent">The other main conclusion that we can draw from these theorems is the fact that two different solution curves to a first-order
+differential equation can not cross, provided the existence and uniqueness theorems hold. If <script type="math/tex">y_1</script> and <script type="math/tex">y_2</script> are two different solutions to <script type="math/tex">y' = f(x,y)</script>
+and the solution curves for <script type="math/tex">y_1(x)</script> and <script type="math/tex">y_2(x)</script> cross, then this means that for some particular value of <script type="math/tex">x_0</script> and <script type="math/tex">y_0</script>, we have that
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    y_1(x_0) = y_0 \qquad y_2(x_0) = y_0.
+\end{equation*}</script>
+If we pick <script type="math/tex">x_0</script> as a starting point, then the fact that the existence and uniqueness theorems hold imply that, at least for some interval
+around <script type="math/tex">x_0</script>, there is exactly one solution to <script type="math/tex; mode=display"> \begin{equation*} 
+      y' = f(x,y) \qquad y(x_0) = y_0.
+                                                                                                     
+                                                                                                     
+\end{equation*}</script>
+However, both <script type="math/tex">y_1</script> and <script type="math/tex">y_2</script> satisfy these two properties. Therefore, <script type="math/tex">y_1</script> and <script type="math/tex">y_2</script> must be the same, which doesn’t make sense because we
+assumed they were different. So it is impossible for two different solution curves to cross, provided the existence and
+uniqueness theorem holds. For a comparison, refer back to  Normally a reference to a previous example goes
+here. earlier to see what non-uniqueness looks like, where we do have two solution curves that cross at the point
+<script type="math/tex">(0,0)</script>.
+<!--l. 167--><p class="noindent">This fact is useful for analyzing differential equations in general, but will be particularly useful in <a class="reference" href="#auteq:section">auteq:section</a> in dealing with autonomous
+equations, where we can use simple solutions to provide boundaries over which other solutions can not cross. This fact will come up
+again in Chapters <a class="reference" href="#sys:chapter">sys:chapter</a> and <a class="reference" href="#nlin:chapter">nlin:chapter</a> in sketching trajectories for these solutions as well.
+</p>
+<div class="theorem-like problem-environment example" id="problem7"><a id="x1-117r7"></a>Consider the differential equation <script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dy}{dt} = (y-3)^2(y+4).
+    \end{equation*}</script>
+     <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem">Verify that <script type="math/tex">y=3</script> is a solution to this differential equation.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem">Assume that we solve this problem with initial condition <script type="math/tex">y(0) = 1</script>. Is it possible for this solution to ever reach <script type="math/tex">y=4</script>? Why or why
+     not?</dd></dl>
+<!--l. 178--></div>
+<!--l. 181--><p class="noindent">Solution:
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+ (a) </dt><dd class="enumerate-enumitem">If we take the function <script type="math/tex">y(t) = 3</script>, then <script type="math/tex">y' = 0</script>, and plugging this into the right hand side also gives <script type="math/tex">0</script>. Therefore, this function solves
+     the differential equation.
+     </dd><dt class="enumerate-enumitem">
+ (b) </dt><dd class="enumerate-enumitem">If the solutions starts with <script type="math/tex">y(0) = 1</script>, this means that it starts below the line <script type="math/tex">y=3</script>. In order to get up to <script type="math/tex">y=4</script>, the solution would
+     need to cross over the line <script type="math/tex">y=3</script>, which would mean that we have solution curves that cross. However, the function <script type="math/tex">f(t,y) = (y-3)^2(y+4)</script> is
+     continuous everywhere, as is the first derivative <script type="math/tex">\frac {\partial f}{\partial y} = 2(y-3)(y+4) + (y-3)^2.</script> Therefore, the existence and uniqueness theorem applies everywhere,
+     and so solution curves can not cross. So, it is not possible for the solution to reach <script type="math/tex">y=4</script>, because this would force solution
+     curves to cross, which we know can not happen.</dd></dl>
+                                                                                                   ___
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</body></html>

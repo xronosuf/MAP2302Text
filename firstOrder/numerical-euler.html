@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="en"><head> <title>Numerical methods: Euler’s method</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="numerical-euler.tex"/> 
+<meta name="author" content="Matthew Charnley and Jason
+                                                                                                     
+                                                                                                     
+Nowell"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Use Euler&#39;s method to numerically approximate solutions to first order differential equations"/> 
+<meta name="learning-outcome" content="Compute the error in a numerical method using the true solution"/> 
+<meta name="learning-outcome" content="Compare a variety of numerical methods, including built-in Matlab methods."/> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="0531e572a11a920a561ee9b236bc4ac9718f912e firstOrder/numerical-euler.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 14--><p class="noindent">Stuff about Numerical methods: Euler’s method
+</p></div>   <div class="maketitle"></div>
+<a class="ximera-label" id="numer:section"></a>
+<!--l. 33--><p class="noindent">Unless <script type="math/tex">f(x,y)</script> is of a special form, it is generally very hard if not impossible to get a nice formula for the solution of the problem
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    y' = f(x,y), \qquad y(x_0) = y_0 .
+\end{equation*}</script>
+<!--l. 38--><p class="noindent">If the equation can be solved in closed form, we should do that. But what if we have an equation that cannot be solved in closed
+form? What if we want to find the value of the solution at some particular <script type="math/tex">x</script>? Or perhaps we want to produce a graph of
+the solution to inspect the behavior. In this section we will learn about the basics of numerical approximation of
+solutions.
+</p><!--l. 40--><p class="noindent">The simplest method for approximating a solution is <em>Euler’s method</em> <script type="text/javascript"> function footnotefunction(ID) { var x = document.getElementById(ID); if (x.style.display === "none") { x.style.color = "##002db3"; x.style.display = "inline"; } else { x.style.display = "none"; } } </script>   <span style="position=relative; vertical-align=baseline;"> <button onclick="footnotefunction(&#39;footnotei&#39;)" style="background:none!important; color:inherit; border:none; padding:0!important; font: inherit; cursor: pointer;"> <sup>[1]</sup></button>   <span id="footnotei" style="display:none; min-width:20em; position:relative; left:2px; padding:5px; color:##002db3; word-wrap:break-word; z-index=9999; overflow=auto;">  <span style="color:#4D00B2;">(Named after the Swiss mathematician <a href="https://en.wikipedia.org/wiki/Euler">Leonhard Paul
+Euler</a> (1707–1783). The correct pronunciation of the name sounds more like “oiler.”)</span></span></span> . It works as follows: Take <script type="math/tex">x_0</script>
+and compute the slope <script type="math/tex">k = f(x_0,y_0)</script>. The slope is the change in <script type="math/tex">y</script> per unit change in <script type="math/tex">x</script>. Follow the line for an interval of length <script type="math/tex">h</script>
+on the <script type="math/tex">x</script>-axis. Hence if <script type="math/tex">y = y_0</script> at <script type="math/tex">x_0</script>, then we say that <script type="math/tex">y_1</script> (the approximate value of <script type="math/tex">y</script> at <script type="math/tex">x_1 = x_0 + h</script>) is <script type="math/tex">y_1 = y_0 + h k</script>. Rinse, repeat! Let <script type="math/tex">k = f(x_1,y_1)</script>, and then
+compute <script type="math/tex">x_2 = x_1 + h</script>, and <script type="math/tex">y_2 = y_1 + h k</script>. Now compute <script type="math/tex">x_3</script> and <script type="math/tex">y_3</script> using <script type="math/tex">x_2</script> and <script type="math/tex">y_2</script>, etc. Consider the equation <script type="math/tex">y' = \nicefrac {y^2}{3}</script>, <script type="math/tex">y(0)=1</script>, and <script type="math/tex">h=1</script>. Then <script type="math/tex">x_0=0</script> and <script type="math/tex">y_0 = 1</script>. We compute
+</p><script type="math/tex; mode=display"> \begin{align*} 
+    & x_1 = x_0 + h = 0 + 1 = 1, & & y_1 = y_0 + h \, f(x_0,y_0) = 1 + 1 \cdot
+    \nicefrac{1^2}{3} = \nicefrac{4}{3} \approx 1.333,\\
+    & x_2 = x_1 + h = 1 + 1 = 2, & & y_2 = y_1 + h \, f(x_1,y_1) =
+    \nicefrac{4}{3} + 1 \cdot \frac{{(\nicefrac{4}{3})}^2}{3} =
+    \nicefrac{52}{27} \approx 1.926.
+\end{align*}</script>
+<!--l. 50--><p class="noindent">We then draw an approximate graph of the solution by connecting the points <script type="math/tex">(x_0,y_0)</script>, <script type="math/tex">(x_1,y_1)</script>, <script type="math/tex">(x_2,y_2)</script>,…. For the first two steps of the method see
+Normally a reference to a previous figure goes here..
+</p>
+<hr class="figure"/><div class="figure">
+                                                                                                     
+                                                                                                     
+<a id="x1-103r0"></a>
+                                                                                                     
+                                                                                                     
+<img src="numerical-euler0x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfigure"/>
+<!--l. 60--><p class="noindent">More abstractly, for any <script type="math/tex">i=0,1,2,3,\ldots </script>, we compute </p><script type="math/tex; mode=display"> \begin{equation*} 
+      x_{i+1} = x_i + h , \qquad y_{i+1}  = y_i + h\, f(x_i,y_i) .
+\end{equation*}</script>
+This can be worked out by hand for a few steps, but the formulas here lend themselves very well to being coded into a looping
+structure for more involved processes. The line segments we get are an approximate graph of the solution. Generally it is not
+exactly the solution. See  Normally a reference to a previous figure goes here. for the plot of the real solution and the
+approximation.
+<hr class="figure"/><div class="figure">
+                                                                                                     
+                                                                                                     
+<a id="x1-105r0"></a>
+                                                                                                     
+                                                                                                     
+<img src="numerical-euler1x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfigure"/>
+<!--l. 74--><p class="noindent">We continue with the equation <script type="math/tex">y' = \nicefrac {y^2}{3}</script>, <script type="math/tex">y(0)=1</script>. Let us try to approximate <script type="math/tex">y(2)</script> using Euler’s method. In Figures <a class="reference" href="#euler-step12:fig">euler-step12:fig</a> and <a class="reference" href="#euler-step12-sol:fig">euler-step12-sol:fig</a> we have graphically
+approximated <script type="math/tex">y(2)</script> with step size 1. With step size 1, we have <script type="math/tex">y(2) \approx 1.926</script>. The real answer is 3. We are approximately 1.074 off. Let us halve the
+step size. Computing <script type="math/tex">y_4</script> with <script type="math/tex">h=0.5</script>, we find that <script type="math/tex">y(2) \approx 2.209</script>, so an error of about 0.791.  Normally a reference to a previous table goes here.
+gives the values computed for various parameters.
+</p>
+<div role="article" class="problem-environment exercise" id="problem1"><a id="x1-107r1"></a> Solve this equation exactly and show that <script type="math/tex">y(2) = 3</script>.
+</div>
+<!--l. 90--><p class="noindent">The difference between the actual solution and the approximate solution is called the error. We usually talk about just the size
+of the error and we do not care much about its sign. The point is, we usually do not know the real solution, so
+we only have a vague understanding of the error. If we knew the error exactly …what is the point of doing the
+approximation?
+</p>
+<div class="table">
+                                                                                                     
+                                                                                                     
+<!--l. 92--><p class="noindent"><a id="x1-108r0"></a></p><hr class="float"/><div class="float">
+                                                                                                     
+                                                                                                     
+<img src="numerical-euler2x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfloat"/>
+</div>
+<!--l. 115--><p class="noindent">Notice that except for the first few times, every time we halved the step size the error approximately halved. This
+halving of the error is a general feature of Euler’s method as it is a <em>first order method</em>. There exists an improved
+Euler method, see the exercises, which is a second order method. A second order method reduces the error to
+approximately one quarter every time we halve the interval. The meaning of “second” order is the squaring in
+<script type="math/tex">\nicefrac {1}{4} = \nicefrac {1}{2} \times \nicefrac {1}{2} = {(\nicefrac {1}{2})}^2</script>.
+</p><!--l. 121--><p class="noindent">To get the error to be within 0.1 of the answer we had to already do 64 steps. To get it to within 0.01 we would
+have to halve another three or four times, meaning doing 512 to 1024 steps. That is quite a bit to do by hand.
+The improved Euler method from the exercises should quarter the error every time we halve the interval, so we
+would have to approximately do half as many “halvings” to get the same error. This reduction can be a big deal.
+With 10 halvings (starting at <script type="math/tex">h=1</script>) we have 1024 steps, whereas with 5 halvings we only have to do 32 steps, assuming
+that the error was comparable to start with. A computer may not care about this difference for a problem this
+simple, but suppose each step would take a second to compute (the function may be substantially more difficult to
+compute than <script type="math/tex">\nicefrac {y^2}{3}</script>). Then the difference is 32 seconds versus about 17 minutes. We are not being altogether fair, a
+second order method would probably double the time to do each step. Even so, it is 1 minute versus 17 minutes.
+Next, suppose that we have to repeat such a calculation for different parameters a thousand times. You get the
+idea.
+</p><!--l. 123--><p class="noindent">Note that in practice we do not know how large the error is! How do we know what is the right step size? Well, essentially we keep
+halving the interval, and if we are lucky, we can estimate the error from a few of these calculations and the assumption that the
+error goes down by a factor of one half each time (if we are using standard Euler).
+</p>
+<div role="article" class="problem-environment exercise" id="problem2"><a id="x1-110r2"></a> In the table above, suppose you do not know the error. Take the approximate values of the function in the last two lines, assume
+that the error goes down by a factor of 2. Can you estimate the error in the last time from this? Does it (approximately) agree
+with the table? Now do it for the first two rows. Does this agree with the table?
+</div>
+<!--l. 129--><p class="noindent">Let us talk a little bit more about the example <script type="math/tex">y' = \frac {y^2}{3}</script>, <script type="math/tex">y(0) = 1</script>. Suppose that instead of the value <script type="math/tex">y(2)</script> we wish to find <script type="math/tex">y(3)</script>. The results of this effort are
+listed in  Normally a reference to a previous table goes here. for successive halvings of <script type="math/tex">h</script>. What is going on here? Well, you
+should solve the equation exactly and you will notice that the solution does not exist at <script type="math/tex">x=3</script>. In fact, the solution goes to infinity when
+you approach <script type="math/tex">x=3</script>.
+</p>
+<div class="table">
+                                                                                                     
+                                                                                                     
+<!--l. 131--><p class="noindent"><a id="x1-111r0"></a></p><hr class="float"/><div class="float">
+                                                                                                     
+                                                                                                     
+<img src="numerical-euler3x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfloat"/>
+</div>
+<!--l. 154--><p class="noindent">Another case where things go bad is if the solution oscillates wildly near some point. The solution may exist at all points, but even
+a much better numerical method than Euler would need an insanely small step size to approximate the solution with reasonable
+precision. And computers might not be able to easily handle such a small step size.
+</p><!--l. 160--><p class="noindent">In real applications we would not use a simple method such as Euler’s. The simplest method that would probably be used in a real
+application is the standard Runge–Kutta method (see exercises). That is a fourth order method, meaning that if we halve the
+interval, the error generally goes down by a factor of 16 (it is fourth order as <script type="math/tex">\nicefrac {1}{16} = \nicefrac {1}{2} \times \nicefrac {1}{2} \times \nicefrac {1}{2} \times \nicefrac {1}{2}</script>).
+</p><!--l. 162--><p class="noindent">Choosing the right method to use and the right step size can be very tricky. There are several competing factors to consider.
+</p>
+     <ul class="itemize1">
+     <li class="itemize">Computational time: Each step takes computer time. Even if the function <script type="math/tex">f</script> is simple to compute, we do it many
+     times over. Large step size means faster computation, but perhaps not the right precision.
+     </li>
+     <li class="itemize">Roundoff errors: Computers only compute with a certain number of significant digits. Errors introduced by rounding
+     numbers off during our computations become noticeable when the step size becomes too small relative to the
+     quantities we are working with. So reducing step size may in fact make errors worse. There is a certain optimum
+     step size such that the precision increases as we approach it, but then starts getting worse as we make our step size
+     smaller still. Trouble is: this optimum may be hard to find.
+     </li>
+     <li class="itemize">Stability: Certain equations may be numerically unstable. What may happen is that the numbers never seem to
+     stabilize no matter how many times we halve the interval. We may need a ridiculously small interval size, which may
+     not be practical due to roundoff errors or computational time considerations. Such problems are sometimes called
+     <em>stiff </em>stiff problem. In the worst case, the numerical computations might be giving us bogus numbers that look like a
+     correct answer. Just because the numbers seem to have stabilized after successive halving, does not mean that we
+     must have the right answer.</li></ul>
+<!--l. 169--><p class="noindent">We have seen just the beginnings of the challenges that appear in real applications. Numerical approximation of solutions to
+differential equations is an active research area for engineers and mathematicians. For example, the general purpose method used
+for the ODE solver in Matlab and Octave (as of this writing) is a method that appeared in the literature only in the
+1980s.
+</p><!--l. 171--><p class="noindent">The method used in Matlab and Octave is a fair bit different from the methods discussed previously. We don’t need to go too much
+in detail about it, but some information will be helpful. The main difference that will be visible when running these methods is
+that they are <em>adaptive</em> method. This means that they adjust the step-size based on what the differential equation
+looks like at a given point. Euler’s method, along with the improved Euler and Runge-Kutta methods, is a fixed
+step-size method, where the steps are always the same no matter what. Adaptive methods are harder to write
+and optimize, but can solve many problems faster because the adaptive nature of the method allows them to get
+similar accuracy to fixed step methods, but at many fewer steps. In the example below, the initial value problem
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+    \frac{dy}{dt} = y \qquad y(0) = 1
+\end{equation*}</script>
+is solved with an Euler’s method and Matlab’s built-in <code>ode45</code> method. Both of the solutions are plotted along with the actual
+solution <script type="math/tex">y = e^t</script>
+<hr class="figure"/><div class="figure">
+                                                                                                     
+                                                                                                     
+<a id="x1-113r0"></a>
+                                                                                                     
+                                                                                                     
+<img src="numerical-euler4x.png" alt="picture"/>
+                                                                                                     
+                                                                                                     
+</div><hr class="endfigure"/>
+<!--l. 183--><p class="noindent">The Euler’s method takes 60 steps in this computation, but is still not as accurate as the <code>ode45</code> method, which only takes 45 steps.
+In addition, the black diamonds, representing the different values computed by <code>ode45</code> are not evenly spaced, illustrating the
+adaptive nature of this solver, while the red stars are all evenly spaced in the <script type="math/tex">t</script>-direction, as is expected from Euler’s
+method.
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</p></body></html>

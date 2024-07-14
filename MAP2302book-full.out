@@ -1,0 +1,130 @@
+\BOOKMARK [1][-]{section*.1}{Preface and About the Author\(s\)}{}% 1
+\BOOKMARK [1][-]{section*.2}{Introduction to differential equations}{}% 2
+\BOOKMARK [2][-]{subsection*.3}{Differential equations}{section*.2}% 3
+\BOOKMARK [2][-]{subsection*.4}{Solutions of differential equations}{section*.2}% 4
+\BOOKMARK [2][-]{subsection*.6}{Differential equations in practice}{section*.2}% 5
+\BOOKMARK [2][-]{subsection*.8}{Four fundamental equations}{section*.2}% 6
+\BOOKMARK [1][-]{section*.9}{Practice for Solving Exact ODEs}{}% 7
+\BOOKMARK [1][-]{section*.10}{Classification of differential equations}{}% 8
+\BOOKMARK [1][-]{section*.11}{Practice for Classifying Equations}{}% 9
+\BOOKMARK [1][-]{section*.12}{Integrals as solutions}{}% 10
+\BOOKMARK [1][-]{section*.13}{Practice for Solving by Direct Integration}{}% 11
+\BOOKMARK [1][-]{section*.14}{Slope fields}{}% 12
+\BOOKMARK [2][-]{subsection*.15}{Slope fields}{section*.14}% 13
+\BOOKMARK [1][-]{section*.20}{Practice for Slope Fields}{}% 14
+\BOOKMARK [1][-]{section*.21}{Separable equations}{}% 15
+\BOOKMARK [2][-]{subsection*.22}{Separable equations}{section*.21}% 16
+\BOOKMARK [2][-]{subsection*.23}{Implicit solutions}{section*.21}% 17
+\BOOKMARK [2][-]{subsection*.25}{Examples of separable equations}{section*.21}% 18
+\BOOKMARK [1][-]{section*.27}{Practice for Separable ODEs}{}% 19
+\BOOKMARK [1][-]{section*.28}{Linear equations and the integrating factor}{}% 20
+\BOOKMARK [1][-]{section*.29}{Practice for Solving First Order Linear ODEs}{}% 21
+\BOOKMARK [1][-]{section*.30}{Existence and Uniqueness of Solutions}{}% 22
+\BOOKMARK [1][-]{section*.34}{Practice for Using the EU-Thm}{}% 23
+\BOOKMARK [1][-]{section*.35}{Numerical methods: Euler's method}{}% 24
+\BOOKMARK [1][-]{section*.41}{Practice for Euler Method}{}% 25
+\BOOKMARK [1][-]{section*.42}{Autonomous equations}{}% 26
+\BOOKMARK [2][-]{subsection*.46}{Concavity of Solutions}{section*.42}% 27
+\BOOKMARK [1][-]{section*.49}{Practice for Autonomous Equations}{}% 28
+\BOOKMARK [1][-]{section*.50}{Bifurcation diagrams}{}% 29
+\BOOKMARK [1][-]{section*.58}{Practice for bifurcation diagrams}{}% 30
+\BOOKMARK [1][-]{section*.59}{Exact equations}{}% 31
+\BOOKMARK [2][-]{subsection*.61}{Solving exact equations}{section*.59}% 32
+\BOOKMARK [2][-]{subsection*.63}{Integrating factors}{section*.59}% 33
+\BOOKMARK [1][-]{section*.64}{Practice for Solving Exact ODEs}{}% 34
+\BOOKMARK [1][-]{section*.65}{Modeling with First Order Equations}{}% 35
+\BOOKMARK [2][-]{subsection*.66}{Principles of Mathematical Modeling}{section*.65}% 36
+\BOOKMARK [2][-]{subsection*.67}{The Accumulation Equation}{section*.65}% 37
+\BOOKMARK [1][-]{section*.69}{Practice for Modeling}{}% 38
+\BOOKMARK [1][-]{section*.70}{Modeling and Parameter Estimation}{}% 39
+\BOOKMARK [1][-]{section*.71}{Practice for Modeling Parameters}{}% 40
+\BOOKMARK [1][-]{section*.72}{Substitution}{}% 41
+\BOOKMARK [2][-]{subsection*.73}{Bernoulli equations}{section*.72}% 42
+\BOOKMARK [2][-]{subsection*.74}{Homogeneous equations}{section*.72}% 43
+\BOOKMARK [1][-]{section*.75}{Practice for Substitution}{}% 44
+\BOOKMARK [1][-]{section*.76}{First order linear PDE}{}% 45
+\BOOKMARK [1][-]{section*.81}{Practice for first PDE}{}% 46
+\BOOKMARK [1][-]{section*.82}{Chapter Review}{}% 47
+\BOOKMARK [1][-]{section*.83}{Second order linear ODEs}{}% 48
+\BOOKMARK [2][-]{subsection*.84}{Intial Value Problems}{section*.83}% 49
+\BOOKMARK [2][-]{subsection*.85}{Constant Coefficient Equations - Real and Distinct Roots}{section*.83}% 50
+\BOOKMARK [2][-]{subsection*.86}{Linear Independence}{section*.83}% 51
+\BOOKMARK [1][-]{section*.87}{Practice for Second Order Linear ODEs}{}% 52
+\BOOKMARK [1][-]{section*.88}{Complex Roots and Euler's Formula}{}% 53
+\BOOKMARK [2][-]{subsection*.89}{Complex roots}{section*.88}% 54
+\BOOKMARK [1][-]{section*.92}{Practice for Complex Roots}{}% 55
+\BOOKMARK [1][-]{section*.93}{Repeated Roots and Reduction of Order}{}% 56
+\BOOKMARK [1][-]{section*.94}{Practice for Second Order Repeated Roots}{}% 57
+\BOOKMARK [1][-]{section*.95}{Mechanical vibrations}{}% 58
+\BOOKMARK [2][-]{subsection*.97}{Free undamped motion}{section*.95}% 59
+\BOOKMARK [2][-]{subsection*.99}{Free damped motion}{section*.95}% 60
+\BOOKMARK [3][-]{subsubsection*.100}{Overdamping}{subsection*.99}% 61
+\BOOKMARK [3][-]{subsubsection*.102}{Critical damping}{subsection*.99}% 62
+\BOOKMARK [3][-]{subsubsection*.104}{Underdamping}{subsection*.99}% 63
+\BOOKMARK [1][-]{section*.106}{Practice for Mechanical Vibrations}{}% 64
+\BOOKMARK [1][-]{section*.107}{Nonhomogeneous equations}{}% 65
+\BOOKMARK [2][-]{subsection*.108}{Solving nonhomogeneous equations}{section*.107}% 66
+\BOOKMARK [2][-]{subsection*.109}{Undetermined coefficients}{section*.107}% 67
+\BOOKMARK [2][-]{subsection*.110}{Variation of parameters}{section*.107}% 68
+\BOOKMARK [1][-]{section*.111}{Practice for Non-Homogeneous Equations}{}% 69
+\BOOKMARK [1][-]{section*.112}{Forced oscillations and resonance}{}% 70
+\BOOKMARK [2][-]{subsection*.113}{Undamped forced motion and resonance}{section*.112}% 71
+\BOOKMARK [2][-]{subsection*.117}{Damped forced motion and practical resonance}{section*.112}% 72
+\BOOKMARK [1][-]{section*.120}{Practice for Forced Oscillations}{}% 73
+\BOOKMARK [1][-]{section*.121}{Higher order linear ODEs}{}% 74
+\BOOKMARK [2][-]{subsection*.122}{Linear independence}{section*.121}% 75
+\BOOKMARK [2][-]{subsection*.123}{Constant coefficient higher order ODEs}{section*.121}% 76
+\BOOKMARK [2][-]{subsection*.124}{Non-Homogeneous Equations}{section*.121}% 77
+\BOOKMARK [1][-]{section*.125}{Practice for Higher Order ODEs}{}% 78
+\BOOKMARK [1][-]{section*.126}{Chapter Review}{}% 79
+\BOOKMARK [2][-]{subsection*.127}{Topics}{section*.126}% 80
+\BOOKMARK [2][-]{subsection*.128}{Exercises}{section*.126}% 81
+\BOOKMARK [1][-]{section*.129}{Vectors, mappings, and matrices}{}% 82
+\BOOKMARK [2][-]{subsection*.130}{Vectors and operations on vectors}{section*.129}% 83
+\BOOKMARK [3][-]{subsubsection*.135}{Linear Combinations and Linear Independence}{subsection*.130}% 84
+\BOOKMARK [2][-]{subsection*.136}{Matrices}{section*.129}% 85
+\BOOKMARK [2][-]{subsection*.137}{Linear mappings and matrices}{section*.129}% 86
+\BOOKMARK [1][-]{section*.138}{Practice for Forced Oscillations}{}% 87
+\BOOKMARK [1][-]{section*.139}{Matrix algebra}{}% 88
+\BOOKMARK [2][-]{subsection*.140}{One-by-one matrices}{section*.139}% 89
+\BOOKMARK [2][-]{subsection*.141}{Matrix addition and scalar multiplication}{section*.139}% 90
+\BOOKMARK [2][-]{subsection*.142}{Matrix multiplication}{section*.139}% 91
+\BOOKMARK [2][-]{subsection*.143}{Some rules of matrix algebra}{section*.139}% 92
+\BOOKMARK [2][-]{subsection*.144}{Inverse}{section*.139}% 93
+\BOOKMARK [2][-]{subsection*.145}{Special types of matrices}{section*.139}% 94
+\BOOKMARK [2][-]{subsection*.146}{Transpose}{section*.139}% 95
+\BOOKMARK [1][-]{section*.147}{Practice for Matrix Algebra}{}% 96
+\BOOKMARK [1][-]{section*.148}{Elimination}{}% 97
+\BOOKMARK [2][-]{subsection*.149}{Linear systems of equations}{section*.148}% 98
+\BOOKMARK [2][-]{subsection*.150}{Row echelon form and elementary operations}{section*.148}% 99
+\BOOKMARK [2][-]{subsection*.151}{Non-unique solutions and inconsistent systems}{section*.148}% 100
+\BOOKMARK [1][-]{section*.152}{Practice for Elimination Method}{}% 101
+\BOOKMARK [1][-]{section*.153}{Linear independence, rank, and dimension}{}% 102
+\BOOKMARK [2][-]{subsection*.154}{Linear independence and rank}{section*.153}% 103
+\BOOKMARK [2][-]{subsection*.155}{Subspaces and span}{section*.153}% 104
+\BOOKMARK [2][-]{subsection*.156}{Basis and dimension}{section*.153}% 105
+\BOOKMARK [1][-]{section*.157}{Practice for Forced Oscillations}{}% 106
+\BOOKMARK [1][-]{section*.158}{Determinant}{}% 107
+\BOOKMARK [1][-]{section*.160}{Practice for Determinants}{}% 108
+\BOOKMARK [1][-]{section*.161}{Eigenvalues and Eigenvectors}{}% 109
+\BOOKMARK [2][-]{subsection*.162}{Finding Eigenvalues and Eigenvectors}{section*.161}% 110
+\BOOKMARK [2][-]{subsection*.163}{Real Eigenvalues}{section*.161}% 111
+\BOOKMARK [2][-]{subsection*.164}{Complex Eigenvalues}{section*.161}% 112
+\BOOKMARK [2][-]{subsection*.165}{Repeated Eigenvalues}{section*.161}% 113
+\BOOKMARK [1][-]{section*.166}{Practice for Eigenvalues}{}% 114
+\BOOKMARK [1][-]{section*.167}{Related Topics in Linear Algebra}{}% 115
+\BOOKMARK [2][-]{subsection*.168}{Subspaces and span}{section*.167}% 116
+\BOOKMARK [2][-]{subsection*.169}{Basis and dimension}{section*.167}% 117
+\BOOKMARK [2][-]{subsection*.170}{Rank}{section*.167}% 118
+\BOOKMARK [2][-]{subsection*.171}{Kernel}{section*.167}% 119
+\BOOKMARK [2][-]{subsection*.172}{Computing the inverse}{section*.167}% 120
+\BOOKMARK [2][-]{subsection*.173}{Trace and Determinant of Matrices}{section*.167}% 121
+\BOOKMARK [2][-]{subsection*.174}{Extension of Previous Theorem}{section*.167}% 122
+\BOOKMARK [1][-]{section*.175}{Practice for Advanced Linear Algebra}{}% 123
+\BOOKMARK [1][-]{section*.176}{Nonhomogeneous systems}{}% 124
+\BOOKMARK [2][-]{subsection*.177}{First order constant coefficient}{section*.176}% 125
+\BOOKMARK [3][-]{subsubsection*.178}{Diagonalization}{subsection*.177}% 126
+\BOOKMARK [3][-]{subsubsection*.179}{Undetermined coefficients}{subsection*.177}% 127
+\BOOKMARK [2][-]{subsection*.180}{First order variable coefficient}{section*.176}% 128
+\BOOKMARK [3][-]{subsubsection*.181}{Variation of parameters}{subsection*.180}% 129
+\BOOKMARK [1][-]{section*.182}{Practice for Non-Homogeneous Systems}{}% 130

@@ -1,0 +1,85 @@
+\documentclass{ximera}
+
+\title{Practice for bifurcation diagrams}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+    Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Start with the logistic equation $\frac{dx}{dt} = kx(M-x)$. Suppose we modify our harvesting. That is we will only harvest  an amount proportional to current population. In other words, we harvest $hx$ per unit of time for some $h > 0$ (Similar to earlier example with $h$ replaced with $hx$).
+    \begin{tasks}
+        \task Construct the differential equation. 
+        \task Show that if $kM > h$, then the equation is still logistic.
+        \task What happens when $kM < h$?
+    \end{tasks}
+\end{exercise}
+
+%\comboSol{%
+%}
+%{%
+%a)~ $\frac{dx}{dt} = kx\left(\frac{Mk-h}{k} - x\right)$ \quad b)~It changes the effective M \quad c)~Population always decreases.
+%}
+
+\begin{exercise}
+    Assume that a population of fish in a lake satisfies $\frac{dx}{dt} = kx(M-x)$.  Now suppose that fish are continually added at $A$ fish per unit of time.
+    \begin{tasks}(2)
+        \task Find the differential equation for $x$.
+        \task What is the new limiting population?
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $\frac{dx}{dt} = kx(M-x)+A$
+%\quad
+%b) $\frac{kM + \sqrt{{(kM)}^2 + 4Ak}}{2k}$
+%}
+
+\begin{exercise}
+    Consider the differential equation with parameter $\alpha$ given by $y' = y(y - \alpha + 1)$. 
+    \begin{tasks}
+        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 1$, and $\alpha = 3$. 
+        \task Draw a bifurcation diagram for this differential equation with parameter. 
+        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%c)~$\alpha = 1$. The solution at $y=0$ changes stability.
+%}
+
+\begin{exercise}
+    Consider the differential equation with parameter $\alpha$ given by $y' = y^2(y^2 - \alpha)$. 
+    \begin{tasks}
+        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 0$, and $\alpha = 3$. 
+        \task Draw a bifurcation diagram for this differential equation with parameter. 
+        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%c)~ $\alpha = 0$. Two new equilibrium solutions are created. 
+%}
+
+\begin{exercise}
+    Consider the differential equation with parameter $\alpha$ given by $y' = y(\alpha - y)$. 
+    \begin{tasks}
+        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 0$, and $\alpha = 3$. 
+        \task Draw a bifurcation diagram for this differential equation with parameter. 
+        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%c)~ $\alpha = 0$, $y=0$ and $y=\alpha$ both change stability.
+%}
+
+\end{document}
+
+%\setcounter{exercise}{100}

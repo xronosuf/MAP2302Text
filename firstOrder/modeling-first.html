@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="en"><head> <title>Modeling with First Order Equations</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"/> 
+<!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
+<meta name="src" content="modeling-first.tex"/> 
+<meta name="author" content="Matthew Charnley and Jason
+                                                                                                     
+                                                                                                     
+Nowell"/> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"/> 
+<meta name="ximera" content="version 0.0.1"/> 
+<link href="https://xronos.clas.ufl.edu/public/v1.8.2/stylesheets/base.css" media="screen"/> 
+<script type="text/javascript" async="" src="https://xronos.clas.ufl.edu/public/javascripts/standalone.min.js"></script> 
+<meta name="learning-outcome" content="Write a first-order differential equation to model a physical situation"/> 
+<meta name="learning-outcome" content="Interpret the solution to a differential equation in the context of a physical problem."/> 
+<meta name="dependency" content="8b5c57cb44ad1d7e5f3a5db85fe07064643d0a94 preamble.tex"/><meta name="dependency" content="b4dda7da693fa3ead1a906f738e97255c1209cec firstOrder/figures/lin-tank.pdf_t"/><meta name="dependency" content="8d6335cf276d568fec0e76defdd685a8cddc556e firstOrder/modeling-first.tex"/></head><body> 
+<div class="preamble"><script type="math/tex">\newenvironment {prompt}{}{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\newrobustcmd }[0]{}
+\newcommand {\csshow }[1]{\begingroup \expandafter \endgroup \expandafter \show \csname #1\endcsname }
+\newcommand {\csmeaning }[1]{\ifcsname #1\endcsname \expandafter \meaning \csname #1\endcsname \else \detokenize {undefined}\fi }
+\newcommand {\ifdefmacro }[0]{}
+\newcommand {\ifdefparam }[0]{}
+\newcommand {\ifdefprotected }[0]{}
+\newcommand {\ifnumequal }[1]{\ifnumcomp {#1}=}
+\newcommand {\ifnumgreater }[1]{\ifnumcomp {#1}&#x003E;}
+\newcommand {\ifnumless }[1]{\ifnumcomp {#1}&#x003C;}
+\newcommand {\ifdimequal }[1]{\ifdimcomp {#1}=}
+\newcommand {\ifdimgreater }[1]{\ifdimcomp {#1}&#x003E;}
+\newcommand {\ifdimless }[1]{\ifdimcomp {#1}&#x003C;}
+\newcommand {\expandonce }[1]{\unexpanded \expandafter {#1}}
+\newcommand {\csexpandonce }[1]{\expandafter \expandonce \csname #1\endcsname }
+\newcommand {\protecting }[0]{}
+\newcommand {\csdef }[1]{\expandafter \def \csname #1\endcsname }
+\newcommand {\csedef }[1]{\expandafter \edef \csname #1\endcsname }
+\newcommand {\csgdef }[1]{\expandafter \gdef \csname #1\endcsname }
+\newcommand {\csxdef }[1]{\expandafter \xdef \csname #1\endcsname }
+\newcommand {\cslet }[2]{\expandafter \let \csname #1\endcsname #2}
+\newcommand {\letcs }[2]{\ifcsdef {#2} {\expandafter \let \expandafter #1\csname #2\endcsname } {\undef #1}}
+\newcommand {\csletcs }[2]{\ifcsdef {#2} {\expandafter \let \csname #1\expandafter \endcsname \csname #2\endcsname } {\csundef {#1}}}
+\newcommand {\csuse }[1]{\ifcsname #1\endcsname \csname #1\expandafter \endcsname \fi }
+\newcommand {\appto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\eappto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{\expandonce #1#2}}}
+\newcommand {\gappto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\expandonce #1\unexpanded {#2}}}}
+\newcommand {\xappto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{\expandonce #1#2}}}
+\newcommand {\preto }[2]{\ifundef {#1} {\edef #1{\unexpanded {#2}}} {\edef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\epreto }[2]{\ifundef {#1} {\edef #1{#2}} {\edef #1{#2\expandonce #1}}}
+\newcommand {\gpreto }[2]{\ifundef {#1} {\xdef #1{\unexpanded {#2}}} {\xdef #1{\unexpanded {#2}\expandonce #1}}}
+\newcommand {\xpreto }[2]{\ifundef {#1} {\xdef #1{#2}} {\xdef #1{#2\expandonce #1}}}
+\newcommand {\csappto }[1]{\expandafter \appto \csname #1\endcsname }
+\newcommand {\cseappto }[1]{\expandafter \eappto \csname #1\endcsname }
+\newcommand {\csgappto }[1]{\expandafter \gappto \csname #1\endcsname }
+\newcommand {\csxappto }[1]{\expandafter \xappto \csname #1\endcsname }
+\newcommand {\cspreto }[1]{\expandafter \preto \csname #1\endcsname }
+\newcommand {\csepreto }[1]{\expandafter \epreto \csname #1\endcsname }
+\newcommand {\csgpreto }[1]{\expandafter \gpreto \csname #1\endcsname }
+\newcommand {\csxpreto }[1]{\expandafter \xpreto \csname #1\endcsname }
+\newcommand {\csnumdef }[1]{\expandafter \numdef \csname #1\endcsname }
+\newcommand {\csnumgdef }[1]{\expandafter \numgdef \csname #1\endcsname }
+\newcommand {\csdimdef }[1]{\expandafter \dimdef \csname #1\endcsname }
+\newcommand {\csdimgdef }[1]{\expandafter \dimgdef \csname #1\endcsname }
+\newcommand {\csgluedef }[1]{\expandafter \gluedef \csname #1\endcsname }
+\newcommand {\csgluegdef }[1]{\expandafter \gluegdef \csname #1\endcsname }
+\newcommand {\mudef }[2]{\ifundef #1{\def #1{0mu}}{}\edef #1{\the \muexpr #2}}
+\newcommand {\csmudef }[1]{\expandafter \mudef \csname #1\endcsname }
+\newcommand {\csmugdef }[1]{\expandafter \mugdef \csname #1\endcsname }
+\newcommand {\listbreak }[0]{}
+\newcommand {\listadd }[2]{\ifblank {#2}{}{\appto #1{#2|}}}
+\newcommand {\listgadd }[2]{\ifblank {#2}{}{\gappto #1{#2|}}}
+\newcommand {\listcsadd }[1]{\expandafter \listadd \csname #1\endcsname }
+\newcommand {\listcseadd }[1]{\expandafter \listeadd \csname #1\endcsname }
+\newcommand {\listcsgadd }[1]{\expandafter \listgadd \csname #1\endcsname }
+\newcommand {\listcsxadd }[1]{\expandafter \listxadd \csname #1\endcsname }
+\newcommand {\listcsremove }[1]{\expandafter \listremove \csname #1\endcsname }
+\newcommand {\listcsgremove }[1]{\expandafter \listgremove \csname #1\endcsname }
+\newcommand {\dolistloop }[0]{\forlistloop \do }
+\newcommand {\dolistcsloop }[0]{\forlistcsloop \do }
+\newcommand {\AfterPreamble }[0]{\AtBeginDocument }
+\newcommand {\tcolorboxenvironment }[2]{\BeforeBeginEnvironment {#1}{\begin {tcolorbox}[savedelimiter={#1},#2]}\AfterEndEnvironment {#1}{\end {tcolorbox}}}
+\newcommand {\tcbpkgprefix }[0]{}
+\newcommand {\hypcapspace }[0]{.5\baselineskip }
+\newcommand {\captiontextstart }[0]{}
+\newcommand {\captiontextend }[0]{\par }
+\newcommand {\DeclareCaptionType }[0]{\RequirePackage {newfloat}\DeclareFloatingEnvironment }
+\newcommand {\memcaptioninfo }[4]{}
+\newcommand {\LTcaptype }[0]{table}
+\newcommand {\log }[0]{\ln }
+\DeclareMathOperator {\arcsec }{arcsec}
+\newcommand {\figurevref }[1]{\myvref {Figure}{#1}}
+\newcommand {\figureref }[1]{\myref {Figure}{#1}}
+\newcommand {\tablevref }[1]{\myvref {Table}{#1}}
+\newcommand {\tableref }[1]{\myref {Table}{#1}}
+\newcommand {\chapterref }[1]{\myref {chapter}{#1}}
+\newcommand {\Chapterref }[1]{\myref {Chapter}{#1}}
+\newcommand {\appendixref }[1]{\myref {appendix}{#1}}
+\newcommand {\Appendixref }[1]{\myref {Appendix}{#1}}
+\newcommand {\sectionref }[1]{\myref {\S }{#1}}
+\newcommand {\subsectionref }[1]{\myref {subsection}{#1}}
+\newcommand {\subsectionvref }[1]{\myvref {subsection}{#1}}
+\newcommand {\exercisevref }[1]{\myvref {Exercise}{#1}}
+\newcommand {\exerciseref }[1]{\myref {Exercise}{#1}}
+\newcommand {\examplevref }[1]{\myvref {Example}{#1}}
+\newcommand {\exampleref }[1]{\myref {Example}{#1}}
+\newcommand {\thmvref }[1]{\myvref {Theorem}{#1}}
+\newcommand {\thmref }[1]{\myref {Theorem}{#1}}
+\newcommand {\exampleref }[1]{ {\color {red} \bfseries Normally a reference to a previous example goes here.}}
+\newcommand {\figurevref }[1]{ {\color {red} \bfseries Normally a reference to a previous figure goes here.}}
+\newcommand {\tablevref }[1]{ {\color {red} \bfseries Normally a reference to a previous table goes here.}}
+\newcommand {\mybeginframe }[0]{\begin {tcolorbox}[colback=white,colframe=lightgray,left=5pt,right=5pt]}
+\newcommand {\myendframe }[0]{\end {tcolorbox}}
+\newcommand {\myfig }[0]{\begin {figure}[h!t] \mybeginframe \centering }
+\newcommand {\diffyincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\myincludegraphics }[3]{\includegraphics [#1]{#3}}
+\newcommand {\inputpdft }[1]{\subimport *{../figures/}{#1.pdf_t}}
+\newcommand {\diffypdfversion }[1]{#1}
+\newcommand {\cite }[1]{}
+\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }</script><script type="text/javascript"> 
+</script> 
+</div>
+                                                                                                     
+<div class="abstract">
+<!--l. 13--><p class="noindent">Stuff about Modeling with First Order Equations
+</p></div>   <div class="maketitle"></div>
+<a class="ximera-label" id="modelfirst:section"></a>
+<!--l. 23--><p class="noindent">One of the main reasons to study and learn about differential equations, particularly for scientists and engineers, is their
+application and use in mathematical modeling. Since the derivative of a function represents the rate of change of that quantity, if
+we can use physical or scientific principles to develop an equation for the rate of change of some quantity in terms of the quantity
+and time, there’s a chance that we can write a differential equation for this quantity and solve it to determine how the quantity
+will change.
+</p>
+<h4 class="likesubsectionHead"><a id="x1-1000"></a>Principles of Mathematical Modeling</h4>
+<!--l. 27--><p class="noindent">The process of mathematical modeling involves three main steps. The first of these is to write the model. This part comes from
+basic science or engineering principles and involves writing a differential equation that fits the given situation. If we can determine
+the rate at which a quantity will change based on the surrounding factors, we have a good shot of getting to such an equation. One
+main principle that can be used to write these equations is the accumuilation equation, which will be discussed in the next
+subsection.
+</p><!--l. 29--><p class="noindent">The second step of this process is to solve the differential equation. This can mean either an analytic solution or a numeric one,
+and this is where the work of this class comes into play. We are going through a bunch of different techniques for solving
+differential equations and analyzing the overall behavior of such equations so that we can use them in this way. The
+end goal is to get an equation or a graph for how the quantity that we made a model for is going to change in
+time.
+</p><!--l. 31--><p class="noindent">The final step of the process is to validate the model by comparing with experimental data. Once we have written the model and
+solved the corresponding differential equation, we want to make sure that the model works. To do this, we can take a new version
+of the original scenario, run the model as well as the physical experiment and see how the results compare. If the results
+are “close” (in whatever sense makes logical sense for the problem), then we have a good model and can keep it.
+However, if our results differ significantly, then the model we used probably doesn’t apply to this problem. We need
+to go back to step 1 to try to figure out a better model for the physical situation in order to get more accurate
+results.
+</p><!--l. 33--><p class="noindent">Why do we care about mathematical modeling? The biggest thing that it does from an engineering point of view is reduce the need
+for repeated testing. If we have a mathematical model that works for a given physical system, we can see how the
+system will be have under slightly different conditions and with different initial conditions without needing to
+run the physical experiment over and over again. We can do all of this testing on the model, and since we have
+validated the model, we can assume that the actual results will be similar. This also allows us to change some
+aspects of the physical situation to try to optimize it, but do so just by modifying the mathematical model, not the
+physical setup. This can significantly cut down on costs and allow for more optimal system design at the same
+time.
+</p>
+<h4 class="likesubsectionHead"><a id="x1-2000"></a>The Accumulation Equation</h4>
+<!--l. 37--><p class="noindent">The accumulation equation is one of the simplest general mathematical formulations that can be used to develop mathematical
+models. This equation comes down to the fact that the rate of change of some quantity should be equal to the rate at which it is
+being added minus the rate at which it is being removed. If we let <script type="math/tex">x</script> be the quantity in question, this can be written as
+</p><script type="math/tex; mode=display"> \begin{equation} 
+    \frac{dx}{dt} = \text{rate in} - \text{rate out}.
+    \label{accum:eqn}
+\end{equation}</script>
+This may seem fairly simple. However, it shows up in many places in science and engineering. Any mass or energy
+balance equations are examples of accumulation equations. These types of equations can also be written for the
+accumulation of momentum, and doing so for fluids gives rise to the Navier-Stokes equations, providing the basis for
+several fields of engineering. The examples that we see here will be simpler than that, but the idea is still the
+same.
+<div class="theorem-like problem-environment example" id="problem1"><a id="x1-2001r1"></a>A tank initially contains 70 gallons of water and 5 lbs of salt. A solution with salt concentration 0.2 lbs per gallon flows into the
+tank at a rate of <script type="math/tex">3</script> gal/min. The tank is well stirred, and water is removed from the tank at a rate of <script type="math/tex">3</script> gal/min. Find the amount of
+                                                                                                     
+                                                                                                     
+salt in the tank at any time <script type="math/tex">t</script>? What happens as <script type="math/tex">t\rightarrow \infty </script>? Does this make sense?
+</div>
+<!--l. 49--><p class="noindent">Solution: To solve this problem, we use the accumulation equation (<a class="reference" href="#accum:eqn">accum:eqn</a>) on the amount of salt in the
+tank. In order to compute with this, we recognize that in terms of mass of salt moving into the tank
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+        \text{rate in} = \text{flow in} \times \text{concentration in}
+    \end{equation*}</script>
+and similarly for the mass of salt leaving the tank.
+<!--l. 55--><p class="noindent">If we let <script type="math/tex">x</script> represent the amount of salt in the tank at any time <script type="math/tex">t</script> (which is the goal of the problem),
+we can write a differential equation for this using the accumulation equation (<a class="reference" href="#accum:eqn">accum:eqn</a>). This gives us that
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+        \frac{dx}{dt} = \text{rate in} - \text{rate out} = \text{flow in} \times \text{concentration in} - \text{flow out} \times \text{concentration out}
+    \end{equation*}</script>
+For this problem, we have that <script type="math/tex; mode=display"> \begin{align*} 
+             \text{flow in} &= 3 , \\
+        \text{concentration in} &= 0.2 , \\
+        \text{flow out} &= 3 , \\
+        \text{concentration out} &= \frac{x}{\text{volume}} = \frac{x}{70}.
+    \end{align*}</script>
+<!--l. 66--><p class="noindent">The last of these lines comes from the fact that the tank is “well stirred” or “well-mixed.” This implies that the concentration of
+salt in the water leaving the tank is the same as the concentration in the tank, which we can compute as <script type="math/tex">\frac {x}{\text {volume}}</script>. In this case, since the
+flow rate in and out are both 3 gal/min, the volume of water in the tank is fixed at <script type="math/tex">70</script> gallons, so we can put this in the
+equation.
+</p><!--l. 68--><p class="noindent">Therefore, our equation becomes </p><script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dx}{dt} = (3\times 0.2) - \left(3 \times \frac{x}{70}\right).
+    \end{equation*}</script>
+We can rewrite this equation as <script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dx}{dt} + \frac{3}{70}x = 0.6
+    \end{equation*}</script>
+which we recognize as a first order linear equation. We can then solve this using the method of integrating factors. Our factor <script type="math/tex">r(t)</script> is
+<script type="math/tex; mode=display"> \begin{equation*} 
+        r(t) = e^{\int p(t)\, dt} = e^{\int \frac{3}{70}\, dt} = e^{\frac{3}{70} t},
+    \end{equation*}</script>
+which we can multiply on both sides of the equation to obtain
+<script type="math/tex; mode=display"> \begin{equation*} 
+        e^{\frac{3}{70} t} \frac{dx}{dt} + e^{\frac{3}{70} t} \frac{3}{70} x = 0.6 e^{\frac{3}{70} t}.
+    \end{equation*}</script>
+The left side of this is a product rule derivative, so we can integrate both sides to obtain
+<script type="math/tex; mode=display"> \begin{equation*} 
+        e^{\frac{3}{70} t} x = 0.6 \frac{70}{3} e^{\frac{3}{70} t} + C.
+    \end{equation*}</script>
+We can then isolate <script type="math/tex">x</script> to get our general solution as <script type="math/tex; mode=display"> \begin{equation*} 
+             x = 14 + Ce^{-\frac{3}{70} t}.
+    \end{equation*}</script>
+Our initial condition tells us that <script type="math/tex">x(0) = 5</script>. Plugging this in gives that <script type="math/tex; mode=display"> \begin{equation*} 
+             5 = x(0) = 14 + C \quad \Rightarrow \quad C = -9,
+    \end{equation*}</script>
+so the solution to the initial value problem, and thus our calculation for the amount of salt in the tank at any time <script type="math/tex">t</script>, is
+<script type="math/tex; mode=display"> \begin{equation*} 
+        x(t) = 14 - 9e^{-\frac{3}{70} t}.
+    \end{equation*}</script>
+<!--l. 101--><p class="noindent">As <script type="math/tex">t\rightarrow \infty </script>, we see that the exponential term goes to zero. This leaves us with 14 lbs of salt in the tank after a long time. This makes some
+sense because this would give us a concentration of <script type="math/tex">\frac {14}{70} = 0.2</script> lb/gal, and that was exactly the concentration of the in-flow stream. It makes
+sense that after a long time of mixing and removing water from the tank, the concentration of the tank would match that of the
+incoming stream.
+</p><!--l. 102--><p class="noindent">                                                                                                   ___
+</p><!--l. 104--><p class="noindent">The same principle works for other types of examples, including those where the volume of the tank is not constant in
+time.
+                                                                                                     
+                                                                                                     
+</p>
+<div class="theorem-like problem-environment example" id="problem2"><a id="x1-2002r2"></a>A 100 liter tank contains 10 kilograms of salt dissolved in 60 liters of water. Solution of water and salt (brine) with concentration
+of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate
+of 3 liters a minute. How much salt is in the tank when the tank is full?
+</div>
+<!--l. 116--><p class="noindent">Solution: We can again use the accumulation equation to write </p><script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dx}{dt} =
+        (\text{flow in} \times \text{concentration in})  -
+        (\text{flow out} \times \text{concentration out}) .
+    \end{equation*}</script>
+In this example, we have <script type="math/tex; mode=display"> \begin{align*} 
+             \text{flow in} &= 5 , \\
+        \text{concentration in} &= 0.1 , \\
+        \text{flow out} &= 3 , \\
+        \text{concentration out} &= \frac{x}{\text{volume}} = \frac{x}{60+(5-3)t} .
+    \end{align*}</script>
+<!--l. 129--><p class="noindent">Our equation is, therefore, </p><script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dx}{dt} = (5 \times 0.1) - \left(3 \frac{x}{60+2t}\right) .
+    \end{equation*}</script>
+Or in the form (<a class="reference" href="#lineq:eq1">lineq:eq1</a>) <script type="math/tex; mode=display"> \begin{equation*} 
+             \frac{dx}{dt} + \frac{3}{60+2t} x = 0.5 .
+    \end{equation*}</script>
+<!--l. 138--><p class="noindent">Let  us  solve.  The  integrating  factor  is
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+        r(t) = \exp \left( \int \frac{3}{60+2t} dt  \right) = \exp \left( \frac{3}{2} \ln (60+2t) \right) = {(60+2t)}^{3/2} .
+    \end{equation*}</script>
+<!--l. 143--><p class="noindent">We multiply both sides of the equation to get </p><script type="math/tex; mode=display"> \begin{align*} 
+             {(60+2t)}^{3/2} \frac{dx}{dt} + {(60+2t)}^{3/2} \frac{3}{60+2t} x & = 0.5{(60+2t)}^{3/2} ,\\
+        \frac{d}{dt}\left[ {(60+2t)}^{3/2} x \right] & = 0.5{(60+2t)}^{3/2} ,\\
+        {(60+2t)}^{3/2} x & = \int  0.5{(60+2t)}^{3/2} dt +C ,\\
+        x & = {(60+2t)}^{-3/2} \int \frac{ {(60+2t)}^{3/2}}{2} dt + C{(60+2t)}^{-3/2} ,\\
+        x & = {(60+2t)}^{-3/2} \frac{1}{10}{(60+2t)}^{5/2} +C{(60+2t)}^{-3/2} ,\\
+        x & = \frac{60+2t}{10} + C{(60+2t)}^{-3/2} .
+    \end{align*}</script>
+<img src="modeling-first0x.png" alt="PICT"/>
+<img src="modeling-first1x.png" alt="PICT"/>
+<!--l. 163--><p class="noindent">We need to find <script type="math/tex">C</script>. We know that at <script type="math/tex">t=0</script>, <script type="math/tex">x=10</script>. So </p><script type="math/tex; mode=display"> \begin{equation*} 
+             10 = x(0) = \frac{60}{10} +C{(60)}^{-3/2} = 6 +C{(60)}^{-3/2} ,
+    \end{equation*}</script>
+                                                                                                     
+                                                                                                     
+or <script type="math/tex; mode=display"> \begin{equation*} 
+             C=4 ({60}^{3/2}) \approx 1859.03 .
+    \end{equation*}</script>
+<!--l. 172--><p class="noindent">We are interested in <script type="math/tex">x</script> when the tank is full. The tank is full when <script type="math/tex">60+2t = 100</script>, or when <script type="math/tex">t=20</script>. So </p><script type="math/tex; mode=display"> \begin{equation*} 
+             \begin{split}
+            x(20) & = \frac{60+40}{10}+C{(60+40)}^{-3/2} \\
+            & \approx 10+1859.03 {(100)}^{-3/2}\approx11.86 .
+        \end{split}
+    \end{equation*}</script>
+See  Normally a reference to a previous figure goes here. for the graph of <script type="math/tex">x</script> over <script type="math/tex">t</script>.
+<!--l. 181--><p class="noindent">The concentration when the tank is full is approximately 0.1186 <sup class="nicefrac">kg</sup>/<sub class="nicefrac">liter</sub>, and we started with <script type="math/tex">\nicefrac {1}{6}</script> or 0.167 <sup class="nicefrac">kg</sup>/<sub class="nicefrac">liter</sub>.
+</p><!--l. 188--><p class="noindent">                                                                                                   ___
+</p><!--l. 190--><p class="noindent">For the previous example, we obtained the solution </p><script type="math/tex; mode=display"> \begin{equation*} 
+      x(t) = \frac{60 + 2t}{10} + 1859.03(60+2t)^{-3/2},
+\end{equation*}</script>
+which is valid and well defined for all positive values of <script type="math/tex">t</script> (it has an issue at <script type="math/tex">t=-30</script>, but we aren’t concerned about that here). However, as
+a differential equation that represents a physical situation, it is not valid for all positive values of <script type="math/tex">t</script>. The issue here is that the tank
+is full at <script type="math/tex">t=20</script>. Therefore, beyond this point, while the function still exists, it is not a valid model for this physical system. Once the
+tank fills, you can’t keep adding and removing water at the same rates that you have been up until this point, because something is
+going to break with the system. The same goes for if you are removing water from the tank at a faster rate than you are adding it,
+because then the tank will empty at some point in time and beyond that, the model equation no longer represents the
+system.
+<!--l. 196--><p class="noindent">The same ideas apply to problems involving interest compounded continuously. For an interest rate of <script type="math/tex">r</script>, the “rate in,” or the rate at
+which the money in the account is increasing, is <script type="math/tex">rP</script> where <script type="math/tex">P</script> is the amount of money in the account. Taking this along with other
+factors that may affect the balance of the account allows us to write a differential equation, which we can solve to determine what
+the balance will be over time.
+</p>
+<div class="theorem-like problem-environment example" id="problem3"><a id="x1-2005r3"></a>A bank account with an interest rate of <script type="math/tex">6\%</script> per year, compounded continuously, starts with a balance of $30000. The owner of the
+account withdraws $50 from the account each month. Find and solve a differential equation for the account balance over time.
+What is the largest amount that the owner could withdraw each month without the account eventually reaching
+$0?
+</div>
+<!--l. 203--><p class="noindent">Solution: We will use the function <script type="math/tex">P(t)</script> to model the balance of the account over time, where <script type="math/tex">t</script> is in <em>years</em>. Since the owner withdraws
+$50 per month, this means that they withdraw $600 over the course of the year. This means that the differential equation we want
+is <script type="math/tex; mode=display"> \frac {dP}{dt} = 0.06P - 600 \qquad P(0) = 30000. </script> We can solve this equation by the integrating factor method. <script type="math/tex; mode=display"> \begin {split} P' - 0.06P &= -600 \\ (e^{-0.06t}P)' &= -600e^{-0.06t} \\ e^{-0.06t}P &= 10000e^{-0.06t} + C \\ P &= 10000 + Ce^{0.06t} \end {split} </script> For <script type="math/tex">P(0) = 30000</script>, we need to take <script type="math/tex">C = 20000</script>. Thus, the solution to the initial value
+problem is <script type="math/tex; mode=display"> P(t) = 10000 + 20000e^{0.06 t}. </script> Since the coefficient in front of <script type="math/tex">e^{0.06t}</script> is positive, this means that the account balance here will grow in
+time.
+</p><!--l. 222--><p class="noindent">For the second part, we need to adjust the withdrawal amount to see how the solution changes. If we let <script type="math/tex">K</script> be the monthly
+withdrawal amount, then we have the differential equation <script type="math/tex; mode=display"> \frac {dP}{dt} = 0.06P - 12K \qquad P(0) = 30000. </script> The same solution method gives us <script type="math/tex; mode=display"> P(t) = \frac {12K}{0.06} + Ce^{0.06t}. </script>
+</p><!--l. 227--><p class="noindent">If <script type="math/tex">C < 0</script>, then the account balance will eventually go to zero. Therefore, we need <script type="math/tex">C \geq 0</script>, and since <script type="math/tex">P(0) = 30000</script>, we have that <script type="math/tex; mode=display"> 30000 = \frac {12K}{0.06} + C \quad \text { or } \quad C = 30000 - \frac {12K}{0.06}. </script> For this to be equal to zero,
+we need <script type="math/tex; mode=display"> \frac {12K}{0.06} = 30000 \qquad K = 150. </script> Thus, the owner can withdraw $150 per month and keep the account balance positive.
+</p><!--l. 236--><p class="noindent">                                                                                                   ___
+</p><!--l. 238--><p class="noindent">To end this section, we will analyze the example that was presented at the very beginning of the book.
+</p>
+<div class="theorem-like problem-environment example" id="problem4"><a id="x1-2006r4"></a>An object falling through the air has its velocity affected by two factors: gravity and a drag force. The velocity
+downward is increased at a rate of <script type="math/tex">9.8\ m/s^2</script> due to gravity, and it is decreased by a rate equation to <script type="math/tex">0.3</script> times the current
+velocity of the object. If the ball is initially thrown downwards at a speed of <script type="math/tex">2\ m/s</script>, what will the velocity be 10 seconds
+later?
+</div>
+<!--l. 245--><p class="noindent">Solution: As described in that first section, we know that the differential equation that we can write for this situation is
+</p><script type="math/tex; mode=display"> \begin{equation*} 
+        \frac{dv}{dt} = 9.8 - 0.3v
+                                                                                                     
+                                                                                                     
+    \end{equation*}</script>
+and that the initial condition for the velocity if <script type="math/tex">v(0) = 2</script>. Since we have gravity as a positive 9.8, this means that the downward direction is
+positive, so the object being thrown downward at <script type="math/tex">2\ m/s</script> means that it is positive. We then need to solve this initial value problem, which
+we can do using first order linear methods. The equation can be written as <script type="math/tex; mode=display"> \begin{equation*} 
+             v' + 0.3v = 9.8
+    \end{equation*}</script>
+which has integrating factor <script type="math/tex">e^{0.3t}</script>. After multiplying this to both sides and integrating, we get that
+<script type="math/tex; mode=display"> \begin{equation*} 
+        e^{0.3t}v = \frac{9.8}{0.3}e^{0.3t} + C
+    \end{equation*}</script>
+or that <script type="math/tex; mode=display"> \begin{equation*} 
+             v(t) = \frac{9.8}{0.3} + Ce^{-0.3t}.
+    \end{equation*}</script>
+<!--l. 260--><p class="noindent">Using the initial condition, we get that </p><script type="math/tex; mode=display"> \begin{equation*} 
+             v(0) = \frac{98}{3} + C = 2
+    \end{equation*}</script>
+so that <script type="math/tex">C = -\frac {92}{3}</script> and the solution to the initial value problem is <script type="math/tex; mode=display"> \begin{equation*} 
+             v(t) = \frac{98}{3} - \frac{92}{3}e^{-0.3t}.
+    \end{equation*}</script>
+Then, to determine the velocity at <script type="math/tex">t=10</script>, we can plug <script type="math/tex">10</script> into this formula to get that <script type="math/tex; mode=display"> \begin{equation*} 
+             v(10) = \frac{98}{3} - \frac{92}{3}e^{-3} \approx 31.14\ m/s.
+    \end{equation*}</script>
+<!--l. 272--><p class="noindent">                                                                                                   __
+</p><!--l. 274--><p class="noindent">All of these examples are based around the same idea of the accumulation equation. We need to determine the quantity that is
+changing as well as all of the factors that cause it to increase and decrease. These get combined into a differential equation which
+we can solve in order to analyze the situation and answer whatever questions you want about that physical problem. Keeping these
+ideas in mind will help you approach a wide variety of problems both in this class as well as future applications in engineering
+classes and beyond.
+<img src="modeling-first2x.png" alt="picture"/>
+ 
+ 
+
+                                                                                                     
+                                                                                                     
+                                                                                                     
+
+
+</p></body></html>

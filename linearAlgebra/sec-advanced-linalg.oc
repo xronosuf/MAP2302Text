@@ -1,0 +1,7 @@
+\outcome {Compute the rank of a matrix}
+\outcome {Find a maximal linearly independent subset of a set of vectors}
+\outcome {Compute a basis of a subspace and the dimension of that subspace}
+\outcome {Determine the kernel of a matrix using row reduction}
+\outcome {Understand the connection between rank and nullity in a given matrix}
+\outcome {Compute the inverse of a matrix using row reduction}
+\outcome {Use properties of the trace and determinant to analyze the eigenvalues of a matrix.}

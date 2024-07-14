@@ -1,0 +1,3 @@
+\outcome {Use Euler's method to numerically approximate solutions to first order differential equations}
+\outcome {Compute the error in a numerical method using the true solution}
+\outcome {Compare a variety of numerical methods, including built-in Matlab methods.}

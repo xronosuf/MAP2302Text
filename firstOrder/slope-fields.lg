@@ -1,0 +1,26 @@
+htfcss: cmti  font-style: italic;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmtt font-family: monospace,monospace;
+File: slope-fields.html
+File: slope-fields.tmp
+File: slope-fields.tmp
+File: slope-fields-1.svg
+File: slope-fields.tmp
+File: slope-fields-2.svg
+File: slope-fields.tmp
+File: slope-fields-3.svg
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+--- needs --- slope-fields.idv[2] ==> slope-fields0x.png ---
+--- needs --- slope-fields.idv[4] ==> slope-fields1x.png ---
+--- needs --- slope-fields.idv[6] ==> slope-fields2x.png ---
+--- characters ---
+Font("cmr","10","10","100")
+Font("cmtt","10","10","100")
+Font("cmbx","10","10","100")
+Font("cmti","10","10","100")
