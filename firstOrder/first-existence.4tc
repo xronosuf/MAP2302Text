@@ -1,4 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-107}{}{\numberline {0}{\ignorespaces Slope field of $y' = \nicefrac  {1}{x}$.\relax }}}{5}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-109}{}{\numberline {0}{\ignorespaces Slope field of $y' = 2 \sqrt  {\lvert y \rvert }$ with two solutions satisfying $y(0) = 0$.\relax }}}{5}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-114}{}{\numberline {0}{\ignorespaces Number line representation of the existence intervals for a differential equation.\relax }}}{9}\relax 

@@ -1,6 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-104}{}{\numberline {0}{\ignorespaces First two steps of Euler's method with $h=1$ for the equation $y' = \frac  {y^2}{3}$ with initial conditions $y(0)=1$.\relax }}}{5}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-106}{}{\numberline {0}{\ignorespaces Two steps of Euler's method (step size 1) and the exact solution for the equation $y' = \frac  {y^2}{3}$ with initial conditions $y(0)=1$. \relax }}}{8}\relax 
-\doTocEntry\toclot{}{\csname a:TocLink\endcsname{1}{x1-109}{}{\numberline {0}{\ignorespaces Euler's method approximation of $y(2)$ where of $y'=\nicefrac  {y^2}{3}$, $y(0)=1$.\relax }}}{11}\relax 
-\doTocEntry\toclot{}{\csname a:TocLink\endcsname{1}{x1-112}{}{\numberline {0}{\ignorespaces Attempts to use Euler's to approximate $y(3)$ where of $y'=\nicefrac  {y^2}{3}$, $y(0)=1$.\relax }}}{14}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-114}{}{\numberline {0}{\ignorespaces Comparison of the solution from Euler's Method and ode45 to the actual solution of $\frac  {dy}{dt} = y$.\relax }}}{17}\relax 

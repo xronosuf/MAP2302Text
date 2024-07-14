@@ -1,5 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Solving exact equations}}{4}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-104}{}{\numberline {0}{\ignorespaces Solutions to $F(x,y) = x^2+y^2 = C$ for various $C$.\relax }}}{6}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-1010}{}{\numberline {0}{\ignorespaces Solution to $-\frac  {y}{x^2+y^2} dx + \frac  {x}{x^2+y^2} dy = 0$, $y(1) = 2$, with initial point marked.\relax }}}{8}\relax 
-\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Integrating factors}}{9}\relax 

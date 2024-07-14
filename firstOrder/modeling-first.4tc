@@ -1,4 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Principles of Mathematical Modeling}}{3}\relax 
-\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{The Accumulation Equation}}{3}\relax 
-\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-2004}{}{\numberline {0}{\ignorespaces Graph of the solution $x$ kilograms of salt in the tank at time $t$.\relax }}}{7}\relax 
