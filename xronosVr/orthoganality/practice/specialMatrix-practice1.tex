@@ -1,0 +1,192 @@
+\documentclass{ximera}
+
+\title{Practice for Special Matrix}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+
+% \TODO{Add Exercises}
+
+\begin{exercise}%
+    Determine if each of the following matrices are orthogonal.
+    \begin{tasks}
+        \task $\displaystyle \begin{bmatrix}2 & 1 \\ 1 & -2 \end{bmatrix}$
+        \task $\displaystyle \begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix}$
+        \task $\displaystyle \begin{bmatrix} 0 & -1 & 0 & 0 \\ 0& 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{bmatrix}$
+        \task $\displaystyle \begin{bmatrix} \frac{1}{9} & 0 & -\frac{4}{3\sqrt{2}} \\ \frac{2}{9} & \frac{1}{\sqrt{2}} & \frac{1}{3\sqrt{2}} \\ \frac{2}{9} & -\frac{1}{\sqrt{2}} & \frac{1}{3\sqrt{2}}  \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~No. b)~Yes. c)~Yes. d)~Yes.
+%}%
+
+\begin{exercise}%
+    Find all of the eigenvalues and eigenvectors of the matrix
+    \[ 
+        \begin{bmatrix}
+            1 & 1 \\ 
+            -4 & 6 
+        \end{bmatrix}. 
+    \]
+    Check if the eigenvectors for different eigenvalues are orthogonal. Does this make sense based on the original matrix?
+\end{exercise}
+%\exsol{%
+%$\lambda_1 = 2$, $\vec{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$. $\lambda_2 = 5$, $\vec{v}_2 = \begin{bmatrix} 1\\ 4 \end{bmatrix}$. Not orthogonal. 
+%}%
+% 2, [1,1]. 5, [1,4]. No.
+
+\begin{exercise}
+    Find all of the eigenvalues and eigenvectors of the matrix
+    \[ 
+        \begin{bmatrix}
+            -3 & -6 \\ 
+            -6 & 13 
+        \end{bmatrix}. 
+    \]
+    Check if the eigenvectors for different eigenvalues are orthogonal. Does this make sense based on the original matrix?
+\end{exercise}
+% 15, [1, -3]. 5, [3, 1]. Yes.
+
+\begin{exercise}%
+    Find all of the eigenvalues and eigenvectors of the matrix
+    \[ 
+        \begin{bmatrix}
+            1 & 0 & 0 \\ 
+            0 & 2 & 2 \\ 
+            0 & 2 & -1 
+        \end{bmatrix}. 
+    \]
+    Check if the eigenvectors for different eigenvalues are orthogonal. Does this make sense based on the original matrix?
+\end{exercise}
+%\exsol{%
+%$\lambda_1 = 1$, $\vec{v}_1 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$. $\lambda_2 = 3$, $\vec{v}_2 = \begin{bmatrix} 0 \\ 2 \\ 1 \end{bmatrix}$.  $\lambda_3 = -2$, $\vec{v}_3 = \begin{bmatrix} 0 \\1 \\-2 \end{bmatrix}$. Orthogonal. 
+%}%
+% 1, [1, 0, 0]. 3, [0, 2, 1]. -2 [0, 1, -2]. Yes
+
+\begin{exercise}
+    Find all of the eigenvalues and eigenvectors of the matrix
+    \[ 
+        \begin{bmatrix} 
+            -1 & -2 & 5 \\ 
+            -2 & 2 & 2 \\ 
+            0 & 0 & 2 
+        \end{bmatrix}. 
+    \]
+    Check if the eigenvectors for different eigenvalues are orthogonal. Does this make sense based on the original matrix?
+\end{exercise}
+% 2, [1, 1, 1] . -2, [2, 1, 0]. 3, [-1, 2, 0]. No.
+
+\begin{exercise}
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            -6 & -1 \\ 
+            6 & -1 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+% P =   -0.4472    0.3162 \\  0.8944   -0.9487    D =-4     0 \\  0    -3
+
+\begin{exercise}%
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            7 & -8 \\ 
+            3 & -3 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+%\exsol{%
+%$P = \begin{bmatrix} 2 & 4 \\ 1 & 3 \end{bmatrix}$, $D = \begin{bmatrix} 3 & 0 \\  0 & 1 \end{bmatrix}$.
+%}%
+%P = 0.8944    0.8000 \\ 0.4472    0.6000     D =  3     0 \\  0     1
+
+\begin{exercise}%
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            2 & -5 \\ 
+            1 & 4 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+%\exsol{%
+%There are complex eigenvalues, so this can not be done. 
+%}%
+% Complex Eigenvalues 
+
+\begin{exercise}%
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            -2 & -2 \\ 
+            8 & 6 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+%\exsol{%
+%$P = \begin{bmatrix} -1 & 0 \\  2 &0.5 \end{bmatrix}$, $J = \begin{bmatrix} 2 & 1\\ 0 & 2\end{bmatrix}$.
+%}%
+% P = -1   0 //  2   0.5 J = [2, 1; 0 2];
+
+\begin{exercise}
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            2 &  0 &  4 \\ 
+            3  &-1 & 4 \\ 
+            0  & 0 &-4 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+%\exsol{%
+%$ P = \begin{bmatrix}  0 & 1 & -2 \\ 1 & 1 & -2 \\  0 &  0 & 3 \end{bmatrix}$, $D = \begin{bmatrix} -1 & 0 & 0 \\ 0&  2 &   0 \\  0 & 0 & -4 \end{bmatrix}$.
+%}%
+% P =   0    0.7071   -0.4851 \\ 1.0000    0.7071   -0.4851 \\   0         0    0.7276
+%D = -1     0     0 \\ 0     2     0 \\  0     0    -4
+
+\begin{exercise}
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            -2 & 4 &8\\ 
+            -3 & -2& 12\\ 
+            1 & 0 & -6 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+%\exsol{%
+%$ P = \begin{bmatrix}  2 & 1 & 4 \\ -3 & 0 & -2 \\  1 &  0 & 1 \end{bmatrix}$, $J = \begin{bmatrix} -4 & 1 & 0 \\ 0&  -4 &   0 \\  0 & 0 & -2 \end{bmatrix}$.
+%}%
+%  P=   2   1    0.8729 \\ -3    0   -0.4364 \\  1   0    0.2182
+% J =    -4.0000    1     0\\   0   -4.0000  0 \\   0         0   -2.0000
+
+\begin{exercise}
+    Diagonalize the matrix below using real numbers, if possible. To do so, find an invertible matrix $P$ and diagonal matrix $D$ so that $A = PDP^{-1}$. If this is not possible because of a repeated eigenvalue, state so, and find an invertible matrix $P$ and Jordan Form matrix $J$ so that $A = PJP^{-1}$. 
+    \[ 
+        A = 
+        \begin{bmatrix} 
+            -2 &0 & 0\\
+            -1 & 0 &-3\\ 
+            -3 &  6 & -6 
+        \end{bmatrix}.
+    \]
+\end{exercise} 
+% Complex Eigenvalues
+
+
+
+\end{document}

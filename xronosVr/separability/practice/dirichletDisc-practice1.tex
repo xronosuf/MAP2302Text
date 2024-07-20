@@ -1,0 +1,100 @@
+\documentclass{ximera}
+
+\title{Practice for the Dirichlet Disc}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Using series solve $\Delta u = 0$, $u(1,\theta) = \lvert \theta \rvert$, for $-\pi < \theta \leq \pi$.
+\end{exercise}
+
+\begin{exercise}%
+    Using series solve $\Delta u = 0$, $u(1,\theta) = 1+ \sum\limits_{n=1}^\infty \frac{1}{n^2}\sin(n\theta)$.
+\end{exercise}
+%\exsol{%
+%$u = 1+ \sum\limits_{n=1}^\infty \frac{1}{n^2}r^n\sin(n\theta)$
+%}
+
+\begin{exercise}%
+    Using the series solution find the solution to $\Delta u = 0$, $u(1,\theta) = 1- \cos(\theta)$.  Express the solution in Cartesian coordinates (that is, using $x$ and $y$).
+\end{exercise}
+%\exsol{%
+%$u = 1-x$
+%}
+
+\begin{exercise}
+    Using series solve $\Delta u = 0$, $u(1,\theta) = g(\theta)$ for the following data.  Hint: trig identities.
+    \begin{tasks}
+        \task $g(\theta) = \nicefrac{1}{2} + 3\sin(\theta) + \cos(3\theta)$
+        \task $g(\theta) = 3\cos(3\theta) + 3\sin(3\theta) + \sin(9\theta)$
+        \task $g(\theta) = 2 \cos(\theta+1)$
+        \task $g(\theta) = \sin^2(\theta)$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Using the Poisson kernel, give the solution to $\Delta u = 0$, where $u(1,\theta)$ is zero for $\theta$ outside the interval $[-\nicefrac{\pi}{4},\nicefrac{\pi}{4}]$ and  $u(1,\theta)$ is 1 for $\theta$ on the interval $[-\nicefrac{\pi}{4},\nicefrac{\pi}{4}]$.
+\end{exercise}
+
+\begin{exercise}
+    \begin{tasks}
+        \task Draw a graph for the Poisson kernel as a function of $\alpha$ when $r=\nicefrac{1}{2}$ and $\theta = 0$. 
+        \task Describe what happens to the graph when you make $r$ bigger (as it approaches 1).
+        \task Knowing that the solution $u(r,\theta)$ is the weighted average of $g(\theta)$ with Poisson kernel as the weight, explain what your answer to part b) means.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise} \label{exercise:dirichproblemxy}
+    Let $g(\theta)$ be the function $xy = \cos \theta \sin \theta$ on the boundary.  Use the series solution to find a solution to the Dirichlet problem $\Delta u = 0$, $u(1,\theta) = g(\theta)$.  Now convert the solution to Cartesian coordinates $x$ and $y$.  Is this solution surprising?  Hint: use your trig identities.
+\end{exercise}
+
+\begin{exercise}%
+    \begin{tasks}
+        \task Try and guess a solution to $\Delta u = -1$, $u(1,\theta) = 0$. Hint: try a solution that only depends on $r$.  Also first, don't worry eabout the boundary condition.
+        \task Now solve $\Delta u = -1$, $u(1,\theta) = \sin(2\theta)$ using superposition.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $u = \frac{-1}{4} r^2 + \frac{1}{4}$
+%b) $u = \frac{-1}{4} r^2 + \frac{1}{4} + r^2 \sin(2\theta)$
+%}
+
+\begin{exercise}
+    Carry out the computation we needed in the separation of variables and solve $r^2 R'' + r R' - n^2 R = 0$, for $n=0,1,2,3,\ldots$.
+\end{exercise}
+
+\begin{exercise}%[challenging]
+    Derive the series solution to the Dirichlet problem if the region is a circle of radius $\rho$ rather than 1. That is, solve $\Delta u = 0$, $u(\rho,\theta) = g(\theta)$. 
+\end{exercise}
+
+\begin{exercise}%[challenging]
+    \begin{tasks}
+        \task Find the solution for $\Delta u = 0$, $u(1,\theta) = x^2y^3 + 5 x^2$.  Write the answer in Cartesian coordinates.
+        \task Now solve $\Delta u = 0$, $u(1,\theta) = x^k y^\ell$. Write the solution in Cartesian coordinates.
+        \task Suppose you have a polynomial $P(x,y) = \sum_{j=0}^m \sum_{k=0}^n c_{j,k} x^j y^k$, solve $\Delta u = 0$, $u(1,\theta) = P(x,y)$ (that is, write down the formula for the answer).  Write the answer in Cartesian coordinates.
+    \end{tasks}
+        Notice the answer is again a polynomial in $x$ and $y$. See also \exerciseref{exercise:dirichproblemxy}.
+\end{exercise}
+
+\begin{exercise}%[challenging]%
+    Derive the Poisson kernel solution if the region is a circle of radius $\rho$ rather than 1.  That is, solve $\Delta u = 0$, $u(\rho,\theta) = g(\theta)$.
+\end{exercise}
+%\exsol{%
+%$\displaystyle
+%u(r,\theta) = 
+%\frac{1}{2\pi} \int_{-\pi}^{\pi}
+%\frac{\rho^2 -r^2}{\rho - 2r\rho\cos(\theta-\alpha) +r^2} g(\alpha) ~ d\alpha$
+%}
+%
+%\setcounter{exercise}{100}
+
+
+
+\end{document}

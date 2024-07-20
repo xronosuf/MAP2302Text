@@ -1,0 +1,59 @@
+\documentclass{ximera}
+
+\title{Practice for Higher Eval Problems}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Suppose you have a beam of length 5 with free ends.  Let $y$ be the transverse deviation of the beam at position $x$ on the beam ($0 < x < 5$). You know that the constants are such that this satisfies the equation $y_{tt} + 4 y_{xxxx} = 0$. Suppose you know that the initial shape of the beam is the graph of $x(5-x)$, and the initial velocity is uniformly equal to 2 (same for each $x$) in the positive $y$ direction.  Set up the equation together with the boundary and initial conditions.  Just set up, do not solve.
+\end{exercise}
+
+\begin{exercise}
+    Suppose you have a beam of length 5 with one end free and one end fixed (the fixed end is at $x=5$). Let $u$ be the longitudinal deviation of the beam at position $x$ on the beam ($0 < x < 5$). You know that the constants are such that this satisfies the equation $u_{tt} = 4 u_{xx}$. Suppose you know that the initial displacement of the beam is $\frac{x-5}{50}$, and the initial velocity is $\frac{-(x-5)}{100}$ in the positive $u$ direction.  Set up the equation together with the boundary and initial conditions.  Just set up, do not solve.
+\end{exercise}
+
+\begin{exercise}
+    Suppose the beam is $L$ units long, everything else kept the same as in \eqref{appeig:beameq}.  What is the equation and the series solution?
+\end{exercise}
+
+\begin{exercise}
+    Suppose you have 
+    \begin{equation*}
+        \begin{aligned}
+            & a^4 y_{xxxx} + y_{tt} = 0 \quad (0 < x < 1, t > 0) , \\
+            & y(0,t) = y_{xx}(0,t) = 0,\\
+            & y(1,t) = y_{xx}(1,t) = 0 ,\\
+            & y(x,0) = f(x), \quad y_{t}(x,0) = g(x) .
+        \end{aligned}
+    \end{equation*}
+    That is, you have also an initial velocity.  Find a series solution.  Hint: Use the same idea as we did for the wave equation.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+\begin{exercise}
+    Suppose you have a beam of length 1 with hinged ends.  Let $y$ be the transverse deviation of the beam at position $x$ on the beam ($0 < x < 1$). You know that the constants are such that this satisfies the equation $y_{tt} + 4 y_{xxxx} = 0$.   Suppose you know that the initial shape of the beam is the graph of $\sin (\pi x)$, and the initial velocity is 0.  Solve for $y$.
+\end{exercise}
+%\exsol{%
+%$y(x,t) = \sin(\pi x) \cos (2 \pi^2 t)$
+%}
+
+\begin{exercise}
+    Suppose you have a beam of length 10 with two fixed ends.  Let $y$ be the transverse deviation of the beam at position $x$ on the beam ($0 < x < 10$). You know that the constants are such that this satisfies the equation $y_{tt} + 9 y_{xxxx} = 0$.   Suppose you know that the initial shape of the beam is the graph of $\sin(\pi x)$, and the initial velocity is uniformly equal to $x(10-x)$. Set up the equation together with the boundary and initial conditions.  Just set up, do not solve.
+\end{exercise}
+%\exsol{%
+%$9 y_{xxxx} + y_{tt} = 0 \quad (0 < x < 10, t > 0)$, \quad
+%$y(0,t) = y_{x}(0,t) = 0$, \quad
+%$y(10,t) = y_{x}(10,t) = 0$, \quad
+%$y(x,0) = \sin(\pi x), \quad y_{t}(x,0) = x(10-x)$.
+%}
+
+
+\end{document}

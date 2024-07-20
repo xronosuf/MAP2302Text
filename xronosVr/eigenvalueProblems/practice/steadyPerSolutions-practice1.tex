@@ -1,0 +1,61 @@
+\documentclass{ximera}
+
+\title{Practice for Steady Per Solutions}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise} \label{sps:sinforceexr}
+    Suppose that the forcing function for the vibrating string is $F_0 \sin (\omega t)$.  Derive the particular solution $y_p$.
+\end{exercise}
+
+\begin{exercise}
+    Take the forced vibrating string. Suppose that $L=1$, $a=1$.  Suppose that the forcing function is the square wave that is 1 on the interval $0 < x < 1$ and $-1$ on the interval $-1 < x< 0$. Find the particular solution.  Hint: You may want to use result of \exerciseref{sps:sinforceexr}.
+\end{exercise}
+
+\begin{exercise}
+    The units are cgs (centimeters-grams-seconds)\index{cgs units}. For $k=0.005$, $\omega = 1.991 \times {10}^{-7}$, $A_0 = 20$. Find the depth at which the temperature variation is half ($\pm 10$ degrees) of what it is on the surface.
+\end{exercise}
+
+\begin{exercise}
+    Derive the solution for underground temperature oscillation without assuming that $T_0 = 0$.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+\begin{exercise}
+    Take the forced vibrating string. Suppose that $L=1$, $a=1$.  Suppose that the forcing function is a sawtooth, that is $\lvert x \rvert -\frac{1}{2}$ on $-1 < x < 1$ extended periodically. Find the particular solution.
+\end{exercise}
+%\exsol{%
+%$y_p(x,t) =
+%\sum\limits_{\substack{n=1 \\ n \text{ odd}}}^\infty
+%\frac{-4}{n^4 \pi^4}
+%\left(
+%\cos(n \pi x ) -
+%\frac{\cos ( n \pi ) - 1}%
+%{\sin( n \pi)}
+%\sin( n \pi x)
+%-1
+%\right)
+%\cos (n \pi t) .
+%$
+%}
+
+\begin{exercise}
+    The units are cgs (centimeters-grams-seconds)\index{cgs units}. For $k=0.01$, $\omega = 1.991 \times {10}^{-7}$, $A_0 = 25$. Find the depth at which the summer is again the hottest point.
+\end{exercise}
+%\exsol{%
+%%$x \sqrt{\frac{\omega}{2k}} = 2\pi$
+%%$x = 2\pi\sqrt{\frac{2k}{\omega}}$
+%%$x = 2\pi\sqrt{\frac{0.02}{1.991 x 10^-7}}$
+%Approximately 1991 centimeters
+%}
+
+
+\end{document}

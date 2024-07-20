@@ -1,0 +1,80 @@
+\documentclass{ximera}
+
+\title{Practice for Sturm Problems}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Find eigenvalues and eigenfunctions of
+    \begin{equation*}
+        y''+\lambda y = 0, \quad y(0)- y'(0) = 0, \quad y(1) = 0 .
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}
+    Expand the function $f(x) = x$ on $0 \leq x \leq 1$ using eigenfunctions of the system
+    \begin{equation*}
+        y'' + \lambda y = 0, \quad y'(0) = 0, \quad y(1) = 0 .
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}
+    Suppose that you had a Sturm--Liouville problem on the interval $[0,1]$ and came up with $y_n(x) = \sin (\gamma n x)$, where $\gamma > 0$ is some constant. Decompose $f(x) = x$, $0 < x < 1$ in terms of these eigenfunctions.
+\end{exercise}
+
+\begin{exercise}
+    Find eigenvalues and eigenfunctions of
+    \begin{equation*}
+        y^{(4)}+\lambda y = 0, \quad y(0) = 0, \quad y'(0) = 0, \quad y(1) = 0, \quad y'(1) = 0 .
+    \end{equation*}
+    This problem is not a Sturm--Liouville problem, but the idea is the same.
+\end{exercise}
+
+\begin{exercise}%[more challenging]
+    Find eigenvalues and eigenfunctions for
+    \begin{equation*}
+        \frac{d}{dx} (e^x y') + \lambda e^x y = 0, \quad y(0) = 0, \quad y(1) = 0 .
+    \end{equation*}
+    %Or at least set up the integrals you would need to solve.
+    Hint: First write the system as a constant coefficient system to find general solutions.  Do note that \thmvref{sl:slregthm} guarantees $\lambda \geq 0$.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+\begin{exercise}
+    Find eigenvalues and eigenfunctions of
+    \begin{equation*}
+        y'' + \lambda y = 0, \quad y(-1) = 0, \quad y(1) = 0 .
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$\lambda_n = \frac{(2n-1)\pi}{2}$, $n=1,2,3,\ldots$, 
+%$y_n = \cos\left(\frac{(2n-1)\pi}{2} x\right)$
+%}
+
+\begin{exercise}
+    Put the following problems into the standard form for Sturm--Liouville problems, that is, find $p(x)$, $q(x)$, $r(x)$, $\alpha_1$, $\alpha_2$, $\beta_1$, and $\beta_2$, and decide if the problems are regular or not.
+    \begin{tasks}
+    \task $x y'' + \lambda y = 0$ \enspace for $0 < x < 1$, \enspace $y(0) = 0$, \enspace $y(1) = 0$.
+    \task $(1+x^2) y'' + 2xy' + (\lambda-x^2) y = 0$ \enspace for $-1 < x < 1$, \enspace $y(-1) = 0$, \enspace $y(1)+y'(1) = 0$.%
+        \footnote{%
+            In an earlier version of this book, a typo rendered the equation as $(1+x^2) y'' - 2xy' + (\lambda-x^2) y = 0$ ending up with something harder than intended.  Try this equation for a further challenge.
+            }
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$p(x) = 1$, $q(x) = 0$, $r(x) = \frac{1}{x}$, $\alpha_1 = 1$, $\alpha_2 =
+%0$, $\beta_1 = 1$, $\beta_2 = 0$.  The problem is not regular.
+%b)~$p(x) = 1+x^2$, $q(x) = x^2$, $r(x) = 1$, $\alpha_1 = 1$, $\alpha_2 =
+%0$, $\beta_1 = 1$, $\beta_2 = 1$.  The problem is regular.
+%}
+
+
+\end{document}

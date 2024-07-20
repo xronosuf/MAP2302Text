@@ -1,0 +1,262 @@
+\documentclass{ximera}
+
+\title{Practice for Intro to Linear Systems}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Verify that $x_1(t) = 2e^{-t} - 2e^{-2t}$, $x_2(t) = e^{-t} - 2e^{-2t}$ solves the system $x_1' = - 2x_2 $, $x_2' = x_1 - 3x_2$.  
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%It works
+%}
+
+\begin{exercise}
+    Verify that $x_1(t) = -2te^{-3t} - 2e^{-3t}$, $x_2(t) = 2te^{-3t} + 3e^{-3t}$ solves the system $x_1' = -5x_1 - 2x_2 $, $x_2' = 2x_1 - x_2$.  
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%It works
+%}
+
+\begin{exercise}
+    Find the general solution of $x_1' = x_2 - x_1 + t$, $x_2' = x_2$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$x_1 = \frac{C_1}{2}e^t + (t-1) + C_2e^{-t}$, $x_2 = C_1e^t$
+%}
+
+\begin{exercise}
+    Find the general solution of $x_1' = 3 x_1 - x_2 + e^t$, $x_2' = x_1$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$x_1 = \frac{3+\sqrt{5}}{2}C_1e^{\frac{3+\sqrt{5}}{2}t} + \frac{3-\sqrt{5}}{2}C_2e^{\frac{3-\sqrt{5}}{2}t} - \frac{1}{2}Ae^t$, $x_2 = C_1e^{\frac{3+\sqrt{5}}{2}t} + C_2e^{\frac{3-\sqrt{5}}{2}t} - \frac{1}{2}Ae^t$
+%}
+
+\begin{exercise}%
+    Find the general solution to $y_1' = 3 y_1$, $y_2' = y_1 + y_2$, $y_3' = y_1 + y_3$.
+\end{exercise}
+%\exsol{%
+%$y_1 = C_1 e^{3x}$,
+%$y_2 = y(x) = C_2 e^x+ \frac{C_1}{2} e^{3 x}$,
+%$y_3 = y(x) = C_3 e^x+ \frac{C_1}{2} e^{3 x}$
+%}
+
+\begin{exercise}%
+    Solve $y'=2x$, $x'=x+y$, $x(0)=1$, $y(0)=3$.
+\end{exercise}
+%\exsol{%
+%$x=\frac{5}{3} e^{2t} - \frac{2}{3} e^{-t}$,
+%$y=\frac{5}{3} e^{2t} + \frac{4}{3} e^{-t}$
+%}
+
+
+\begin{exercise}
+    Write $ay'' + by' + cy = f(x)$ as a first order system of ODEs.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\vec{x}\ ' = \left[\begin{smallmatrix} 0 & 1 \\ -\frac{c}{a} & -\frac{b}{a} \end{smallmatrix}\right] \vec{x} + \left[\begin{smallmatrix}  0 \\ \frac{1}{a}f(x) \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    Write $x'' + y^2 y' - x^3 = \sin(t)$, $y'' + {(x'+y')}^2 -x = 0$ as a first order system of ODEs.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\left[\begin{smallmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end{smallmatrix}\right]' = \left[\begin{smallmatrix} u_2 \\ \sin(t) + u_1^3 - u_3^2u_4 \\ u_4 \\ u_1 - (u_3 + u_4)^2 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}%
+    Write $x''' = x+t$ as a first order system.
+\end{exercise}
+%\exsol{%
+%$x_1' = x_2$,
+%$x_2' = x_3$,
+%$x_3' = x_1+t$
+%}
+
+\begin{exercise}%
+    Write $y_1'' + y_1 + y_2 = t$, $y_2'' + y_1 - y_2 = t^2$ as a first order system.
+\end{exercise}
+%\exsol{%
+%$y_3' + y_1 + y_2 = t$, 
+%$y_4' + y_1 - y_2 = t^2$,
+%$y_1' = y_3$,
+%$y_2' = y_4$
+%}
+
+\begin{exercise}
+    Write $y^{(4)} - t^2 y''' + e^t y' - (2t+1)y = \cos(t)$ as a first order system.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\vec{u}' = \left[\begin{smallmatrix}  0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 2t+1 & -e^t & 0 & t^2 \end{smallmatrix}\right]\vec{u} + \left[\begin{smallmatrix} 0 \\ 0 \\ 0 \\ \cos(t) \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    Write the initial value problem 
+    \[ 
+        y'' - 2xy' + 3y = \sin(x) \qquad y(0) = 1,\ y'(0) = -2 
+    \] 
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. 
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\vec{u}' = \left[\begin{smallmatrix}  0 & 1 \\ -3 & 2x \end{smallmatrix}\right]\vec{x} + \left[\begin{smallmatrix}  0 \\ \sin(x) \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix}  1 \\ -2 \end{smallmatrix}\right]$
+%}
+
+\begin{exercise}
+    Write the initial value problem 
+    \[ 
+        y'' - (y+1)^2 y' - e^{xy} = \cos(x) \qquad y(0) = -1,\ y'(0) = 5 
+    \] 
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. Can this be written in matrix form? Why or why not?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\vec{u}' = \left[\begin{smallmatrix}  u_2 \\ \cos(x) + e^{xu_1} + (u_1 + 1)^2u_2 \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix}  -1 \\ 5 \end{smallmatrix}\right]$. Non-linear.
+%}
+
+\begin{exercise}
+    Write the initial value problem 
+    \[ 
+        y^{(4)} + e^x y'' - 4\cos(x)y' + (x^2 + 1)y = \frac{1}{x-3} \qquad y(0) = 2,\ y'(0) = -3,\ y''(0) = 0,\ y^{(3)}(0) = 1 
+    \] 
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. 
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$\vec{u}' = \left[\begin{smallmatrix}  0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ -(x^2 + 1) & 4\cos(x) & -e^x & 0 \end{smallmatrix}\right] \vec{u} + \left[\begin{smallmatrix} 0 \\ 0 \\ 0 \\ \frac{1}{x-3} \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix} -2 \\ -3 \\ 0 \\ 1 \end{smallmatrix}\right]$.
+%}
+
+\begin{exercise}
+    Suppose two masses on carts on frictionless surface are at displacements $x_1$ and $x_2$ as in \examplevref{sintro:carts-example}. Suppose that a rocket applies force $F$ in the positive direction on cart $x_1$.  Set up the system of equations.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$mx_1'' = k(x_2 - x_1) + F,\ mx_2''  =-k(x_2 - x_1)$
+%}
+
+\begin{exercise}%
+    Suppose two masses on carts on frictionless surface are at  displacements $x_1$ and $x_2$ as in \examplevref{sintro:carts-example}. Suppose initial displacement is $x_1(0)=x_2(0)=0$, and initial velocity is $x_1'(0) = x_2'(0) = a$ for some number $a$. Use your intuition to solve the system, explain your reasoning.
+\end{exercise}
+%\exsol{%
+%$x_1 = x_2 = at$.  Explanation of the intuition is left to reader.
+%}
+
+\begin{exercise}
+    Suppose the tanks are as in \examplevref{sintro:closedbrine-example}, starting both at volume $V$, but now the rate of flow from tank 1 to tank 2 is $r_1$, and rate of flow from tank 2 to tank 1 is $r_2$.  In particular, the volumes will now be changing.  Set up the system of equations.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$V_1(t) = V + (r_2 - r_1)t$, $V_2(t) = V + (r_1 - r_2)t$ \\
+%$\frac{dx_1}{dt} = r_2\left(\frac{x_2}{V + (r_1 - r_2)t}\right)  - r_1\left(\frac{x_1}{V + (r_2 - r_1)t}\right)$ \quad
+%$\frac{dx_2}{dt} = r_1\left(\frac{x_1}{V + (r_2 - r_1)t}\right)  - r_2\left(\frac{x_2}{V + (r_1 - r_2)t}\right)$ \\
+%}
+
+\begin{exercise}%
+    Suppose the tanks are as in  \examplevref{sintro:closedbrine-example} except that clean water flows in at the rate $s$ liters per second into tank 1, and brine flows out of tank 2 and into the sewer also at the rate of $s$ liters per second. We also adjust the flow rate of the line from tank 1 to tank 2 to be $r+s$ liters per second.
+    \begin{tasks}
+        \task Draw the picture.
+        \task Set up the system of equations.
+        \task Intuitively, what happens as $t$ goes to infinity, explain.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Left to reader.
+%\quad b) 
+%$x_1' = \frac{r}{V} (x_2-x_1)$,
+%$x_2' = \frac{r}{V} x_1- \frac{r-s}{V}x_2$.
+%\quad c) As $t$ goes to infinity, both $x_1$ and $x_2$ go to zero,
+%explanation is left to reader.
+%}
+
+\begin{exercise}%
+    Match the systems of differential equations below to their corresponding slope fields. Justify.
+    \begin{equation*}
+        (i)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= x+y \\ 
+            \frac{dy}{dt} &= 2y-x 
+        \end{cases} 
+        \qquad (ii)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= x-y \\ 
+            \frac{dy}{dt} &= x^2 + y 
+        \end{cases} 
+        \qquad (iii)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= x^2 - y^2 \\ 
+            \frac{dy}{dt} &= 3x-1 
+        \end{cases}
+    \end{equation*}
+    \begin{tasks}(3)
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_1}}
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_3}}
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_2}}
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) (i), \quad
+%b) (iii), \quad
+%c) (ii) \quad
+%Justification left to reader.
+%}
+
+\begin{exercise}
+    Match the systems of differential equations below to their corresponding slope fields. Justify.
+    \begin{equation*}
+        (i)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= 2x+y \\ 
+            \frac{dy}{dt} &= y - x^2 
+        \end{cases} 
+        \qquad (ii)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= x^2 \\ 
+            \frac{dy}{dt} &= x-y 
+        \end{cases} 
+        \qquad (iii)\ 
+        \begin{cases} 
+            \frac{dx}{dt} &= y+2 \\ 
+            \frac{dy}{dt} &= x+y+1 
+        \end{cases}
+    \end{equation*}
+    \begin{tasks}(3)
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_3}}
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_2}}
+        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_1}}
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) (iii), \quad
+%b) (ii), \quad
+%c) (i) \quad
+%Justification left to reader.
+%}
+
+
+\end{document}

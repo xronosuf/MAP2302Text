@@ -1,0 +1,126 @@
+\documentclass{ximera}
+
+\title{Practice for Convolution}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Using the Heaviside function write down the piecewise function that is 0 for $t < 0$, $t^2$ for $t$ in $[0,1]$ and $t$ for $t > 1$.
+\end{exercise}
+
+\begin{exercise}%
+    Using the Heaviside function $u(t)$, write down the function
+    \begin{equation*}
+        f(t) =
+        \begin{cases}
+            0 & \text{if } \; \phantom{1 \leq {}} t < 1  , \\
+            t-1 & \text{if } \; 1 \leq t < 2 , \\
+            1 & \text{if } \; 2 \leq t .
+        \end{cases}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$f(t) =
+%(t-1)\bigl(u(t-1) - u(t-2)\bigr) + 
+%u(t-2)$
+%}
+
+\begin{exercise}
+    Using the Laplace transform solve
+    \begin{equation*}
+        m x'' + c x' + k x = 0 , \quad x(0) = a, \quad x'(0) = b ,
+    \end{equation*}
+    where $m > 0$, $c > 0$, $k > 0$, and $c^2 - 4km > 0$ (system is overdamped).
+\end{exercise}
+
+\begin{exercise}
+    Using the Laplace transform solve
+    \begin{equation*}
+        m x'' + c x' + k x = 0 , \quad x(0) = a, \quad x'(0) = b ,
+    \end{equation*}
+    where $m > 0$, $c > 0$, $k > 0$, and $c^2 - 4km < 0$ (system is underdamped).
+\end{exercise}
+
+\begin{exercise}
+    Using the Laplace transform solve
+    \begin{equation*}
+        m x'' + c x' + k x = 0 , \quad x(0) = a, \quad x'(0) = b ,
+    \end{equation*}
+    where $m > 0$, $c > 0$, $k > 0$, and $c^2 = 4km$ (system is critically damped).
+\end{exercise}
+
+\begin{exercise}
+    Solve $x'' + x = u(t-1)$ for initial conditions $x(0) = 0$ and $x'(0) = 0$.
+\end{exercise}
+
+\begin{exercise}%
+Solve $x''-x = (t^2-1) u(t-1)$ for initial conditions $x(0)=1$, $x'(0) = 2$ using the Laplace transform.
+\end{exercise}
+%\exsol{%
+%$x(t) = (2e^{t-1}-t^2-1) u(t-1) -\frac{1}{2}e^{-t}+\frac{3}{2}e^t$
+%}
+ 
+
+\begin{exercise}
+    Show the differentiation of the transform property.  Suppose $\mathcal{L} \bigl\{ f(t) \bigr\} = F(s)$, then show
+    \begin{equation*}
+        \mathcal{L} \bigl\{ -t f(t) \bigr\} = F'(s) .
+    \end{equation*}
+    Hint: Differentiate under the integral sign.
+\end{exercise}
+
+\begin{exercise}
+    Solve $x''' + x = t^3 u(t-1)$ for initial conditions $x(0) = 1$ and $x'(0) = 0$, $x''(0) = 0$.
+\end{exercise}
+
+\begin{exercise}
+    Show the second shifting property: $\mathcal{L} \bigl\{ f(t-a) \, u(t-a) \bigr\} = e^{-as} \mathcal{L} \bigl\{ f(t) \bigr\}$.
+\end{exercise}
+
+\begin{exercise}
+    Let us think of the mass-spring system with a rocket from \exampleref{lt:rocketex}.  We noticed that the solution kept oscillating after the rocket stopped running.  The amplitude of the oscillation depends on the time that the rocket was fired (for 4 seconds in the example). 
+    \begin{tasks}
+    \task Find a formula for the amplitude of the resulting oscillation in terms of the amount of time the rocket is fired.
+    \task Is there a nonzero time (if so what is it?) for which the rocket fires and the resulting oscillation has amplitude 0 (the mass is not moving)?
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Define
+    \begin{equation*}
+        f(t) =
+        \begin{cases}
+            {(t-1)}^2 & \text{if } \; 1 \leq t < 2, \\
+            3-t & \text{if } \; 2 \leq t < 3, \\
+            0 & \text{otherwise} .
+        \end{cases}
+    \end{equation*}
+    \begin{tasks}
+        \task Sketch the graph of $f(t)$.
+        \task Write down $f(t)$ using the Heaviside function.
+        \task Solve $x''+x=f(t)$, $x(0)=0$, $x'(0) = 0$ using Laplace transform.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Find the transfer function for $m x'' + c x' + kx = f(t)$ (assuming the initial conditions are zero).
+\end{exercise}
+
+\begin{exercise}%
+    Find the transfer function for $x' + x = f(t)$ (assuming the initial conditions are zero).
+\end{exercise}
+%\exsol{%
+%$H(s) = \frac{1}{s+1}$
+%}
+
+%\setcounter{exercise}{100}
+
+
+\end{document}

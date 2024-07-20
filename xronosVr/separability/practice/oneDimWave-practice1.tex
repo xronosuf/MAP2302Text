@@ -1,0 +1,165 @@
+\documentclass{ximera}
+
+\title{Practice for One Dim Wave}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Solve
+    \begin{equation*}
+        \begin{array}{ll}
+            y_{tt} = 9 y_{xx} , &  \\
+            y(0,t) = y(1,t) = 0 , &  \\
+            y(x,0) = \sin (3\pi x) + \frac{1}{4} \sin (6 \pi x) & \qquad \text{for } \; 0 < x < 1 , \\
+            y_t(x,0) = 0 & \qquad \text{for } \; 0 < x < 1 .
+        \end{array}
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}\%
+    Solve
+    \begin{equation*}
+        \begin{array}{ll}
+            y_{tt} = y_{xx} , &  \\
+            y(0,t) = y(\pi,t) = 0 , &  \\
+            y(x,0) = \sin(x) & \qquad \text{for } \; 0 < x < \pi , \\
+            y_t(x,0) = \sin(x) & \qquad \text{for } \; 0 < x < \pi .
+        \end{array}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$
+%y(x,t)
+%=
+%\sin(x)
+%\bigl(\sin(t) + \cos(t)\bigr)
+%$
+%}
+
+\begin{exercise}
+    Solve
+    \begin{equation*}
+    \begin{array}{ll}
+        y_{tt} = 4 y_{xx} , &  \\
+        y(0,t) = y(1,t) = 0 , &  \\
+        y(x,0) = \sin (3\pi x) + \frac{1}{4} \sin (6 \pi x) & \qquad \text{for } \; 0 < x < 1 , \\
+        y_t(x,0) = \sin (9 \pi x) & \qquad \text{for } \; 0 < x < 1 .
+    \end{array}
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}\%
+    Solve
+    \begin{equation*}
+    \begin{array}{ll}
+        y_{tt} = 25 y_{xx} , &  \\
+        y(0,t) = y(2,t) = 0 , &  \\
+        y(x,0) = 0 & \qquad \text{for } \; 0 < x < 2 , \\
+        y_t(x,0) = \sin(\pi t) + 0.1 \sin(2\pi t) & \qquad \text{for } \; 0 < x < 2 .
+    \end{array}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$y(x,t)
+%=
+%\frac{1}{5 \pi}
+%\sin (\pi x)
+%\sin (5 \pi t)
+%+
+%\frac{1}{100 \pi}
+%\sin(2\pi x)
+%\sin(10\pi t)$
+%}
+%%$
+%%y(x,t)
+%%=
+%%\sum\limits_{n=1}^\infty
+%%\sin \left( \frac{n \pi}{L} x \right)
+%%\left[
+%%b_n
+%%\frac{L}{n \pi a}
+%%\sin \left( \frac{n \pi a}{L} t \right) 
+%%+
+%%c_n
+%%\cos \left( \frac{n \pi a}{L} t \right) 
+%%\right] .
+
+\begin{exercise}\%
+    Solve
+    \begin{equation*}
+    \begin{array}{ll}
+        y_{tt} = 2 y_{xx} , &  \\
+        y(0,t) = y(\pi,t) = 0 , &  \\
+        y(x,0) = x & \qquad \text{for } \; 0 < x < \pi , \\
+        y_t(x,0) = 0 & \qquad \text{for } \; 0 < x < \pi .
+    \end{array}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$
+%y(x,t)
+%=
+%\sum\limits_{n=1}^\infty
+%\frac{2{(-1)}^{n+1}}{n}
+%\sin(nx)
+%\cos( n \sqrt{2}\,t ) 
+%$
+%%$
+%%y(x,t)
+%%=
+%%\sum\limits_{n=1}^\infty
+%%\sin \left( \frac{n \pi}{L} x \right)
+%%\left[
+%%b_n
+%%\frac{L}{n \pi a}
+%%\sin \left( \frac{n \pi a}{L} t \right) 
+%%+
+%%c_n
+%%\cos \left( \frac{n \pi a}{L} t \right) 
+%%$
+%}
+
+\begin{exercise}
+    Derive the solution for a general plucked string of length $L$ and any constant $a$ (in the equation $y_{tt} = a^2 y_{xx}$), where we raise the string some distance $b$ at the midpoint and let go.
+\end{exercise}
+
+
+\begin{exercise}
+    Imagine that a stringed musical instrument falls on the floor.  Suppose that the length of the string is 1 and $a=1$.  When the musical instrument hits the ground the string was in rest position and hence $y(x,0) = 0$.  However, the string was moving at some velocity at impact ($t=0$), say $y_t(x,0) = -1$.  Find the solution $y(x,t)$ for the shape of the string at time $t$.
+\end{exercise}
+
+
+\begin{exercise}\%
+    Let's see what happens when $a=0$.  Find a solution to $y_{tt} = 0$, $y(0,t) = y(\pi,t) = 0$, $y(x,0) = \sin(2x)$, $y_t(x,0) = \sin(x)$.
+\end{exercise}
+%\exsol{%
+%$y(x,t) = \sin(2x)+t\sin(x)$
+%}
+
+\begin{exercise}[challenging]
+    Suppose that you have a vibrating string and that there is air resistance proportional to the velocity.  That is, you have
+    \begin{equation*}
+    \begin{array}{ll}
+        y_{tt} = a^2 y_{xx} - k y_t , &  \\
+        y(0,t) = y(1,t) = 0 , &  \\
+        y(x,0) = f(x) & \qquad \text{for } \; 0 < x < 1 , \\
+        y_t(x,0) = 0 & \qquad \text{for } \; 0 < x < 1 .
+    \end{array}
+    \end{equation*}
+    Suppose that $0 < k < 2 \pi a$. Derive a series solution to the problem.  Any coefficients in the series should be expressed as integrals of $f(x)$.
+\end{exercise}
+
+\begin{exercise}
+    Suppose you touch the guitar string exactly in the middle to ensure another condition $u(\nicefrac{L}{2},t) = 0$ for all time. Which multiples of the fundamental frequency $\frac{\pi a}{L}$ show up in the solution?
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+
+\end{document}

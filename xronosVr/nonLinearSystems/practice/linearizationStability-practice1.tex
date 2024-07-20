@@ -1,0 +1,321 @@
+\documentclass{ximera}
+
+\title{Practice for Linearization and Stability}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Sketch the phase plane vector field for:
+    \begin{tasks}(3)
+        \task $x'=x^2$, \enspace $y'=y^2$,
+        \task $x'=(x-y)^2$, \enspace $y'=-x$,
+        \task $x'=e^y$, \enspace $y'=e^x$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~\parbox[c]{1.4in}{\includegraphics[width=1.4in]{Images/sysslopex2y2.png}} \quad b)~\parbox[c]{1.4in}{\includegraphics[width=1.4in]{Images/sysslopexmy2mx.png}} \quad c)~\parbox[c]{1.4in}{\includegraphics[width=1.4in]{Images/sysslopeeyex.png}}
+%}
+
+\begin{exercise}
+    Match systems
+    \begin{equation*}
+        (i)\  x'=x^2, \enspace y'=y^2, \quad (ii)\  x'=xy, \enspace y'=1+y^2, \quad (iii)\  x'=\sin(\pi y), \enspace y'=x,
+    \end{equation*}
+    to the vector fields below.  Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-xy-1py2}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-x2-y2}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-sinpiy-x}}
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ (ii) \quad b)~(i) \quad c)~(iii)
+%}
+
+\begin{exercise}%
+    Match systems
+    \begin{equation*}
+        (i)\  x'=y^2, \enspace y'=-x^2, \quad (ii)\  x'=y, \enspace y'=(x-1)(x+1), \quad (iii)\  x'=y+x^2, \enspace y'=-x,
+    \end{equation*}
+    to the vector fields below.  Justify.
+    \begin{tasks}(3)
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-y-xm1xp1}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-ypx2-mx}}
+        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-y2-mx2}}
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~(ii) \quad b)~(iii) \quad c)~(i)
+%}
+
+
+\begin{exercise}
+    Find the critical points and linearizations of the following systems.
+    \begin{tasks}(2)
+        \task $x'=x^2-y^2$, \enspace $y'=x^2+y^2-1$,
+        \task $x'=-y$, \enspace $y'=3x+yx^2$,
+        \task $x'=x^2+y$, \enspace $y'=y^2+x$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ Critical points: $\left(\pm \frac{\sqrt{2}}{2}, \pm \frac{\sqrt{2}}{2}\right)$. At $\left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)$, linearization matrix is $\left[\begin{smallmatrix} \sqrt{2} & -\sqrt{2} \\ \sqrt{2} & \sqrt{2} \end{smallmatrix}\right]$. At $\left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2}\right)$, linearization matrix is $\left[\begin{smallmatrix} \sqrt{2} & \sqrt{2} \\ \sqrt{2} & -\sqrt{2} \end{smallmatrix}\right]$.
+%At $\left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)$, linearization matrix is $\left[\begin{smallmatrix} -\sqrt{2} & -\sqrt{2} \\ -\sqrt{2} & \sqrt{2} \end{smallmatrix}\right]$. At $\left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2}\right)$, linearization matrix is $\left[\begin{smallmatrix} -\sqrt{2} & \sqrt{2} \\ -\sqrt{2} & -\sqrt{2} \end{smallmatrix}\right]$. \\
+%b)~Critical point: $(0,0)$, linearization matrix $\left[\begin{smallmatrix} 0 & -1 \\ 3 & 0 \end{smallmatrix}\right]$\\
+%c)~Critical points: $(0,0)$ and $(-1, -1)$. At $(0,0)$, linearization matrix is $\left[\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right]$. At $(-1, -1)$, linearization matrix is $\left[\begin{smallmatrix} -2 & 1 \\ 1 & -2 \end{smallmatrix}\right]$.
+%}
+
+
+\begin{exercise}%
+    Find the critical points and linearizations of the following systems.
+    \begin{tasks}(2)
+        \task $x'=\sin(\pi y)+(x-1)^2$, \enspace $y'=y^2-y$,
+        \task $x'=x+y+y^2$, \enspace $y'=x$,
+        \task $x'=(x-1)^2+y$, \enspace $y'=x^2+y$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Critical points $(1,1)$ and $(1,0)$.  At $(1,1)$ using $u=x-1$, $v=y-1$ the linearization is $u'=-\pi v$, $v'=v$.
+%At $(1,0)$ using $u=x-1$, $v=y$ the linearization is
+%$u'=\pi v$, $v'=-v$.\\
+%b) Critical points $(0,0)$ and $(0, -1)$. For $(0,0)$, using $u=x$, $v=y$ the linearization is
+%$u'=u+v$, $v'=u$. For $(0,-1)$, using $u = x$ and $v = y+1$, the linearization is $u' = u-v$, $v' = u$\\
+%c) Critical point $(\nicefrac{1}{2},\nicefrac{-1}{4})$.  Using
+%$u=x-\nicefrac{1}{2}$, $v=y+\nicefrac{1}{4}$ the linearization is
+%$u'=-u+v$, $v'=u+v$.
+%}
+
+\begin{exercise}
+    For the following systems, verify they have critical point at $(0,0)$, and find the linearization at $(0,0)$.
+    \begin{tasks}(2)
+        \task $x'=x+2y+x^2-y^2$, \enspace $y'=2y-x^2$
+        \task $x'=-y$, \enspace $y'=x-y^3$
+        \task* $x'=ax+by+f(x,y)$, $y'=cx+dy+g(x,y)$, where
+            $f(0,0) = 0$, $g(0,0) = 0$, 
+            and all first partial derivatives of $f$ and $g$ are also zero at $(0,0)$, that is,
+            $\frac{\partial f}{\partial x}(0,0) = \frac{\partial f}{\partial y}(0,0) = \frac{\partial g}{\partial x}(0,0) = \frac{\partial g}{\partial y}(0,0) = 0$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $\left[\begin{smallmatrix} 1 & 2 \\ 0 & 2 \end{smallmatrix}\right]$ \quad b)~ $\left[\begin{smallmatrix} 1 & 1 \\ 1 & 0 \end{smallmatrix}\right]$ \qquad c)~ $\left[\begin{smallmatrix} a & b \\ c & d \end{smallmatrix}\right]$.
+%}
+
+\begin{exercise}
+    Take the system $x' = (x-2)(x+y)$, \ $y' = (y+3)(x-y)$.
+    \begin{tasks}
+        \task Find all critical points.
+        \task Determine the linearization of this system around each of the critical points.
+        \task For each of the critical points, determine the behavior and classify the type of solution that the  \emph{linearized} system will have around that critical point. 
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$(0,0)$, $\left[\begin{smallmatrix} -2 & -2 \\ 3 & -3 \end{smallmatrix}\right]$, Nodal sink.\ $(2, -3)$, $\left[\begin{smallmatrix} -1 & 0 \\ 0 & 1 \end{smallmatrix}\right]$, Saddle. \ 
+%$(2, 2)$, $\left[\begin{smallmatrix} 2 & 0 \\ 5 & -5 \end{smallmatrix}\right]$, Saddle.\ 
+%$(3, -3)$, $\left[\begin{smallmatrix} 1 & 1 \\ 0 & 6 \end{smallmatrix}\right]$, Nodal source. 
+%}
+
+\begin{exercise}
+    Take the system $x' = (x^2 - y)(x+3)$, \ $y' = (y-1)(x+y+1)$.
+    \begin{tasks}
+        \task Find all critical points.
+        \task Determine the linearization of this system around each of the critical points.
+        \task For each of the critical points, determine the behavior and classify the type of solution that the \emph{linearized} system will have around that critical point. 
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$(-1,1)$, $\left[\begin{smallmatrix} -4 & -2 \\ 0 & -1 \end{smallmatrix}\right]$, Nodal sink.\ $(1,1)$, $\left[\begin{smallmatrix} 8 & -4 \\ 0 & 1 \end{smallmatrix}\right]$, Nodal source.\ 
+%$(-3, 1)$, $\left[\begin{smallmatrix} 8 & 0 \\ 0 & -3 \end{smallmatrix}\right]$, Saddle.\ 
+%$(-3, 4)$, $\left[\begin{smallmatrix} 5 & 0 \\ 3 & 3 \end{smallmatrix}\right]$, Nodal Source.\ 
+%$\left( -\frac{1}{2} + \frac{\sqrt{5}}{2}, \frac{3}{2} - \frac{\sqrt{5}}{2}\right)$, $\left[\begin{smallmatrix} 2\sqrt{5} & -\frac{5}{2} - \frac{\sqrt{5}}{2} \\ \frac{1}{2} - \frac{\sqrt{5}}{2} & \frac{1}{2} - \frac{\sqrt{5}}{2} \end{smallmatrix}\right]$, Saddle.\ 
+%$\left( -\frac{1}{2} - \frac{\sqrt{5}}{2}, \frac{3}{2} + \frac{\sqrt{5}}{2}\right)$, $\left[\begin{smallmatrix} -2\sqrt{5} & -\frac{5}{2} + \frac{\sqrt{5}}{2} \\ \frac{1}{2} + \frac{\sqrt{5}}{2} & \frac{1}{2} + \frac{\sqrt{5}}{2} \end{smallmatrix}\right]$, Saddle.
+%}
+
+\begin{exercise}
+    Take $x'=(x-y)^2$, \enspace $y'=(x+y)^2$. 
+    \begin{tasks}
+        \task Find the set of critical points.
+        \task Sketch a phase diagram and describe the behavior near the critical point(s).
+        \task Find the linearization.  Is it helpful in understanding the system?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~(0,0) \quad b)~Solutions move away from 0, generally above the line $y=x$ \quad c)~No. Linearization is 0.
+%}
+
+\begin{exercise}
+    Take $x'=x^2$, \enspace $y'=x^3$.
+    \begin{tasks}
+        \task Find the set of critical points.
+        \task Sketch a phase diagram and describe the behavior near the critical point(s).
+        \task Find the linearization.  Is it helpful in understanding the system?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$(0,y)$ for any $y$. \quad b)~Generally curving upward as $x$ gets bigger \quad c)~No. Linearization is zero at any critical point.
+%}
+
+
+\begin{exercise}%
+    The idea of critical points and linearization works in higher dimensions as well.  You simply make the Jacobian matrix bigger by adding more functions and more variables.  For the following system of 3 equations find the critical points and their linearizations:
+    \begin{equation*}
+        x' = x + z^2, \qquad y' = z^2-y, \qquad z' = z+x^2.
+    \end{equation*}
+\end{exercise}
+
+%\exsol{%
+%Critical points are $(0,0,0)$, and
+%$(-1, 1, -1)$.
+%The linearization at the origin using variables $u=x$, $v=y$, $w=z$ is
+%$u' = u$, $v'=-v$, $z' = w$.
+%The linearization at the point $(-1,1,-1)$ using variables $u=x+1$,
+%$v=y-1$, $w=z+1$ is
+%%$x=u-1$
+%%$y=v+1$
+%%$z=w-1$
+%%$u' = u-1 + (w-1)^2$, $v' = (w-1)^2-v+1$, $w' = (w-1)+(u-1)^2$.
+%%$u' = u + w^2-2w$, $v' = w^2-2w-v$, $w' = w+u^2-2u$
+%$u'=u-2w$, $v'=-v-2w$, $w'=w-2u$.
+%}
+
+\begin{exercise}%
+    Any two-dimensional non-autonomous system $x'=f(x,y,t)$, $y'=g(x,y,t)$ can be written as a three-dimensional autonomous system (three equations).  Write down this autonomous system using the variables $u$, $v$, $w$.
+\end{exercise}
+%\exsol{%
+%$u' = f(u,v,w)$, $v'=g(u,v,w)$, $w' = 1$.
+%}
+
+\begin{exercise}
+    For the systems below, find and classify the critical points, also indicate if the equilibria are stable, asymptotically stable, or unstable.
+    \begin{tasks}(2)
+        \task $x'=-x+3x^2, y'=-y$
+        \task $x'=x^2+y^2-1$, $y'=x$
+        \task $x'=ye^x$, $y'=y-x+y^2$
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$(0,0)$ nodal sink, asymptotically stable. $(1/3, 0)$ saddle, unstable.\\
+%b)~$(0,1)$ saddle, unstable. $(0, -1)$ center, unknown, maybe stable. \\
+%c)~$(0,0)$ spiral source, unstable. 
+%}
+
+\begin{exercise}%
+    For the systems below, find and classify the critical points.
+    \begin{tasks}(3)
+        \task $x'=-x+x^2$, $y'=y$
+        \task $x'=y-y^2-x$, $y'=-x$
+        \task $x'=xy$, $y'=x+y-1$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $(0,0)$: saddle (unstable), $(1,0)$: source (unstable), \qquad
+%b) $(0,0)$: spiral sink (asymptotically stable), $(0,1)$: saddle (unstable), \qquad
+%c) $(1,0)$: saddle (unstable), $(0,1)$: improper nodal source (unstable)
+%}
+
+\begin{exercise}
+    Find and classify all critical points of the system
+    \[ 
+        \frac{dx}{dt} = (x+1)(x-y+3) \qquad \frac{dy}{dt} = (x-2)(x-y) .
+    \]
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$(-1, -1)$, improper nodal source, unstable. $(2,5)$, saddle, unstable.
+%}
+
+\begin{exercise}
+    Find and classify all critical points of the system
+    \[ 
+        \frac{dx}{dt} = x^2 - y^2 \qquad \frac{dy}{dt} = (x+4)(y-2) .
+    \]
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$(-4, 4)$, improper nodal sink, asymptotically stable. $(-4, -4)$, spiral sink, asymptotically stable. $(-2, 2)$, saddle, unstable. $(2,2)$, nodal source, unstable.
+%}
+
+
+\begin{exercise}
+    Find and classify the critical point(s) of $x' = -x^2$, $y' = -y^2$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$(0,0)$ Unstable. Everything moves downward, so if either component is negative, the solution converges away from $(0,0)$.
+%}
+
+
+\begin{exercise}
+    Suppose $x'=-xy$, $y'=x^2-1-y$.
+    \begin{tasks}
+        \task Show there are two spiral sinks at $(-1,0)$ and $(1,0)$.
+        \task For any initial point of the form $(0,y_0)$, find the trajectory.
+        \task Can a trajectory starting at $(x_0,y_0)$ where $x_0 > 0$ spiral into the critical point at $(-1,0)$?  Why or why not?
+    \end{tasks}
+\end{exercise}
+
+
+%\comboSol{%
+%}
+%{%
+%b)~The solution will converge (exponentially) to $(0, -1)$. \quad c)~ No, it can not cross another solution curve.
+%}
+
+\begin{exercise} \label{exercise:increasing}
+In the example $x'=y$, $y'=y^3-x$ show that for any trajectory, the distance from the origin is an increasing function. Conclude that the origin behaves like is a spiral source. Hint: Consider 
+$f(t) = {\bigl(x(t)\bigr)}^2 + {\bigl(y(t)\bigr)}^2$ 
+and show it has positive derivative.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$2r\frac{dr}{dt} = 2y^4 > 0$
+%}
+
+\begin{exercise}
+    Find and analyze all critical points of the system $x' = y$, $y' = -x - y^3$. Use the ideas from \exerciseref{exercise:increasing} to show that the solutions to this problem move towards the origin as $t$ grows.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$2r\frac{dr}{dt} = -2y^4 < 0$
+%}
+
+\begin{exercise}%
+    Derive an analogous classification of critical points for equations in one dimension, such as $x'= f(x)$ based on the derivative.  A point $x_0$ is critical when $f(x_0) = 0$ and almost linear if in addition $f'(x_0) \not= 0$.  Figure out if the critical point is stable or unstable depending on the sign of $f'(x_0)$.  Explain.  Hint: see \sectionref{auteq:section}.
+\end{exercise}
+%\exsol{%
+%A critical point $x_0$ is stable if $f'(x_0) < 0$ and unstable when $f'(x_0)
+%> 0$.
+%}
+
+%
+%\setcounter{exercise}{100}
+
+\end{document}

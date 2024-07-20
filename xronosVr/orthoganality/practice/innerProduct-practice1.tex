@@ -1,0 +1,144 @@
+\documentclass{ximera}
+
+\title{Practice for Inner Products}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+
+\begin{exercise}
+    Find the $s$ that makes the following vectors orthogonal: $(1,2,3)$, $(1,1,s)$.
+\end{exercise}
+
+\begin{exercise}%
+    Find the $s$ that makes the following vectors orthogonal: $(1,1,1)$, $(1,s,1)$.
+\end{exercise}
+%\exsol{%
+%$s=-2$
+%}
+
+
+\begin{exercise}
+    Find the angle $\theta$ between $(1,3,1)$, $(2,1,-1)$.
+\end{exercise}
+
+\begin{exercise}
+    Find the angle $\theta$ between $(1,2,3)$, $(1,1,1)$.
+\end{exercise}
+%\exsol{%
+%$\theta \approx 0.3876$
+%}
+
+
+\begin{exercise}
+    Given that $\langle \vec{v} , \vec{w} \rangle = 3$ and $\langle \vec{v} , \vec{u} \rangle = -1$ compute
+    \begin{tasks}(3)
+        \task $\langle \vec{u} , 2 \vec{v} \rangle$
+        \task $\langle \vec{v} , 2 \vec{w} + 3 \vec{u} \rangle$
+        \task $\langle \vec{w} + 3 \vec{u}, \vec{v} \rangle$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Given that $\langle \vec{v} , \vec{w} \rangle = 1$ and $\langle \vec{v} , \vec{u} \rangle = -1$  and $\lVert \vec{v} \rVert = 3$  and
+    \begin{tasks}(3)
+        \task $\langle 3 \vec{u} , 5 \vec{v} \rangle$
+        \task $\langle \vec{v} , 2 \vec{w} + 3 \vec{u} \rangle$
+        \task $\langle \vec{w} + 3 \vec{v}, \vec{v} \rangle$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~-15 \quad
+%b)~-1 \quad
+%c)~28
+%}
+
+
+\begin{exercise}
+    Suppose $\vec{v} = (1,1,-1)$.  Find
+    \begin{tasks}(3)
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (1,0,0) \bigr)$
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (1,2,3) \bigr)$
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (1,-1,0) \bigr)$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Suppose $\vec{v} = (1,0,-1)$.  Find
+    \begin{tasks}(3)
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (0,2,1) \bigr)$
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (1,0,1) \bigr)$
+        \task $\operatorname{proj}_{\vec{v}}\bigl( (4,-1,0) \bigr)$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$(\nicefrac{-1}{2},0,\frac{1}{2})$ \quad
+%b)~$(0,0,0)$ \quad
+%c)~$(2,0,-2)$
+%}
+
+\begin{exercise}
+    Consider the vectors $(1,2,3)$, $(-3,0,1)$, $(1,-5,3)$.
+    \begin{tasks}(2)
+        \task Check that the vectors are linearly independent and so form a basis.
+        \task Check that the vectors are mutually orthogonal, and are therefore an orthogonal basis.
+        \task Represent $(1,1,1)$ as a linear combination of this basis.
+        \task Make the basis orthonormal.
+    \end{tasks}
+\end{exercise}
+
+
+\begin{exercise}
+    The vectors $(1,1,-1)$, $(2,-1,1)$, $(1,-5,3)$ form an orthonormal basis. Represent the following vectors in terms of this basis.
+    \begin{tasks}(3)
+        \task $(1,-8,4)$
+        \task $(5,-7,5)$
+        \task $(0,-6,2)$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a)~$(1,1,-1)-(2,-1,1)+2(1,-5,3)$ \quad
+%b)~$2(2,-1,1)+(1,-5,3)$ \quad
+%c)~$2(1,1,-1)-2(2,-1,1)+2(1,-5,3)$
+%}
+
+\begin{exercise}
+    Let $S$ be the subspace spanned by $(1,3,-1)$, $(1,1,1)$.  Find an orthogonal basis of $S$ by the Gram-Schmidt process.
+\end{exercise}
+
+\begin{exercise}%
+    Let $S$ be the subspace spanned by $(2,-1,1)$, $(2,2,2)$.  Find an orthogonal basis of $S$ by the Gram-Schmidt process.
+\end{exercise}
+%\exsol{%
+%$(2,-1,1)$, $(\nicefrac{2}{3},\nicefrac{8}{3},\nicefrac{4}{3})$
+%}
+
+\begin{exercise}
+    Starting with $(1,2,3)$, $(1,1,1)$, $(2,2,0)$, follow the Gram-Schmidt process to find an orthogonal basis of ${\mathbb{R}}^3$.
+\end{exercise}
+
+\begin{exercise}
+    Starting with $(1,1,-1)$, $(2,3,-1)$, $(1,-1,1)$, follow the Gram-Schmidt process to find an orthogonal basis of ${\mathbb{R}}^3$.
+\end{exercise}
+%\exsol{%
+%$(1,1,-1)$, $(0,1,1)$, $(\nicefrac{4}{3},\nicefrac{-2}{3},\nicefrac{2}{3})$
+%}
+
+\begin{exercise}
+    Find an orthogonal basis of ${\mathbb{R}}^3$ such that $(3,1,-2)$ is one of the vectors.  Hint: First find two extra vectors to make a linearly independent set.
+\end{exercise}
+
+\begin{exercise}
+    Using cosines and sines of $\theta$, find a unit vector $\vec{u}$ in ${\mathbb{R}}^2$ that makes angle $\theta$ with $\vec{\imath} = (1,0)$.  What is $\langle \vec{\imath} , \vec{u} \rangle$?
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+
+\end{document}

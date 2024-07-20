@@ -1,0 +1,291 @@
+\documentclass{ximera}
+
+\title{Practice for Nonlinear Applications}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Take the \emph{\myindex{damped nonlinear pendulum equation}} $\theta '' + \mu \theta' + (\nicefrac{g}{L}) \sin \theta = 0$ for some $\mu > 0$ (that is, there is some friction).
+    \begin{tasks}
+        \task Suppose $\mu = 1$ and $\nicefrac{g}{L} = 1$ for simplicity, find and classify the critical points.
+        \task Do the same for any $\mu > 0$ and any $g$ and $L$, but such that the damping is small, in particular, $\mu^2 < 4(\nicefrac{g}{L})$.
+        \task Explain what your findings mean, and if it agrees with what you expect in reality.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $(n\pi, 0)$, $n$ is odd is a saddle, $n$ is even is a spiral sink. \quad b)~Same is true under those conditions. \quad c)~ Oscillates decaying to $\theta = 0$, which makes sense.
+%}
+
+\begin{exercise}%
+    Take the damped nonlinear pendulum equation $\theta '' + \mu \theta' + (\nicefrac{g}{L}) \sin \theta = 0$ for some $\mu > 0$ (that is, there is friction). Suppose the friction is large, in particular $\mu^2 > 4 (\nicefrac{g}{L})$.
+    \begin{tasks}
+        \task Find and classify the critical points.
+        \task Explain what your findings mean, and if it agrees with what you expect in reality.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Critical points are $\omega=0$, $\theta=k\pi$ for any integer $k$.  When
+%$k$ is odd, we have a saddle point.  When $k$ is even we get a sink.  \quad
+%b)~The findings mean the pendulum will simply go to one of the sinks, for
+%example $(0,0)$ and it will not swing back and forth.  The friction is too high for it to
+%oscillate, just like an overdamped mass-spring system.
+%}
+
+\begin{exercise}
+    Suppose the hares do not grow exponentially, but logistically.  In particular consider
+    \begin{equation*}
+        x' = (0.4-0.01y)x - \gamma x^2, \qquad y' = (0.003x-0.3)y .
+    \end{equation*}
+    For the following two values of $\gamma$, find and classify all the critical points in the positive quadrant, that is, for $x \geq 0$ and $y \geq 0$.  Then sketch the phase diagram.  Discuss the implication for the long term behavior of the population.
+    \begin{tasks}(2)
+        \task $\gamma=0.001$, 
+        \task $\gamma=0.01$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~ $(0,0)$ saddle, $(400, 0)$ saddle, $(100, 30)$ spiral sink. Both species survive. \quad b)~ $(0,0)$ saddle, $(40,0)$ nodal sink. Foxes die out.
+%}
+
+\begin{exercise}%
+    Suppose we have the system predator-prey system where the foxes are also killed at a constant rate $h$ ($h$ foxes killed per unit time): $x' = (a-by)x,$  $y' = (cx-d)y - h$.
+    \begin{tasks}
+        \task Find the critical points and the Jacobian matrices of the system.
+        \task Put in the constants $a=0.4$, $b=0.01$, $c=0.003$, $d=0.3$, $h=10$. Analyze the critical points.  What do you think it says about the forest?
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Solving for the critical points we get
+%$(0,-\nicefrac{h}{d})$ and $(\frac{bh+ad}{ac},\frac{a}{b})$.
+%The Jacobian matrix at
+%$(0,-\nicefrac{h}{d})$ is
+%$\left[
+%\begin{smallmatrix}
+%a+bh/d & 0 \\
+%-ch/d & -d
+%\end{smallmatrix}
+%\right]$
+%whose eigenvalues are $a+bh/d$ and $-d$.  So the eigenvalues are always real of
+%opposite signs and we get a saddle (In the application however we are only looking at the
+%positive quadrant so this critical point is not relevant).
+%At $(\frac{bh+ad}{ac},\frac{a}{b})$ we get Jacobian matrix
+%$\left[
+%\begin{smallmatrix}
+%0 & -\frac{b \left( b h+a d\right) }{a c}\\
+%\frac{a c}{b} & \frac{b h+a d}{a}-d
+%\end{smallmatrix}
+%\right]$.
+%b)~For the specific numbers given, the second critical point is
+%$(\frac{550}{3},40)$
+%the matrix is
+%$\left[
+%\begin{smallmatrix}
+%0 & -11/6 \\
+%3/25 & 1/4
+%\end{smallmatrix}
+%\right]$, which has eigenvalues $\frac{5\pm i \sqrt{327}}{40}$.  Therefore
+%there is a spiral source.  This means the solution spirals
+%outwards.  The solution will eventually hit one of the axes, $x=0$ or $y=0$,
+%so something will die out in the forest.
+%}
+
+\begin{exercise}%[challenging]%
+    Suppose the foxes never die.  That is, we have the system $x' = (a-by)x,$ $y' = cxy$. Find the critical points and notice they are not isolated. What will happen to the population in the forest if it starts at some positive numbers.  Hint: Think of the constant of motion.
+\end{exercise}
+%\exsol{%
+%The critical points are on the line $x=0$.  In the positive
+%quadrant the $y'$ is always positive and so the fox population always grows.
+%The constant of motion is $C = y^ae^{-cx-by}$, for any $C$ this curve must
+%hit the $y$-axis (why?), so the trajectory will simply approach a point on the $y$
+%axis somewhere and the number of hares will go to zero.
+%}
+
+\begin{exercise}
+    The following system of differential equations models a pair of populations interacting. 
+    \[ 
+        \frac{dx}{dt} = 4x - 2xy \qquad \frac{dy}{dt} = 3xy - y 
+    \]
+    \begin{tasks}
+        \task Does this system of differential equations represent a competing species model or a predator-prey model? If it is predator-prey, which species is the predator?
+        \task Find and classify the critical point (if it exists) with both $x>0$ and $y>0$.
+        \task Describe what is going to happen to the population of these species over time. If this depends on the initial condition, say so.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~Predator-prey, $x$ is prey \quad b)~$(2, 1/3)$ is a center \quad c)~Oscillates around this point
+%}
+
+\begin{exercise}
+    The following system of differential equations models a pair of populations interacting. 
+    \[ 
+        \frac{dx}{dt} = x(6 - 3y - 2x)  \qquad \frac{dy}{dt} = y(4 - y - 3x) 
+    \]
+    \begin{tasks}
+        \task Does this system of differential equations better fit with a competing species model or a predator-prey model? If it is predator-prey, which species is the predator?
+        \task Find and classify the critical point (if it exists) with both $x>0$ and $y>0$.
+        \task Describe what is going to happen to the population of these species over time. It this depends on the initial condition, say so.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~Competing Species\quad b)~ $\left(\frac{6}{7}, \frac{10}{7}\right)$ is a saddle \quad c)~One of the two species will die off eventually, depending on the initial condition
+%}
+
+\begin{exercise}
+    The following system of differential equations models a pair of populations interacting. 
+    \[ 
+        \frac{dx}{dt} = x(5 - x - 2y)\qquad \frac{dy}{dt} = y(7 - x - 3y) 
+    \]
+    \begin{tasks}
+        \task Does this system of differential equations better fit with a competing species model or a predator-prey model? If it is predator-prey, which species is the predator?
+        \task Find and classify the critical point (if it exists) with both $x>0$ and $y>0$.
+        \task Describe what is going to happen to the population of these species over time. It this depends on the initial condition, say so.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~Competing Species\quad b)~$(1,2)$ is a nodal sink \quad c)~Tends towards coexistence equilibrium at $(1,2)$
+%}
+
+\begin{exercise}
+    \begin{tasks}
+        \task Suppose $x$ and $y$ are positive variables.  Show $\frac{y x}{e^{x+y}}$ attains a maximum at $(1,1)$.
+        \task Suppose $a,b,c,d$ are positive constants, and also suppose $x$ and $y$ are positive variables.  Show $\frac{y^a x^d}{e^{cx+by}}$ attains a maximum at $(\nicefrac{d}{c},\nicefrac{a}{b})$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Hint: Look at where the gradient is zero for the critical point, and look at the eigenvalues of the Hessian to determine if it is a maximum. Two negative eigenvalues means it is a maximum.
+%}
+
+\begin{exercise}
+    Suppose that for the pendulum equation we take a trajectory giving the spinning-around motion, for example $\omega = \sqrt{\frac{2g}{L} \cos \theta + \frac{2g}{L} + \omega_0^2}$.  This is the trajectory where the lowest angular velocity is $\omega_0^2$.  Find an integral expression for how long it takes the pendulum to go all the way around.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$T = \int_0^{2\pi} \frac{1}{\sqrt{\frac{2g}{L}\cos(\theta) + \frac{2g}{L} + \omega_0^2}}\ d\theta$
+%}
+
+%Suppose we have the system predator-prey system where the foxes are also
+%hunted at a constant rate $hy$ proportional to the population.  That is,
+%$x' = (a-by)x,$  $y' = (cx-d)y - hy$.  Find and analyze the critical points.
+
+\begin{exercise}
+    Consider a predator-prey interaction where humans have gotten involved. The idea is that at least one of the species is valuable for food or another resource, and the two species still intact in their normal predator-prey manner. The first version of this will deal with ``constant effort harvesting,'' which means that humans will remove animals from the populations are a rate proportional to the population. This results in equations of the form
+    \[ 
+        \frac{dx}{dt} = x(a - by - E_1) \qquad \frac{dy}{dt} = y(-d + cx - E_2) 
+    \] 
+    where $E_1$ and $E_2$ denote the amount of harvesting done.
+    \begin{tasks}
+        \task There is a single equilibrium solution with $x > 0$ and $y>0$ in the case of no harvesting, that is, $E_1 = E_2 = 0$. Find this equilibrium solution.
+        \task Without doing any mathematical work, what do you think will happen to the equilibrium solution if just the prey is harvested? What if just the predator is harvested? What if both are harvested?
+        \task Find the location of the equilibrium system in each of the three cases in the previous part. Do this in terms of the constants $E_1$ and $E_2$ for all three cases. 
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a) $(\frac{d}{c},\ \frac{a}{b})$\quad b)~It will change the effective values of $a$ and $d$. \quad c)~$\left(\frac{d+E_2}{c}, \frac{a-E_1}{b}\right)$
+%}
+
+\begin{exercise}
+    The second version of this will deal with ``constant yield harvesting,'' which means that humans will remove animals from the populations at a fixed rate, no matter their population. This results in equations of the form
+    \[ 
+        \frac{dx}{dt} = x(a - by) - H_1 \qquad \frac{dy}{dt} = y(-d + cx) - H_2 
+    \] 
+    where $H_1$ and $H_2$ denote the amount of harvesting done.
+    \begin{tasks}
+        \task There is a single equilibrium solution with $x > 0$ and $y>0$ in the case of no harvesting, that is, $H_1 = H_2 = 0$. Find this equilibrium solution.
+        \task Without doing any mathematical work, what do you think will happen to the equilibrium solution if just the prey is harvested? What if just the predator is harvested? What if both are harvested?
+        \task Find the location of the equilibrium system in each of the three cases in the previous part. Do this in terms of the constants $H_1$ and $H_2$ for all three cases. 
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a) $(\frac{d}{c},\ \frac{a}{b})$\quad b)~Any harvesting should increase the $x$ value and decrease the $y$ value. \\
+%c)~ $\left( \frac{ad+bH_2 + cH_1 + \sqrt{(ad+bH_2 + cH_1)^2 - 4acdH_1}}{2ac}, \frac{ad-cH_1 - bH_2 + \sqrt{(ad-cH_1 - bH_2)^2 +4abdH_2}}{2bd}\right)$
+%}
+
+\begin{exercise}
+    The general competing species model has the form
+    \[ 
+        \frac{dx}{dt} = x(\rho_1 - \gamma_1 y - M_1 x) \qquad \frac{dy}{dt} = y(\rho_2 - \gamma_2 x - M_2 y) 
+    \] 
+    where $\rho$ indicates the growth rate, $M$ is related to the carrying capacity, and $\gamma$ is connected to the interaction term. Assume that this model is being used to represent species A and B of fish living in a pond at time $t$, which is initially stocked with both species of fish. We want to analyze the behavior of this equation under different sets of coefficients.
+    \begin{tasks}
+        \task If $\rho_2/\gamma_2 > \rho_1/M_1$ and $\rho_2/M_2 > \rho_1/\gamma_1$, show that the only equilibrium populations in the pond are no fish, no fish of species A, or no fish of species B. What happens for large values of $t$?
+        \task If $ \rho_1/M_1 > \rho_2/\gamma_2 $ and $\rho_1/\gamma_1 > \rho_2/M_2$, show that the only equilibrium populations in the pond are no fish, no fish of species A, or no fish of species B. What happens for large values of $t$?
+        \task Suppose that $\rho_2/\gamma_2 > \rho_1/M_1$ and $\rho_1/\gamma_1 > \rho_2/M_2$. Show that there is a stable equilibrium where both species coexist. 
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Hint: Solve for the critical point with neither population zero in terms of all of the parameters. Then, you want to classify the critical points at this non-zero value, as well as at $(0, y)$ and $(x,0)$ for the appropriate values of $x$ and $y$. This should give you enough to know what happens over time. For c), think about what these two inequalities tell you about $M_1M_2 - \gamma_1\gamma_2$.
+%}
+
+\begin{exercise}%[challenging]
+    Take the pendulum, suppose the initial position is $\theta = 0$.
+    \begin{tasks}
+        \task Find the expression for $\omega$ giving the trajectory with initial condition $(0,\omega_0)$.  Hint: Figure out what $C$ should be in terms of $\omega_0$.
+        \task Find the crucial angular velocity $\omega_1$, such that for any higher initial angular velocity, the pendulum will keep going around its axis, and for any lower initial angular velocity, the pendulum will simply swing back and forth. Hint: When the pendulum doesn't go over the top the expression for $\omega$ will be undefined for some $\theta$s.
+        \task What do you think happens if the initial condition is $(0,\omega_1)$, that is, the initial angle is 0, and the initial angular velocity is exactly $\omega_1$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$\omega = \sqrt{\frac{2g}{L}\cos(\theta) - \frac{2g}{L} + \omega_0^2}$ \quad b)~$\omega_0 < 2\sqrt{\frac{g}{L}}$ \quad c)~It stops at the top.
+%}
+
+%\setcounter{exercise}{100}
+
+
+%We have a conservative equation and so (exercise) the
+%trajectories are given by
+%\begin{equation*}
+%\omega = \pm \sqrt{ \frac{2g}{L} \cos \theta + C} ,
+%\end{equation*}
+%for various values of $C$.  Let us figure out what $C$ corresponds to an
+%initial condition $(0,\omega_0)$.  A little bit of thought tells us that
+%such a $C = \omega_0^2 - \frac{2g}{L}$.  Taking just the top part of the
+%trajectory we get
+%\begin{equation*}
+%\omega = \sqrt{ \frac{2g}{L} \cos \theta - \frac{2g}{L} + \omega_0^2} .
+%\end{equation*}
+%What we are trying to do is figure out when this will have no
+%\myquote{gaps,} that
+%is when what is under the square root is always positive.  The minimum is
+%clearly taken when $\theta$ is an odd multiple of $\pi$, in this case we
+%will get precisely zero when
+%\begin{equation*}
+%0 = \frac{2g}{L} \cos \pi - \frac{2g}{L} + \omega_0^2 ,
+%\end{equation*}
+%or in other words, solving for $\omega_0$ (and assuming it is positive) we
+%have
+%\begin{equation*}
+%\omega_0 = 2 \sqrt{\frac{g}{L}} .
+%\end{equation*}
+%In the case we graphed, that is when $\frac{g}{L} = 1$, then this magic
+%$\omega_0 = 2$.  Notice that the trajectory that seems to go through the 
+%saddle points goes through the point $(0,2)$.
+
+
+\end{document}

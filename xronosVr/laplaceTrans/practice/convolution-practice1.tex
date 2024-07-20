@@ -1,0 +1,101 @@
+\documentclass{ximera}
+
+\title{Practice for Convolution}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Let $f(t) = t^2$ for $t \geq 0$, and $g(t) = u(t-1)$.  Compute $f * g$.
+\end{exercise}
+
+\begin{exercise}
+    Let $f(t) = t$ for $t \geq 0$, and $g(t) = \sin t $ for $t \geq 0$.  Compute $f * g$.
+\end{exercise}
+
+\begin{exercise}%
+    Let $f(t) = \cos t$ for $t \geq 0$, and $g(t) = e^{-t}$.  Compute $f * g$.
+\end{exercise}
+%\exsol{%
+%$\frac{1}{2}(\cos t + \sin t - e^{-t})$
+%}
+
+\begin{exercise}
+    Find the solution to
+    \begin{equation*}
+        m x'' + c x' + k x = f(t) , \quad x(0) = 0, \quad x'(0) = 0 ,
+    \end{equation*}
+    for an arbitrary function $f(t)$, where $m > 0$, $c > 0$, $k > 0$, and $c^2 - 4km > 0$ (system is overdamped). Write the solution as a definite integral.
+\end{exercise}
+
+\begin{exercise}
+    Find the solution to
+    \begin{equation*}
+        m x'' + c x' + k x = f(t) , \quad x(0) = 0, \quad x'(0) = 0 ,
+    \end{equation*}
+    for an arbitrary function $f(t)$, where $m > 0$, $c > 0$, $k > 0$, and $c^2 - 4km < 0$ (system is underdamped). Write the solution as a definite integral.
+\end{exercise}
+
+\begin{exercise}
+    Find the solution to
+    \begin{equation*}
+        m x'' + c x' + k x = f(t) , \quad x(0) = 0, \quad x'(0) = 0 ,
+    \end{equation*}
+    for an arbitrary function $f(t)$, where $m > 0$, $c > 0$, $k > 0$, and $c^2 = 4km$ (system is critically damped). Write the solution as a definite integral.
+\end{exercise}
+
+\begin{exercise}
+    Solve
+    \begin{equation*}
+        x(t) =  e^{-t} + \int_0^t \cos(t-\tau) x(\tau) ~ d\tau .
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}%
+    Solve $x''+x = \sin t$, $x(0) = 0$, $x'(0)=0$ using convolution.
+\end{exercise}
+%\exsol{%
+%$\frac{1}{2}(\sin t - t \cos t)$
+%}
+
+\begin{exercise}
+    Solve
+    \begin{equation*}
+        x(t) =  \cos t + \int_0^t \cos(t-\tau) x(\tau) ~ d\tau .
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}%
+    Solve $x'''+x' = f(t)$, $x(0) = 0$, $x'(0)=0$, $x''(0)=0$ using convolution. Write the result as a definite integral.
+\end{exercise}
+%\exsol{%
+%$\int_0^t f(\tau) \bigl( 1 - \cos (t-\tau)\bigr)~ d\tau$
+%}
+
+\begin{exercise}
+    Compute ${\mathcal{L}}^{-1} \left\{ \frac{s}{{(s^2+4)}^2} \right\}$ using convolution.
+\end{exercise}
+
+\begin{exercise}%
+    Compute ${\mathcal{L}}^{-1} \left\{ \frac{5}{s^4+s^2} \right\}$ using convolution.
+\end{exercise}
+%\exsol{%
+%$5t-5\sin t$
+%}
+
+\begin{exercise}
+    Write down the solution to $x''-2x=e^{-t^2}$, $x(0)=0$, $x'(0)=0$ as a definite integral.  Hint: Do not try to compute the Laplace transform of $e^{-t^2}$.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+
+
+
+\end{document}

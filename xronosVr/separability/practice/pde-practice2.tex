@@ -1,0 +1,40 @@
+\documentclass{ximera}
+
+\title{Practice for PDEs}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Classify each of the following second order differential equations as \emph{hyperbolic}, \emph{parabolic}, or \emph{elliptic}.
+    \begin{tasks}
+        \task $\displaystyle 2 \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial x \partial y} + 4 \frac{\partial^2 u}{\partial y^2} + 3 \frac{\partial u}{\partial x} - 5u = 0$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Use separation variables to find a nontrivial solution to $u_{xx} + u_{yy} = 0$, where $u(x,0) = 0$ and $u(0,y) = 0$. Hint: Try $u(x,y) = X(x)Y(y)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Use separation of variables to find a nontrivial solution to $u_{xt} = u_{xx}$.
+\end{exercise}
+%\exsol{%
+%$u(x,t) = e^{\lambda t} e^{\lambda x}$ for some $\lambda$
+%}
+
+\begin{exercise}\%
+    Use separation of variables (Hint: try $u(x,t) = X(x)+T(t)$) to find a nontrivial solution to $u_{x} + u_{t} = u$.
+\end{exercise}
+%\exsol{%
+%$u(x,t) = Ae^x + Be^t$
+%}
+%
+%\TODO{Add more exercises. Look at what people normally assign.}
+
+\end{document}

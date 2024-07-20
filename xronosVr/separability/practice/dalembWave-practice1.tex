@@ -1,0 +1,107 @@
+\documentclass{ximera}
+
+\title{Practice for Dalemb Wave}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Using the d'Alembert solution solve $y_{tt} = 4y_{xx}$, $0 < x < \pi$, $t > 0$, $y(0,t) = y(\pi, t) = 0$, $y(x,0) = \sin x$, and $y_t(x,0) = \sin x$.  Hint: Note that $\sin x$ is the odd periodic extension of $y(x,0)$ and $y_t(x,0)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Using the d'Alembert solution solve $y_{tt} = 9y_{xx}$, $0 < x < 1$, $t > 0$, $y(0,t) = y(1, t) = 0$, $y(x,0) = \sin (2 \pi x)$, and $y_t(x,0) = \sin (3 \pi x)$.
+\end{exercise}
+%\exsol{%
+%$y(x,t)=
+%\frac{\sin(2 \pi (x-3 t))+\sin(2 \pi (3 t+x))}{2}
+%+
+%\frac{\cos(3 \pi (x-3 t))-\cos(3 \pi (3 t+x))}{18\pi}$
+%}
+
+\begin{exercise}
+    Using the d'Alembert solution solve $y_{tt} = 2y_{xx}$, $0 < x < 1$, $t > 0$, $y(0,t) = y(1, t) = 0$, $y(x,0) = \sin^5 (\pi x)$, and $y_t(x,0) = \sin^3 (\pi x)$.
+\end{exercise}
+
+\begin{exercise}
+    Take $y_{tt} = 4y_{xx}$, $0 < x < \pi$, $t > 0$, $y(0,t) = y(\pi, t) = 0$, $y(x,0) = x(\pi-x)$, and $y_t(x,0) = 0$.
+    \begin{tasks}
+        \task Solve using the d'Alembert formula.  Hint: You can use the sine series for $y(x,0)$.
+        \task Find the solution as a function of $x$ for a fixed $t=0.5$, $t=1$, and $t=2$.  Do not use the sine series here.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}\%
+    Take $y_{tt} = 4y_{xx}$, $0 < x < 1$, $t > 0$, $y(0,t) = y(1, t) = 0$, $y(x,0) = x-x^2$, and $y_t(x,0) = 0$.  Using the d'Alembert solution find the solution at
+    \begin{tasks}(3)
+        \task $t=0.1$,
+        \task $t=\nicefrac{1}{2}$,
+        \task $t=1$.
+    \end{tasks}
+    You may have to split your answer up by cases.
+\end{exercise}
+%\exsol{%
+%a)
+%$y(x,0.1) =
+%\begin{cases}
+%%\frac{(x-0.2)-{(x-0.2)}^2+(x+0.2)-{(x+0.2)}^2}{2}
+%x-x^2-0.04
+%& \text{if } \; 0.2 \leq x \leq 0.8 \\
+%%\frac{-(x+0.8)+{(x+0.8)}^2+(x+0.2)-{(x+0.2)}^2}{2}
+%0.6x
+%& \text{if } \; x \leq 0.2 \\
+%%\frac{(x-0.2)-{(x-0.2)}^2-(x-0.8)+{(x-0.8)}^2}{2}
+%0.6-0.6x
+%& \text{if } \; x \geq 0.8 \\
+%\end{cases}$
+%\\
+%b)
+%$y(x,\nicefrac{1}{2}) = -x+x^2$
+%\quad
+%c)
+%$y(x,1) = x-x^2$
+%}
+
+\begin{exercise}
+    Derive the d'Alembert solution for $y_{tt} = a^2 y_{xx}$, $0 < x < \pi$, $t > 0$, $y(0,t) = y(\pi, t) = 0$, $y(x,0) = f(x)$, and $y_t(x,0) = 0$, using the Fourier series solution of the wave equation, by applying an appropriate trigonometric identity. Hint: Do it first for a single term of the Fourier series solution, in particular do it when $y$ is $\sin\left(\frac{n \pi}{L} x \right)\sin\left(\frac{n \pi a}{L} t \right)$.
+\end{exercise}
+
+\begin{exercise}
+    The d'Alembert solution still works if there are no boundary conditions and the initial condition is defined on the whole real line.  Suppose that $y_{tt} = y_{xx}$ (for all $x$ on the real line and $t \geq 0$), $y(x,0) = f(x)$, and $y_t(x,0) = 0$, where
+    \begin{equation*}
+        f(x) =
+        \begin{cases}
+            0 & \text{if } \; \phantom{{-1} \leq {} }x < -1, \\
+            x+1 & \text{if } \; {-1} \leq x < 0, \\
+            -x+1 & \text{if } \; \phantom{-}0 \leq x < 1, \\
+            0 & \text{if } \; \phantom{-}1 < x .
+        \end{cases}
+    \end{equation*}
+    Solve using the d'Alembert solution. That is, write down a piecewise definition for the solution.  Then sketch the solution for $t=0$, $t=\nicefrac{1}{2}$, $t=1$, and $t=2$.
+\end{exercise}
+
+\begin{exercise}\%
+    Take $y_{tt} = 100y_{xx}$, $0 < x < 4$, $t > 0$, $y(0,t) = y(4, t) = 0$, $y(x,0) = F(x)$, and $y_t(x,0) = 0$. Suppose that $F(0)=0$, $F(1)=2$, $F(2)=3$, $F(3)=1$. Using the d'Alembert solution find
+    \begin{tasks}(3)
+        \task $y(1,1)$,
+        \task $y(4,3)$,
+        \task $y(3,9)$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) $y(1,1) = -\nicefrac{1}{2}$
+%\quad
+%b) $y(4,3) = 0$
+%\quad
+%c) $y(3,9) = \nicefrac{1}{2}$
+%}
+%
+%\setcounter{exercise}{100}
+
+\end{document}

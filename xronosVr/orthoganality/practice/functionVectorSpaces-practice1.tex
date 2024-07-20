@@ -1,0 +1,57 @@
+\documentclass{ximera}
+
+\title{Practice for Function Vector Spaces}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+
+\begin{exercise}
+    Consider the space $C([0,1])$. Compute the following inner products. 
+    \begin{tasks}
+        \task $\langle x, x^3 \rangle$
+        \task $\langle e^x, x+1 \rangle$
+        \task $\langle e^x, \sin(\pi x)$
+        \task $\langle x^2 + 1, x - 3 \rangle$. 
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Are the functions $\cos(x)$ and $\sin(x)$ orthogonal in $C([-\pi, \pi])$? What about in $C([0,\pi])$?
+\end{exercise}
+
+\begin{exercise}
+    Are the functions $\cos(x)$ and $\cos(2x)$ orthogonal in $C([-\pi, \pi])$? What about in $C([0,\pi])$? \textbf{Hint:} The product to sum formulas for trigonometric functions will be useful here, in particular,
+    \[ 
+        \cos(A)\cos(B) = \frac{1}{2}\left(\cos(A+B) + \cos(A-B)\right). 
+    \]
+\end{exercise}
+
+\begin{exercise}
+    Consider the set of functions $S = \{\sin(x),\ \sin(2x),\ \sin(3x), ... \}$ and $C = \{\cos(x),\  \cos(2x),\ \cos(3x),\ ... \}$ as functions in $C([-\pi, \pi])$. 
+    \begin{tasks}
+        \task Is $S$ an orthogonal set in this space? You will want to start by picking two functions in this set, which will be $\sin(nx)$ and $\sin(mx)$, and computing the inner product.
+        \task Is $C$ an orthogonal set in this space?
+        \task If we combine $C$ and $S$, do we still get an orthogonal set? After establishing the first two parts, we only need to look at the inner product with one function from $C$ and one function from $S$. 
+        \task Are these functions in $C$ and $S$ orthogonal to the constant function $1$?
+    \end{tasks}
+    For this, the product-to-sum identities will be useful. 
+    \[ 
+        \begin{split}
+            \cos(A)\cos(B) &= \frac{1}{2}\left(\cos(A+B) + \cos(A-B)\right)\\
+            \sin(A)\cos(B) &= \frac{1}{2}\left(\sin(A+B) + \sin(A-B)\right) \\
+            \sin(A)\sin(B) &= \frac{1}{2}\left(\cos(A-B) - \cos(A+B)\right)
+        \end{split}
+     \]
+\end{exercise}
+
+
+
+
+\end{document}

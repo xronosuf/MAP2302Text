@@ -1,0 +1,164 @@
+\documentclass{ximera}
+
+\title{Practice for Laplacian}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < \pi$ and $0 < y < \pi$. Solve the problem
+    \begin{equation*}
+        \Delta u = 0, \quad u(x,0) = \sin x, \quad u(x,\pi) = 0, \quad u(0,y) = 0,  \quad u(\pi,y) = 0 .
+    \end{equation*}
+\end{exercise}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 1$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = \sin (\pi x) - \sin (2\pi x), \quad u(x,1) = 0, \\
+        & u(0,y) = 0, \quad u(1,y) = 0 .
+    \end{align*}
+\end{exercise}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 1$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = u(x,1) = u(0,y) = u(1,y) = C .
+    \end{align*}
+    for some constant $C$.  Hint: Guess, then check your intuition.
+\end{exercise}
+
+\begin{exercise} \label{dirich:diffsepexr}
+    Let $R$ be the region described by $0 < x < \pi$ and $0 < y < \pi$. Solve
+    \begin{equation*}
+        \Delta u = 0, \quad u(x,0) = 0,\quad u(x,\pi) = \pi, \quad u(0,y) = y,\quad u(\pi,y) = y .
+    \end{equation*}
+    Hint: Try a solution of the form $u(x,y) = X(x) + Y(y)$ (different separation of variables).
+\end{exercise}
+
+\begin{exercise}
+    Use the solution of \exerciseref{dirich:diffsepexr} to solve
+    \begin{equation*}
+        \Delta u = 0, \quad u(x,0) = \sin x, \quad u(x,\pi) = \pi, \quad u(0,y) = y, \quad u(\pi,y) = y .
+    \end{equation*}
+    Hint: Use superposition.
+\end{exercise}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < w$ and $0 < y < h$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = 0, \quad u(x,h) = f(x), \\
+        & u(0,y) = 0, \quad u(w,y) = 0.
+    \end{align*}
+    The solution should be in series form using the Fourier series coefficients of $f(x)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 1$. Solve the problem
+    \begin{equation*}
+        \Delta u = 0, \quad u(x,0) = \sum_{n=1}^\infty \frac{1}{n^2} \sin (n \pi x), \quad u(x,1) = 0, \quad u(0,y) = 0, \quad u(1,y) = 0 .
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$u(x,y) =
+%\sum\limits_{n=1}^\infty
+%\frac{1}{n^2}
+%\sin ( n \pi x )
+%\left( \frac{\sinh ( n \pi (1-y) )}{\sinh ( n \pi )} \right)
+%$
+%}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < w$ and $0 < y < h$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = 0, \quad u(x,h) = 0, \\
+        & u(0,y) = f(y), \quad u(w,y) = 0.
+    \end{align*}
+    The solution should be in series form using the Fourier series coefficients of $f(y)$.
+\end{exercise}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < w$ and $0 < y < h$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = 0, \quad u(x,h) = 0, \\
+        & u(0,y) = 0, \quad u(w,y) = f(y).
+    \end{align*}
+    The solution should be in series form using the Fourier series coefficients of $f(y)$.
+\end{exercise}
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 1$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = \sin (9 \pi x), \quad u(x,1) = \sin (2 \pi x), \\
+        & u(0,y) = 0, \quad u(1,y) = 0 .
+    \end{align*}
+    Hint: Use superposition.
+\end{exercise}
+
+\begin{exercise}\%
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 2$. Solve the problem
+    \begin{equation*}
+        \Delta u = 0, \quad u(x,0) = 0.1 \sin (\pi x), \quad u(x,2) = 0, \quad u(0,y) = 0, \quad u(1,y) = 0 .
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%$u(x,y) =
+%0.1
+%\sin ( \pi x )
+%\left( \frac{\sinh ( \pi (2-y)  )}%
+%{\sinh ( 2 \pi )} \right)$
+%}
+
+
+\begin{exercise}
+    Let $R$ be the region described by $0 < x < 1$ and $0 < y < 1$. Solve the problem
+    \begin{align*}
+        & u_{xx} + u_{yy} = 0, \\
+        & u(x,0) = \sin (\pi x), \quad u(x,1) = \sin (\pi x), \\
+        & u(0,y) = \sin (\pi y), \quad u(1,y) = \sin (\pi y) .
+    \end{align*}
+    Hint: Use superposition.
+\end{exercise}
+
+\begin{exercise}%[challenging]
+    Using only your intuition find $u(\nicefrac{1}{2},\nicefrac{1}{2})$, for the problem $\Delta u = 0$, where $u(0,y) = u(1,y) = 100$ for $0 < y < 1$, and $u(x,0) = u(x,1) = 0$ for $0 < x < 1$.  Explain.
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+
+
+
+%\begin{equation*}
+%f(x) =
+%%\frac{a_0}{2} +
+%\sum_{n=1}^\infty
+%%a_n \cos \left( \frac{n \pi x }{w} \right)
+%%+
+%b_n \sin \left( \frac{n \pi x }{w} \right) .
+%\end{equation*}
+%
+%u(x,y) =
+%\sum_{n=1}^\infty
+%b_n u_n(x,y)
+%=
+%\sum_{n=1}^\infty
+%b_n 
+%\sin \left( \frac{n \pi}{w} x \right)
+%\left( \frac{\sinh \left( \frac{n \pi (h-y) }{w} \right)}%
+%{\sinh \left( \frac{n \pi h }{w} \right)} \right)
+
+
+\end{document}

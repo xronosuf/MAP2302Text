@@ -1,0 +1,84 @@
+\documentclass{ximera}
+
+\title{Practice for Boundary Value Problems}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+\begin{exercise}\%
+    Consider a spinning string of length 2 and linear density 0.1 and tension 3. Find smallest angular velocity when the string pops out.
+\end{exercise}
+%\exsol{%
+%$\omega = \pi \sqrt{\frac{15}{2}}$
+%}
+
+
+Hint for the following exercises:  Note that when $\lambda > 0$, then $\cos \bigl( \sqrt{\lambda}\, (t - a) \bigr)$ and $\sin  \bigl( \sqrt{\lambda}\, (t - a) \bigr)$ are also solutions of the homogeneous equation.
+
+\begin{exercise}
+    Compute all eigenvalues and eigenfunctions of $x'' + \lambda x = 0, ~ x(a) = 0, ~ x(b) = 0$ (assume $a < b$).
+\end{exercise}
+
+\begin{exercise}
+    Compute all eigenvalues and eigenfunctions of $x'' + \lambda x = 0, ~ x'(a) = 0, ~ x'(b) = 0$ (assume $a < b$).
+\end{exercise}
+
+\begin{exercise}\%
+    Suppose $x'' + \lambda x = 0$ and $x(0)=1$, $x(1) = 1$. Find all $\lambda$ for which there is more than one solution.  Also find the corresponding solutions (only for the eigenvalues).
+\end{exercise}
+%\exsol{%
+%$\lambda_k = 4 k^2 \pi^2$ for $k = 1,2,3,\ldots$
+%\quad
+%$x_k =  \cos (2k\pi t) + B \sin (2k\pi t)$ \quad (for any $B$)
+%}
+
+
+\begin{exercise}
+    Compute all eigenvalues and eigenfunctions of $x'' + \lambda x = 0, ~ x'(a) = 0, ~ x(b) = 0$ (assume $a < b$).
+\end{exercise}
+
+\begin{exercise}
+    Compute all eigenvalues and eigenfunctions of $x'' + \lambda x = 0, ~ x(a) = x(b), ~ x'(a) = x'(b)$ (assume $a < b$).
+\end{exercise}
+
+\begin{exercise}%
+    Suppose $x'' + x = 0$ and $x(0)=0$, $x'(\pi) = 1$. Find all the solution(s) if any exist.
+\end{exercise}
+%\exsol{%
+%$x(t) = - \sin(t)$
+%}
+
+
+\begin{exercise}
+    We skipped the case of $\lambda < 0$ for the boundary value problem $x'' + \lambda x = 0, ~ x(-\pi) = x(\pi), ~ x'(-\pi) = x'(\pi)$. Finish the calculation and show that there are no negative eigenvalues.
+\end{exercise}
+
+\begin{exercise}\%
+    Consider $x' + \lambda x = 0$ and $x(0)=0$, $x(1) = 0$.  Why does it not have any eigenvalues?  Why does any first order equation with two endpoint conditions such as above have no eigenvalues?
+\end{exercise}
+%\exsol{%
+%General solution is $x = C e^{-\lambda t}$.  Since $x(0) = 0$ then $C=0$, and so $x(t) = 0$.
+%Therefore,
+%the solution is always identically zero.  One condition is always
+%enough to guarantee a unique solution for a first order equation.
+%}
+
+\begin{exercise}%[challenging]\%
+    Suppose $x''' + \lambda x = 0$ and $x(0)=0$, $x'(0) = 0$, $x(1) = 0$. Suppose that $\lambda > 0$.  Find an equation that all such eigenvalues must satisfy. Hint: Note that $-\sqrt[3]{\lambda}$ is a root of $r^3+\lambda = 0$.
+\end{exercise}
+%\exsol{%
+%$\frac{\sqrt{3}}{3} e^{\frac{-3}{2}\sqrt[3]{\lambda}}
+%- \frac{\sqrt{3}}{3} \cos \bigl( \frac{\sqrt{3}\, \sqrt[3]{\lambda}}{2} \bigr)
+%+ \sin \bigl( \frac{\sqrt{3}\, \sqrt[3]{\lambda}}{2}\bigr) = 0$
+%}
+
+
+%\setcounter{exercise}{100}
+
+\end{document}

@@ -1,0 +1,184 @@
+\documentclass{ximera}
+
+\title{Practice for Limit Cycles}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+
+\begin{exercise}
+    Consider the two-dimensional system of differential equation written in polar coordinates as
+    \[ 
+        \frac{dr}{dt} = r(r-1)(r-4)^2 \qquad \frac{d\theta}{dt} = 1. 
+    \] 
+    Determine all limit cycles, periodic solutions, and classify the stability of each of these solutions. 
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$r=0$ is asymptotically stable, $r=1$ is a periodic solution, but not a limit cycle, is unstable, $r=4$ is semistable, limit cycle from the inside.
+%}
+
+\begin{exercise}
+    Consider the two-dimensional system of differential equation written in polar coordinates as
+    \[ 
+        \frac{dr}{dt} = r^2(r-1)^2(r-3) \qquad \frac{d\theta}{dt} = -1. 
+    \] 
+    Determine all limit cycles, periodic solutions, and classify the stability of each of these solutions. 
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$r=0$ asymptoticallys table, $r=1$ semistable limit cycle, $r=3$ periodic solution, unstable.
+%}
+
+\begin{exercise}%
+    Consider the system of differential equation given by
+    \[ 
+        \frac{dx}{dt} = x(3- 2y^2 - x^2) \qquad \frac{dy}{dt} = y(3-y^2) .
+    \]
+    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. 
+\end{exercise}
+%\exsol{%
+%$(0,0)$, unstable, $r = \sqrt{3}$, asymptotically stable.
+%}
+
+\begin{exercise}%
+    Consider the system of differential equation given by
+    \[ 
+        \frac{dx}{dt} = -x(x^2 + y^2)^2 + 6x(x^2 + y^2) - 8x + 6y \qquad \frac{dy}{dt} = -y(x^2 + y^2)^2 + 6y(x^2 + y^2) - 8y - 6x .
+    \]
+    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. 
+\end{exercise}
+%\exsol{%
+%$(0,0)$, asymptotically stable, $r = \sqrt{2}$, unstable, $r = 2$, asymptotically stable. 
+%}
+
+\begin{exercise}
+    Consider the system %5.4
+    \begin{equation}
+        \begin{bmatrix}
+            \dfrac{dx}{dt}=x+2y+x(x^2+y^2-2\sqrt{x^2+y^2})\\[6pt]
+            \dfrac{dy}{dt}=-2x+y+y(x^2+y^2-2\sqrt{x^2+y^2})
+        \end{bmatrix}. \label{eq:LimitCycleExercise1}
+    \end{equation}
+    \begin{tasks}
+        \task Use polar coordinates to write $\dfrac{dr}{dt}$ as a function of $r$.
+        \task Draw the phase line of the DE $\dfrac{dr}{dt}=f(r)$, where $f(r)$ is the function from part a.
+        \task Does the system \eqref{eq:LimitCycleExercise1} have a limit cycle? If so, find it. If not, explain why not. For each positive root of $f(r)$, decide whether the corresponding trajectory one is stable, unstable, or semistable.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$\frac{dr}{dt} = r(r-1)^2$ \quad c)~Limit cycle at $r=1$, it is semistable.
+%}
+
+\begin{exercise}
+    Show that the following systems have no closed trajectories.
+    \begin{tasks}(2)
+        \task $x'=x^3+y,\quad y'=y^3+x^2$,
+        \task $x'=e^{x-y},\quad y'=e^{x+y}$,
+        \task $x'=x+3y^2-y^3,\quad y'=y^3+x^2$.
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~$f_x + g_y = 3(x^2 + y^2) > 0$ \quad b)~$f_x$, $g_y > 0$ \quad c)~$f_x + g_y = 1+3y^2 > 0$
+%}
+
+\begin{exercise}%
+    Show that the following systems have no closed trajectories.
+    \begin{tasks}(2)
+        \task $x'=x+y^2,\quad y'=y+x^2$,
+        \task $x'=-x\sin^2(y),\quad y'=e^x$,
+        \task $x'=xy,\quad y'=x+x^2$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%Use Bendixson--Dulac Theorem.
+%a) $f_x+g_y = 1+1 > 0$, so no closed trajectories.
+%b) $f_x+g_y = -\sin^2(y)+0 < 0$ for all $x,y$ except the lines
+%given by $y=k\pi$ (where we get zero), so no closed trajectories.
+%c) $f_x+g_y = y + 0 > 0$ for all $x,y$ except the line
+%given by $y=0$ (where we get zero), so no closed trajectories.
+%}
+
+\begin{exercise}%
+    Suppose an autonomous system in the plane has a solution $x=\cos(t)+e^{-t}$, $y=\sin(t)+e^{-t}$.  What can you say about the system (in particular about limit cycles and periodic solutions)?
+\end{exercise}
+%\exsol{%
+%Using Poincar\'e--Bendixson Theorem,
+%the system has a limit cycle, which is the unit circle centered at the origin as
+%$x=\cos(t)+e^{-t}$, $y=\sin(t)+e^{-t}$ gets closer and closer to the unit
+%circle.  Thus we also have that $x=\cos(t)$, $y=\sin(t)$ is the periodic
+%solution.
+%}
+
+\begin{exercise}
+    Formulate a condition for a 2-by-2 linear system ${\vec{x}}' = A \vec{x}$ to not be a center using the Bendixson--Dulac theorem. That is, the theorem says something about certain elements of $A$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$a+d \neq 0$
+%}
+
+\begin{exercise}
+Explain why the Bendixson--Dulac Theorem does not apply for any conservative system $x''+h(x) = 0$.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$f_x = 0$, $g_y = 0$, so it's always zero.
+%}
+
+\begin{exercise}
+    A system such as $x'=x, y'=y$ has solutions that exist for all time $t$, yet there are no closed trajectories.  Explain why the Poincar\'e--Bendixson Theorem does not apply.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%The solutions are not bounded.
+%}
+
+\begin{exercise}%
+    Show that the limit cycle of the  Van der Pol oscillator (for $\mu > 0$) must not lie completely in the set where $-1 < x < 1$. Compare with \figurevref{fig:nlin-van-der-fig}.
+\end{exercise}
+%\exsol{%
+%$f(x,y) = y$, $g(x,y) = \mu(1-x^2)y-x$.  So
+%$f_x+g_y = \mu(1-x^2)$.  The Bendixson--Dulac Theorem
+%says there is no closed trajectory lying entirely in the set $x^2 < 1$.
+%}
+
+\begin{exercise}
+    Differential equations can also be given in different coordinate systems. Suppose we have the system $r' = 1-r^2$, $\theta' = 1$ given in polar coordinates.  Find all the closed trajectories and check if they are limit cycles and if so, if they are asymptotically stable or not. 
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%$r=0$ is unstable, $r=1$ is asymptotically stable limit cycle
+%}
+
+\begin{exercise}%
+    Suppose we have the system $r' = \sin(r)$, $\theta' = 1$ given in polar coordinates.  Find all the closed trajectories.
+\end{exercise}
+%\exsol{%
+%The closed trajectories are those where $\sin(r) = 0$, therefore,
+%all the circles centered at the origin with radius that
+%is a multiple of $\pi$ are closed
+%trajectories.
+%}
+
+
+%
+%\setcounter{exercise}{100}
+
+\end{document}

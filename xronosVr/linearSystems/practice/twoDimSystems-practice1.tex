@@ -1,0 +1,205 @@
+\documentclass{ximera}
+
+\title{Practice for Advanced Linear Algebra}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+\begin{exercise}
+    Take the equation $m x'' + c x' + kx = 0$, with $m > 0$, $c \geq 0$, $k > 0$ for the mass-spring system.
+    \begin{tasks}
+        \task Convert this to a system of first order equations.
+        \task Classify for what $m, c, k$ do you get which behavior.
+        \task Can you explain from physical intuition why you do not get all the different kinds of behavior here?
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%a)~${\vec{x}}' = \left[\begin{smallmatrix} 0 & 1 \\ -k/m &-c/m \end{smallmatrix}\right]\vec{x}$ \quad b)~$c=0$ is center, $c^2 - 4mk < 0$ is spiral sink, $c^2 - 4mk = 0$ is improper sink, $c^2 - 4mk > 0$ is nodal sink. \quad c)~The forced positive coefficients restricts the behavior 
+%}
+
+\begin{exercise}
+    What happens in the case when $P = \left[ \begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix} \right]$?  In this case the eigenvalue is repeated and there is only one independent eigenvector. What picture does this look like?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Improper nodal sink \hfill\raisebox{-0.5\height}{\includegraphics[height=1.5in]{Images/phaseportrait_1_1_0_1_sketch.png}}\hfill\hfill
+%}
+
+\begin{exercise}
+    What happens in the case when $P = \left[ \begin{smallmatrix} 1 & 1 \\ 1 & 1 \end{smallmatrix} \right]$? Does this look like any of the pictures we have drawn?
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%It does not look like any of our previous pictures. \hfill\raisebox{-0.5\height}{\includegraphics[height=1.5in]{Images/phaseportrait_1_1_1_1_sketch.png}}\hfill\hfill
+%}
+
+\begin{exercise}%
+    Describe the behavior of the following systems without solving:
+    \begin{tasks}(2)
+        \task $x' = x + y$, \quad $y' = x-y$.
+        \task $x_1' = x_1 + x_2$, \quad $x_2' = 2 x_2$.
+        \task $x_1' = -2x_2$, \quad $x_2' = 2 x_1$.
+        \task $x' = x + 3y$, \quad $y' = -2x-4y$.
+        \task $x' = x - 4y$, \quad $y' = -4x+y$.
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Two eigenvalues: $\pm \sqrt{2}$ so the behavior is a saddle.
+%\quad
+%b) Two eigenvalues: $1$ and $2$, so the behavior is a source.
+%\quad
+%c) Two eigenvalues: $\pm 2i$, so the behavior is a center (ellipses).
+%\quad
+%d) Two eigenvalues: $-1$ and $-2$, so the behavior is a sink.
+%\quad
+%e) Two eigenvalues: $5$ and $-3$, so the behavior is a saddle.
+%}
+
+\begin{exercise}
+    Which behaviors are possible if $P$ is diagonal, that is $P = \left[ \begin{smallmatrix} a & 0 \\ 0 & b \end{smallmatrix} \right]$? You can assume that $a$ and $b$ are not zero.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Eigenvalues are $a$ and $b$, so any real eigenvalue behavior is possible. Saddle, source, sink.
+%}
+
+\begin{exercise}%
+    Suppose that $\vec{x}\,' = A \vec{x}$ where $A$ is a 2 by 2 matrix with eigenvalues $2\pm i$.  Describe the behavior.
+\end{exercise}
+%\exsol{%
+%Spiral source.
+%}
+
+\begin{exercise}\label{ex:TwoDimSys1}%
+    For each of the following matrices $A$, describe the behavior and classify the phase portrait of the system given by ${\vec{x}}' = A\vec{x}$. Use the eigenvalues to determine this.
+    \begin{tasks}(2)
+        \task $A = \begin{bmatrix} 7 & -8 \\ 3 & -3 \end{bmatrix}$
+        \task $A = \begin{bmatrix} 3 & 5 \\ -1 & 1 \end{bmatrix}$
+        \task $A = \begin{bmatrix} 8 & -18 \\ 4 & -10 \end{bmatrix}$
+        \task $A = \begin{bmatrix} -2 & -4 \\0 & -3 \end{bmatrix}$
+        \task $A = \begin{bmatrix} 3 & -2 \\ 2 & -3 \end{bmatrix}$
+        \task $A = \begin{bmatrix} -3 & -4 \\ 1 & 1 \end{bmatrix}$
+    \end{tasks}
+\end{exercise}
+%\exsol{%
+%a) Nodal source \quad c) Spiral source  \quad  c) Saddle \quad c) Nodal sink \quad  e) Spiral sink \quad f) Improper nodal sink
+%}
+
+\begin{exercise}
+For each of the matrices and systems in \exerciseref{ex:TwoDimSys1}, perform the same analysis using the trace and determinant of the matrix.
+\end{exercise}
+
+\begin{exercise}
+    Consider the system of differential equations given by 
+    \begin{equation*}
+        {\vec{x}}'  = \begin{bmatrix} -2 & -3 \\ 3 & -2 \end{bmatrix} \vec{x}.
+    \end{equation*}
+    \begin{tasks}
+        \task Use trace and determinant analysis to determine the behavior of this linear system.
+        \task Find the general solution to this system of differential equations and verify that it matches the analysis in (a).
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Spiral sink. $\vec{x}(t) = C_1e^{-2t}\left[\begin{smallmatrix} -\sin(3t) \\ \cos(3t) \end{smallmatrix}\right] + C_2e^{-2t} \left[\begin{smallmatrix} \cos(3t) \\ \sin(3t) \end{smallmatrix}\right]$.
+%}
+
+\begin{exercise}
+    Consider the system of differential equations given by 
+    \begin{equation*}
+        {\vec{x}}'  = \begin{bmatrix} -2 & -3 \\ 3 & 4 \end{bmatrix} \vec{x}.
+    \end{equation*}
+    \begin{tasks}
+        \task Use trace and determinant analysis to determine the behavior of this linear system.
+        \task Find the general solution to this system of differential equations and verify that it matches the analysis in (a).
+    \end{tasks}
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%Improper nodal source. $\vec{x}(t) = C_1 \left[\begin{smallmatrix} 1 \\ -1 \end{smallmatrix}\right]e^t + C_2\left(\left[\begin{smallmatrix} 1 \\ -1 \end{smallmatrix}\right]te^t + \left[\begin{smallmatrix} -1/3 \\ 0 \end{smallmatrix}\right]e^t \right)$
+%}
+
+\begin{exercise}
+    Take the system from \examplevref{sintro:closedbrine-example}, $x_1'=\frac{r}{V}(x_2-x_1)$, $x_2'=\frac{r}{V}(x_1-x_2)$. As we said, one of the eigenvalues is zero.  What is the other eigenvalue, how does the picture look like and what happens when $t$ goes to infinity.
+\end{exercise}
+%\comboSol{%
+%}
+%{%
+%All solutions flow directly to the line $y=x$.
+%}
+
+\begin{exercise}%
+    Take 
+    $\left[ 
+    \begin{smallmatrix}
+        x \\ 
+        y 
+    \end{smallmatrix}
+    \right] '
+    = \left[ 
+    \begin{smallmatrix} 
+        0 & 1 \\ 
+        0 & 0
+    \end{smallmatrix}
+    \right] \left[ 
+    \begin{smallmatrix}
+        x \\ 
+        y 
+    \end{smallmatrix}\right]$.
+    Draw the vector field and describe the behavior.  Is it one of the behaviors that we have seen before?
+\end{exercise}
+%\exsol{%
+%\\[6pt]
+%\includegraphics[width=2in]{figures/0100vectorfield}
+%\\
+%The solution does not move anywhere if $y = 0$.  When $y$ is positive,
+%the solution moves (with constant speed)
+%in the positive $x$ direction.  When $y$ is
+%negative, the solution moves (with constant speed) in the negative
+%$x$ direction.  It is not one of the behaviors we have seen.
+%\\
+%Note that the matrix has a double eigenvalue 0 and the general solution is
+%$x = C_1 t + C_2$ and $y = C_1$, which agrees with the
+%description above.
+%}
+
+\begin{exercise}
+    In this exercise, we will analyze ``perturbations'' or near-by matrices to the ones that are given. This will be important later in \sectionref{linearization:section}. For each of the following matrices
+    \begin{tasks}
+        \task Find the trace and determinant, and use them to classify the behavior of the linear system ${\vec{x}}' = A\vec{x}$ for the given matrix $A$.
+        \task Draw a sketch of the trace-determinant plane, including the curve $D = \nicefrac{T^2}{4}$, and plot the point corresponding to the matrix on those axes.
+        \task Look at the points in a small (as small as you want) circle around the point you just drew. What does the behavior look like for systems whose matrices fall within that circle? What do these behaviors have in common with each other, and how do they differ?
+    \end{tasks}
+    \begin{equation*}
+    \begin{split}
+        (i)\ \begin{bmatrix} 2 & 8 \\ -3 & -8 \end{bmatrix} \qquad (ii)\ \begin{bmatrix} 15 & -12 \\ 16 & -13 \end{bmatrix} \qquad &(iii)\ \begin{bmatrix} 2 & -1 \\ 5 & -2 \end{bmatrix} \qquad (iv)\ \begin{bmatrix} 4 & -1 \\ 2 & 2 \end{bmatrix}\\
+        (v)\ \begin{bmatrix} -2 & 2 \\ -2 & -6 \end{bmatrix} \qquad (vi)\ \begin{bmatrix} -1 & -4 \\ 2 & 5 \end{bmatrix} \qquad &(vii)\ \begin{bmatrix} -5 & 6 \\ -3 & 1 \end{bmatrix} \qquad (viii)\ \begin{bmatrix} 5 & -2 \\ 8 & -3 \end{bmatrix} 
+    \end{split}
+    \end{equation*}
+\end{exercise}
+%\exsol{%
+%(i) $T=-6$, $D = 8$. Nodal sink. All points nearby are nodal sinks. \\
+%(ii)  $T = 2$, $D = -3$. Saddle. All points nearby are saddles. \\
+%(iii)  $T = 0$, $D = 1$. Center. Points nearby are all spirals, but they could be asymptotically stable, centers, or unstable. Stability is unknown.\\
+%(iv)  $T = 6$, $D = 10$. Spiral source. All points nearby are spiral sources.\\
+%(v)  $T = -8$, $D = 16$. Improper nodal sink. All points nearby will be asymptotically stable, but they could be nodal sinks, improper nodal sinks, or spiral sinks.\\
+%(vi)  $T = 4$, $D = 3$. Nodal source. All points nearby are nodal sources. \\
+%(vii)  $T = -4$, $D = 13$. Spiral sink. All points nearby are spiral sinks. \\
+%(viii)  $T = 2$, $D = 1$. Improper nodal source. All points nearby will be unstable, but they may be spirals, nodal sources, or improper nodal sources.\\
+%}%
+
+
+
+\end{document}

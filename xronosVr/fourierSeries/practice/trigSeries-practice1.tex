@@ -1,0 +1,106 @@
+\documentclass{ximera}
+
+\title{Practice for Trig Series}
+
+\input{../../preamble}
+
+\begin{document}
+\begin{abstract}
+Why?
+\end{abstract}
+\maketitle
+
+
+
+\begin{exercise}\%
+    Suppose $f(t)$ is defined on $[-\pi,\pi]$ as $f(t) = \sin(t)$.  Extend periodically and compute the Fourier series.
+\end{exercise}
+%\exsol{%
+%$\sin(t)$
+%}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $[-\pi,\pi]$ as $\sin (5t) + \cos (3t)$.  Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $[-\pi,\pi]$ as $\lvert t \rvert$. Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $[-\pi,\pi]$ as $\lvert t \rvert^3$. Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Suppose $f(t)$ is defined on $(-\pi,\pi]$ as $f(t) = \sin(\pi t)$.  Extend periodically and compute the Fourier series.
+\end{exercise}
+%\exsol{%
+%$\sum\limits_{n=1}^\infty
+%\frac{(\pi-n) \sin( \pi n+{\pi}^{2})
+%+(\pi+n)\sin(\pi n-{\pi}^{2}) }{\pi {n}^{2}-{\pi}^{3}}
+%\sin(nt)$
+%%$a_0 = \frac{1}{\pi} \int_{-\pi}^\pi \sin(\pi t) \, dt$
+%%\\
+%%$a_n =
+%%\frac{1}{\pi} \int_{-\pi}^\pi \sin(\pi t) \cos (nt) \, dt$
+%%\\
+%%$b_n =
+%%\frac{1}{\pi} \int_{-\pi}^\pi f(t) \sin (nt) \, dt$
+%}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $(-\pi,\pi]$ as
+    \begin{equation*}
+        f(t) =
+        \begin{cases}
+            -1 & \text{if } \; {-\pi} < t \leq 0 , \\
+            1 & \text{if } \; \phantom{-}0 < t \leq \pi .
+        \end{cases}
+    \end{equation*}
+    Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $(-\pi,\pi]$ as $t^3$. Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Suppose $f(t)$ is defined on $(-\pi,\pi]$ as $f(t) = \sin^2(t)$. Extend periodically and compute the Fourier series.
+\end{exercise}
+%\exsol{%
+%$\frac{1}{2}-\frac{1}{2}\cos(2t)$
+%}
+
+\begin{exercise}
+    Suppose $f(t)$ is defined on $[-\pi,\pi]$ as $t^2$. Extend periodically and compute the Fourier series of $f(t)$.
+\end{exercise}
+
+\begin{exercise}\%
+    Suppose $f(t)$ is defined on $(-\pi,\pi]$ as $f(t) = t^4$. Extend periodically and compute the Fourier series.
+\end{exercise}
+%\exsol{%
+%$\frac{\pi^4}{5} + \sum\limits_{n=1}^\infty
+%\frac{{(-1)}^{n} (8{\pi}^{2}{n}^{2}-48) }{{n}^{4}}
+%\cos(nt)$
+%}
+
+There is another form of the Fourier series using complex exponentials $e^{nt}$ for $n=\ldots,-2,-1,0,1,2,\ldots$ instead of $\cos(nt)$ and $\sin(nt)$ for positive $n$.  This form may be easier to work with sometimes.  It is certainly more compact to write, and there is only one formula for the coefficients.  On the downside, the coefficients are complex numbers.
+
+\begin{exercise}
+    Let 
+    \begin{equation*}
+        f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty a_n \cos (n t) + b_n \sin (n t) .
+    \end{equation*}
+    Use Euler's formula $e^{i\theta} = \cos (\theta) + i \sin (\theta)$ to show that there exist complex numbers $c_m$ such that
+    \begin{equation*}
+    f(t) = \sum_{m=-\infty}^\infty c_m e^{imt} .
+    \end{equation*}
+    Note that the sum now ranges over all the integers including negative ones. Do not worry about convergence in this calculation. Hint: It may be better to start from the complex exponential form and write the series as
+    \begin{equation*}
+        c_0 + \sum_{m=1}^\infty \Bigl( c_m e^{imt} + c_{-m} e^{-imt}  \Bigr).
+    \end{equation*}
+\end{exercise}
+
+%\setcounter{exercise}{100}
+
+\end{document}
