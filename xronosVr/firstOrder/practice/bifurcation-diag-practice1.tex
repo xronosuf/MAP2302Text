@@ -11,12 +11,26 @@
 \maketitle
 
 \begin{exercise}
-    Start with the logistic equation $\frac{dx}{dt} = kx(M-x)$. Suppose we modify our harvesting. That is we will only harvest  an amount proportional to current population. In other words, we harvest $hx$ per unit of time for some $h > 0$ (Similar to earlier example with $h$ replaced with $hx$).
-    \begin{tasks}
-        \task Construct the differential equation. 
-        \task Show that if $kM > h$, then the equation is still logistic.
-        \task What happens when $kM < h$?
-    \end{tasks}
+    Start with the logistic equation $\frac{dx}{dt} = kx(M-x)$. Suppose we modify our harvesting. That is we will only harvest an amount proportional to current population. In other words, we harvest $hx$ per unit of time for some $h > 0$ (Similar to earlier example with $h$ replaced with $hx$).
+    
+    Construct the differential equation: $\frac{dx}{dt} = \answer{kx\left(\frac{Mk-h}{k} - x\right)}$
+    \begin{problem}
+        If $kM > h$, then what can you say about the equation?
+        \begin{multipleChoice}
+            \choice{The equation is no longer logistic.}
+            \choice[correct]{The equation is still logistic.}
+            \choice{It depends - so we can't answer without more information.}
+        \end{multipleChoice}
+        \begin{problem}
+            What happens when $kM < h$?
+            \begin{multipleChoice}
+                \choice{The population always increases.}
+                \choice{The population doesn't change.}
+                \choice{The population fluctuates - increasing sometimes and decreasing sometimes.}
+                \choice[correct]{The population always decreases.}
+            \end{multipleChoice}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 
 %\comboSol{%
@@ -26,11 +40,12 @@
 %}
 
 \begin{exercise}
-    Assume that a population of fish in a lake satisfies $\frac{dx}{dt} = kx(M-x)$.  Now suppose that fish are continually added at $A$ fish per unit of time.
-    \begin{tasks}(2)
-        \task Find the differential equation for $x$.
-        \task What is the new limiting population?
-    \end{tasks}
+    Assume that a population of fish in a lake satisfies $\frac{dx}{dt} = kx(M-x)$.  Also suppose that fish are continually added at $A$ fish per unit of time.
+    
+    Find the differential equation for $x$: $\frac{dx}{dt} = \answer{kx(M-x) + A}$
+    \begin{problem}
+        What is the new limiting population? $\answer{\frac{kM + \sqrt{{(kM)}^2 + 4Ak}}{2k}}$
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %a) $\frac{dx}{dt} = kx(M-x)+A$
@@ -40,11 +55,16 @@
 
 \begin{exercise}
     Consider the differential equation with parameter $\alpha$ given by $y' = y(y - \alpha + 1)$. 
-    \begin{tasks}
-        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 1$, and $\alpha = 3$. 
-        \task Draw a bifurcation diagram for this differential equation with parameter. 
-        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
-    \end{tasks}
+    \begin{hint}
+        Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 1$, and $\alpha = 3$.
+    \end{hint}
+    \begin{hint}
+        Draw a bifurcation diagram for this differential equation with parameter. 
+    \end{hint}
+     What is the bifurcation point for this equation? $\alpha = \answer{1}$
+     
+     %What changes when $\alpha$ passes over the bifurcation point?
+
 \end{exercise}
 %\comboSol{%
 %}
@@ -54,11 +74,16 @@
 
 \begin{exercise}
     Consider the differential equation with parameter $\alpha$ given by $y' = y^2(y^2 - \alpha)$. 
-    \begin{tasks}
-        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 0$, and $\alpha = 3$. 
-        \task Draw a bifurcation diagram for this differential equation with parameter. 
-        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
-    \end{tasks}
+    \begin{hint}
+        Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 1$, and $\alpha = 3$.
+    \end{hint}
+    \begin{hint}
+        Draw a bifurcation diagram for this differential equation with parameter. 
+    \end{hint}
+        What is the bifurcation point for this equation? $\alpha = \answer{0}$
+        
+        %What changes when $\alpha$ passes over the bifurcation point?
+
 \end{exercise}
 %\comboSol{%
 %}
@@ -68,11 +93,15 @@
 
 \begin{exercise}
     Consider the differential equation with parameter $\alpha$ given by $y' = y(\alpha - y)$. 
-    \begin{tasks}
-        \task Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 0$, and $\alpha = 3$. 
-        \task Draw a bifurcation diagram for this differential equation with parameter. 
-        \task What is the bifurcation point for this equation? What changes when $\alpha$ passes over the bifurcation point?
-    \end{tasks}
+    \begin{hint}
+        Sketch a phase diagram for this differential equation with $\alpha = -3$, $\alpha = 1$, and $\alpha = 3$.
+    \end{hint}
+    \begin{hint}
+        Draw a bifurcation diagram for this differential equation with parameter. 
+    \end{hint}
+        What is the bifurcation point for this equation? $\alpha = \answer{0}$
+        
+        %What changes when $\alpha$ passes over the bifurcation point?
 \end{exercise}
 %\comboSol{%
 %}

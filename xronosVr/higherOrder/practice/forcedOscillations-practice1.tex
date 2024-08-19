@@ -14,6 +14,9 @@
 
 \begin{exercise}
     Write $\cos(3x) - \cos(2x)$ as a product of two sine functions.
+    \[
+        \answer{-2\sin\left(\frac{5}{2}x\right)\sin\left(\frac{1}{2}x\right)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -23,6 +26,9 @@
 
 \begin{exercise}
     Write $\cos(5x) - \cos(3x)$ as a product of two sine functions.
+    \[
+        \answer{-2\sin\left(4x\right)\sin\left(x\right)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -32,6 +38,9 @@
 
 \begin{exercise}
     Write $\cos(3x) - \cos(\pi x)$ as a product of two sine functions.
+    \[
+        \answer{-2\sin\left(\frac{3+\pi}{2}x\right)\sin\left(\frac{3-\pi}{2}x\right)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -41,6 +50,9 @@
 
 \begin{exercise}
     Derive a formula for $x_{sp}$ if the equation is $m x'' + \gamma x' + kx = F_0 \sin (\omega t)$.  Assume $\gamma > 0$.
+    \[
+        x_{sp}(t) = \frac{F_0}{\answer{(\gamma \omega)^2 + (k - m\omega^2)^2}}\left(\answer{ (k - m\omega^2)\sin(\omega t) - \gamma \omega \cos(\omega t)}\right)
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -50,6 +62,10 @@
 
 \begin{exercise}
     Derive a formula for $x_{sp}$ if the equation is $m x'' + \gamma x' + kx = F_0 \cos (\omega t) + F_1 \cos (3\omega t)$. Assume $\gamma > 0$.
+    \[
+        x_{sp}(t) = \frac{F_0}{\answer{(\gamma \omega)^2 + (k - m\omega^2)^2}}\left(\answer{ (k - m\omega^2)\cos(\omega t) + \gamma \omega \sin(\omega t)}\right)
+        + \frac{F_1}{\answer{(3\gamma \omega)^2 + (k - 9m\omega^2)^2}}\left(\answer{(k -9 m\omega^2)\cos(3\omega t) + 3\gamma \omega \sin(3\omega t)}\right)
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -57,22 +73,19 @@
 %$x_{sp}(t) = \frac{F_0}{(\gamma \omega)^2 + (k - m\omega^2)^2}\left( (k - m\omega^2)\cos(\omega t) + \gamma \omega \sin(\omega t)\right)$ \\ $\ \ + \frac{F_1}{(3\gamma \omega)^2 + (k - 9m\omega^2)^2}\left( (k -9 m\omega^2)\cos(3\omega t) + 3\gamma \omega \sin(3\omega t)\right)$
 %}
 
-\begin{exercise}%
-    Derive a formula for $x_{sp}$ for $mx''+\gamma x'+kx = F_0 \cos(\omega t) + A$, where $A$ is some constant.  Assume $\gamma > 0$.
-\end{exercise}
+%\begin{exercise}%
+%    Derive a formula for $x_{sp}$ for $mx''+\gamma x'+kx = F_0 \cos(\omega t) + A$, where $A$ is some constant.  Assume $\gamma > 0$.
+%\end{exercise}
 %\exsol{%
 %$x_{sp} = 
-%\frac{(\omega_0^2-\omega^2) F_0}
-%{m{(2\omega p)}^2+m{(\omega_0^2-\omega^2)}^2} \cos (\omega t) +
-%\frac{2 \omega p F_0}
-%{m{(2\omega p)}^2+m{(\omega_0^2-\omega^2)}^2} \sin (\omega t)
-%+ \frac{A}{k}$,
+%\frac{(\omega_0^2-\omega^2) F_0}{m{(2\omega p)}^2+m{(\omega_0^2-\omega^2)}^2} \cos (\omega t) +
+%\frac{2 \omega p F_0}{m{(2\omega p)}^2+m{(\omega_0^2-\omega^2)}^2} \sin (\omega t)+ \frac{A}{k}$,
 %where
 %$p = \frac{\gamma}{2m}$ and $\omega_0 = \sqrt{\frac{k}{m}}$.
 %}
 
 \begin{exercise}
-    Take $m x'' + \gamma x' + kx = F_0 \cos (\omega t)$. Fix $m > 0$, $k > 0$, and $F_0 > 0$.  Consider the function $C(\omega)$. For what values of $\gamma$ (solve in terms of $m$, $k$, and $F_0$) will there be no practical resonance (that is, for what values of $\gamma$ is there no maximum of $C(\omega)$ for $\omega > 0$)?
+    Take $m x'' + \gamma x' + kx = F_0 \cos (\omega t)$. Fix $m > 0$, $k > 0$, and $F_0 > 0$.  Consider the function $C(\omega)$. For what values of $\gamma$ (solve in terms of $m$, $k$, and $F_0$) will there be no practical resonance (that is, for what values of $\gamma$ is there no maximum of $C(\omega)$ for $\omega > 0$)? $\answer{\gamma > \sqrt{2mk}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -81,7 +94,7 @@
 %}
 
 \begin{exercise}
-    Take $m x'' + \gamma x' + kx = F_0 \cos (\omega t)$. Fix $\gamma > 0$, $k > 0$, and $F_0 > 0$.  Consider the function $C(\omega)$. For what values of $m$ (solve in terms of $\gamma$, $k$, and $F_0$) will there be no practical resonance (that is, for what values of $m$ is there no maximum of $C(\omega)$ for $\omega > 0$)?
+    Take $m x'' + \gamma x' + kx = F_0 \cos (\omega t)$. Fix $\gamma > 0$, $k > 0$, and $F_0 > 0$.  Consider the function $C(\omega)$. For what values of $m$ (solve in terms of $\gamma$, $k$, and $F_0$) will there be no practical resonance (that is, for what values of $m$ is there no maximum of $C(\omega)$ for $\omega > 0$)? $\answer{m < \frac{\gamma^2}{2k}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -90,7 +103,7 @@
 %}
 
 \begin{exercise}%
-    A mass of \unit[4]{kg} on a spring with $k=\unitfrac[4]{N}{m}$ and a damping constant $c=\unitfrac[1]{Ns}{m}$. Suppose that $F_0 = \unit[2]{N}$.  Using forcing function $F_0 \cos (\omega t)$, find the $\omega$ that causes the maximum amount of practical resonance and find the amplitude.
+    A mass of \unit[4]{kg} on a spring with $k=\unitfrac[4]{N}{m}$ and a damping constant $c=\unitfrac[1]{Ns}{m}$. Suppose that $F_0 = \unit[2]{N}$.  Using forcing function $F_0 \cos (\omega t)$, find the $\omega$ that causes the maximum amount of practical resonance and find the amplitude. $\omega = \answer{\frac{\sqrt{31}}{4\sqrt{2}}}$, $C(\omega) = \answer{\frac{16}{3\sqrt{7}}}$
 \end{exercise}
 %\exsol{%
 %$\omega = \frac{\sqrt{31}}{4\sqrt{2}} \approx 0.984$ \quad
@@ -99,12 +112,21 @@
 
 \begin{exercise}
     An infant is bouncing in a spring chair. The infant has a mass of \unit[8]{kg}, and the chair functions as a spring with spring constant \unitfrac[72]{N}{m}. The bouncing of the infant applies a force of the form $6 \cos(\omega t)$ for some frequency $\omega$. Assume that the infant starts at rest at the equilibrium position of the chair.
-    \begin{tasks}
-        \task If there is no dampening coefficient, what frequency would the infant need to force at in order to generate pure resonance?
-        \task Assume that the chair is built with a dampener with coefficient \unitfrac[16]{Ns}{m}. Set up an initial value problem for this situation if the child behaves in the same way.
-        \task Solve this initial value problem.
-        \task There are several options for chairs you can buy. There is the one with dampening coefficient \unitfrac[16]{Ns}{m}, one with \unitfrac[1]{Ns}{m}, and one with \unitfrac[30]{Ns}{m}. Which of these would be most `fun' for the infant? How do you know?
-    \end{tasks}
+    
+     If there is no dampening coefficient, what frequency would the infant need to force at in order to generate pure resonance? $\answer{3}$rad/s
+    \begin{problem}
+        Assume that the chair is built with a dampener with coefficient \unitfrac[16]{Ns}{m}. Set up an initial value problem for this situation if the child behaves in the same way. [Use $\frac{d^ny}{dx^n}$ notation, make sure to enter the entire equality] $\answer{8\frac{d^2y}{dx^2} + 16\frac{dy}{dx} + 72y = 6\cos(3t)}$
+        \begin{problem}
+            Solve this initial value problem. $y(t) = \answer{\frac{1}{8}\sin(3t) - \frac{3}{16\sqrt{2}}\sin(2\sqrt{2} t)}$
+            \begin{problem}
+                There are several options for chairs you can buy. There is the one with dampening coefficient \unitfrac[16]{Ns}{m}, one with \unitfrac[1]{Ns}{m}, and one with \unitfrac[30]{Ns}{m}. Which of these would be most `fun' for the infant? How do you know?
+                \begin{multipleChoice}
+                    \choice[correct]{First Option}
+                    \choice{Second Option}
+                \end{multipleChoice}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -115,26 +137,34 @@
 
 \begin{exercise}
     A water tower in an earthquake acts as a mass-spring system. Assume that the container on top is full and the water does not move around. The container then acts as the mass and the support acts as the spring, where the induced vibrations are horizontal.  The container with water has a mass of $m=\unit[10,000]{kg}$.  It takes a force of 1000 newtons to displace the container 1 meter.  For simplicity assume no friction. When the earthquake hits the water tower is at rest (it is not moving). 
-    %
+    
     The earthquake induces an external force $F(t) = m A \omega^2 \cos (\omega t)$.
-    \begin{tasks}
-        \task What is the natural frequency of the water tower?
-        \task If $\omega$ is not the natural frequency, find a formula for the maximal amplitude of the resulting oscillations of the water container (the maximal deviation from the rest position).  The motion will be a high frequency wave modulated by a low frequency wave, so simply find the constant in front of the sines.
-        \task Suppose $A = 1$ and an earthquake with frequency 0.5 cycles per second comes.  What is the amplitude of the oscillations?  Suppose that if the water tower moves more than 1.5 meter from the rest position, the tower collapses. Will the tower collapse? 
-    \end{tasks}
+    
+    What is the natural frequency of the water tower? $\omega = \answer{\frac{1}{\sqrt{10}}}$
+    \begin{problem}
+        If $\omega$ is not the natural frequency, find a formula for the maximal amplitude of the resulting oscillations of the water container (the maximal deviation from the rest position).  The motion will be a high frequency wave modulated by a low frequency wave, so simply find the constant in front of the sines. $\answer{\frac{2A}{\frac{1}{10\omega^2} - 1}}$
+        \begin{problem}
+            Suppose $A = 1$ and an earthquake with frequency 0.5 cycles per second comes.  What is the amplitude of the oscillations?  Suppose that if the water tower moves more than 1.5 meter from the rest position, the tower collapses. Will the tower collapse? 
+            \begin{multipleChoice}
+                \choice[correct]{Yes.}
+                \choice{No.}
+            \end{multipleChoice}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
 %{%
-%a)~$\omega)1 = \frac{1}{\sqrt{10}}$ \quad b)~$\frac{2A}{\frac{1}{10\omega^2} - 1}$ \quad c)~Yes
+%a)~$\omega = \frac{1}{\sqrt{10}}$ \quad b)~$\frac{2A}{\frac{1}{10\omega^2} - 1}$ \quad c)~Yes
 %}
 
 \begin{exercise}%
     Suppose there is no damping in a mass and spring system with $m = 5$, $k= 20$, and $F_0 = 5$.  Suppose $\omega$ is chosen to be precisely the resonance frequency.
-    \begin{tasks}
-        \task Find $\omega$.
-        \task Find the amplitude of the oscillations at time $t=100$, given the system is at rest at $t=0$.
-    \end{tasks}
+    
+    Find $\omega$. $\omega = \answer{2}$
+    \begin{problem}
+        Find the amplitude of the oscillations at time $t=100$, given the system is at rest at $t=0$. $\answer{25}$
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %a) $\omega = 2$ \quad
@@ -143,11 +173,16 @@
 
 \begin{exercise}
     Assume that a 2 kg mass is attached to a spring that is acted on by a forcing function $F(t) = 5 \cos(2t)$. Assume that there is no dampening on the spring.
-    \begin{tasks}
-        \task What should the spring constant $k$ be in order for this system to exhibit pure resonance?
-        \task If we wanted the system to exhibit practical resonance instead, what do or can we change about it to get this?
-        \task Assume that we set $k$ to be the value determined in (a), and that the rest of the problem is situated so that the system exhibits practical resonance. What would we expect to see for the amplitude of the solution? This should be a generic comment, not a specific value.
-    \end{tasks}
+    
+    What should the spring constant $k$ be in order for this system to exhibit pure resonance? $\answer{8}$ N/m
+    \begin{problem}
+        If we wanted the system to exhibit practical resonance instead, what do or can we change about it to get this?
+        
+        \wordChoice{\choice[correct]{Add}\choice{Subtract}} some dampening. Specifically, $\gamma < \answer{\sqrt{2mk}}$.
+        \begin{problem}
+            Assume that we set $k$ to be the value determined in the first part, and that the rest of the problem is situated so that the system exhibits practical resonance. What would we expect to see for the amplitude of the solution? This should be a generic comment, not a specific value? It should be \wordChoice{\choice[correct]{Larger}\choice{Smaller}} than $\frac{5}{8}$.
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -160,12 +195,23 @@
     \begin{equation*}
         3y'' + 2y' + 18y = 4\cos(5t).
     \end{equation*}
-    \begin{tasks}
-        \task Identify the mass, dampening coefficient, and spring constant for the system.
-        \task Use the entire equation to find the natural frequency, forcing frequency, and quasi-frequency of this oscillation.
-        \task Two of these frequencies will show up in the general solution to this problem. Which are they, and in which part (transient, steady-periodic) do they appear?
-        \task Find the general solution of this problem.
-    \end{tasks}
+    
+    Identify the mass, dampening coefficient, and spring constant for the system.
+    $m = \answer{3}$ kg, $\gamma = \answer{2}$ Ns/m, $k = \answer{18}$ N/m
+    \begin{problem}
+        Use the entire equation to find the natural frequency, forcing frequency, and quasi-frequency of this oscillation.
+        Natural is $\answer{\sqrt{6}}$ rad/s, Forcing is $\answer{5}$ rad/s, Quasi-frequency is $\answer{\frac{\sqrt{53}}{3}}$ rad/s
+        \begin{problem}
+            Two of these frequencies will show up in the general solution to this problem. Which are they, and in which part (transient, steady-periodic) do they appear?
+            \wordChoice{\choice{Natural}\choice{Forcing}\choice[correct]{Quasifrequency}} is in the transient, and \wordChoice{\choice{Natural}\choice[correct]{Forcing}\choice{Quasifrequency}} is in steady periodic
+            \begin{problem}
+                Find the general solution of this problem. [Use $A$ and $B$ for arbitrary constants]
+                \[
+                    \answer{Ae^{-t/3}\cos\left(\frac{\sqrt{53}}{3}t\right) + Be^{-t/3}\sin\left(\frac{\sqrt{53}}{3}t\right) - \frac{228}{3349} \cos(5t) + \frac{40}{3349}\sin(5t)}
+                \]
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -176,16 +222,19 @@
 
 \begin{exercise}
     A circuit is built with an $L$ Henry inductor, and $R$ Ohm resistor, and a $C$ Farad capacitor. All of the units are correct, but you do not know any of their values. To study this circuit, you apply an external voltage source of $F(t) = 4 \cos\left(\frac{1}{2} t \right)$, and the circuit starts with no initial charge or current.
-    \begin{tasks}
-        \task Write an initial value problem to model this situation.
-        \task Your friend (who knows more about this circuit than you do) takes a reading from this circuit after it is running and says ``The amplitude of the charge oscillation is greater than 100 coulombs, which means this circuit is exhibiting practical resonance.'' There are \textbf{three} facts that you can learn about this circuit from the statement here that will tell you about the values of $L$, $R$, and $C$. 
+    
+    Write an initial value problem to model this situation. $\answer{L}Q'' + \answer{R}Q' + \answer{\frac{1}{C}}Q = \answer{4\cos\left(\frac{1}{2}t\right)}$
+    \begin{problem}
+        Your friend (who knows more about this circuit than you do) takes a reading from this circuit after it is running and says ``The amplitude of the charge oscillation is greater than 100 coulombs, which means this circuit is exhibiting practical resonance.'' There are \textbf{three} facts that you can learn about this circuit from the statement here that will tell you about the values of $L$, $R$, and $C$. 
         \begin{enumerate}
-            \item This statement seems to imply that the expected amplitude of the oscillation is 100 coulombs. What does this mean about the value of $C$?
-            \item Your friend says that this circuit is in practical resonance. What does this tell you about the value of $R$ in this case?
-            \item Finally, being in practical resonance says something about how the forcing frequency compares to the natural frequency of this system. What is that, and how does it relate to the value of $L$?
+            \item This statement seems to imply that the expected amplitude of the oscillation is 100 coulombs. What does this mean about the value of $C$? $C = \answer{25}$
+            \item Your friend says that this circuit is in practical resonance. What does this tell you about the value of $R$ in this case? $R > \answer{0}$
+            \item Finally, being in practical resonance says something about how the forcing frequency compares to the natural frequency of this system. What is that, and how does it relate to the value of $L$? $L \approx \answer{\frac{4}{25}}$
         \end{enumerate}
-        \task What is the frequency of the steady-periodic oscillation that your friend mentioned above? 
-    \end{tasks}
+        \begin{problem}
+            What is the frequency of the steady-periodic oscillation that your friend mentioned above? $\answer{\frac{1}{2}}$
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}

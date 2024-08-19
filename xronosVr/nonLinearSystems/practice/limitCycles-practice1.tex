@@ -18,6 +18,7 @@ Why?
         \frac{dr}{dt} = r(r-1)(r-4)^2 \qquad \frac{d\theta}{dt} = 1. 
     \] 
     Determine all limit cycles, periodic solutions, and classify the stability of each of these solutions. 
+    $r = \answer{0}$ is asymptotically stable, $r = \answer{1}$ is a periodic solution, but not a limit cycle, is unstable, $r = \answer{4}$ is semistable, limit cycle from the inside.
 \end{exercise}
 %\comboSol{%
 %}
@@ -31,6 +32,7 @@ Why?
         \frac{dr}{dt} = r^2(r-1)^2(r-3) \qquad \frac{d\theta}{dt} = -1. 
     \] 
     Determine all limit cycles, periodic solutions, and classify the stability of each of these solutions. 
+    $r = \answer{0}$ asymptoticallys table, $r = \answer{1}$ semistable limit cycle, $r = \answer{3}$ periodic solution, unstable.
 \end{exercise}
 %\comboSol{%
 %}
@@ -43,7 +45,8 @@ Why?
     \[ 
         \frac{dx}{dt} = x(3- 2y^2 - x^2) \qquad \frac{dy}{dt} = y(3-y^2) .
     \]
-    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. 
+    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. \\
+    $\left(\answer{0},\answer{0}\right)$ is unstable, $r = \answer{\sqrt{3}}$ is asymptotically stable.
 \end{exercise}
 %\exsol{%
 %$(0,0)$, unstable, $r = \sqrt{3}$, asymptotically stable.
@@ -54,7 +57,8 @@ Why?
     \[ 
         \frac{dx}{dt} = -x(x^2 + y^2)^2 + 6x(x^2 + y^2) - 8x + 6y \qquad \frac{dy}{dt} = -y(x^2 + y^2)^2 + 6y(x^2 + y^2) - 8y - 6x .
     \]
-    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. 
+    Find and classify all limit cycles by converting to an autonomous equation in $r = \sqrt{x^2 + y^2}$ or $s = x^2 + y^2$. \\
+    $\left(\answer{0},\answer{0}\right)$ is asymptotically stable, $r = \answer{\sqrt{2}}$ is unstable, $r = \answer{2}$ is asymptotically stable. 
 \end{exercise}
 %\exsol{%
 %$(0,0)$, asymptotically stable, $r = \sqrt{2}$, unstable, $r = 2$, asymptotically stable. 
@@ -68,11 +72,13 @@ Why?
             \dfrac{dy}{dt}=-2x+y+y(x^2+y^2-2\sqrt{x^2+y^2})
         \end{bmatrix}. \label{eq:LimitCycleExercise1}
     \end{equation}
-    \begin{tasks}
-        \task Use polar coordinates to write $\dfrac{dr}{dt}$ as a function of $r$.
-        \task Draw the phase line of the DE $\dfrac{dr}{dt}=f(r)$, where $f(r)$ is the function from part a.
-        \task Does the system \eqref{eq:LimitCycleExercise1} have a limit cycle? If so, find it. If not, explain why not. For each positive root of $f(r)$, decide whether the corresponding trajectory one is stable, unstable, or semistable.
-    \end{tasks}
+    \begin{itemize}
+        \item Use polar coordinates to write $\dfrac{dr}{dt}$ as a function of $r$.\\
+            $\frac{dr}{dt} = \answer{r(r-1)^2}$
+        \item Draw the phase line of the DE $\dfrac{dr}{dt}=f(r)$, where $f(r)$ is the function from part a.
+        \item Does the system \eqref{eq:LimitCycleExercise1} have a limit cycle? If so, find it. If not, explain why not. For each positive root of $f(r)$, decide whether the corresponding trajectory one is stable, unstable, or semistable.\\
+        Limit cycle at $r = \answer{1}$, which is semistable.
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -82,11 +88,11 @@ Why?
 
 \begin{exercise}
     Show that the following systems have no closed trajectories.
-    \begin{tasks}(2)
-        \task $x'=x^3+y,\quad y'=y^3+x^2$,
-        \task $x'=e^{x-y},\quad y'=e^{x+y}$,
-        \task $x'=x+3y^2-y^3,\quad y'=y^3+x^2$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=x^3+y,\quad y'=y^3+x^2$, $\answer{f_x + g_y = 3(x^2 + y^2)} > \answer{0}$
+        \item $x'=e^{x-y},\quad y'=e^{x+y}$, $f_x$, $g_y > \answer{0}$
+        \item $x'=x+3y^2-y^3,\quad y'=y^3+x^2$. $f_x + g_y = \answer{1 + 3y^2} > 0$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -96,11 +102,11 @@ Why?
 
 \begin{exercise}%
     Show that the following systems have no closed trajectories.
-    \begin{tasks}(2)
-        \task $x'=x+y^2,\quad y'=y+x^2$,
-        \task $x'=-x\sin^2(y),\quad y'=e^x$,
-        \task $x'=xy,\quad y'=x+x^2$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=x+y^2,\quad y'=y+x^2$, $f_x + g_y = \answer{2} > 0$
+        \item $x'=-x\sin^2(y),\quad y'=e^x$, $f_x+g_y = \answer{-(\sin(y))^2} < 0$
+        \item $x'=xy,\quad y'=x+x^2$. $f_x + g_y = \answer{y} > 0$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %Use Bendixson--Dulac Theorem.
@@ -113,6 +119,13 @@ Why?
 
 \begin{exercise}%
     Suppose an autonomous system in the plane has a solution $x=\cos(t)+e^{-t}$, $y=\sin(t)+e^{-t}$.  What can you say about the system (in particular about limit cycles and periodic solutions)?
+    \begin{multipleChoice}
+        \choice{The system has no limit cycle.}
+        \choice[correct]{The system has a limit cycle.}
+    \end{multipleChoice}
+    \begin{problem}
+        The periodic solution is: $x = \answer{\cos(t)+e^{-t}}$, $y= \answer{\sin(t)+e^{-t}}$
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %Using Poincar\'e--Bendixson Theorem,
@@ -123,7 +136,8 @@ Why?
 %}
 
 \begin{exercise}
-    Formulate a condition for a 2-by-2 linear system ${\vec{x}}' = A \vec{x}$ to not be a center using the Bendixson--Dulac theorem. That is, the theorem says something about certain elements of $A$.
+    Formulate a condition for a 2-by-2 linear system ${\vec{x}}' = A \vec{x}$ to not be a center using the Bendixson--Dulac theorem. That is, the theorem says something about certain elements of $A$.\\
+    $\answer{a+d} \neq \answer{0}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -132,7 +146,8 @@ Why?
 %}
 
 \begin{exercise}
-Explain why the Bendixson--Dulac Theorem does not apply for any conservative system $x''+h(x) = 0$.
+    Explain why the Bendixson--Dulac Theorem does not apply for any conservative system $x''+h(x) = 0$.\\
+    $f_x = \answer{0}$, $g_y = \answer{0}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -150,7 +165,8 @@ Explain why the Bendixson--Dulac Theorem does not apply for any conservative sys
 %}
 
 \begin{exercise}%
-    Show that the limit cycle of the  Van der Pol oscillator (for $\mu > 0$) must not lie completely in the set where $-1 < x < 1$. Compare with \figurevref{fig:nlin-van-der-fig}.
+    Show that the limit cycle of the  Van der Pol oscillator (for $\mu > 0$) must not lie completely in the set where $-1 < x < 1$. Compare with figure \ref{fig:nlin-van-der-fig}.\\
+    $f(x,y) = \answer{y}$, $g(x,y) = \mu\answer{(1 - x^2)y} + \answer{-x}$.  So $f_x + g_y = \mu\answer{(1-x^2)}$
 \end{exercise}
 %\exsol{%
 %$f(x,y) = y$, $g(x,y) = \mu(1-x^2)y-x$.  So
@@ -159,7 +175,8 @@ Explain why the Bendixson--Dulac Theorem does not apply for any conservative sys
 %}
 
 \begin{exercise}
-    Differential equations can also be given in different coordinate systems. Suppose we have the system $r' = 1-r^2$, $\theta' = 1$ given in polar coordinates.  Find all the closed trajectories and check if they are limit cycles and if so, if they are asymptotically stable or not. 
+    Differential equations can also be given in different coordinate systems. Suppose we have the system $r' = 1-r^2$, $\theta' = 1$ given in polar coordinates.  Find all the closed trajectories and check if they are limit cycles and if so, if they are asymptotically stable or not. \\
+    $r = \answer{0}$ is unstable, $r = \answer{1}$ is asymptotically stable limit cycle
 \end{exercise}
 %\comboSol{%
 %}

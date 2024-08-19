@@ -202,9 +202,9 @@ $M_y = 1$ and  $N_x = y$, which are clearly not equal.  The equation is not exac
     
     If we think back to the theorem, it does not guarantee such a function anyway.  It only guarantees a potential function locally, that is only in some region near the initial point.  As $y(1) = 2$ we start at the point $(1,2)$.  Considering $x > 0$ and integrating $M$ in $x$ or $N$ in $y$, we find
     \begin{equation*}
-        F(x,y) = \operatorname{arctan} \bigl( \nicefrac{y}{x} \bigr) .
+        F(x,y) = \operatorname{arctan} \bigl( \frac{y}{x} \bigr) .
     \end{equation*}
-    The implicit solution is $\operatorname{arctan} \bigl( \nicefrac{y}{x} \bigr) = C$.  Solving, $y = \tan(C) x$.  That is, the solution is a straight line.  Solving $y(1) = 2$ gives us that $\tan(C) = 2$, and so $y= 2x$ is the desired solution. See \figurevref{exact:y2x}, and note that the solution only exists for $x > 0$.
+    The implicit solution is $\operatorname{arctan} \bigl( \frac{y}{x} \bigr) = C$.  Solving, $y = \tan(C) x$.  That is, the solution is a straight line.  Solving $y(1) = 2$ gives us that $\tan(C) = 2$, and so $y= 2x$ is the desired solution. See \figurevref{exact:y2x}, and note that the solution only exists for $x > 0$.
     \begin{myfig}
         \capstart
         \diffyincludegraphics{width=3in}{width=4.5in}{exact-y2x}
@@ -230,7 +230,7 @@ $M_y = 1$ and  $N_x = y$, which are clearly not equal.  The equation is not exac
     \end{equation*}
     Therefore $A'(y) = 2y$ or $A(y) = y^2$ and $F(x,y) = \frac{1}{3}x^3 + xy^2 + y^2$. We try to solve $F(x,y) = C$.  We easily solve for $y^2$ and then just take the square root:
     \begin{equation*}
-        y^2 = \frac{C-(\nicefrac{1}{3})x^3}{x+1}, \qquad \text{so} \qquad y = \pm \sqrt{\frac{C-(\nicefrac{1}{3})x^3}{x+1}} .
+        y^2 = \frac{C-(\frac{1}{3})x^3}{x+1}, \qquad \text{so} \qquad y = \pm \sqrt{\frac{C-(\frac{1}{3})x^3}{x+1}} .
     \end{equation*}
     When $x=-1$, the term in front of $\frac{dy}{dx}$ vanishes.  You can also see that our solution is not valid in that case.  However, one could in that case try to solve for $x$ in terms of $y$ starting from the implicit solution $\frac{1}{3}x^3 + xy^2 + y^2 = C$.  The solution is somewhat messy and we leave it as implicit.
 \end{exampleSol}
@@ -314,7 +314,7 @@ Letting $q(y) = \frac{M_y-N_x}{M}$, we find $u(y) = C e^{-\int q(y) \, dy}$.  We
     which is an exact equation that we solved in
     \exampleref{exact:exampleabove}.  The solution was
     \begin{equation*}
-        y = \pm \sqrt{\frac{C-(\nicefrac{1}{3})x^3}{x+1}} .
+        y = \pm \sqrt{\frac{C-(\frac{1}{3})x^3}{x+1}} .
     \end{equation*}
     If, instead, we had wanted a solution with $x < -1$, we would have needed to multiply by $-(x+1)$, which would have given a very similar result. 
 \end{exampleSol}

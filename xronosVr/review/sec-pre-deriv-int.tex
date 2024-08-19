@@ -390,7 +390,7 @@ since there is no simple function whose derivative is $\frac{3}{x^2 - x - 2}$. W
             \begin{equation*}
                 \int \frac{1}{x-2}\ dx = \int \frac{1}{u}\ du = \ln|x-2| + C.
             \end{equation*}
-        \item This integral is another substitution, but the goal here is arctangent, not a logarithm. We let $u = \nicefrac{x}{2}$, so that $du = \nicefrac{1}{2}\ dx$, and then 
+        \item This integral is another substitution, but the goal here is arctangent, not a logarithm. We let $u = \frac{x}{2}$, so that $du = \frac{1}{2}\ dx$, and then 
             \begin{equation*}
                 \int \frac{1}{x^2 + 4}\ dx = \int \frac{1}{4u^2 + 4} 2\ du = \frac{1}{2} \int \frac{1}{u^2 + 1}\ du = \frac{1}{2} \arctan\left( \frac{x}{2} \right) + C.
             \end{equation*}
@@ -467,16 +467,16 @@ The process is best shown through an example.
     \begin{equation*}
         1 = -12A + 0 + 0
     \end{equation*}
-    which implies that $A = -\nicefrac{1}{12}$. For the next term, we can plug in $-3$ to make the $x+3$ terms go away, resulting in
+    which implies that $A = -\frac{1}{12}$. For the next term, we can plug in $-3$ to make the $x+3$ terms go away, resulting in
     \begin{equation*}
         -8 = B(-3)(-7)
-    \end{equation*} so that $B = -\nicefrac{8}{21}$. Plugging in $x=4$ gives
+    \end{equation*} so that $B = -\frac{8}{21}$. Plugging in $x=4$ gives
     \begin{equation*}
         13 = C(4)(7)
     \end{equation*}
-    so that $C = \nicefrac{13}{28}$. Therefore, we can write that
+    so that $C = \frac{13}{28}$. Therefore, we can write that
     \begin{equation*}
-        \frac{3x + 1}{x^3 - x^2 - 12x} = \frac{-\nicefrac{1}{12}}{x} + \frac{ -\nicefrac{8}{21}}{x+3} + \frac{\nicefrac{13}{28}}{x-4}
+        \frac{3x + 1}{x^3 - x^2 - 12x} = \frac{-\frac{1}{12}}{x} + \frac{ -\frac{8}{21}}{x+3} + \frac{\frac{13}{28}}{x-4}
     \end{equation*}
     Then, we can integrate both sides to get that
     \begin{equation*}
@@ -502,22 +502,22 @@ The same type of approach applies if there are irreducible quadratics in the exp
     \begin{equation*}
         2x^2 - 6 = (Ax + B)(x-1) + C(x^2 + 4)
     \end{equation*}
-    where we need to find the appropriate constants. In this case, we can plug in $x=1$ to determine that $-4 = 5C$ or $C = -\nicefrac{4}{5}$. However, there is no value we can plug in to make $x^2 + 4 = 0$. We could use complex numbers here, but assuming we don't want to do that, we can plug in any two numbers and go from there. Plugging in $x=0$ is nice because it makes the $A$ term go away, resulting in
+    where we need to find the appropriate constants. In this case, we can plug in $x=1$ to determine that $-4 = 5C$ or $C = -\frac{4}{5}$. However, there is no value we can plug in to make $x^2 + 4 = 0$. We could use complex numbers here, but assuming we don't want to do that, we can plug in any two numbers and go from there. Plugging in $x=0$ is nice because it makes the $A$ term go away, resulting in
     \begin{equation*}
         -6 = B(-1) + C(4) = -B - \frac{16}{5}
     \end{equation*}
-    which we can solve to get $B = \nicefrac{14}{5}$. Finally, we can plug in any other number for $x$ to get an equation to solve for $A$. Let's use $-1$ to give that
+    which we can solve to get $B = \frac{14}{5}$. Finally, we can plug in any other number for $x$ to get an equation to solve for $A$. Let's use $-1$ to give that
     \begin{equation*}
         -4 = \left(-A + \frac{14}{5}\right)(-2) + \left(-\frac{4}{5}\right)(5) = 2A - \frac{28}{5} - 4
     \end{equation*}
-    which gives that $A = -\nicefrac{14}{5}$. Therefore, we can write 
+    which gives that $A = -\frac{14}{5}$. Therefore, we can write 
     \begin{equation*}
-        \frac{2x^2 - 6}{x^3 - x^2 + 4x - 4} = \frac{-\nicefrac{14}{5}x + \nicefrac{14}{5}}{x^2 + 4} + \frac{-\nicefrac{4}{5}}{x-1}.
+        \frac{2x^2 - 6}{x^3 - x^2 + 4x - 4} = \frac{-\frac{14}{5}x + \frac{14}{5}}{x^2 + 4} + \frac{-\frac{4}{5}}{x-1}.
     \end{equation*}
     Therefore, we can write the integral we want to compute as
     \begin{equation*}
         \begin{split}
-            \int \frac{2x^2 - 6}{x^3 - x^2 + 4x - 4}\ dx &= \int  \frac{-\nicefrac{14}{5}x + \nicefrac{14}{5}}{x^2 + 4} + \frac{-\nicefrac{4}{5}}{x-1}\ dx \\
+            \int \frac{2x^2 - 6}{x^3 - x^2 + 4x - 4}\ dx &= \int  \frac{-\frac{14}{5}x + \frac{14}{5}}{x^2 + 4} + \frac{-\frac{4}{5}}{x-1}\ dx \\
             &= -\frac{14}{5} \int \frac{x}{x^2 + 4}\ dx + \frac{14}{5} \int \frac{1}{x^2 + 4}\ dx - \frac{4}{5} \int \frac{1}{x-1}\ dx \\
             &= -\frac{7}{5}\ln(|x^2 + 4|) + \frac{7}{5} \arctan\left(\frac{x}{2}\right) - \frac{4}{5}\ln(|x-1|) + C
         \end{split}

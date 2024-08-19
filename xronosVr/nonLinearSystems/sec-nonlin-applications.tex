@@ -182,7 +182,7 @@ See \figurevref{fig:nlin-pred-prey} for the phase portrait.  In this example it 
     \caption{The phase portrait (left) and graphs of $x$ and $y$ for a sample solution (right). \label{fig:nlin-pred-prey}}
 \end{myfig}
 
-Let us analyze what we see on the graphs.  We work in the general setting rather than putting in specific numbers.  We start with finding the critical points.  Set $(a-by)x = 0$, and $(cx-d)y = 0$. The first equation is satisfied if either $x=0$ or $y=\nicefrac{a}{b}$.  If $x=0$, the second equation implies $y=0$.  If $y= \nicefrac{a}{b}$, the second equation implies $x=\nicefrac{d}{c}$. There are two equilibria: at $(0,0)$ when there are no animals at all, and at $(\nicefrac{d}{c},\nicefrac{a}{b})$. In our specific example $x = \nicefrac{d}{c} = 100$, and $y = \nicefrac{a}{b} = 40$. This is the point where there are 100 hares and 40 foxes.
+Let us analyze what we see on the graphs.  We work in the general setting rather than putting in specific numbers.  We start with finding the critical points.  Set $(a-by)x = 0$, and $(cx-d)y = 0$. The first equation is satisfied if either $x=0$ or $y=\frac{a}{b}$.  If $x=0$, the second equation implies $y=0$.  If $y= \frac{a}{b}$, the second equation implies $x=\frac{d}{c}$. There are two equilibria: at $(0,0)$ when there are no animals at all, and at $(\frac{d}{c},\frac{a}{b})$. In our specific example $x = \frac{d}{c} = 100$, and $y = \frac{a}{b} = 40$. This is the point where there are 100 hares and 40 foxes.
 
 We compute the Jacobian matrix:
 \begin{equation*}
@@ -198,7 +198,7 @@ $\left[ \begin{smallmatrix}
 \end{smallmatrix} \right]$, 
 so the eigenvalues are $a$ and $-d$, hence real and of opposite signs.  So the critical point at the origin is a saddle. This makes sense.  If you started with some foxes but no hares, then the foxes would go extinct, that is, you would approach the origin.  If you started with no foxes and a few hares, then the hares would keep multiplying without check, and so you would go away from the origin.
 
-OK\@, how about the other critical point at $(\nicefrac{d}{c},\nicefrac{a}{b})$.  Here the Jacobian matrix becomes
+OK\@, how about the other critical point at $(\frac{d}{c},\frac{a}{b})$.  Here the Jacobian matrix becomes
 \begin{equation*}
     \begin{bmatrix}
         0 & -\frac{bd}{c} \\
@@ -245,7 +245,7 @@ Our equations give us what $x'$ and $y'$ are so let us plug those in:
         & = 0 .
     \end{split}
 \end{equation*}
-So along the trajectories $D$ is constant.  In fact, the expression $D = \frac{y^a x^d}{e^{cx+by}}$ gives us an implicit equation for the trajectories.  In any case, once we have found this constant of motion, it must be true that the trajectories are simple curves, that is, the level curves of $\frac{y^a x^d}{e^{cx+by}}$.  It turns out, the critical point at $(\nicefrac{d}{c},\nicefrac{a}{b})$ is a maximum for $D$ (left as an exercise). So $(\nicefrac{d}{c},\nicefrac{a}{b})$ is a stable equilibrium point, and we do not have to worry about the foxes and hares going extinct or their populations exploding.
+So along the trajectories $D$ is constant.  In fact, the expression $D = \frac{y^a x^d}{e^{cx+by}}$ gives us an implicit equation for the trajectories.  In any case, once we have found this constant of motion, it must be true that the trajectories are simple curves, that is, the level curves of $\frac{y^a x^d}{e^{cx+by}}$.  It turns out, the critical point at $(\frac{d}{c},\frac{a}{b})$ is a maximum for $D$ (left as an exercise). So $(\frac{d}{c},\frac{a}{b})$ is a stable equilibrium point, and we do not have to worry about the foxes and hares going extinct or their populations exploding.
 
 One blemish on this wonderful model is that the number of foxes and hares are discrete quantities and we are modeling with continuous variables.  Our model has no problem with there being 0.1 fox in the forest for example, while in reality that makes no sense.  The approximation is a reasonable one as long as the number of foxes and hares are large, but it does not make much sense for small numbers.  One must be careful in interpreting any results from such a model.
 

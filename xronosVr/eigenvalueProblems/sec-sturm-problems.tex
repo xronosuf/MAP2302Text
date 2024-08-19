@@ -158,7 +158,7 @@ When zero is an eigenvalue, we usually start labeling the eigenvalues at 0 rathe
         \frac{h}{\sqrt{\lambda}} = \tan \sqrt{\lambda} .
     \end{equation*}
     
-    We use a computer to find $\lambda_n$.  There are tables available, though using a computer or a graphing calculator is far more convenient nowadays. Easiest method is to plot the functions $\nicefrac{h}{x}$ and $\tan x$ and see for which $x$ they intersect. There is an infinite number of intersections.  Denote the first intersection by $\sqrt{\lambda_1}$, the second intersection by $\sqrt{\lambda_2}$, etc. For example, when$h=1$, we get $\sqrt{\lambda_1} \approx 0.86$,  $\sqrt{\lambda_2} \approx 3.43$, \ldots. That is $\lambda_1 \approx 0.74$, $\lambda_2 \approx 11.73$, \ldots. A plot for $h=1$ is given in \figurevref{sl:tanx1overxfig}. The appropriate eigenfunction (let $A = 1$ for convenience, then $B=\nicefrac{h}{\sqrt{\lambda}}$) is
+    We use a computer to find $\lambda_n$.  There are tables available, though using a computer or a graphing calculator is far more convenient nowadays. Easiest method is to plot the functions $\frac{h}{x}$ and $\tan x$ and see for which $x$ they intersect. There is an infinite number of intersections.  Denote the first intersection by $\sqrt{\lambda_1}$, the second intersection by $\sqrt{\lambda_2}$, etc. For example, when$h=1$, we get $\sqrt{\lambda_1} \approx 0.86$,  $\sqrt{\lambda_2} \approx 3.43$, \ldots. That is $\lambda_1 \approx 0.74$, $\lambda_2 \approx 11.73$, \ldots. A plot for $h=1$ is given in \figurevref{sl:tanx1overxfig}. The appropriate eigenfunction (let $A = 1$ for convenience, then $B=\frac{h}{\sqrt{\lambda}}$) is
     \begin{equation*}
         y_n(x) = \cos ( \sqrt{\lambda_n} x ) + \frac{h}{\sqrt{\lambda_n}} \sin (\sqrt{\lambda_n}  x ) .
     \end{equation*}
@@ -264,21 +264,21 @@ The following theorem holds more generally, but the statement given is enough fo
 \begin{example}
     Consider
     \begin{align*}
-        & y'' + \lambda y = 0, \quad 0 < x < \nicefrac{\pi}{2} , \\
-        & y(0) =0, \quad y'(\nicefrac{\pi}{2}) = 0 .
+        & y'' + \lambda y = 0, \quad 0 < x < \frac{\pi}{2} , \\
+        & y(0) =0, \quad y'(\frac{\pi}{2}) = 0 .
     \end{align*}
     The above is a regular Sturm--Liouville problem, and \thmvref{sl:slregthm} says that if $\lambda$ is an eigenvalue then $\lambda \geq 0$.
     
-    Suppose $\lambda = 0$.  The general solution is $y(x) = Ax + B$. We plug in the initial conditions to get $0=y(0) = B$, and $0 = y'(\nicefrac{\pi}{2}) = A$. Hence $\lambda = 0$ is not an eigenvalue.
+    Suppose $\lambda = 0$.  The general solution is $y(x) = Ax + B$. We plug in the initial conditions to get $0=y(0) = B$, and $0 = y'(\frac{\pi}{2}) = A$. Hence $\lambda = 0$ is not an eigenvalue.
     
     So let us consider $\lambda > 0$, where the general solution is
     \begin{equation*}
         y(x) = A \cos ( \sqrt{\lambda}  x ) + B \sin ( \sqrt{\lambda}  x) .
     \end{equation*}
     Plugging in the boundary conditions we get $0 = y(0) = A$ and 
-    $0 = y'(\nicefrac{\pi}{2}) = \sqrt{\lambda}  B \cos \bigl(\sqrt{\lambda}  \frac{\pi}{2}\bigr)$. 
+    $0 = y'(\frac{\pi}{2}) = \sqrt{\lambda}  B \cos \bigl(\sqrt{\lambda}  \frac{\pi}{2}\bigr)$. 
     Since $A$ is zero, then $B$ cannot be zero.  Hence $\cos \bigl( \sqrt{\lambda}  \frac{\pi}{2}\bigr) = 0$. This means that $\sqrt{\lambda} \frac{\pi}{2}$ is an odd integral multiple of 
-    $\nicefrac{\pi}{2}$, i.e.\ $(2n-1)\frac{\pi}{2} = \sqrt{\lambda_n} \frac{\pi}{2}$. 
+    $\frac{\pi}{2}$, i.e.\ $(2n-1)\frac{\pi}{2} = \sqrt{\lambda_n} \frac{\pi}{2}$. 
     Solving for $\lambda_n$ we get
     \begin{equation*}
         \lambda_n = {(2n-1)}^2 .
@@ -292,7 +292,7 @@ The following theorem holds more generally, but the statement given is enough fo
         \int_0^{\frac{\pi}{2}} {\Bigl( \sin \bigl( (2n-1)x \bigr) \Bigr)}^2  dx = \frac{\pi}{4} .
     \end{equation*}
     
-    So any piecewise smooth function $f(x)$ on $[0,\nicefrac{\pi}{2}]$ can be written as
+    So any piecewise smooth function $f(x)$ on $[0,\frac{\pi}{2}]$ can be written as
     \begin{equation*}
         f(x) = \sum_{n=1}^\infty c_n \sin \bigl( (2n-1)x \bigr) ,
     \end{equation*}
@@ -306,15 +306,15 @@ The following theorem holds more generally, but the statement given is enough fo
     Note that the series converges to an odd $2\pi$-periodic extension of $f(x)$.  With the regular sine series we would expect a function with period $2  \frac{\pi}{2} = \pi$.
     
     \begin{exercise}%[challenging]
-        In the example above, the function is defined on $0 < x < \nicefrac{\pi}{2}$, yet the series with respect to the eigenfunctions $\sin \bigl( (2n-1)x \bigr)$ converges to an odd $2\pi$-periodic extension of $f(x)$. Find out how is the extension defined for $\nicefrac{\pi}{2} < x < \pi$.
+        In the example above, the function is defined on $0 < x < \frac{\pi}{2}$, yet the series with respect to the eigenfunctions $\sin \bigl( (2n-1)x \bigr)$ converges to an odd $2\pi$-periodic extension of $f(x)$. Find out how is the extension defined for $\frac{\pi}{2} < x < \pi$.
     \end{exercise}
     
-    Let us compute an example. Consider $f(x) = x$ for $0 < x <  \nicefrac{\pi}{2}$.  Some calculus later we find
+    Let us compute an example. Consider $f(x) = x$ for $0 < x <  \frac{\pi}{2}$.  Some calculus later we find
     \begin{equation*}
         c_n =  \frac{4}{\pi} \int_0^{\frac{\pi}{2}} f(x) \sin \bigl( (2n-1)x \bigr)  dx 
         = \frac{4{(-1)}^{n+1}}{\pi {(2n-1)}^2} ,
     \end{equation*}
-    and so for $x$ in $[0,\nicefrac{\pi}{2}]$,
+    and so for $x$ in $[0,\frac{\pi}{2}]$,
     \begin{equation*}
         f(x) = \sum_{n=1}^\infty \frac{4{(-1)}^{n+1}}{\pi {(2n-1)}^2} \sin \bigl( (2n-1)x \bigr) .
     \end{equation*}
@@ -322,7 +322,7 @@ The following theorem holds more generally, but the statement given is enough fo
     \begin{equation*}
         f(x) = \sum_{n=1}^\infty \frac{{(-1)}^{n+1}}{n}  \sin ( 2nx ) .
     \end{equation*}
-    Both sums converge are equal to $f(x)$ for $0 < x < \nicefrac{\pi}{2}$, but the eigenfunctions involved come from different eigenvalue problems.
+    Both sums converge are equal to $f(x)$ for $0 < x < \frac{\pi}{2}$, but the eigenfunctions involved come from different eigenvalue problems.
 \end{example}
 
 

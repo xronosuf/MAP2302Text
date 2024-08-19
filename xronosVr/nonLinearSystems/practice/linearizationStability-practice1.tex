@@ -13,11 +13,11 @@ Why?
 
 \begin{exercise}
     Sketch the phase plane vector field for:
-    \begin{tasks}(3)
-        \task $x'=x^2$, \enspace $y'=y^2$,
-        \task $x'=(x-y)^2$, \enspace $y'=-x$,
-        \task $x'=e^y$, \enspace $y'=e^x$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=x^2$, \enspace $y'=y^2$,
+        \item $x'=(x-y)^2$, \enspace $y'=-x$,
+        \item $x'=e^y$, \enspace $y'=e^x$.
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -31,11 +31,26 @@ Why?
         (i)\  x'=x^2, \enspace y'=y^2, \quad (ii)\  x'=xy, \enspace y'=1+y^2, \quad (iii)\  x'=\sin(\pi y), \enspace y'=x,
     \end{equation*}
     to the vector fields below.  Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-xy-1py2}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-x2-y2}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-sinpiy-x}}
-    \end{tasks}
+    \begin{itemize}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-xy-1py2}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice[correct]{ii}
+                \choice{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-x2-y2}}
+            \begin{multipleChoice}
+                \choice[correct]{i}
+                \choice{ii}
+                \choice{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-sinpiy-x}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice{ii}
+                \choice[correct]{iii}
+            \end{multipleChoice}
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -49,11 +64,26 @@ Why?
         (i)\  x'=y^2, \enspace y'=-x^2, \quad (ii)\  x'=y, \enspace y'=(x-1)(x+1), \quad (iii)\  x'=y+x^2, \enspace y'=-x,
     \end{equation*}
     to the vector fields below.  Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-y-xm1xp1}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-ypx2-mx}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{figures/nlin-exer-y2-mx2}}
-    \end{tasks}
+    \begin{itemize}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-y-xm1xp1}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice[correct]{ii}
+                \choice{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-ypx2-mx}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice{ii}
+                \choice[correct]{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{1.75in}{\includegraphics[width=1.75in]{../figures/nlin-exer-y2-mx2}}
+            \begin{multipleChoice}
+                \choice[correct]{i}
+                \choice{ii}
+                \choice{iii}
+            \end{multipleChoice}
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a)~(ii) \quad b)~(iii) \quad c)~(i)
@@ -62,11 +92,20 @@ Why?
 
 \begin{exercise}
     Find the critical points and linearizations of the following systems.
-    \begin{tasks}(2)
-        \task $x'=x^2-y^2$, \enspace $y'=x^2+y^2-1$,
-        \task $x'=-y$, \enspace $y'=3x+yx^2$,
-        \task $x'=x^2+y$, \enspace $y'=y^2+x$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=x^2-y^2$, \enspace $y'=x^2+y^2-1$,\\
+            Critical points: $\left(\pm \answer{\frac{\sqrt{2}}{2}}, \pm \answer{\frac{\sqrt{2}}{2}}\right)$. \\
+            At $\left(+\answer{\frac{\sqrt{2}}{2}}, +\answer{\frac{\sqrt{2}}{2}}\right)$, linearization matrix is $\left[\begin{smallmatrix} \answer{\sqrt{2}} & -\sqrt{2} \\ \sqrt{2} & \answer{\sqrt{2}} \end{smallmatrix}\right]$. \\
+            At $\left(+\answer{\frac{\sqrt{2}}{2}}, -\answer{\frac{\sqrt{2}}{2}}\right)$, linearization matrix is $\left[\begin{smallmatrix} \answer{\sqrt{2}} & \sqrt{2} \\ \answer{\sqrt{2}} & -\sqrt{2} \end{smallmatrix}\right]$.\\
+            At $\left(-\answer{\frac{\sqrt{2}}{2}}, +\answer{\frac{\sqrt{2}}{2}}\right)$, linearization matrix is $\left[\begin{smallmatrix} -\answer{\sqrt{2}} & -\sqrt{2} \\ -\sqrt{2} & \answer{\sqrt{2}} \end{smallmatrix}\right]$. \\
+            At $\left(-\answer{\frac{\sqrt{2}}{2}}, -\answer{\frac{\sqrt{2}}{2}}\right)$, linearization matrix is $\left[\begin{smallmatrix} -\sqrt{2} & \answer{\sqrt{2}} \\ -\answer{\sqrt{2}} & -\sqrt{2} \end{smallmatrix}\right]$. \\
+        \item $x'=-y$, \enspace $y'=3x+yx^2$,\\
+            Critical point: $\left(\answer{0},\answer{0}\right)$, linearization matrix $\left[\begin{smallmatrix} \answer{0} & \answer{-1} \\ \answer{3} & 0 \end{smallmatrix}\right]$\\
+        \item $x'=x^2+y$, \enspace $y'=y^2+x$.\\
+            Critical points: $\left(\answer{0},\answer{0}\right)$ and $\left(\answer{-1}, \answer{-1}\right)$. \\
+            At $\left(\answer{0},\answer{0}\right)$, linearization matrix is $\left[\begin{smallmatrix} \answer{0} & 1 \\ \answer{1} & 0 \end{smallmatrix}\right]$. \\
+            At $\left(\answer{-1}, \answer{-1}\right)$, linearization matrix is $\left[\begin{smallmatrix} \answer{-2} & \answer{1} \\ 1 & \answer{-2} \end{smallmatrix}\right]$\\
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -80,11 +119,19 @@ Why?
 
 \begin{exercise}%
     Find the critical points and linearizations of the following systems.
-    \begin{tasks}(2)
-        \task $x'=\sin(\pi y)+(x-1)^2$, \enspace $y'=y^2-y$,
-        \task $x'=x+y+y^2$, \enspace $y'=x$,
-        \task $x'=(x-1)^2+y$, \enspace $y'=x^2+y$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=\sin(\pi y)+(x-1)^2$, \enspace $y'=y^2-y$,\\
+            Critical points $\left( \answer{1}, \answer{1} \right)$ and $\left( \answer{1}, \answer{0} \right)$.  \\
+            At $\left( \answer{1}, \answer{1} \right)$ using $u = x - 1$, $v = y - 1$ the linearization is $u'= \answer{-\pi v}$, $v' = \answer{v}$.\\
+            At $\left( \answer{1}, \answer{0} \right)$ using $u = x - 1$, $v = y$ the linearization is $u' = \answer{\pi v}$, $v' = \answer{-v}$.\\
+        \item $x'=x+y+y^2$, \enspace $y'=x$,\\
+            Critical points $\left( \answer{0},\answer{0} \right)$ and $\left(\answer{0}, \answer{-1} \right)$. \\
+            For $\left( \answer{0}, \answer{0} \right)$, using $u=x$, $v=y$ the linearization is $u' = \answer{u + v}$, $v' = \answer{u}$. \\
+            For $\left( \answer{0}, \answer{-1} \right)$, using $u = x$ and $v = y + 1$, the linearization is $u' = \answer{u - v}$, $v' = \answer{u}$\\
+        \item $x'=(x-1)^2+y$, \enspace $y'=x^2+y$.\\
+            Critical point $\left( \answer{\frac{1}{2}}, \answer{\frac{-1}{4}} \right)$. \\
+            Using $u = x - \frac{1}{2}$, $v = y + \frac{1}{4}$ the linearization is $u' = \answer{-u + v}$, $v' = \answer{u + v}$.
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) Critical points $(1,1)$ and $(1,0)$.  At $(1,1)$ using $u=x-1$, $v=y-1$ the linearization is $u'=-\pi v$, $v'=v$.
@@ -92,21 +139,22 @@ Why?
 %$u'=\pi v$, $v'=-v$.\\
 %b) Critical points $(0,0)$ and $(0, -1)$. For $(0,0)$, using $u=x$, $v=y$ the linearization is
 %$u'=u+v$, $v'=u$. For $(0,-1)$, using $u = x$ and $v = y+1$, the linearization is $u' = u-v$, $v' = u$\\
-%c) Critical point $(\nicefrac{1}{2},\nicefrac{-1}{4})$.  Using
-%$u=x-\nicefrac{1}{2}$, $v=y+\nicefrac{1}{4}$ the linearization is
+%c) Critical point $(\frac{1}{2},\frac{-1}{4})$.  Using
+%$u=x-\frac{1}{2}$, $v=y+\frac{1}{4}$ the linearization is
 %$u'=-u+v$, $v'=u+v$.
 %}
 
 \begin{exercise}
     For the following systems, verify they have critical point at $(0,0)$, and find the linearization at $(0,0)$.
-    \begin{tasks}(2)
-        \task $x'=x+2y+x^2-y^2$, \enspace $y'=2y-x^2$
-        \task $x'=-y$, \enspace $y'=x-y^3$
-        \task* $x'=ax+by+f(x,y)$, $y'=cx+dy+g(x,y)$, where
-            $f(0,0) = 0$, $g(0,0) = 0$, 
-            and all first partial derivatives of $f$ and $g$ are also zero at $(0,0)$, that is,
-            $\frac{\partial f}{\partial x}(0,0) = \frac{\partial f}{\partial y}(0,0) = \frac{\partial g}{\partial x}(0,0) = \frac{\partial g}{\partial y}(0,0) = 0$.
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=x+2y+x^2-y^2$, \enspace $y'=2y-x^2$\\
+            $\left[\begin{smallmatrix} \answer{1} & 2 \\ 0 & \answer{2} \end{smallmatrix}\right]$
+        \item $x'=-y$, \enspace $y'=x-y^3$\\
+            $\left[\begin{smallmatrix} \answer{1} & \answer{1} \\ 1 & \answer{0} \end{smallmatrix}\right]$
+        \item* $x'=ax+by+f(x,y)$, $y'=cx+dy+g(x,y)$, 
+            where $f(0,0) = 0$, $g(0,0) = 0$, and all first partial derivatives of $f$ and $g$ are also zero at $(0,0)$, that is, $\frac{\partial f}{\partial x}(0,0) = \frac{\partial f}{\partial y}(0,0) = \frac{\partial g}{\partial x}(0,0) = \frac{\partial g}{\partial y}(0,0) = 0$.\\
+            $\left[\begin{smallmatrix} \answer{a} & \answer{b} \\ \answer{c} & \answer{d} \end{smallmatrix}\right]$.
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -116,11 +164,55 @@ Why?
 
 \begin{exercise}
     Take the system $x' = (x-2)(x+y)$, \ $y' = (y+3)(x-y)$.
-    \begin{tasks}
-        \task Find all critical points.
-        \task Determine the linearization of this system around each of the critical points.
-        \task For each of the critical points, determine the behavior and classify the type of solution that the  \emph{linearized} system will have around that critical point. 
-    \end{tasks}
+    
+    Find all critical points.\\
+    $\left(\answer{0}, \answer{0}\right)$, $\left(\answer{2}, \answer{-3}\right)$, $\left(\answer{2}, \answer{2}\right)$, $\left(\answer{3}, \answer{-3}\right)$
+    \begin{problem}
+        Determine the linearization of this system around each of the critical points.\\
+            $(0,0)$, $\left[\begin{smallmatrix} \answer{-2} & \answer{-2} \\ \answer{3} & -3 \end{smallmatrix}\right]$, \\ 
+            $(2, -3)$, $\left[\begin{smallmatrix} -1 & \answer{0} \\ \answer{0} & \answer{1} \end{smallmatrix}\right]$, \\ 
+            $(2, 2)$, $\left[\begin{smallmatrix} \answer{2} & \answer{0} \\ 5 & \answer{-5} \end{smallmatrix}\right]$, \\ 
+            $(3, -3)$, $\left[\begin{smallmatrix} 1 & \answer{1} \\ \answer{0} & \answer{6} \end{smallmatrix}\right]$, \\
+        \begin{problem}
+            For each of the critical points, determine the behavior and classify the type of solution that the  \emph{linearized} system will have around that critical point. \\
+            $(0,0)$,  \\
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice[correct]{Nodal sink}
+                \choice{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $(2, -3)$
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice[correct]{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $(2, 2)$
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice[correct]{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $(3, -3)$
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice[correct]{Nodal Source}
+            \end{multipleChoice}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -132,15 +224,78 @@ Why?
 
 \begin{exercise}
     Take the system $x' = (x^2 - y)(x+3)$, \ $y' = (y-1)(x+y+1)$.
-    \begin{tasks}
-        \task Find all critical points.
-        \task Determine the linearization of this system around each of the critical points.
-        \task For each of the critical points, determine the behavior and classify the type of solution that the \emph{linearized} system will have around that critical point. 
-    \end{tasks}
+    Find all critical points.\\
+    $\left(\answer{-1}, \answer{1}\right)$, $\left(\answer{1}, \answer{1}\right)$, $\left(\answer{-3}, \answer{1}\right)$, $\left(\answer{-3}, \answer{4}\right)$, $\left( \answer{-\frac{1}{2} + \frac{\sqrt{5}}{2}}, \answer{\frac{3}{2} - \frac{\sqrt{5}}{2}}\right)$, $\left( \answer{-\frac{1}{2} - \frac{\sqrt{5}}{2}}, \answer{\frac{3}{2} + \frac{\sqrt{5}}{2}}\right)$
+    \begin{problem}
+        Determine the linearization of this system around each of the critical points.\\
+            $(-1,1)$, $\left[\begin{smallmatrix} \answer{-4} & \answer{-2} \\ 0 & \answer{-1} \end{smallmatrix}\right]$, \\
+            $(1,1)$, $\left[\begin{smallmatrix} \answer{8} & \answer{-4} \\ \answer{0} & 1 \end{smallmatrix}\right]$, \\
+            $(-3, 1)$, $\left[\begin{smallmatrix} \answer{8} & \answer{0} \\ 0 & \answer{-3} \end{smallmatrix}\right]$,  \\
+            $(-3, 4)$, $\left[\begin{smallmatrix} 5 & \answer{0} \\ \answer{3} & \answer{3} \end{smallmatrix}\right]$, \\ 
+            $\left( -\frac{1}{2} + \frac{\sqrt{5}}{2}, \frac{3}{2} - \frac{\sqrt{5}}{2}\right)$, $\left[\begin{smallmatrix} \answer{2\sqrt{5}} & \answer{-\frac{5}{2} - \frac{\sqrt{5}}{2}} \\ \answer{\frac{1}{2} - \frac{\sqrt{5}}{2}} & \frac{1}{2} - \frac{\sqrt{5}}{2} \end{smallmatrix}\right]$, \\
+            $\left( -\frac{1}{2} - \frac{\sqrt{5}}{2}, \frac{3}{2} + \frac{\sqrt{5}}{2}\right)$, $\left[\begin{smallmatrix} -2\sqrt{5} & \answer{-\frac{5}{2} + \frac{\sqrt{5}}{2}} \\ \answer{\frac{1}{2} + \frac{\sqrt{5}}{2}} & \answer{\frac{1}{2} + \frac{\sqrt{5}}{2}} \end{smallmatrix}\right]$\\
+        \begin{problem}
+            For each of the critical points, determine the behavior and classify the type of solution that the  \emph{linearized} system will have around that critical point. \\
+            $\left(\answer{-1}, \answer{1}\right)$,   \\
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice[correct]{Nodal sink}
+                \choice{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $\left(\answer{1}, \answer{1}\right)$, 
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice[correct]{Nodal Source}
+            \end{multipleChoice}
+            $\left(\answer{-3}, \answer{1}\right)$, 
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice[correct]{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $\left(\answer{-3}, \answer{4}\right)$, 
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice[correct]{Nodal Source}
+            \end{multipleChoice}
+            $\left( \answer{-\frac{1}{2} + \frac{\sqrt{5}}{2}}, \answer{\frac{3}{2} - \frac{\sqrt{5}}{2}}\right)$, 
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice[correct]{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+            $\left( \answer{-\frac{1}{2} - \frac{\sqrt{5}}{2}}, \answer{\frac{3}{2} + \frac{\sqrt{5}}{2}}\right)$ 
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{Nodal sink}
+                \choice[correct]{Saddle}
+                \choice{Nodal Saddle}
+                \choice{Source}
+                \choice{Nodal Source}
+            \end{multipleChoice}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
-%{%
+%{% 
 %$(-1,1)$, $\left[\begin{smallmatrix} -4 & -2 \\ 0 & -1 \end{smallmatrix}\right]$, Nodal sink.\ $(1,1)$, $\left[\begin{smallmatrix} 8 & -4 \\ 0 & 1 \end{smallmatrix}\right]$, Nodal source.\ 
 %$(-3, 1)$, $\left[\begin{smallmatrix} 8 & 0 \\ 0 & -3 \end{smallmatrix}\right]$, Saddle.\ 
 %$(-3, 4)$, $\left[\begin{smallmatrix} 5 & 0 \\ 3 & 3 \end{smallmatrix}\right]$, Nodal Source.\ 
@@ -149,12 +304,15 @@ Why?
 %}
 
 \begin{exercise}
-    Take $x'=(x-y)^2$, \enspace $y'=(x+y)^2$. 
-    \begin{tasks}
-        \task Find the set of critical points.
-        \task Sketch a phase diagram and describe the behavior near the critical point(s).
-        \task Find the linearization.  Is it helpful in understanding the system?
-    \end{tasks}
+    Take $x'=(x-y)^2$, \enspace $y'=(x+y)^2$. \\
+    Find the set of critical points. $\left(\answer{0}, \answer{0}\right)$
+    \begin{problem}
+        Sketch a phase diagram and describe the behavior near the critical point(s) and find the linearization.\\
+        Solutions move away from $\answer{0}$, generally above the line $y=\answer{x}$
+        \begin{feedback}[correct]
+            Is it helpful in understanding the system?
+        \end{feedback}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -164,11 +322,19 @@ Why?
 
 \begin{exercise}
     Take $x'=x^2$, \enspace $y'=x^3$.
-    \begin{tasks}
-        \task Find the set of critical points.
-        \task Sketch a phase diagram and describe the behavior near the critical point(s).
-        \task Find the linearization.  Is it helpful in understanding the system?
-    \end{tasks}
+    Find the set of critical points. $\left(\answer{0}, \answer{y}\right)$
+    \begin{problem}
+        Sketch a phase diagram and describe the behavior near the critical point(s) \\
+        Generally curving \wordChoice{\choice[correct]{upward}\choice{downward}\choice{toward the x-axis.}} as $x$ gets bigger
+        
+        \begin{problem}
+            Find the linearization.\\
+            The linearization is $\answer{0}$.
+            \begin{feedback}[correct]
+                Is it helpful in understanding the system?
+            \end{feedback}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -200,7 +366,8 @@ Why?
 %}
 
 \begin{exercise}%
-    Any two-dimensional non-autonomous system $x'=f(x,y,t)$, $y'=g(x,y,t)$ can be written as a three-dimensional autonomous system (three equations).  Write down this autonomous system using the variables $u$, $v$, $w$.
+    Any two-dimensional non-autonomous system $x'=f(x,y,t)$, $y'=g(x,y,t)$ can be written as a three-dimensional autonomous system (three equations).  Write down this autonomous system using the variables $u$, $v$, $w$.\\
+    $u' = f(u,v,w)$, $v'=g(u,v,w)$, $w' = \answer{1}$.
 \end{exercise}
 %\exsol{%
 %$u' = f(u,v,w)$, $v'=g(u,v,w)$, $w' = 1$.
@@ -208,11 +375,11 @@ Why?
 
 \begin{exercise}
     For the systems below, find and classify the critical points, also indicate if the equilibria are stable, asymptotically stable, or unstable.
-    \begin{tasks}(2)
-        \task $x'=-x+3x^2, y'=-y$
-        \task $x'=x^2+y^2-1$, $y'=x$
-        \task $x'=ye^x$, $y'=y-x+y^2$
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=-x+3x^2, y'=-y$
+        \item $x'=x^2+y^2-1$, $y'=x$
+        \item $x'=ye^x$, $y'=y-x+y^2$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -224,11 +391,11 @@ Why?
 
 \begin{exercise}%
     For the systems below, find and classify the critical points.
-    \begin{tasks}(3)
-        \task $x'=-x+x^2$, $y'=y$
-        \task $x'=y-y^2-x$, $y'=-x$
-        \task $x'=xy$, $y'=x+y-1$
-    \end{tasks}
+    \begin{itemize}
+        \item $x'=-x+x^2$, $y'=y$
+        \item $x'=y-y^2-x$, $y'=-x$
+        \item $x'=xy$, $y'=x+y-1$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $(0,0)$: saddle (unstable), $(1,0)$: source (unstable), \qquad
@@ -241,6 +408,38 @@ Why?
     \[ 
         \frac{dx}{dt} = (x+1)(x-y+3) \qquad \frac{dy}{dt} = (x-2)(x-y) .
     \]
+    $\left(\answer{-1}, \answer{-1}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice{spiral sink}
+        \choice{nodal saddle}
+        \choice{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice[correct]{improper nodal source}
+        \choice{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice{Asymptotically stable}\choice[correct]{unstable}}.\\
+    $\left(\answer{2}, \answer{5}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice[correct]{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice{spiral sink}
+        \choice{nodal saddle}
+        \choice{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice{improper nodal source}
+        \choice{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice{Asymptotically stable}\choice[correct]{unstable}}.
 \end{exercise}
 %\comboSol{%
 %}
@@ -253,6 +452,70 @@ Why?
     \[ 
         \frac{dx}{dt} = x^2 - y^2 \qquad \frac{dy}{dt} = (x+4)(y-2) .
     \]
+    $\left(\answer{-4}, \answer{4}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice{spiral sink}
+        \choice{nodal saddle}
+        \choice{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice{improper nodal source}
+        \choice[correct]{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice[correct]{Asymptotically stable}\choice{unstable}}.\\
+    $\left(\answer{-4}, \answer{-4}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice[correct]{spiral sink}
+        \choice{nodal saddle}
+        \choice{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice{improper nodal source}
+        \choice{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice[correct]{Asymptotically stable}\choice{unstable}}.\\
+    $\left(\answer{-2}, \answer{2}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice[correct]{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice{spiral sink}
+        \choice{nodal saddle}
+        \choice{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice{improper nodal source}
+        \choice{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice{Asymptotically stable}\choice[correct]{unstable}}.\\
+    $\left(\answer{-2}, \answer{2}\right)$ Which is a:
+    \begin{multipleChoice}
+        \choice{saddle}
+        \choice{source}
+        \choice{sink}
+        \choice{spiral saddle}
+        \choice{spiral source}
+        \choice{spiral sink}
+        \choice{nodal saddle}
+        \choice[correct]{nodal source}
+        \choice{nodal sink}
+        \choice{improper nodal saddle}
+        \choice{improper nodal source}
+        \choice{improper nodal sink}
+    \end{multipleChoice}
+    And it is \wordChoice{\choice{stable}\choice{Asymptotically stable}\choice[correct]{unstable}}.
 \end{exercise}
 %\comboSol{%
 %}
@@ -262,7 +525,8 @@ Why?
 
 
 \begin{exercise}
-    Find and classify the critical point(s) of $x' = -x^2$, $y' = -y^2$.
+    Find and classify the critical point(s) of $x' = -x^2$, $y' = -y^2$.\\
+    $\left(\answer{0}, \answer{0}\right)$ which is \wordChoice{\choice{stable}\choice{Asymptotically stable}\choice[correct]{unstable}}.
 \end{exercise}
 %\comboSol{%
 %}
@@ -273,11 +537,11 @@ Why?
 
 \begin{exercise}
     Suppose $x'=-xy$, $y'=x^2-1-y$.
-    \begin{tasks}
-        \task Show there are two spiral sinks at $(-1,0)$ and $(1,0)$.
-        \task For any initial point of the form $(0,y_0)$, find the trajectory.
-        \task Can a trajectory starting at $(x_0,y_0)$ where $x_0 > 0$ spiral into the critical point at $(-1,0)$?  Why or why not?
-    \end{tasks}
+    \begin{itemize}
+        \item Show there are two spiral sinks at $(-1,0)$ and $(1,0)$.
+        \item For any initial point of the form $(0,y_0)$, find the trajectory.
+        \item Can a trajectory starting at $(x_0,y_0)$ where $x_0 > 0$ spiral into the critical point at $(-1,0)$?  Why or why not?
+    \end{itemize}
 \end{exercise}
 
 
@@ -288,9 +552,9 @@ Why?
 %}
 
 \begin{exercise} \label{exercise:increasing}
-In the example $x'=y$, $y'=y^3-x$ show that for any trajectory, the distance from the origin is an increasing function. Conclude that the origin behaves like is a spiral source. Hint: Consider 
-$f(t) = {\bigl(x(t)\bigr)}^2 + {\bigl(y(t)\bigr)}^2$ 
-and show it has positive derivative.
+    In the example $x'=y$, $y'=y^3-x$ show that for any trajectory, the distance from the origin is an increasing function. Conclude that the origin behaves like is a spiral source. Hint: Consider 
+    $f(t) = {\bigl(x(t)\bigr)}^2 + {\bigl(y(t)\bigr)}^2$ and show it has positive derivative.\\
+    $\answer{2r}\frac{dr}{dt} = \answer{2y^4} > 0$
 \end{exercise}
 %\comboSol{%
 %}
@@ -299,7 +563,8 @@ and show it has positive derivative.
 %}
 
 \begin{exercise}
-    Find and analyze all critical points of the system $x' = y$, $y' = -x - y^3$. Use the ideas from \exerciseref{exercise:increasing} to show that the solutions to this problem move towards the origin as $t$ grows.
+    Find and analyze all critical points of the system $x' = y$, $y' = -x - y^3$. Use the ideas from exercise \ref{exercise:increasing} to show that the solutions to this problem move towards the origin as $t$ grows.\\
+    $\answer{2r}\frac{dr}{dt} = \answer{-2y^4} < 0$
 \end{exercise}
 %\comboSol{%
 %}
@@ -308,7 +573,8 @@ and show it has positive derivative.
 %}
 
 \begin{exercise}%
-    Derive an analogous classification of critical points for equations in one dimension, such as $x'= f(x)$ based on the derivative.  A point $x_0$ is critical when $f(x_0) = 0$ and almost linear if in addition $f'(x_0) \not= 0$.  Figure out if the critical point is stable or unstable depending on the sign of $f'(x_0)$.  Explain.  Hint: see \sectionref{auteq:section}.
+    Derive an analogous classification of critical points for equations in one dimension, such as $x'= f(x)$ based on the derivative.  A point $x_0$ is critical when $f(x_0) = 0$ and almost linear if in addition $f'(x_0) \not= 0$.  Figure out if the critical point is stable or unstable depending on the sign of $f'(x_0)$.  Explain.  Hint: see section \ref{auteq:section}.\\
+    A critical point $x_0$ is stable if $f'(x_0) < \answer{0}$ and unstable when $f'(x_0) > \answer{0}$.
 \end{exercise}
 %\exsol{%
 %A critical point $x_0$ is stable if $f'(x_0) < 0$ and unstable when $f'(x_0)

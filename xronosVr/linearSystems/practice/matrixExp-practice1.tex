@@ -11,7 +11,8 @@ Why?
 \maketitle
 
 \begin{exercise}
-Using the matrix exponential, find a fundamental matrix solution for the system $x' = 3x+y$, $y' = x+3y$.
+    Using the matrix exponential, find a fundamental matrix solution for the system $x' = 3x+y$, $y' = x+3y$.
+    $e^{tA} = \left[\begin{smallmatrix} \answer{\frac{1}{2}e^{2t} + \frac{1}{2}e^{4t}} & \answer{\frac{1}{2}e^{4t} - \frac{1}{2}e^{2t}} \\ \answer{-\frac{1}{2}e^{2t} + \frac{1}{2}e^{4t}} & \answer{\frac{1}{2}e^{2t} + \frac{1}{2}e^{4t}} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -24,7 +25,8 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
     \left[ \begin{smallmatrix}
         2 & 3 \\
         0 & 2
-    \end{smallmatrix} \right]$.
+    \end{smallmatrix} \right]$.\\
+    $e^{tA} = \left[\begin{smallmatrix}  \answer{e^{2t}} & \answer{3te^{2t}} \\ \answer{0} & \answer{e^{2t}} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -37,7 +39,13 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
     $A=\left[ \begin{smallmatrix}
         1 & -2 \\
         -2 & 1 
-    \end{smallmatrix}\right]$.
+    \end{smallmatrix}\right]$.\\
+    $e^{tA}=\left[ \begin{smallmatrix}
+    \answer{\frac{{e}^{3t}+{e}^{-t}}{2}} & \quad
+    \answer{\frac{{e}^{-t}-{e}^{3t}}{2}}\\
+    \answer{\frac{{e}^{-t}-{e}^{3t}}{2}} & \quad
+    \answer{\frac{{e}^{3t}+{e}^{-t}}{2}}
+    \end{smallmatrix}\right]$
 \end{exercise}
 %\exsol{%
 %$e^{tA}=\left[ \begin{smallmatrix}
@@ -55,7 +63,18 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
         1 & -3 & 2 \\
         -2 & 1 & 2 \\
         -1 & -3 & 4
-    \end{smallmatrix}\right]$.
+    \end{smallmatrix}\right]$.\\
+    $e^{tA}=\left[ \begin{smallmatrix}
+    \answer{2{e}^{3t}-4{e}^{2t}+3{e}^{t}} & \quad
+    \answer{\frac{3{e}^{t}}{2}-\frac{3{e}^{3t}}{2}} & \quad
+    \answer{-{e}^{3t}+4{e}^{2t}-3{e}^{t}} \\
+    \answer{2{e}^{t}-2{e}^{2t}} & \quad
+    \answer{{e}^{t}} & \quad
+    \answer{2{e}^{2t}-2{e}^{t}} \\
+    \answer{2{e}^{3t}-5{e}^{2t}+3{e}^{t}} & \quad
+    \answer{\frac{3{e}^{t}}{2}-\frac{3{e}^{3t}}{2}} & \quad
+    \answer{-{e}^{3t}+5{e}^{2t}-3{e}^{t}}
+    \end{smallmatrix}\right]$
 \end{exercise}
 %\exsol{%
 %$e^{tA}=\left[ \begin{smallmatrix}
@@ -72,40 +91,65 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
 %}
 
 \begin{exercise}%
-    \begin{tasks}(2)
-        \task Compute $e^{tA}$ where
+    \begin{itemize}
+        \item Compute $e^{tA}$ where
         $A=\left[ \begin{smallmatrix}
             3 & -1 \\
             1 & 1 
-        \end{smallmatrix}\right]$.
-        \task Solve $\vec{x}\,' = A \vec{x}$ for $\vec{x}(0) =
+        \end{smallmatrix}\right]$.\\
+        $e^{tA}=
+        \left[ \begin{smallmatrix}
+            \answer{( t+1) {e}^{2t} & -t{e}^{2t}} \\
+            \answer{t{e}^{2t} & ( 1-t) {e}^{2t}}
+        \end{smallmatrix}\right]$
+        
+        \item Solve $\vec{x}' = A \vec{x}$ for $\vec{x}(0) =
         \left[ \begin{smallmatrix}
             1 \\ 
             2
-        \end{smallmatrix}\right]$.
-    \end{tasks}
+        \end{smallmatrix}\right]$.\\
+        $\vec{x}=
+        \left[ \begin{smallmatrix}
+            \answer{(1-t) {e}^{2t}} \\
+            \answer{(2-t) {e}^{2t}}
+        \end{smallmatrix}\right]$
+        
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $e^{tA}=\left[ \begin{smallmatrix}
-%( t+1) \,{e}^{2t} & -t{e}^{2t} \\
-%t{e}^{2t} & ( 1-t) \,{e}^{2t}
+%( t+1) {e}^{2t} & -t{e}^{2t} \\
+%t{e}^{2t} & ( 1-t) {e}^{2t}
 %\end{smallmatrix}\right]$
 %\quad
 %b) $\vec{x}=\left[ \begin{smallmatrix}
-%(1-t) \,{e}^{2t} \\
-%(2-t) \,{e}^{2t}
+%(1-t) {e}^{2t} \\
+%(2-t) {e}^{2t}
 %\end{smallmatrix}\right]$
 %}
 
 \begin{exercise}
-    Find a fundamental matrix solution for the system $x_1' = 7x_1+4x_2+ 12x_3$, $x_2' = x_1+2x_2+x_3$, $x_3' = -3x_1-2x_2- 5x_3$.  Then find the solution that satisfies $\vec{x}(0) = 
-    \left[ 
-        \begin{smallmatrix} 
+    Find a fundamental matrix solution for the system $x_1' = 7x_1+4x_2+ 12x_3$, $x_2' = x_1+2x_2+x_3$, $x_3' = -3x_1-2x_2- 5x_3$.\\
+    $\frac{1}{6}\left[\begin{smallmatrix} 
+        \answer{10e^{3t} + 12e^t - 16} & \answer{8e^{3t} - 8} & \answer{16e^{3t} + 24e^t - 40} \\%
+        \answer{5e^{3t} - 9e^t + 4} & \answer{4e^{3t} + 2} & \answer{8e^{3t} - 18e^t + 10} \\%
+        \answer{-5e^{3t} - 3e^t + 8} & \answer{-4e^{3t} + 4} & \answer{-8e^{3t} - 6e^t + 20} 
+    \end{smallmatrix}\right]$
+    
+    \begin{problem}
+        Find the solution that satisfies $\vec{x}(0) = 
+        \left[ \begin{smallmatrix} 
             0 \\ 
             1 \\ 
             -2 
-        \end{smallmatrix} 
-    \right]$.
+        \end{smallmatrix} \right]$.\\
+        
+        $\vec{x}(t) = \frac{1}{6}\left[\begin{smallmatrix} 
+            \answer{10e^{3t} + 12e^t - 16} & \answer{8e^{3t} - 8} & \answer{16e^{3t} + 24e^t - 40} \\%
+            \answer{5e^{3t} - 9e^t + 4} & \answer{4e^{3t} + 2} & \answer{8e^{3t} - 18e^t + 10} \\%
+            \answer{-5e^{3t} - 3e^t + 8} & \answer{-4e^{3t} + 4} & \answer{-8e^{3t} - 6e^t + 20} \end{smallmatrix}\right] 
+            \left[\begin{smallmatrix} 0 \\ 1 \\ 2 \end{smallmatrix}\right]$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -124,7 +168,8 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
             1 & 2 \\ 
             0 & 1 
         \end{smallmatrix} 
-    \right]$.
+    \right]$.\\
+    $\left[\begin{smallmatrix} \answer{e^t} & \answer{(1+2t)e^t} \\ \answer{0} & \answer{e^t} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -142,7 +187,10 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
 %}
 
 \begin{exercise} \label{matexp:expinvex}
-    Use \exerciseref{matexp:explawex} to show that ${(e^{A})}^{-1} = e^{-A}$.  In particular this means that $e^A$ is invertible even if $A$ is not.
+    \begin{hint}
+        $A$ commutes with $-A$.
+    \end{hint}
+    Use exercise \ref{matexp:explawex} to show that ${(e^{A})}^{-1} = e^{-A}$.  In particular this means that $e^A$ is invertible even if $A$ is not.
 \end{exercise}
 %\comboSol{%
 %}
@@ -164,17 +212,18 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
             1
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task Find matrix $A$ with these properties.
-        \task Find a fundamental matrix solution to ${\vec{x}}' = A \vec{x}$.
-        \task Solve the system in with initial conditions $\vec{x}(0) =
-        \left[ 
-            \begin{smallmatrix}
-                2 \\
-                3
-            \end{smallmatrix} 
-        \right]$ .
-    \end{tasks}
+    \begin{itemize}
+        \item Find matrix $A$ with these properties.\\
+            $\left[\begin{smallmatrix} \answer{-1} & 0 \\ -2 & \answer{1} \end{smallmatrix}\right]$
+        \item Find a fundamental matrix solution to ${\vec{x}}' = A \vec{x}$.\\
+            $\left[\begin{smallmatrix} \answer{e^{-t}} & 0 \\ \answer{e^{-t} - e^t} & e^t \end{smallmatrix}\right]$
+        \item Solve the system in with initial conditions $\vec{x}(0) =
+        \left[ \begin{smallmatrix}
+            2 \\
+            3
+        \end{smallmatrix} \right]$ .\\
+        $\left[\begin{smallmatrix} \answer{2e^{-t}} \\ \answer{2e^{-t} + e^t} \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -193,22 +242,20 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
 
 \begin{exercise}
     Let $A = 
-    \left[ 
-        \begin{smallmatrix}
-            -1 & -1 \\
-            1 & -3
-        \end{smallmatrix} 
-    \right]$.
-    \begin{tasks}(2)
-    \task Find $e^{tA}$.
-    \task Solve ${\vec{x}}' = A \vec{x}$, $\vec{x}(0) =
-    \left[ 
-        \begin{smallmatrix}
+    \left[\begin{smallmatrix}
+        -1 & -1 \\
+        1 & -3
+    \end{smallmatrix} \right]$.
+    \begin{itemize}
+    \item Find $e^{tA}$.\\
+        $\left[\begin{smallmatrix} \answer{(1+t)e^{-2t}} & \answer{-te^{-2t}} \\ \answer{te^{-2t}} & \answer{(1-t)e^{-2t}} \end{smallmatrix}\right]$
+    \item Solve ${\vec{x}}' = A \vec{x}$, $\vec{x}(0) =
+        \left[ \begin{smallmatrix}
             1 \\
             -2
-        \end{smallmatrix} 
-    \right]$.
-    \end{tasks}
+        \end{smallmatrix} \right]$.\\
+        $\left[\begin{smallmatrix} \answer{(1+3t)e^{-2t}} \\ \answer{(-2 + 3t)e^{-2t}} \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -221,7 +268,8 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
         1 & 2 \\
         3 & 4 
     \end{smallmatrix} \right]$.
-    Approximate $e^{tA}$ by expanding the power series up to the third order.
+    Approximate $e^{tA}$ by expanding the power series up to the third order.\\
+    $\left[\begin{smallmatrix} \answer{1 + t + \frac{7}{2}t^2 + \frac{37}{6}t^3} & \answer{2t + 5t^2 + 9t^3} \\ \answer{3t + \frac{15}{2}t^2 + \frac{79}{6}t^3} & \answer{1 + 4t + 11t^2 + 18t^3} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -234,8 +282,20 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
     $A=\left[ \begin{smallmatrix}
         2 & 3 \\
         2 & 2 
-    \end{smallmatrix}\right]$ 
-    (Write as a single matrix). Then use it to approximate $e^{0.1A}$.
+    \end{smallmatrix}\right]$ \\
+    (Write as a single matrix). \\
+    $\left[ \begin{smallmatrix}
+        \answer{1+2t+5t^2} & \answer{3t+6t^2} \\
+        \answer{2t+4t^2} & \answer{1+2t+5t^2}
+    \end{smallmatrix}\right]$
+    \begin{problem}
+        Use the above to approximate $e^{0.1A}$. [Enter up to two decimal digits] \\
+        $e^{0.1A} \approx
+        \left[ \begin{smallmatrix}
+            \answer{1.25} & \answer{0.36} \\
+            \answer{0.24} & \answer{1.25}
+        \end{smallmatrix}\right]$
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %$\left[ \begin{smallmatrix}
@@ -252,28 +312,32 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
 
 \begin{exercise}
     For any positive integer $n$, find a formula (or a recipe) for $A^n$ for the following matrices:
-    \begin{tasks}(4)
-        \task
+    \begin{itemize}
+        \item
         $\begin{bmatrix}
             3 & 0 \\ 
             0 & 9
-        \end{bmatrix}$
-        \task
+        \end{bmatrix}$\\
+        $\left[\begin{smallmatrix} \answer{3^n} & \answer{0} \\ \answer{0} & \answer{9^n} \end{smallmatrix}\right]$
+        \item
         $\begin{bmatrix}
             5 & 2 \\ 
             4 & 7
-        \end{bmatrix}$
-        \task
+        \end{bmatrix}$\\
+        $3^{n-1}\left[\begin{smallmatrix} \answer{2 + 3^n} & \answer{-1 + 3^n} \\ \answer{-2 + 2\cdot3^n} & \answer{1 + 2\cdot 3^n} \end{smallmatrix}\right]$
+        \item
         $\begin{bmatrix}
             0 & 1 \\ 
             0 & 0
-        \end{bmatrix}$
-        \task
+        \end{bmatrix}$\\
+        $A^0 = I$, $A^1 = A$, $A^n = \answer{0}$ for all $n \geq \answer{2}$
+        \item
         $\begin{bmatrix}
             2 & 1 \\ 
             0 & 2
-        \end{bmatrix}$
-    \end{tasks}
+        \end{bmatrix}$\\
+        $\left[\begin{smallmatrix} \answer{2^n} & \answer{n2^{n-1}} \\ \answer{0} & \answer{2^n} \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -283,23 +347,35 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
 
 \begin{exercise}%
     For any positive integer $n$, find a formula (or a recipe) for $A^n$ for the following matrices:
-    \begin{tasks}(3)
-        \task
+    \begin{itemize}
+        \item
         $\begin{bmatrix}
             7 & 4 \\ 
             -5 & -2
-        \end{bmatrix}$
-        \task
+        \end{bmatrix}$\\
+        $\left[\begin{smallmatrix}
+            \answer{5 (3^n)-2^{n+2}} & \answer{4 (3^n)-2^{n+2}}\\
+            \answer{5 (2^n)-5 (3^n)} & \answer{5 (2^n)-4 (3^n)}
+        \end{smallmatrix}\right]$
+        \item
         $\begin{bmatrix}
             -3 & 4 \\ 
             -6 & 7
         \end{bmatrix}$
-        \task
+        $\left[\begin{smallmatrix}
+            \answer{3-2 (3^n)} & \answer{2 (3^n)-2}\\
+            \answer{3-3^{n+1}} & \answer{3^{n+1}-2}
+        \end{smallmatrix}\right]$
+        \item
         $\begin{bmatrix}
             0 & 1 \\ 
             1 & 0
         \end{bmatrix}$
-    \end{tasks}
+        $\left[\begin{smallmatrix} \answer{1} & \answer{0} \\ \answer{0} & \answer{1} \end{smallmatrix}\right]$
+        if $n$ is even, and
+        $\left[\begin{smallmatrix} \answer{0} & \answer{1} \\ \answer{1} & \answer{0} \end{smallmatrix}\right]$
+        if $n$ is odd.
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a)
@@ -338,7 +414,8 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
             2 
         \end{bmatrix} 
     \] 
-    using matrix exponentials.
+    using matrix exponentials.\\
+    $\vec{x}(t) = \left[\begin{smallmatrix} \answer{-\frac{1}{2}e^{3t} - e^t + 1} \\ \answer{-\frac{9}{4}e^{3t} - \frac{5}{2}e^t + 2} \end{smallmatrix}\right] + \frac{8}{3}\left[\begin{smallmatrix} \answer{1} \\ \answer{3} \end{smallmatrix}\right]e^{2t} - \frac{13}{12}\left[\begin{smallmatrix} \answer{2} \\ \answer{3} \end{smallmatrix}\right]e^{-t}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -365,7 +442,8 @@ Using the matrix exponential, find a fundamental matrix solution for the system 
             -1 
         \end{bmatrix} 
     \] 
-    using matrix exponentials.
+    using matrix exponentials.\\
+    $\vec{x}(t) = \left[\begin{smallmatrix} \answer{-2t + \frac{88}{72}} \\ \answer{-1} \end{smallmatrix}\right]e^{3t} + \left[\begin{smallmatrix} \answer{-\frac{1}{6}t - \frac{7}{72}} \\ \answer{\frac{t}{4} + \frac{1}{16}} \end{smallmatrix}\right] + \left[\begin{smallmatrix} \answer{\frac{7}{8}} \\-\frac{1}{16} \end{smallmatrix}\right]e^{4t}$
 \end{exercise}
 %\comboSol{%
 %}

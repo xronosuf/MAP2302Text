@@ -12,7 +12,11 @@ Why?
 
 
 \begin{exercise}
-    Verify that $x_1(t) = 2e^{-t} - 2e^{-2t}$, $x_2(t) = e^{-t} - 2e^{-2t}$ solves the system $x_1' = - 2x_2 $, $x_2' = x_1 - 3x_2$.  
+    Does $x_1(t) = 2e^{-t} - 2e^{-2t}$, $x_2(t) = e^{-t} - 2e^{-2t}$ solve the system $x_1' = - 2x_2 $, $x_2' = x_1 - 3x_2$?
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -21,7 +25,11 @@ Why?
 %}
 
 \begin{exercise}
-    Verify that $x_1(t) = -2te^{-3t} - 2e^{-3t}$, $x_2(t) = 2te^{-3t} + 3e^{-3t}$ solves the system $x_1' = -5x_1 - 2x_2 $, $x_2' = 2x_1 - x_2$.  
+    Does that $x_1(t) = -2te^{-3t} - 2e^{-3t}$, $x_2(t) = 2te^{-3t} + 3e^{-3t}$ solve the system $x_1' = -5x_1 - 2x_2 $, $x_2' = 2x_1 - x_2$?
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -30,7 +38,8 @@ Why?
 %}
 
 \begin{exercise}
-    Find the general solution of $x_1' = x_2 - x_1 + t$, $x_2' = x_2$.
+    Find the general solution of $x_1' = x_2 - x_1 + t$, $x_2' = x_2$. [Use $A$ and $B$ for your arbitrary constants] \\
+    $x_1 = \answer{\frac{A}{2}e^t + (t-1) + Be^{-t}}$, $x_2 = \answer{Ae^t}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -39,7 +48,8 @@ Why?
 %}
 
 \begin{exercise}
-    Find the general solution of $x_1' = 3 x_1 - x_2 + e^t$, $x_2' = x_1$.
+    Find the general solution of $x_1' = 3 x_1 - x_2 + e^t$, $x_2' = x_1$. [Use $A$. $B$ and $C$ for your arbitrary constants] \\
+    $x_1 = \answer{\frac{3+\sqrt{5}}{2}Ae^{\frac{3+\sqrt{5}}{2}t} + \frac{3-\sqrt{5}}{2}Be^{\frac{3-\sqrt{5}}{2}t} - \frac{1}{2}Ce^t}$, $x_2 = \answer{Ae^{\frac{3+\sqrt{5}}{2}t} + Be^{\frac{3-\sqrt{5}}{2}t} - \frac{1}{2}Ce^t}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -48,7 +58,10 @@ Why?
 %}
 
 \begin{exercise}%
-    Find the general solution to $y_1' = 3 y_1$, $y_2' = y_1 + y_2$, $y_3' = y_1 + y_3$.
+    Find the general solution to $y_1' = 3 y_1$, $y_2' = y_1 + y_2$, $y_3' = y_1 + y_3$. [Use $A$. $B$ and $C$ for your arbitrary constants]\\
+    $y_1 = \answer{A e^{3x}}$,\\
+    $y_2 = y(x) = \answer{B e^x+ \frac{A}{2} e^{3 x}}$,\\
+    $y_3 = y(x) = \answer{C e^x+ \frac{A}{2} e^{3 x}}$
 \end{exercise}
 %\exsol{%
 %$y_1 = C_1 e^{3x}$,
@@ -57,7 +70,9 @@ Why?
 %}
 
 \begin{exercise}%
-    Solve $y'=2x$, $x'=x+y$, $x(0)=1$, $y(0)=3$.
+    Solve $y'=2x$, $x'=x+y$, $x(0)=1$, $y(0)=3$.\\
+    $x = \answer{\frac{5}{3} e^{2t} - \frac{2}{3} e^{-t}}$,\\
+    $y = \answer{\frac{5}{3} e^{2t} + \frac{4}{3} e^{-t}}$
 \end{exercise}
 %\exsol{%
 %$x=\frac{5}{3} e^{2t} - \frac{2}{3} e^{-t}$,
@@ -66,7 +81,8 @@ Why?
 
 
 \begin{exercise}
-    Write $ay'' + by' + cy = f(x)$ as a first order system of ODEs.
+    Write $ay'' + by' + cy = f(x)$ as a first order system of ODEs.\\
+    $\vec{x} ' = \left[\begin{smallmatrix} \answer{0} & \answer{1} \\ -\frac{c}{a} & \answer{-\frac{b}{a}} \end{smallmatrix}\right] \vec{x} + \left[\begin{smallmatrix}  \answer{0} \\ \answer{\frac{1}{a}}f(x) \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -75,7 +91,8 @@ Why?
 %}
 
 \begin{exercise}
-    Write $x'' + y^2 y' - x^3 = \sin(t)$, $y'' + {(x'+y')}^2 -x = 0$ as a first order system of ODEs.
+    Write $x'' + y^2 y' - x^3 = \sin(t)$, $y'' + {(x'+y')}^2 -x = 0$ as a first order system of ODEs.\\
+    %$\left[\begin{smallmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end{smallmatrix}\right]' = \left[\begin{smallmatrix} u_2 \\ \sin(t) + u_1^3 - u_3^2u_4 \\ u_4 \\ u_1 - (u_3 + u_4)^2 \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -84,7 +101,7 @@ Why?
 %}
 
 \begin{exercise}%
-    Write $x''' = x+t$ as a first order system.
+    Write $x''' = x + t$ as a first order system.
 \end{exercise}
 %\exsol{%
 %$x_1' = x_2$,
@@ -103,7 +120,8 @@ Why?
 %}
 
 \begin{exercise}
-    Write $y^{(4)} - t^2 y''' + e^t y' - (2t+1)y = \cos(t)$ as a first order system.
+    Write $y^{(4)} - t^2 y''' + e^t y' - (2t+1)y = \cos(t)$ as a first order system.\\
+    $\vec{u}' = \left[\begin{smallmatrix}  \answer{0} & \answer{1} & 0 & 0 \\ \answer{0} & 0 & \answer{1} & \answer{0} \\ 0 & \answer{0} & \answer{0} & 1 \\ \answer{2t+1} & -e^t & \answer{0} & t^2 \end{smallmatrix}\right]\vec{u} + \left[\begin{smallmatrix} 0 \\ 0 \\ 0 \\ \cos(t) \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -116,7 +134,8 @@ Why?
     \[ 
         y'' - 2xy' + 3y = \sin(x) \qquad y(0) = 1,\ y'(0) = -2 
     \] 
-    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. 
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. \\
+    $\vec{u}' = \left[\begin{smallmatrix}  0 & \answer{1} \\ -3 & \answer{2x} \end{smallmatrix}\right]\vec{x} + \left[\begin{smallmatrix}  \answer{0} \\ \sin(x) \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix}  \answer{1} \\ -2 \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -129,7 +148,15 @@ Why?
     \[ 
         y'' - (y+1)^2 y' - e^{xy} = \cos(x) \qquad y(0) = -1,\ y'(0) = 5 
     \] 
-    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. Can this be written in matrix form? Why or why not?
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem.\\
+    $\vec{u}' = \left[\begin{smallmatrix}  u_2 \\ \cos(x) + e^{xu_1} + (u_1 + 1)^2u_2 \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix}  \answer{-1} \\ \answer{5} \end{smallmatrix}\right]$
+    \begin{problem}
+        Can this be written in matrix form? %Why or why not?
+        \begin{multipleChoice}
+            \choice{Yes.}
+            \choice[correct]{No.}
+        \end{multipleChoice}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -142,7 +169,8 @@ Why?
     \[ 
         y^{(4)} + e^x y'' - 4\cos(x)y' + (x^2 + 1)y = \frac{1}{x-3} \qquad y(0) = 2,\ y'(0) = -3,\ y''(0) = 0,\ y^{(3)}(0) = 1 
     \] 
-    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. 
+    as an initial value problem for a first order system of ODEs. Make sure to indicate how the initial condition appears as a part of this problem. \\
+    $\vec{u}' = \left[\begin{smallmatrix}  \answer{0} & 1 & \answer{0} & 0 \\ \answer{0} & \answer{0} & 1 & \answer{0} \\ \answer{0} & 0 & \answer{0} & \answer{1} \\ \answer{-(x^2 + 1)} & \answer{4\cos(x)} & -e^x & \answer{0} \end{smallmatrix}\right] \vec{u} + \left[\begin{smallmatrix} \answer{0} \\ 0 \\ \answer{0} \\ \answer{\frac{1}{x-3}} \end{smallmatrix}\right]$, $\vec{u}(0) = \left[\begin{smallmatrix} \answer{-2} \\ \answer{-3} \\ 0 \\ \answer{1} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -151,7 +179,8 @@ Why?
 %}
 
 \begin{exercise}
-    Suppose two masses on carts on frictionless surface are at displacements $x_1$ and $x_2$ as in \examplevref{sintro:carts-example}. Suppose that a rocket applies force $F$ in the positive direction on cart $x_1$.  Set up the system of equations.
+    Suppose two masses on carts on frictionless surface are at displacements $x_1$ and $x_2$ as in example \ref{sintro:carts-example}. Suppose that a rocket applies force $F$ in the positive direction on cart $x_1$.  Set up the system of equations.\\
+    $mx_1'' = \answer{k(x_2 - x_1)} + F$,  $mx_2'' = \answer{-k}(x_2 - x_1)$
 \end{exercise}
 %\comboSol{%
 %}
@@ -160,14 +189,17 @@ Why?
 %}
 
 \begin{exercise}%
-    Suppose two masses on carts on frictionless surface are at  displacements $x_1$ and $x_2$ as in \examplevref{sintro:carts-example}. Suppose initial displacement is $x_1(0)=x_2(0)=0$, and initial velocity is $x_1'(0) = x_2'(0) = a$ for some number $a$. Use your intuition to solve the system, explain your reasoning.
+    Suppose two masses on carts on frictionless surface are at  displacements $x_1$ and $x_2$ as in example \ref{sintro:carts-example}. Suppose initial displacement is $x_1(0)=x_2(0)=0$, and initial velocity is $x_1'(0) = x_2'(0) = a$ for some number $a$. Use your intuition to solve the system, explain your reasoning. $x_1 = x_2 = \answer{at}$
 \end{exercise}
 %\exsol{%
 %$x_1 = x_2 = at$.  Explanation of the intuition is left to reader.
 %}
 
 \begin{exercise}
-    Suppose the tanks are as in \examplevref{sintro:closedbrine-example}, starting both at volume $V$, but now the rate of flow from tank 1 to tank 2 is $r_1$, and rate of flow from tank 2 to tank 1 is $r_2$.  In particular, the volumes will now be changing.  Set up the system of equations.
+    Suppose the tanks are as in example \ref{sintro:closedbrine-example}, starting both at volume $V$, but now the rate of flow from tank 1 to tank 2 is $r_1$, and rate of flow from tank 2 to tank 1 is $r_2$.  In particular, the volumes will now be changing.  Set up the system of equations.\\
+    $V_1(t) = V + (r_2 - r_1)\answer{t}$, $V_2(t) = V + (r_1 - r_2)\answer{t}$ \\
+    $\frac{dx_1}{dt} = r_2\left(\frac{x_2}{\answer{V} + (r_1 - r_2)\answer{t}}\right)  - r_1\left(\frac{x_1}{\answer{V} + (r_2 - r_1)\answer{t}}\right)$ \quad
+    $\frac{dx_2}{dt} = \answer{r_1\left(\frac{x_1}{V + (r_2 - r_1)t}\right) - r_2\left(\frac{x_2}{V + (r_1 - r_2)t}\right)}$ \\
 \end{exercise}
 %\comboSol{%
 %}
@@ -178,12 +210,15 @@ Why?
 %}
 
 \begin{exercise}%
-    Suppose the tanks are as in  \examplevref{sintro:closedbrine-example} except that clean water flows in at the rate $s$ liters per second into tank 1, and brine flows out of tank 2 and into the sewer also at the rate of $s$ liters per second. We also adjust the flow rate of the line from tank 1 to tank 2 to be $r+s$ liters per second.
-    \begin{tasks}
-        \task Draw the picture.
-        \task Set up the system of equations.
-        \task Intuitively, what happens as $t$ goes to infinity, explain.
-    \end{tasks}
+    Suppose the tanks are as in example \ref{sintro:closedbrine-example} except that clean water flows in at the rate $s$ liters per second into tank 1, and brine flows out of tank 2 and into the sewer also at the rate of $s$ liters per second. We also adjust the flow rate of the line from tank 1 to tank 2 to be $r+s$ liters per second.
+    \begin{itemize}
+        \item Draw the picture.
+        \item Set up the system of equations.\\
+            $x_1' = \answer{\frac{r}{V} (x_2-x_1)}$,\\
+            $x_2' = \answer{\frac{r}{V} x_1- \frac{r-s}{V}x_2}$.
+        \item Intuitively, what happens as $t$ goes to infinity, explain.\\
+            As $t$ goes to infinity, both $x_1$ and $x_2$ go to $\answer{0}$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) Left to reader.
@@ -213,11 +248,26 @@ Why?
             \frac{dy}{dt} &= 3x-1 
         \end{cases}
     \end{equation*}
-    \begin{tasks}(3)
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_1}}
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_3}}
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_2}}
-    \end{tasks}
+    \begin{itemize}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_1}}
+            \begin{multipleChoice}
+                \choice[correct]{i}
+                \choice{ii}
+                \choice{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_3}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice{ii}
+                \choice[correct]{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx1_2}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice[correct]{ii}
+                \choice{iii}
+            \end{multipleChoice}
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) (i), \quad
@@ -245,11 +295,26 @@ Why?
             \frac{dy}{dt} &= x+y+1 
         \end{cases}
     \end{equation*}
-    \begin{tasks}(3)
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_3}}
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_2}}
-        \task \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_1}}
-    \end{tasks}
+    \begin{itemize}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_3}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice{ii}
+                \choice[correct]{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_2}}
+            \begin{multipleChoice}
+                \choice{i}
+                \choice[correct]{ii}
+                \choice{iii}
+            \end{multipleChoice}
+        \item \parbox[c]{2in}{\includegraphics[width=1.75in]{sysslopeEx2_1}}
+            \begin{multipleChoice}
+                \choice[correct]{i}
+                \choice{ii}
+                \choice{iii}
+            \end{multipleChoice}
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) (iii), \quad

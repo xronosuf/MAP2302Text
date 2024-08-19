@@ -11,7 +11,7 @@
 \maketitle
 
 \begin{exercise}
-    Sketch slope field for $y'=e^{x-y}$.  How do the solutions behave as $x$ grows?  Can you guess a particular solution by looking at the slope field?
+    Sketch slope field for $y'=e^{x-y}$.  How do the solutions behave as $x$ grows?  Can you guess a particular solution by looking at the slope field? $y = \answer{x}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -22,7 +22,7 @@
 %}
 
 \begin{exercise}%
-    Sketch the slope field of $y'=y^3$.  Can you visually find the solution that satisfies $y(0)=0$?
+    Sketch the slope field of $y'=y^3$.  Can you visually find the solution that satisfies $y(0)=0$? $y = \answer{0}$
 \end{exercise}
 %\exsol{%
 %\\[6pt]
@@ -52,12 +52,12 @@
 
 \begin{exercise}
     For each of the following differential equations, sketch out a slope field on $-3 < x < 3$ and $-3 < y < 3$ and determine the overall behavior of the solutions to the equation as $t \rightarrow \infty$. If this fact depends on the value of the solution at $t=0$, explain how it changes.
-    \begin{tasks}(4)
-        \task $\displaystyle \frac{dy}{dx} = 3 - 2y$
-        \task $\displaystyle \frac{dy}{dx} = 1 + y$
-        \task $\displaystyle \frac{dy}{dx} = y - 1$
-        \task $\displaystyle \frac{dy}{dx} = -2 - y$
-    \end{tasks}
+    \begin{itemize}
+        \item $\displaystyle \frac{dy}{dx} = 3 - 2y$; Solutions tend to $\answer{\frac{3}{2}}$
+        \item $\displaystyle \frac{dy}{dx} = 1 + y$; Solutions tend to $\answer{\infty}$ if $y(0) > \answer{-1}$, $\answer{-\infty}$ if $y(0) < \answer{-1}$, and is constant if $y(0) = \answer{-1}$
+        \item $\displaystyle \frac{dy}{dx} = y - 1$; Solutions tend to $\answer{\infty}$ if $y(0) > \answer{1}$, $\answer{-\infty}$ if $y(0) < \answer{1}$, and is constant if $y(0) = \answer{1}$
+        \item $\displaystyle \frac{dy}{dx} = -2 - y$; Solutions tend to $\answer{-2}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -72,11 +72,11 @@
 
 \begin{exercise}
     Which of the following slope fields corresponds to the differential equation $\frac{dy}{dt} = t(y-1)$. Explain your reasoning.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetyp1slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetsqym1slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetym1slope}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=1.75in]{yprimetyp1slope}}
+        \choice[correct]{\includegraphics[width=1.75in]{yprimetsqym1slope}}
+        \choice{\includegraphics[width=1.75in]{yprimetym1slope}}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -86,11 +86,11 @@
 
 \begin{exercise}
     Which of the following slope fields corresponds to the differential equation $\frac{dy}{dt} = (2-t)(y^2 - 9)$. Explain your reasoning.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimetm2ysqm9slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimeyp1tsqm9slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprime2mtysqm9slope}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=1.75in]{yprimetm2ysqm9slope}}
+        \choice{\includegraphics[width=1.75in]{yprimeyp1tsqm9slope}}
+        \choice[correct]{\includegraphics[width=1.75in]{yprime2mtysqm9slope}}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -101,11 +101,11 @@
 
 \begin{exercise}
     Match equations $y'=1-x$, $y'=x-2y$, $y' = x(1-y)$ to slope fields. Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimex1minusyslope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprime1minusxslope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimexminus2yslope}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=1.75in]{yprimex1minusyslope}}
+        \choice{\includegraphics[width=1.75in]{yprime1minusxslope}}
+        \choice{\includegraphics[width=1.75in]{yprimexminus2yslope}}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -116,11 +116,11 @@
 
 \begin{exercise}%
     Match equations $y'=\sin x$, $y'=\cos y$, $y' = y\cos(x)$ to slope fields. Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimecosyslope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimecosxyslope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=1.75in]{yprimesinxslope}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=1.75in]{yprimecosyslope}}
+        \choice{\includegraphics[width=1.75in]{yprimecosxyslope}}
+        \choice{\includegraphics[width=1.75in]{yprimesinxslope}}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %a) $y'=\cos y$, \quad
@@ -131,11 +131,11 @@
 
 \begin{exercise}
     Match equations $y'=y(y-2)$, $y'=y-1$, $y' = y(2-y)$ to slope fields. Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivym1}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivy2my}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{quivyym2}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=2in]{quivym1}}
+        \choice{\includegraphics[width=2in]{quivy2my}}
+        \choice{\includegraphics[width=2in]{quivyym2}}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -145,11 +145,11 @@
 
 \begin{exercise}
     Match equations $y'=t(y^2 + 1)$, $y'=t(y^2 - 1)$, $y' = t^2(y^2 - 1)$ to slope fields. Justify.
-    \begin{tasks}(3)
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetysqm1slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetsqysqm1slope}}
-        \task \parbox[c]{1.75in}{\includegraphics[width=2in]{yprimetysqp1slope}}
-    \end{tasks}
+    \begin{multipleChoice}
+        \choice{\includegraphics[width=2in]{yprimetysqm1slope}}
+        \choice{\includegraphics[width=2in]{yprimetsqysqm1slope}}
+        \choice{\includegraphics[width=2in]{yprimetysqp1slope}}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -159,6 +159,8 @@
 
 \begin{exercise}\label{ex:3myyp2}
     The slope field for the differential equation $y' = (3-y)(y+2)$ is below.  If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+    
+    The long time behavior tends to $\answer{3}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -168,6 +170,8 @@
 
 \begin{exercise}\label{ex:tm2yp4ym3}
     The slope field for the differential equation $y' = (t-2)(y+4)(y-3)$ is below. If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+    
+    The long time behavior tends to $\answer{-4}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -177,6 +181,8 @@
 
 \begin{exercise}\label{ex:yp1yp4}
     The slope field for the differential equation $y' = (y+1)(y+4)$ is below. If we find the solution to this differential equation with initial condition, $y(0) = 1$, what will happen to the solution as $t \rightarrow \infty$? Use the slope field and your knowledge of the equation to determine the long-time behavior of this solution.
+    
+    The long time behavior tends to $\answer{\infty}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -184,20 +190,22 @@
 %Goes to $\infty$. Will not exist for all positive $t$ values.
 %}
 
-\begin{minipage}{0.32\textwidth}
-    \includegraphics[width=\textwidth]{yprime3myyp2slope}
-    \captionof{figure}{\exerciseref{ex:3myyp2}}
-\end{minipage}%
-\begin{minipage}{0.32\textwidth}
-    \includegraphics[width=\textwidth]{yprimetm2yp4ym3slope}
-    \captionof{figure}{\exerciseref{ex:tm2yp4ym3}}
-\end{minipage}%
-\begin{minipage}{0.32\textwidth}
-    \includegraphics[width=\textwidth]{yprimeyp1yp4slope}
-    \captionof{figure}{\exerciseref{ex:yp1yp4}}
-\end{minipage}
+%\begin{minipage}{0.32\textwidth}
+%    \includegraphics[width=\textwidth]{yprime3myyp2slope}
+%    \captionof{figure}{\exerciseref{ex:3myyp2}}
+%\end{minipage}%
+%\begin{minipage}{0.32\textwidth}
+%    \includegraphics[width=\textwidth]{yprimetm2yp4ym3slope}
+%    \captionof{figure}{\exerciseref{ex:tm2yp4ym3}}
+%\end{minipage}%
+%\begin{minipage}{0.32\textwidth}
+%    \includegraphics[width=\textwidth]{yprimeyp1yp4slope}
+%    \captionof{figure}{\exerciseref{ex:yp1yp4}}
+%\end{minipage}
 
-\begin{exercise}[challenging]
+\begin{exercise}
+    Challenge Problem:
+    
     Take $y' = f(x,y)$, $y(0) = 0$, where $f(x,y) > 1$ for all $x$ and $y$.  If the solution exists for all $x$, can you say what happens to $y(x)$ as $x$ goes to positive infinity?  Explain.
 \end{exercise}
 %\comboSol{%
@@ -208,12 +216,12 @@
 
 \begin{exercise}
     Suppose $y' = f(x,y)$.  What will the slope field look like, explain and sketch an example, if you know the following about $f(x,y)$:
-    \begin{tasks}(2)
-        \task $f$ does not depend on $y$.
-        \task $f$ does not depend on $x$.
-        \task $f(t,t) = 0$ for any number $t$.
-        \task $f(x,0) = 0$ and $f(x,1) = 1$ for all $x$.
-    \end{tasks}
+    \begin{itemize}
+        \item $f$ does not depend on $y$.
+        \item $f$ does not depend on $x$.
+        \item $f(t,t) = 0$ for any number $t$.
+        \item $f(x,0) = 0$ and $f(x,1) = 1$ for all $x$.
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -226,12 +234,12 @@
 
 \begin{exercise}
     Describe what each of the following facts about the function $f(x,y)$ tells you about the slope field for the differential equation $y' = f(x,y)$.
-    \begin{tasks}
-        \task $f(2,y) = 0$ for all $y$
-        \task $f(x,-x) = 0$ for all $x$
-        \task $f(x,x) = 1$ for all $x$
-        \task $f(x, -1) = 0$ for all $x$
-    \end{tasks}
+    \begin{itemize}
+        \item $f(2,y) = 0$ for all $y$
+        \item $f(x,-x) = 0$ for all $x$
+        \item $f(x,x) = 1$ for all $x$
+        \item $f(x, -1) = 0$ for all $x$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}

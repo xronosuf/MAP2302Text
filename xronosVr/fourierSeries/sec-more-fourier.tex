@@ -259,10 +259,10 @@ Let us do an example of a periodic function with one derivative everywhere.
     \begin{equation*}
         \frac{8}{\pi^3} \sin (\pi t) + \frac{8}{27 \pi^3} \sin (3 \pi t) ,
     \end{equation*}
-    it is almost indistinguishable from the plot of $f(t)$ in \figurevref{gfs:smoothexfig}. In fact, the coefficient  $\frac{8}{27 \pi^3}$ is already just 0.0096 (approximately). The reason for this behavior is the $n^3$ term in the denominator. The coefficients $b_n$ in this case go to zero as fast as $\nicefrac{1}{n^3}$ goes to zero.
+    it is almost indistinguishable from the plot of $f(t)$ in \figurevref{gfs:smoothexfig}. In fact, the coefficient  $\frac{8}{27 \pi^3}$ is already just 0.0096 (approximately). The reason for this behavior is the $n^3$ term in the denominator. The coefficients $b_n$ in this case go to zero as fast as $\frac{1}{n^3}$ goes to zero.
 \end{example}
 
-For functions constructed piecewise from polynomials as above, it is generally true that if you have one derivative, the Fourier coefficients will go to zero approximately like $\nicefrac{1}{n^3}$.  If you have only a continuous function, then the Fourier coefficients will go to zero as $\nicefrac{1}{n^2}$.  If you have discontinuities, then the Fourier coefficients will go to zero approximately as $\nicefrac{1}{n}$. For more general functions the story is somewhat more complicated but the same idea holds, the more derivatives you have, the faster the coefficients go to zero.  Similar reasoning works in reverse.  If the coefficients go to zero like $\nicefrac{1}{n^2}$, you always obtain a continuous function.  If they go to zero like $\nicefrac{1}{n^3}$, you obtain an everywhere differentiable function.
+For functions constructed piecewise from polynomials as above, it is generally true that if you have one derivative, the Fourier coefficients will go to zero approximately like $\frac{1}{n^3}$.  If you have only a continuous function, then the Fourier coefficients will go to zero as $\frac{1}{n^2}$.  If you have discontinuities, then the Fourier coefficients will go to zero approximately as $\frac{1}{n}$. For more general functions the story is somewhat more complicated but the same idea holds, the more derivatives you have, the faster the coefficients go to zero.  Similar reasoning works in reverse.  If the coefficients go to zero like $\frac{1}{n^2}$, you always obtain a continuous function.  If they go to zero like $\frac{1}{n^3}$, you obtain an everywhere differentiable function.
 %Therefore, we can tell a lot about the smoothness of a function by looking
 %at its Fourier coefficients.
 
@@ -274,7 +274,7 @@ When we differentiate term by term we notice
 \begin{equation*}
     f'(t) = \sum_{n=1}^\infty \frac{1}{n^2} \cos (n t) .
 \end{equation*}
-Therefore, the coefficients now go down like $\nicefrac{1}{n^2}$, which  means that we have a continuous function. The derivative of $f'(t)$ is defined at most points, but there are points where $f'(t)$ is not differentiable. It has corners, but no jumps. If we differentiate again (where we can), we find that the function $f''(t)$, now fails to be continuous (has jumps)
+Therefore, the coefficients now go down like $\frac{1}{n^2}$, which  means that we have a continuous function. The derivative of $f'(t)$ is defined at most points, but there are points where $f'(t)$ is not differentiable. It has corners, but no jumps. If we differentiate again (where we can), we find that the function $f''(t)$, now fails to be continuous (has jumps)
 \begin{equation*}
     f''(t) = \sum_{n=1}^\infty \frac{-1}{n} \sin (n t) .
 \end{equation*}

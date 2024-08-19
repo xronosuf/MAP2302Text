@@ -14,6 +14,9 @@
 
 \begin{exercise}%
     Write $3 \cos(2x) + 3\sin(2x)$ in the form $R \cos(\beta x - \delta)$.
+    \[
+        \answer{3\sqrt{2}\cos\left(2x - \frac{\pi}{4}\right)}
+    \]
 \end{exercise}
 %\exsol{%
 %$3\sqrt{2}\cos\left(2x - \frac{\pi}{4}\right)$
@@ -21,6 +24,9 @@
 
 \begin{exercise}
     Write $2 \cos(3x) + \sin(3x)$ in the form $R \cos(\beta x - \delta)$.
+    \[
+        \answer{\sqrt{5}\cos(3x - \tan^{-1}(1/2))}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -30,6 +36,9 @@
 
 \begin{exercise}
     Write $3 \cos(x) - 4\sin(x)$ in the form $R \cos(\beta x - \delta)$.
+    \[
+        \answer{5\cos(x - \tan^{-1}(-4/3))}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -38,7 +47,11 @@
 %}
 
 \begin{exercise}
-    Show that $e^{2x}\cos(x)$ and $e^{2x}\sin(x)$ are linearly independent.
+    Are $e^{2x}\cos(x)$ and $e^{2x}\sin(x)$ linearly independent?
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -47,7 +60,10 @@
 %}
 
 \begin{exercise}
-    Find the general solution of $2y'' + 50y = 0$.
+    Find the general solution of $2y'' + 50y = 0$. [Use $A$, $B$ for arbitrary constants]
+    \[
+        y = \answer{A\cos(5t) + B\sin(5t)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -56,7 +72,10 @@
 %}
 
 \begin{exercise}
-    Find the general solution of $y'' - 6 y' + 13 y = 0$.
+    Find the general solution of $y'' - 6 y' + 13 y = 0$. [Use $A$, $B$ for arbitrary constants]
+    \[
+        y = \answer{Ae^{3t}\cos(2t) + Be^{3t}\sin(2t)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -66,6 +85,9 @@
 
 \begin{exercise}
     Find the solution to $y'' - 2y' + 5y = 0$ with $y(0) = 3$ and $y'(0) = 2$. 
+    \[
+        y = \answer{3e^t\cos(2t) - \frac{1}{2}e^t\sin(2t)}
+    \]
 \end{exercise} 
 %\comboSol{%
 %}
@@ -74,7 +96,10 @@
 %}
 
 \begin{exercise}
-    Find the general solution of $y'' + 2y' - 3y = 0$.
+    Find the general solution of $y'' + 2y' - 3y = 0$. [Use $A$, $B$ for arbitrary constants]
+    \[
+        y = \answer{Ae^{-3t} + Be^t}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -84,26 +109,31 @@
 
 \begin{exercise}%
     Find the solution to $2y''+y'+y=0$, $y(0) = 1$, $y'(0)=-2$.
+    \[
+        y = \answer{e^{-x/4} \cos\bigl((\frac{\sqrt{7}}{4})x\bigr) - \sqrt{7}e^{-x/4} \sin\bigl((\frac{\sqrt{7}}{4})x\bigr)}
+    \]
 \end{exercise}
 %\exsol{%
 %$y =
-%e^{-x/4} \cos\bigl((\nicefrac{\sqrt{7}}{4})x\bigr)
-%-
-%\sqrt{7}
-%e^{-x/4} \sin\bigl((\nicefrac{\sqrt{7}}{4})x\bigr)$
+%e^{-x/4} \cos\bigl((\frac{\sqrt{7}}{4})x\bigr) - \sqrt{7}e^{-x/4} \sin\bigl((\frac{\sqrt{7}}{4})x\bigr)$
 %}
 
 \begin{exercise}%
     Find the solution to $z''(t) = -2z'(t)-2z(t)$, $z(0) = 2$, $z'(0)= -2$.
+    \[
+        z(t) = \answer{2e^{-t} \cos(t)}
+    \]
 \end{exercise}
 %\exsol{%
-%$z(t) =
-%2e^{-t} \cos(t)$
+%$z(t) = 2e^{-t} \cos(t)$
 %}
 
 
 \begin{exercise}
-    Let us revisit the Cauchy--Euler equations\index{Cauchy--Euler equation} of \exercisevref{sol:eulerex}.  Suppose now that ${(b-a)}^2-4ac < 0$.  Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Note that $x^r = e^{r \ln x}$.
+    Let us revisit the Cauchy--Euler equations of \ref{sol:eulerex}.  Suppose now that ${(b-a)}^2-4ac < 0$.  Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Note that $x^r = e^{r \ln x}$. [Use $A$ and $B$ for arbitrary constants]
+    \[
+        y = \answer{x^{\frac{a-b}{2a}}\left( A\cos\left( \frac{\sqrt{4ac-(b-a)^2}}{2a} \ln(|x|) \right) + B\sin\left( \frac{\sqrt{4ac-(b-a)^2}}{2a} \ln(|x|) \right) \right)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -112,7 +142,10 @@
 %}
 
 \begin{exercise}
-    Construct an equation such that $y = C_1 e^{-2x} \cos(3x) + C_2 e^{-2x} \sin(3x)$ is the general solution.
+    Construct an equation such that $y = C_1 e^{-2x} \cos(3x) + C_2 e^{-2x} \sin(3x)$ is the general solution. [Use $\frac{d^ny}{dx^n}$ notation, not $y'$ notation, and make sure to enter the full equality]
+    \[
+        \answer{\frac{d^2y}{dx^2} + 4\frac{dy}{dx} + 13y = 0}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -122,6 +155,10 @@
 
 \begin{exercise}%
     Find a second order, constant coefficient differential equation with general solution given by $y(t) = C_1e^{x} \cos(2x) + C_2e^{2x}\sin(x)$ or explain why there is no such thing.
+    \begin{multipleChoice}
+        \choice{There is such a thing}
+        \choice[correct]{There is no such thing.}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %There is no such equation. The two roots will always be complex conjugates, which means the exponential parts will match, and the trigonometric functions will have the same argument.
@@ -129,6 +166,16 @@
 
 \begin{exercise}
     Find a second order, constant coefficient differential equation with general solution given by $y(t) = C_1e^{x} \cos(2x) + C_2e^{x}\sin(2x)$ or explain why there is no such thing.
+    \begin{multipleChoice}
+        \choice[correct]{There is such a thing}
+        \choice{There is no such thing.}
+    \end{multipleChoice}
+    \begin{problem}
+        Give the example - use $\frac{d^ny}{dx^n}$ notation, not $y'$ notation, and make sure to enter the full equality.
+        \[
+            \answer{\frac{d^2y}{dx^2} -2\frac{dy}{dx} + 5y = 0}
+        \]
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -141,7 +188,10 @@
     \[ 
         y'' + 4y' + 5y = 0 \qquad y(0) = 3,\ y'(0) = -1.
     \]
-    Determine a value $T$ so that $|y(x)| < 0.02$ for all $x > T$. 
+    $y = \answer{v3e^{-2t}\cos(t) + 5e^{-2t}\sin(t)}$
+    \begin{problem}
+        Determine a value $T$ so that $|y(x)| < 0.02$ for all $x > T$. [Enter to 3 decimal places] $T \approx \answer{2.838}$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -154,7 +204,10 @@
     \[ 
         y'' + 6y' + 13y = 0 \qquad y(0) = 4,\ y'(0) = 7.
     \]
-    Determine a value $T$ so that $|y(x)| < 0.01$ for all $x > T$. 
+    $y = \answer{4e^{-3t}\cos(2t) + \frac{19}{2}e^{-3t}\sin(2t)}$
+    \begin{problem}
+        Determine a value $T$ so that $|y(x)| < 0.01$ for all $x > T$. [Enter to 3 decimal digits] $T \approx \answer{2.313}$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}

@@ -1,0 +1,9 @@
+ <!--l. 139--><p class="noindent" >figure<a 
+ id="figure.\theHfigure "></a><img 
+src="./figures/Auto_PL_SS.png" alt="PIC"  
+width="325" height="325"  />
+<a 
+ id="x1-124"></a>
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">Phase line for the differential equation <script type="math/tex">\frac {dx}{dt} = x(x-2)^2(x+3)(x-4)</script> and a plot of some solutions to this equation.<a class="ximera-label" id="autoexsolplot:fig"></a></span></div><!--tex4ht:label?: x1-123r -->                                 

@@ -1,0 +1,50 @@
+ <!--l. 77--><p class="noindent" >table<a 
+ id="table.\theHtable "></a></p>
+<div class="center" 
+>
+<!--l. 78--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1" /><col 
+id="TBL-2-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td01">Eigenvalues                           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td10"> Trace and Determinant Classification</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td01">real and both positive               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td10"> <script type="math/tex">T > 0</script>, <script type="math/tex">D > 0</script>, <script type="math/tex">T^2 - 4D > 0</script>                                             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td01">real and both negative              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td10"> <script type="math/tex">T < 0</script>, <script type="math/tex">D > 0</script>, <script type="math/tex">T^2 - 4D > 0</script>                                             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td01">real and opposite signs              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td10"> <script type="math/tex">D < 0</script>                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td01">purely imaginary                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"  
+class="td10"> <script type="math/tex">T = 0</script>, <script type="math/tex">D > 0</script>                                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"  
+class="td01">complex with positive real part   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-2"  
+class="td10"> <script type="math/tex">T > 0</script>, <script type="math/tex">T^2 - 4D < 0</script>                                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-1"  
+class="td01">complex with negative real part  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-2"  
+class="td10"> <script type="math/tex">T < 0</script>, <script type="math/tex">T^2 - 4D < 0</script>                                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-1"  
+class="td01">repeated                                </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-2"  
+class="td10"> <script type="math/tex">T^2 - 4D = 0</script>                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-1"  
+class="td01">                            </td></tr></table></div></div>
+<a 
+ id="x1-1005"></a>
+<br /> <div class="caption" 
+><span class="id">Table 0: </span><span  
+class="content">Summary of behavior of linear homogeneous two-dimensional systems.<a class="ximera-label" id="pln:behtabTD"></a></span></div><!--tex4ht:label?: x1-1004r -->                                                     

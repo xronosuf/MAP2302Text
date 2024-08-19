@@ -13,7 +13,8 @@ Why?
 
 
 \begin{exercise}
-    Find the general solution of $x_1' = x_1 -2 x_2$, $x_2' = 2 x_1 + x_2$ using the eigenvalue method. Do not use complex exponentials in your solution.
+    Find the general solution of $x_1' = x_1 -2 x_2$, $x_2' = 2 x_1 + x_2$ using the eigenvalue method. Do not use complex exponentials in your solution. [Use $A$, $B$ as your arbitrary constants] \\
+    $\answer{Ae^t}\left[\begin{smallmatrix} \answer{-\sin(2t)}\\ \cos(2t) \end{smallmatrix}\right] + Be^{t}\left[\begin{smallmatrix} \answer{\cos(2t)} \\ \answer{\sin(2t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -22,7 +23,14 @@ Why?
 %}
 
 \begin{exercise}%
-    Solve $x_1' = x_2$, $x_2' = -x_1$ using the eigenvalue method.
+    Solve $x_1' = x_2$, $x_2' = -x_1$ using the eigenvalue method. [Use $A$ and $B$ as your arbitrary constants]
+    $\vec{x} =
+    A \left[ \begin{smallmatrix}
+        \answer{\cos(t)} \\ \answer{-\sin(t)}
+    \end{smallmatrix}\right]
+    + \answer{B}\left[ \begin{smallmatrix}
+        \answer{\sin(t)} \\ \cos(t)
+    \end{smallmatrix}\right]$
 \end{exercise}
 %\exsol{%
 %$\vec{x} =
@@ -37,10 +45,11 @@ Why?
 
 \begin{exercise}
     A $2\times 2$ matrix $A$ has complex eigenvector $\displaystyle \vec{v}=\begin{bmatrix} 1\\ i \end{bmatrix}$ corresponding to eigenvalue $\lambda=-1+3i$. %4.5
-    \begin{tasks}
-        \task Use Euler's Formula to find the (real-valued) general solution to the system $\vec{x}'=A\vec{x}$.
-        \task Sketch the phase portrait of this system.
-    \end{tasks}
+    \begin{itemize}
+        \item Use Euler's Formula to find the (real-valued) general solution to the system $\vec{x}'=A\vec{x}$.\\
+            $\vec{x}(t) = C_1\answer{e^{-t}}\left[\begin{smallmatrix} \answer{\cos(3t)} \\ -\sin(3t) \end{smallmatrix}\right] + C_2e^{-t}\left[\begin{smallmatrix} \answer{\sin(3t)} \\ \answer{\cos(3t)} \end{smallmatrix}\right]$ 
+        \item Sketch the phase portrait of this system.
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -49,17 +58,25 @@ Why?
 %}
 
 \begin{exercise}%
-    \begin{tasks}
-        \task Compute eigenvalues and eigenvectors of
+    \begin{itemize}
+        \item Compute eigenvalues and eigenvectors of
             $A=\left[ 
                 \begin{smallmatrix}
                     1 & 1 \\
                     -1 & 0 
                 \end{smallmatrix}
             \right]$.
-        \task Solve the system $\vec{x}\,' = A\vec{x}$.
-        \task Sketch the phase portrait for this system
-    \end{tasks}
+        \item Solve the system $\vec{x}\,' = A\vec{x}$.\\
+            Eigenvalues: $\answer{\frac{1+\sqrt{3}i}{2}}$, $\answer{\frac{1-\sqrt{3}i}{2}}$.\\
+            Eigenvectors:
+            $\left[ \begin{smallmatrix}
+            \answer{-2} \\ \answer{1-\sqrt{3}i}
+            \end{smallmatrix}\right]$, 
+            $\left[ \begin{smallmatrix}
+            \answer{-2} \\ 1+\sqrt{3}i
+            \end{smallmatrix}\right]$
+            \item Sketch the phase portrait for this system
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a)
@@ -109,11 +126,13 @@ Why?
             y 
         \end{bmatrix}.
     \end{equation*} %4.5
-    \begin{tasks}
-        \task Find the general solution.
-        \task Sketch the phase portrait for this system.
-        \task Solve the IVP with initial conditions $x(0)=1, y(0)=0$, and determine the maximum $x$-coordinate on this trajectory.
-    \end{tasks}
+    \begin{itemize}
+        \item Find the general solution.\\
+            $C_1\left[\begin{smallmatrix} \answer{2\cos(3t)} \\ \answer{\cos(3t)} + 3\sin(3t) \end{smallmatrix}\right] + C_2 \left[\begin{smallmatrix} \answer{2\sin(3t)} \\ \answer{\sin(3t) - 3\cos(3t)} \end{smallmatrix}\right]$
+        \item Sketch the phase portrait for this system.
+        \item Solve the IVP with initial conditions $x(0)=1, y(0)=0$, and determine the maximum $x$-coordinate on this trajectory.\\
+            $x = \answer{\frac{\sqrt{10}}{3}}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -130,6 +149,7 @@ Why?
             -5 & 2 
         \end{bmatrix} \vec{x}
     \end{equation*}
+    $\vec{x}(t) = C_1\answer{e^{3t}} \left[\begin{smallmatrix} \answer{-\cos(2t)} \\ \cos(2t) + \answer{2\sin(2t)} \end{smallmatrix}\right] + C_2e^{3t}\left[\begin{smallmatrix} \answer{-\sin(2t)} \\ \answer{\sin(2t) - 2 \cos(2t)} \end{smallmatrix}\right]$
     and sketch the phase portrait for this system.
 \end{exercise}
 %\comboSol{%
@@ -148,6 +168,7 @@ Why?
             -2 & -3 
         \end{bmatrix} \vec{x}
     \end{equation*}
+    $\vec{x}(t) = C_1\answer{e^{-t}}\left[\begin{smallmatrix} \answer{\cos(2t) - \sin(2t)} \\ -\cos(2t) \end{smallmatrix}\right] + C_2e^{-t}\left[\begin{smallmatrix} \answer{\sin(2t) + \cos(2t)} \\ -\sin(2t) \end{smallmatrix}\right]$
     and sketch the phase portrait for this system.
 \end{exercise}
 %\comboSol{%
@@ -166,6 +187,7 @@ Why?
             -3 & 0 & 2 
         \end{bmatrix} \vec{x}.
     \end{equation*}
+    $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{0} \\ \answer{1} \\ \answer{0} \end{smallmatrix}\right]e^{2t} + C_2\answer{e^{2t}}\left[\begin{smallmatrix} \answer{\cos(3t)} \\ \answer{-2\cos(3t) - 2\sin(3t)}\\ -\sin(3t) \end{smallmatrix}\right] + C_3e^{2t}\left[\begin{smallmatrix} \answer{\sin(3t)} \\ \answer{2\cos(3t) - 3\sin(3t)} \\ \cos(3t) \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -183,6 +205,7 @@ Why?
             12 & 6 & -2 
         \end{bmatrix} \vec{x}.
     \end{equation*}
+    $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{-1} \\ \answer{2} \\ 2 \end{smallmatrix}\right]e^{-2t} + C_2\answer{e^{-3t}} \left[\begin{smallmatrix} \answer{-4\cos(t)} \\ \answer{7\cos(t) - \sin(t)} \\ 6\cos(t)  \end{smallmatrix}\right] + C_2e^{-3t}\left[\begin{smallmatrix} \answer{-4\sin(t)} \\ 7\sin(t) + \cos(t) \\ \answer{6\sin(t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -204,6 +227,7 @@ Why?
             -1 
         \end{bmatrix}. 
     \]
+    $\vec{x}(t) = \answer{e^{3t}} \left[\begin{smallmatrix} \answer{2\cos(2t) + \frac{1}{2}\sin(2t)} \\ -\cos(2t) + \answer{4\sin(2t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -226,6 +250,7 @@ Why?
             1 
         \end{bmatrix}. 
     \]
+    $\vec{x}(t) = \answer{e^{-2t}}\left[\begin{smallmatrix} \answer{\cos(2t)} - 7\sin(2t)\\ \answer{\cos(2t) + \frac{11}{2}\sin(2t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -249,6 +274,7 @@ Why?
             -3 
         \end{bmatrix}. 
     \]
+    $\vec{x}(t) = \answer{e^{-t}}\left[\begin{smallmatrix} \answer{-7 + 5\cos(2t)} + 13\sin(2t) \\ \answer{\cos(2t) + 7\sin(2t)} \\ -3\cos(2t) + \answer{4\sin(2t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}

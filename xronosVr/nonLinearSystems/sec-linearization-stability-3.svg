@@ -1,0 +1,49 @@
+ <!--l. 329--><p class="noindent" >table<a 
+ id="table.\theHtable "></a></p>
+<div class="center" 
+>
+<!--l. 330--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1" /><col 
+id="TBL-1-2" /><col 
+id="TBL-1-3" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-1-1"  
+class="td01">Eigenvalues of the Jacobian matrix  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-1-2"  
+class="td11"> Behavior                    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-1-3"  
+class="td10"> Stability                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-2-1"  
+class="td01">real and both positive                    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-2-2"  
+class="td11"> source / unstable node  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-2-3"  
+class="td10"> unstable                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-3-1"  
+class="td01">real and both negative                   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-3-2"  
+class="td11"> sink / stable node        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-3-3"  
+class="td10"> asymptotically stable</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-4-1"  
+class="td01">real and opposite signs                   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-4-2"  
+class="td11"> saddle                        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-4-3"  
+class="td10"> unstable                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-5-1"  
+class="td01">complex with positive real part        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-5-2"  
+class="td11"> spiral source               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-5-3"  
+class="td10"> unstable                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-6-1"  
+class="td01">complex with negative real part       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-6-2"  
+class="td11"> spiral sink                  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-6-3"  
+class="td10"> asymptotically stable</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-7-1"  
+class="td01">                               </td></tr></table></div></div>
+<a 
+ id="x1-4002"></a>
+<br /> <div class="caption" 
+><span class="id">Table 0: </span><span  
+class="content">Behavior of an almost linear system near an isolated critical point. <a class="ximera-label" id="pln:behtab2"></a></span></div><!--tex4ht:label?: x1-4001r -->                                                         

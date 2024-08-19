@@ -83,7 +83,7 @@ We plug $y_p$ into the left hand side to obtain
         & =  0 + 5A + 6Ax + 6B = 6Ax+ (5A+6B) .
     \end{split}
 \end{equation*}
-So $6Ax+(5A+6B) = 2x+1$. If we match up the coefficients of $x$ in this equation, we get that $6A = 2$ or $A = \nicefrac{1}{3}$. In order for the constant terms to match, we need that $5A + 6B = 1$. Since we know the value of $A$, this tells us that $B = \nicefrac{-1}{9}$. That means $y_p = \frac{1}{3}\, x - \frac{1}{9} = \frac{3x-1}{9}$. Solving the complementary problem (exercise!) we get
+So $6Ax+(5A+6B) = 2x+1$. If we match up the coefficients of $x$ in this equation, we get that $6A = 2$ or $A = \frac{1}{3}$. In order for the constant terms to match, we need that $5A + 6B = 1$. Since we know the value of $A$, this tells us that $B = \frac{-1}{9}$. That means $y_p = \frac{1}{3}\, x - \frac{1}{9} = \frac{3x-1}{9}$. Solving the complementary problem (exercise!) we get
 \begin{equation*}
     y_c = C_1 e^{-2x} + C_2 e^{-3x}.
 \end{equation*}
@@ -91,12 +91,12 @@ Hence the general solution to \eqref{eq3.5:nh} is
 \begin{equation*}
     y = C_1 e^{-2x} + C_2 e^{-3x} + \frac{3x-1}{9} .
 \end{equation*}
-Now suppose we are further given some initial conditions.  For example, $y(0) = 0$ and $y'(0) = \nicefrac{1}{3}$.  First find $y' = - 2C_1 e^{-2x} - 3C_2 e^{-3x}
-+ \nicefrac{1}{3}$. Then
+Now suppose we are further given some initial conditions.  For example, $y(0) = 0$ and $y'(0) = \frac{1}{3}$.  First find $y' = - 2C_1 e^{-2x} - 3C_2 e^{-3x}
++ \frac{1}{3}$. Then
 \begin{equation*}
     0 = y(0) = C_1 + C_2 -\frac{1}{9} , \qquad \frac{1}{3} = y'(0) = - 2C_1 - 3C_2 + \frac{1}{3} .
 \end{equation*}
-We solve to get $C_1 = \nicefrac{1}{3}$ and $C_2 = \nicefrac{-2}{9}$. The particular solution we want is
+We solve to get $C_1 = \frac{1}{3}$ and $C_2 = \frac{-2}{9}$. The particular solution we want is
 \begin{equation*}
     y(x) = \frac{1}{3} e^{-2x} - \frac{2}{9} e^{-3x} + \frac{3x-1}{9} = \frac{3 e^{-2x} - 2 e^{-3x} + 3x-1}{9} .
 \end{equation*}
@@ -143,7 +143,7 @@ A right-hand side consisting of exponentials, sines, and cosines can be handled 
     \begin{equation*}
         (-4A+4B+2A) \cos(2x) + (-4B-4A+2B) \sin(2x) = \cos(2x) .
     \end{equation*}
-    The left-hand side must equal to right-hand side.  Namely, $-4A + 4B + 2A = 1$ and $-4B - 4A + 2B = 0$.  So $-2A+4B =1$ and $2A+B=0$. We can solve this system of equations to get that $A=\nicefrac{-1}{10}$ and $B=\nicefrac{1}{5}$.  So
+    The left-hand side must equal to right-hand side.  Namely, $-4A + 4B + 2A = 1$ and $-4B - 4A + 2B = 0$.  So $-2A+4B =1$ and $2A+B=0$. We can solve this system of equations to get that $A=\frac{-1}{10}$ and $B=\frac{1}{5}$.  So
     \begin{equation*}
         y_p = A \cos (2x) + B \sin (2x) = \frac{-\cos (2x) + 2 \sin (2x)}{10} .
     \end{equation*}
@@ -184,7 +184,7 @@ and we note that the $e^{3x}$ term is a duplicate with our desired guess. We mod
 \begin{equation*}
     y'' -9y = 6Ae^{3x} + 9Axe^{3x} - 9Axe^{3x} = 6Ae^{3x} .
 \end{equation*}
-Thus $6Ae^{3x}$ is supposed to equal $e^{3x}$.  Hence, $6A = 1$ and so $A=\nicefrac{1}{6}$.  We can now write the general solution as
+Thus $6Ae^{3x}$ is supposed to equal $e^{3x}$.  Hence, $6A = 1$ and so $A=\frac{1}{6}$.  We can now write the general solution as
 \begin{equation*}
     y = y_c + y_p =  C_1 e^{-3x} + C_2 e^{3x} + \frac{1}{6}\,xe^{3x} .
 \end{equation*}
@@ -260,7 +260,7 @@ To summarize all of this, we can make a table of the different guesses we should
     \begin{equation*}
         y_p'' - 3y_p' - 4y_p = -5Ae^{-x} + (3C - 5B)\sin(x) + (-3B-5C)\cos(x).
     \end{equation*}
-    Since we want this to equal $2e^{-x} + 4\sin(x)$, this means that we need $-5A = 2$, so $A = -\nicefrac{2}{5}$, as well as $3C - 5B = 4$ and $-3B-5C = 0$. The second of these implies that $3B = -5C$, or $B = -\nicefrac{5}{3}C$, so that the first equation gives $3C - 5(-\nicefrac{5}{3}C) = 4$. This implies that $(3 + \nicefrac{25}{3})C = 4$ so that \[ C = \frac{4}{(3 + \frac{25}{3})} = \frac{4}{\frac{34}{3}} = \frac{6}{17}.\] We can then find $B$ as
+    Since we want this to equal $2e^{-x} + 4\sin(x)$, this means that we need $-5A = 2$, so $A = -\frac{2}{5}$, as well as $3C - 5B = 4$ and $-3B-5C = 0$. The second of these implies that $3B = -5C$, or $B = -\frac{5}{3}C$, so that the first equation gives $3C - 5(-\frac{5}{3}C) = 4$. This implies that $(3 + \frac{25}{3})C = 4$ so that \[ C = \frac{4}{(3 + \frac{25}{3})} = \frac{4}{\frac{34}{3}} = \frac{6}{17}.\] We can then find $B$ as
     \[ 
         B = -\frac{5}{3}C = -\frac{5}{3} \cdot \frac{6}{17} = -\frac{10}{17}.
     \] 
@@ -419,7 +419,7 @@ where $x_0$ is any conveniently chosen value (usually zero). Notice the use of $
     \begin{equation*}
         24Ae^{3x} + 3B = e^{3x} + 2
     \end{equation*}
-    so that $A = \nicefrac{1}{24}$ and $B = \nicefrac{2}{3}$. Thus, the general solution to the non-homogeneous equation is
+    so that $A = \frac{1}{24}$ and $B = \frac{2}{3}$. Thus, the general solution to the non-homogeneous equation is
     \begin{equation*}
         y(x) = C_1e^{-x} + C_2e^{-3x} + \frac{1}{24}e^{3x} + \frac{2}{3}.
     \end{equation*}

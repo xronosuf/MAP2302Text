@@ -12,12 +12,12 @@
 
 \begin{exercise}
     Solve the following exact equations, implicit general solutions will suffice:
-    \begin{tasks}(2)
-        \task $(2 xy + x^2) \, dx + (x^2+y^2+1) \, dy = 0$
-        \task $x^5 + y^5 \frac{dy}{dx} = 0$
-        \task $e^x+y^3 + 3xy^2 \frac{dy}{dx} = 0$
-        \task $(x+y)\cos(x)+\sin(x) + \sin(x)y' = 0$
-    \end{tasks}
+    \begin{itemize}
+        \item $(2 xy + x^2) dx + (x^2+y^2+1) dy = 0$, $\answer{x^2y + \frac{x^3}{3} + \frac{y^3}{3} + y} = C$
+        \item $x^5 + y^5 \frac{dy}{dx} = 0$, $\answer{\frac{x^6}{6} + \frac{y^6}{6}} = C$
+        \item $e^x+y^3 + 3xy^2 \frac{dy}{dx} = 0$, $\answer{e^x + xy^3} = C$
+        \item $(x+y)\cos(x)+\sin(x) + \sin(x)y' = 0$, $\answer{(x+y)\sin(x) + \cos(x)} = C$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -28,12 +28,12 @@
 
 \begin{exercise}%
     Solve the following exact equations, implicit general solutions will suffice:
-    \begin{tasks}(2)
-        \task $\cos(x)+ye^{xy} + xe^{xy} y' = 0$
-        \task $(2x+y)\, dx + (x-4y) \, dy = 0$
-        \task $e^x + e^y \frac{dy}{dx} = 0$
-        \task $(3x^2+3y)\,dx + (3y^2+3x)\, dy = 0$
-    \end{tasks}
+    \begin{itemize}
+        \item $\cos(x)+ye^{xy} + xe^{xy} y' = 0$, $\answer{e^{xy}+\sin(x)} = C$
+        \item $(2x+y)dx + (x-4y) dy = 0$, $\answer{x^2+xy-2y^2} = C$
+        \item $e^x + e^y \frac{dy}{dx} = 0$, $\answer{e^x+e^y} = C$
+        \item $(3x^2+3y)dx + (3y^2+3x)dy = 0$, $\answer{x^3 + 3xy+ y^3} = C$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $e^{xy}+\sin(x)=C$ \quad
@@ -44,6 +44,9 @@
 
 \begin{exercise}
     Solve the differential equation $(2ye^{2xy} - 2x) + (2xe^{2xy} + \cos(y))y' = 0$
+    \[
+        C = \answer{e^{2xy} - x^2 + \sin(y)}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -53,6 +56,9 @@
 
 \begin{exercise}
     Solve the differential equation $(-y\sin(xy) - 2xe^{x^2}) + (-x\sin(xy) + 1)y' = 0$
+    \[
+        C = \answer{\cos(xy) - e^{x^2} + y}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -61,7 +67,14 @@
 %}
 
 \begin{exercise}
-    Solve the differential equation $(2x + 3y\sin(xy)) + (3x\sin(xy) - e^y)y' = 0$ with $y(2) = 0$. 
+    
+    Solve the differential equation $(2x + 3y\sin(xy)) + (3x\sin(xy) - e^y)y' = 0$ with $y(2) = 0$.
+    
+    [Note: Make sure to enter the full equation, e.g. 0 = x + 4]
+    \[
+        \answer{x^2 - 3\cos(xy) - e^y = 0}
+    \]
+    
 \end{exercise}
 %\comboSol{%
 %}
@@ -70,7 +83,16 @@
 %}
 
 \begin{exercise}
-    Solve the differential equation $x + yy' = 0$ with $y(0) = 8$. Write this as an explicit function and determine the interval of $x$ values where the solution is valid. 
+    Solve the differential equation $x + yy' = 0$ with $y(0) = 8$. Write this as an explicit function.
+    [Note: Make sure to enter the full equation, e.g. 0 = x + 4]
+    \[
+        \answer{y = \sqrt{64-x^2}}
+    \]
+    \begin{problem}
+        Determine the interval of $x$ values where the solution is valid:
+        \wordChoice{\choice{(}\choice[correct]{[}}$\answer{-8},\answer{8}$\wordChoice{\choice{)}\choice[correct]{]}}
+    \end{problem}
+    
 \end{exercise}
 %\comboSol{%
 %}
@@ -79,7 +101,15 @@
 %}
 
 \begin{exercise}
-    Solve the differential equation $2x-2 + (8y+16)y' = 0$ with $y(2) = 0$. Write this as an explicit function and determine the interval of $x$ values where the solution is valid. 
+    Solve the differential equation $2x-2 + (8y+16)y' = 0$ with $y(2) = 0$. Write this as an explicit function.
+    [Note: Make sure to enter the full equation, e.g. 0 = x + 4]
+    \[
+        \answer{y = \frac{-4 + \sqrt{17 - (x-1)^2}}{2}}
+    \]
+    \begin{problem}
+        Determine the interval of $x$ values where the solution is valid:
+        \wordChoice{\choice{(}\choice[correct]{[}}$\answer{1 - \sqrt{17}},\answer{1 + \sqrt{17}}$\wordChoice{\choice{)}\choice[correct]{]}}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -89,12 +119,12 @@
 
 \begin{exercise}
     Find the integrating factor for the following equations making them into exact equations. You can either use the formulas in this section or guess what the integrating factor should be.
-    \begin{tasks}(2)
-        \task $e^{xy} \, dx + \frac{y}{x} e^{xy} \, dy = 0$
-        \task $\frac{e^x+y^3}{y^2} \, dx + 3x \, dy = 0$
-        \task $(4x^5 + 9x^4y^2 + 10\frac{y}{x})\, dx + (6x^5y + 3x^2y^2 - 5)\, dy = 0$
-        \task $2\sin(y) \, dx + x\cos(y)\, dy = 0$
-    \end{tasks}
+    \begin{itemize}
+        \item $e^{xy} dx + \frac{y}{x} e^{xy} dy = 0$, $\answer{xe^{-xy}}$
+        \item $\frac{e^x+y^3}{y^2} dx + 3x dy = 0$, $\answer{y^2}$
+        \item $(4x^5 + 9x^4y^2 + 10\frac{y}{x})dx + (6x^5y + 3x^2y^2 - 5)dy = 0$, $\answer{x^{-2}}$
+        \item $2\sin(y) dx + x\cos(y)dy = 0$, $\answer{x}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -102,36 +132,48 @@
 %a)~ $xe^{-xy}$ \quad b)~$y^2$ \quad c)~$x^{-2}$ \quad d)~$x$
 %}
 
-\begin{samepage}
+
 \begin{exercise}%
     Find the integrating factor for the following equations making them into exact equations:
-    \begin{tasks}(2)
-        \task $\frac{1}{y}\, dx + 3y \, dy = 0$
-        \task $dx - e^{-x-y} \, dy = 0$
-        \task $\bigl( \frac{\cos(x)}{y^2} + \frac{1}{y} \bigr) \, dx + \frac{x}{y^2} \, dy = 0$
-        \task $\bigl( 2y + \frac{y^2}{x} \bigr) \, dx + ( 2y+x )\, dy = 0$
-    \end{tasks}
+    \begin{itemize}
+        \item $\frac{1}{y}dx + 3y dy = 0$, 
+            Integrating Factor: $\answer{y}$,
+            Exact Equation: $\answer{dx + 3y^2dy = 0}$
+        \item $dx - e^{-x-y} dy = 0$, $\answer{xe^{-xy}}$, 
+            Integrating Factor: $\answer{e^x}$,
+            Exact Equation: $\answer{e^x dx - e^{-y}dy= 0}$
+        \item $\bigl( \frac{\cos(x)}{y^2} + \frac{1}{y} \bigr) dx + \frac{x}{y^2} dy = 0$, $\answer{xe^{-xy}}$, 
+            Integrating Factor: $\answer{y^2}$,
+            Exact Equation: $\answer{(\cos(x)+y)dx + xdy = 0}$
+        \item $\bigl( 2y + \frac{y^2}{x} \bigr) dx + ( 2y+x )dy = 0$, $\answer{xe^{-xy}}$, 
+            Integrating Factor: $\answer{x}$,
+            Exact Equation: $\answer{( 2xy+y^2 )dx + (x^2+2xy)dy = 0}$
+    \end{itemize}
 \end{exercise}
-\end{samepage}
+
 %\exsol{%
-%a) Integrating factor is $y$, equation becomes $dx + 3y^2\,dy = 0$.
+%a) Integrating factor is $y$, equation becomes $dx + 3y^2dy = 0$.
 %\quad
-%b) Integrating factor is $e^x$, equation becomes $e^x \, dx - e^{-y}\,dy
+%b) Integrating factor is $e^x$, equation becomes $e^x dx - e^{-y}dy
 %= 0$.
 %\quad
-%c) Integrating factor is $y^2$, equation becomes $(\cos(x)+y)\, dx +
-%x\,dy = 0$.
+%c) Integrating factor is $y^2$, equation becomes $(\cos(x)+y)dx +
+%xdy = 0$.
 %\quad
-%d) Integrating factor is $x$, equation becomes $( 2xy+y^2 )\, dx +
-%(x^2+2xy)\,dy = 0$.
+%d) Integrating factor is $x$, equation becomes $( 2xy+y^2 )dx +
+%(x^2+2xy)dy = 0$.
 %}
 
 \begin{exercise}
     Suppose you have an equation of the form: $f(x) + g(y) \frac{dy}{dx} = 0$.
-    \begin{tasks}
-        \task Show it is exact.
-        \task Find the form of the potential function in terms of $f$ and $g$.
-    \end{tasks}
+    
+    Is it exact? \wordChoice{\choice[correct]{Yes.}\choice{No.}}
+    \begin{problem}
+        Find the form of the potential function in terms of $f$ and $g$. 
+        \[
+            \int \answer{f(x)}dx + \int \answer{g(y)}dy = 0.
+        \]
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -140,11 +182,12 @@
 %}
 
 \begin{exercise}
-    Suppose that we have the equation $f(x) \, dx - dy = 0$.
-    \begin{tasks}
-        \task Is this equation exact?
-        \task Find the general solution using a definite integral.
-    \end{tasks}
+    Suppose that we have the equation $f(x) dx - dy = 0$.
+    
+    Is this equation exact? \wordChoice{\choice[correct]{Yes.}\choice{No.}}
+    \begin{problem}
+        Find the general solution using a definite integral. $y = \int \answer{f(x)}dx + C$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -153,11 +196,11 @@
 %}
 
 \begin{exercise}
-    Find the potential function $F(x,y)$ of the exact equation $\frac{1+xy}{x}\, dx + \bigl(\nicefrac{1}{y} + x \bigr) \, dy = 0$ in two different ways.
-    \begin{tasks}
-        \task Integrate $M$ in terms of $x$ and then differentiate in $y$ and set to $N$.
-        \task Integrate $N$ in terms of $y$ and then differentiate in $x$ and set to $M$.
-    \end{tasks}
+    Find the potential function $F(x,y)$ of the exact equation $\frac{1+xy}{x}dx + \bigl(\frac{1}{y} + x \bigr) dy = 0$ in two different ways.
+    \begin{itemize}
+        \item Integrate $M$ in terms of $x$ and then differentiate in $y$ and set to $N$. $\answer{xy + \ln(x) + \ln(y) = C}$
+        \item Integrate $N$ in terms of $y$ and then differentiate in $x$ and set to $M$. $\answer{xy + \ln(x) + \ln(y) = C}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -165,21 +208,21 @@
 %$xy + \ln(x) + \ln(y) = C$
 %}
 
-\begin{samepage}
-    \begin{exercise}
-        A function $u(x,y)$ is said to be a \emph{harmonic function} if $u_{xx} + u_{yy} = 0$.
-        \begin{tasks}
-            \task Show if $u$ is harmonic, $-u_y \, dx + u_x \, dy = 0$ is an exact equation.  So there exists (at least locally) the so-called \emph{harmonic conjugate} function $v(x,y)$ such that $v_x = -u_y$ and $v_y = u_x$.
-        \end{tasks}
-        Verify that the following $u$ are harmonic and 
-        find the corresponding harmonic conjugates $v$:
-        \begin{tasks}[resume](3)
-            \task $u = 2xy$
-            \task $u = e^x \cos y$
-            \task $u = x^3-3xy^2$
-        \end{tasks}
-    \end{exercise}
-\end{samepage}
+\begin{exercise}
+    A function $u(x,y)$ is said to be a \emph{harmonic function} if $u_{xx} + u_{yy} = 0$.
+    
+    Compute: the difference between $M_y = -u_{yy}$ and $N_x = u_{xx}$: $\answer{0}$.
+    \begin{problem}
+        Since the difference is zero, they are equal, thus $-u_y dx + u_x dy = 0$ is an exact equation.  So there exists (at least locally) the so-called \emph{harmonic conjugate} function $v(x,y)$ such that $v_x = -u_y$ and $v_y = u_x$.
+        
+        Verify that the following $u$ are harmonic and find the corresponding harmonic conjugates $v$:
+        \begin{itemize}
+            \item $u = 2xy$, corresponding harmonic conjugate: $\answer{y^2 - x^2}$.
+            \item $u = e^x \cos y$, corresponding harmonic conjugate: $\answer{e^{x}\sin(y)}$.
+            \item $u = x^3-3xy^2$, corresponding harmonic conjugate: $\answer{3x^2y - y^3}$.
+        \end{itemize}
+    \end{problem}
+\end{exercise}
 %\comboSol{%
 %}
 %{%
@@ -187,18 +230,27 @@
 %b)~ (i)~$y^2 - x^2$ \quad (ii)~$e^{x}\sin(y)$ \quad (iii)~ $3x^2y - y^3$
 %}
 
-\begin{exercise}\label{ex:separableExact}%    
-    \begin{tasks}
-        \task Show that every separable equation $y' = f(x)g(y)$ can be written as an exact equation, and verify that it is indeed exact.
-        \task Using this rewrite $y' = xy$ as an exact equation, solve it and verify that the solution is the same as it was in \exampleref{example:yprimeisxy}.
-    \end{tasks}
+\begin{exercise}\label{ex:separableExact}%
+    Consider equations of the form $y' = f(x)g(y)$. Compute: $M_y = \answer{0}$, and $N_x = \answer{0}$.
+    \begin{problem}
+        Since $M_y = 0 = N_x$, we know that it is an exact function. We can thus use the substitution $y' = xy$ to rewrite it as an exact equation and solve. Start by using separation of variables to get:
+        \[
+            \answer{-x }dx + \answer{\frac{1}{y}} dy = 0
+        \]
+        \begin{problem}
+            Then taking the integral we get:
+            \[
+                F(x,y) = \answer{-\frac{x^2}{2} + \ln \lvert y \rvert} + C
+            \]
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\exsol{%
-%a) The equation is $ - f(x) \, dx + \frac{1}{g(y)} \, dy$,
+%a) The equation is $ - f(x) dx + \frac{1}{g(y)} dy$,
 %and this is exact
 %because $M = -f(x)$, $N = \frac{1}{g(y)}$, so $M_y = 0 = N_x$.
 %\quad
-%b) $-x \, dx + \frac{1}{y} \, dy = 0$, leads to
+%b) $-x dx + \frac{1}{y} dy = 0$, leads to
 %potential function $F(x,y) = -\frac{x^2}{2} + \ln \lvert y \rvert$, solving
 %$F(x,y) = C$ leads to the same solution as the example.
 %}

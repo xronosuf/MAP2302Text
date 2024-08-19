@@ -11,10 +11,14 @@
 \maketitle
 
 
-In the exercises, feel free to leave answer as a definite integral if a closed form solution cannot be found.  If you can find a closed form solution, you should give that.
+In the exercises, feel free to leave answer as a definite integral if a closed form solution cannot be found.  
+If you can find a closed form solution, you should give that. 
+When an arbitrary constant is needed, use $C$.
 
 \begin{exercise}
     Solve $y' + xy = x$.
+    
+    $y = \answer{1 + Ce^{-x^2}{2}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -24,6 +28,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' + 6y = e^x$.
+    
+    $y = \answer{\frac{1}{7}e^x + Ce^{-6x}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -33,6 +39,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' + 4y = x^2e^{-4x}$.
+    
+    $y = \answer{\frac{1}{3}x^3e^{-4x} + Ce^{-4x}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -42,6 +50,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' - 3y = xe^x$.
+    
+    $y = \answer{-\frac{1}{2}xe^{x} - \frac{1}{4}e^x + Ce^{3x}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -51,6 +61,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' + 3y = e^{4x} - e^{-2x}$ with $y(0) = -3$.
+    
+    $y = \answer{\frac{1}{7}e^{4x} - e^{-2} + \frac{27}{7}e^{-3x}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -60,6 +72,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' - 2y = x + 4$.
+    
+    $y = \answer{-\frac{x}{2} - \frac{9}{4} + Ce^{2x}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -69,6 +83,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $xy' + 4y = x^2 - \frac{1}{x^2}$.
+    
+    $y = \answer{\frac{x^2}{6} - \frac{1}{2x^2} + Cx^{-4}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -78,6 +94,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $xy' - 3y = x-2$ with $y(1) = 3$. 
+    
+    $y = \answer{-\frac{1}{2}x - \frac{2}{3} + \frac{25}{6}x^3}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -87,6 +105,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' - 4y = \cos{(3t)}$.
+    
+    $y = \answer{\frac{3}{25}\sin(3t) - \frac{4}{25}\cos(3t) + Ce^{4t}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -96,13 +116,17 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}%
     Solve $y'+3 x^2 y = x^2$.
+    
+    $y = \answer{C e^{-x^3} + \frac{1}{3}}$
 \end{exercise}
 %\exsol{%
-%$y = C e^{-x^3} + \nicefrac{1}{3}$
+%$y = C e^{-x^3} + \frac{1}{3}$
 %}
 
 \begin{exercise}
     Solve $y' + 3x^2y = \sin(x) \, e^{-x^3}$, with $y(0) = 1$.
+    
+    $y = \answer{(2-\cos(x))e^{-x^3}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -112,6 +136,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $y' + \cos (x) y = \cos(x)$.
+    
+    $y = \answer{1 + Ce^{-\sin(x)}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -121,6 +147,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve the IVP $4ty'+y=24\sqrt{t};\ y(10000)=100.$ %1.4
+    
+    $y = \answer{8\sqrt{t} - 7000t^{-1/4}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -130,6 +158,8 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve the IVP $(t^2+1)y' - 2ty = t^2+1; \ y(1)=0$. %1.4
+    
+    $y = \answer{(t^2 + 1)\left(\tan^{-1}(t) - \frac{\pi}{4}\right)}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -139,6 +169,9 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 
 \begin{exercise}
     Solve $\frac{1}{x^2+1} \, y' + x y = 3$, with $y(0) = 0$.
+    \[
+        y = \answer{ e^{-\left(\frac{x^4}{4} + \frac{x^2}{2}\right)}} \int_0^x \answer{3e^{\frac{s^4}{4} + \frac{s^2}{2}}(s^2 + 1) ds}
+    \]
 \end{exercise}
 %\comboSol{%
 %}
@@ -147,7 +180,9 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 %}
 
 \begin{exercise}%
-    Solve $y'+ 2\sin(2x) y = 2\sin(2x)$, $y(\nicefrac{\pi}{2}) = 3$.
+    Solve $y'+ 2\sin(2x) y = 2\sin(2x)$, $y(\frac{\pi}{2}) = 3$.
+    
+    $y = \answer{ 2 e^{\cos(2x)+1} + 1}$
 \end{exercise}
 %\exsol{%
 %$y = 2 e^{\cos(2x)+1} + 1$
@@ -158,7 +193,18 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
     \[ 
         5y' - 3y = e^{-2t} \qquad y(0) = a 
     \] 
-    for an undetermined value $a$. Solve the problem and determine the dependence on the value of $a$. How does the value of the solution as $t \rightarrow \infty$ depend on the value of $a$?
+    for an undetermined value $a$. Solve the problem and determine the dependence on the value of $a$. 
+    \[
+        y = \answer{ -\frac{1}{13}e^{-2t} + \left(a + \frac{1}{13}\right)e^{3/5}t}
+    \]
+    \begin{problem}
+        How does the value of the solution as $t \rightarrow \infty$ depend on the value of $a$?
+        \begin{itemize}
+            \item If $a > -\frac{1}{13}$, the solution goes to $\answer{\infty}$, 
+            \item If $a = -\frac{1}{13}$, the solution goes to $\answer{0}$, 
+            \item If $a < -\frac{1}{13}$, the solution goes to $\answer{-\infty}$.
+        \end{itemize}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -167,7 +213,10 @@ In the exercises, feel free to leave answer as a definite integral if a closed f
 %}
 
 \begin{exercise}
-    Find an expression for the general solution to $y' + 3y = \sin(t^2)$ with $y(0) = 2$. Simplfy your answer as much as possible. 
+    Find an expression for the general solution to $y' + 3y = \sin(t^2)$ with $y(0) = 2$. Simplify your answer as much as possible.
+    \[
+        y = \answer{ 2e^{-3t} + e^{-3t}}\int_0^t \answer{e^{3s}\sin(s^2) ds}
+    \]
 \end{exercise}
 %\comboSol{%
 %}

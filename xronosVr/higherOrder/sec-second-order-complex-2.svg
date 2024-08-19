@@ -1,0 +1,9 @@
+ <!--l. 326--><p class="noindent" >figure<a 
+ id="figure.\theHfigure "></a><img 
+src="./figures/envBounds.png" alt="PIC"  
+width="216" height="216"  />
+<a 
+ id="x1-1010"></a>
+<br /> </p><div class="caption" 
+><span class="id">Figure 0: </span><span  
+class="content">Plot of the function <script type="math/tex">e^{-x}\cos (2x) + 3e^{-x}\sin (2x)</script> with envelope curves illustrating the bounds on the function for large values of <script type="math/tex">x</script>. <a class="ximera-label" id="envBounds:fig"></a></span></div><!--tex4ht:label?: x1-1009r -->           

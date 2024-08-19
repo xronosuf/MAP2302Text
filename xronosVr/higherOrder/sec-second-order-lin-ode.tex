@@ -43,7 +43,7 @@ for $F$ an arbitrary function of three variables. As with first order equations,
     \begin{equation} \label{sol:eqlin}
         y'' + p(x)y' + q(x)y = f(x) ,
     \end{equation}
-    where $p(x) = \nicefrac{B(x)}{A(x)}$, $q(x) = \nicefrac{C(x)}{A(x)}$, and $f(x) = \nicefrac{F(x)}{A(x)}$.
+    where $p(x) = \frac{B(x)}{A(x)}$, $q(x) = \frac{C(x)}{A(x)}$, and $f(x) = \frac{F(x)}{A(x)}$.
 \end{definition}
 
 The word \emph{linear\index{linear equation}} means that the equation contains no powers nor functions of $y$, $y'$, and $y''$. In the special case when $f(x) = 0$, we have a so-called \emph{homogeneous\index{homogeneous linear equation}} equation
@@ -366,7 +366,7 @@ which says that $y_1$ is a constant multiple of $y_2$, which holds for all value
     is the general solution to $y'' + y = 0$.
 \end{exampleSol}
 
-For two functions, checking linear independence is rather simple.  Let us see another example using non-constant coefficient equations.  Consider $y''-2x^{-2}y = 0$.  Then $y_1 = x^2$ and $y_2 = \nicefrac{1}{x}$ are solutions.  To see that they are linearly indepedent, suppose one is a multple of the other: $y_1 = A y_2$, we just have to find out that $A$ cannot be a constant.  In this case we have $A = \nicefrac{y_1}{y_2} = x^3$, this most decidedly not a constant. So $y = C_1 x^2 + C_2 \nicefrac{1}{x}$ is the general solution.
+For two functions, checking linear independence is rather simple.  Let us see another example using non-constant coefficient equations.  Consider $y''-2x^{-2}y = 0$.  Then $y_1 = x^2$ and $y_2 = \frac{1}{x}$ are solutions.  To see that they are linearly indepedent, suppose one is a multple of the other: $y_1 = A y_2$, we just have to find out that $A$ cannot be a constant.  In this case we have $A = \frac{y_1}{y_2} = x^3$, this most decidedly not a constant. So $y = C_1 x^2 + C_2 \frac{1}{x}$ is the general solution.
 
 Now, back to our discussion of constant coefficient equations. If $b^2 - 4ac > 0$, then we have two distinct real roots $r_1$ and $r_2$, giving rise to solutions of the form $y_1(x) = e^{r_1x}$ and $y_2(x) = e^{r_2x}$. Using condition \ref{eqn:linindep} with $x_0 = 0$, we compute
 \begin{equation*}

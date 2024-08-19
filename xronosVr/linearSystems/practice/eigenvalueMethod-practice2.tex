@@ -21,7 +21,8 @@ Why?
             3 & 2 & 1 \\
             -3 & -1 & 0 \\
         \end{smallmatrix} 
-    \right]$.
+    \right]$.\\
+    $\lambda_1 = \answer{-2}$, $\vec{v}_1 = \left[\begin{smallmatrix} \answer{-1} \\ \answer{1} \\ -1 \end{smallmatrix}\right]$. $\lambda_2 = \answer{1}$, two-dimensional space of eigenvectors, options: $\left\{ \left[\begin{smallmatrix} \answer{-1} \\ 0 \\ \answer{3} \end{smallmatrix}\right],\ \left[\begin{smallmatrix} \answer{-1} \\ \answer{3} \\ 0 \end{smallmatrix}\right]\right\}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -37,7 +38,8 @@ Why?
             3 & -1 
         \end{smallmatrix} 
     \right]$.
-    Find the general solution of ${\vec{x}}' = A \vec{x}$ and sketch the corresponding phase portrait.
+    Find the general solution of ${\vec{x}}' = A \vec{x}$ and sketch the corresponding phase portrait.\\
+    $\vec{x}(t) = C_1 \left[\begin{smallmatrix}  \answer{1} \\ \answer{1} \end{smallmatrix}\right]e^{2t} + C_2\left( \left[\begin{smallmatrix} \answer{1} \\ \answer{1} \end{smallmatrix}\right]te^{2t} + \left[\begin{smallmatrix} \answer{\frac{1}{3}} \\ 0 \end{smallmatrix}\right]e^{2t}\right)$
 \end{exercise}
 %\comboSol{%
 %}
@@ -59,7 +61,8 @@ Why?
             1 
         \end{bmatrix} 
     \] 
-    and sketch the phase portrait for this system.
+    and sketch the phase portrait for this system.\\
+    $\vec{x}(t) = \left[\begin{smallmatrix} \answer{(2t+2)}e^{-3t} \\ \answer{(2t+1)}e^{-3t} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -82,7 +85,8 @@ Why?
             1 
         \end{bmatrix} 
     \] 
-    and sketch the phase portrait for this system.
+    and sketch the phase portrait for this system.\\
+    $\vec{x}(t) = \left[\begin{smallmatrix} \answer{(-6t+1)e^{-t}} \\ \answer{(12t + 1)e^{-t}} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -104,7 +108,8 @@ Why?
             2  
         \end{bmatrix} 
     \] 
-    and sketch the phase portrait for this system.
+    and sketch the phase portrait for this system.\\
+    $\vec{x}(t) = \left[\begin{smallmatrix} \answer{(-42t + 3)e^{3t}} \\ \answer{(21t + 2)e^{3t}} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -115,7 +120,8 @@ Why?
 \begin{exercise}
     Assume $A$ is a $3\times 3$ matrix. The row-reduced echelon forms of $A-\lambda I$ are given for three different values of $\lambda$: $$A-3I \rightsquigarrow \begin{pmatrix} 1&0&0\\ 0&1&0\\ 0&0&1 \end{pmatrix} \qquad\qquad  A-5I \rightsquigarrow \begin{pmatrix} 1&4&0\\ 0&0&1\\ 0&0&0 \end{pmatrix}\qquad\qquad A-7I \rightsquigarrow \begin{pmatrix} 1&-1&1/2\\ 0&0&0\\ 0&0&0 \end{pmatrix}$$
     
-    Find the general solution of the homogeneous system $\vec{x}'=A\vec{x}$.
+    Find the general solution of the homogeneous system $\vec{x}'=A\vec{x}$.\\
+    $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{4} \\ -1 \\ \answer{0} \end{smallmatrix}\right]e^{5t} + C_2\left[\begin{smallmatrix} \answer{1} \\ 1 \\ \answer{0} \end{smallmatrix}\right]e^{7t} + C_2\left[\begin{smallmatrix} \answer{-\frac{1}{2}} \\ 0 \\ \answer{1} \end{smallmatrix}\right]e^{7t}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -130,10 +136,11 @@ Why?
         0 & -3 & 2 \\
         0  & -4 & 1 
     \end{pmatrix}$
-    \begin{tasks}
-        \task Determine the characteristic polynomial of $A$ and give its eigenvalues.
-        \task How many (linearly independent) straight-line solutions does the system ${\vec{x}}'=A\vec{x}$ have? How do you know, without solving? 
-    \end{tasks}
+    \begin{itemize}
+        \item Determine the characteristic polynomial of $A$ and give its eigenvalues.\\
+            $\lambda = \answer{7}$, $\answer{-1}\pm \answer{2i}$
+        \item How many (linearly independent) straight-line solutions does the system ${\vec{x}}'=A\vec{x}$ have? $\answer{1}$ %How do you know, without solving? 
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -143,10 +150,11 @@ Why?
 
 \begin{exercise}
     Let $A=\begin{bmatrix} 1&5&-18\\ 2&-1&-5 \\ 1&1&-6 \end{bmatrix}$. 
-    \begin{tasks}
-        \task Show directly that $\vec{v}_1=\begin{bmatrix} 1\\3\\1 \end{bmatrix}$ is an eigenvector of $A$.
-        \task All eigenvalues of $A$ are the same. Find the general solution to ${\vec{x}}'=A\vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item Show directly that $\vec{v}_1=\begin{bmatrix} 1\\3\\1 \end{bmatrix}$ is an eigenvector of $A$.
+        \item All eigenvalues of $A$ are the same. Find the general solution to ${\vec{x}}'=A\vec{x}$.\\
+            $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{1} \\ \answer{3} \\1 \end{smallmatrix}\right]e^{-2t} + C_2\left(\left[\begin{smallmatrix} \answer{1} \\ 3 \\ \answer{1} \end{smallmatrix}\right] te^{-2t} + \left[\begin{smallmatrix} \answer{2} \\ \answer{-1} \\ 0 \end{smallmatrix}\right]e^{-2t}\right) + C_3\left( \left[\begin{smallmatrix} \answer{1} \\ \answer{3} \\1 \end{smallmatrix}\right] \frac{t^2}{2}e^{-2t} + \left[\begin{smallmatrix} \answer{2} \\ -1 \\ \answer{0} \end{smallmatrix}\right]te^{-2t} + \left[\begin{smallmatrix} \answer{-1} \\ 1 \\ \answer{0} \end{smallmatrix}\right] e^{-2t}\right)$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -164,11 +172,12 @@ Why?
             -2 & 4 & -1
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of ${\vec{x}}' = A \vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{3}$, $\answer{1}$, $\answer{1}$.
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{0}$
+        \item Find the general solution of ${\vec{x}}' = A \vec{x}$.\\
+            $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{1} \\ \answer{0} \\ -1 \end{smallmatrix}\right]e^t + C_2\left[\begin{smallmatrix} 2 \\ \answer{1} \\ \answer{0} \end{smallmatrix}\right]e^{3t} + C_3\left[\begin{smallmatrix} \answer{-2} \\ 0 \\ \answer{1} \end{smallmatrix}\right]e^{3t}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -185,11 +194,22 @@ Why?
             1 & 1 & 1 
         \end{smallmatrix}
     \right]$.  
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of $\vec{x}\,' = A\vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{0}$, $\answer{0}$, $\answer{3}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{0}$
+        \item Find the general solution of $\vec{x}\,' = A\vec{x}$.\\
+            $\vec{x} =
+            C_1 \left[ \begin{smallmatrix}
+                \answer{1} \\ \answer{1} \\ 1
+            \end{smallmatrix}\right]
+            e^{3t} + C_2
+            \left[ \begin{smallmatrix}
+                1 \\ \answer{0} \\ \answer{-1}
+            \end{smallmatrix}\right] + C_3
+            \left[ \begin{smallmatrix}
+                0 \\ \answer{1} \\ \answer{-1}
+            \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $3,0,0$
@@ -225,11 +245,12 @@ Why?
             0 & 0 & 2 
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of ${\vec{x}}' = A \vec{x}$ in two different ways and verify you get the same answer.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{2}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{1}$
+        \item Find the general solution of ${\vec{x}}' = A \vec{x}$ in two different ways and verify you get the same answer.\\
+            $\vec{x}(t) = C_1 \left[\begin{smallmatrix} \answer{1} \\ \answer{0} \\ 0 \end{smallmatrix}\right]e^{2t} + C_2\left[\begin{smallmatrix} \answer{0} \\ 0 \\ \answer{1} \end{smallmatrix}\right]e^{2t} + C_3\left(\left[\begin{smallmatrix} \answer{1} \\ \answer{0} \\ 0 \end{smallmatrix}\right]te^{2t} + \left[\begin{smallmatrix} \answer{0} \\ 1 \\ \answer{0} \end{smallmatrix}\right]e^{2t}\right)$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -246,11 +267,30 @@ Why?
             -1 & 1 & 2 \\
         \end{smallmatrix}
     \right]$.  
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of $\vec{x}\,' = A\vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{1}$, $\answer{1}$, $\answer{2}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{2}$
+        \item Find the general solution of $\vec{x}\,' = A\vec{x}$.\\
+            $\vec{x} = C_1
+            \left[ \begin{smallmatrix}
+                \answer{0} \\ \answer{1} \\ -1
+            \end{smallmatrix}\right]
+            e^{t} + C_2
+            \left(
+                \left[ \begin{smallmatrix}
+                    1 \\ \answer{0} \\ \answer{0}
+                \end{smallmatrix}\right]
+                + t 
+                \left[ \begin{smallmatrix}
+                    \answer{0} \\ 1 \\ \answer{-1}
+                \end{smallmatrix}\right]
+            \right)
+            e^{t} + C_3
+            \left[ \begin{smallmatrix}
+                3 \\ \answer{3} \\ \answer{-2}
+            \end{smallmatrix}\right]
+            e^{2t}$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $1,1,2$
@@ -294,11 +334,12 @@ Why?
             -4 & 4 & 7
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of ${\vec{x}}' = A \vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{1}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{1}$
+        \item Find the general solution of ${\vec{x}}' = A \vec{x}$.\\
+            $\vec{x}(t) = C_1\left[\begin{smallmatrix} \answer{-2} \\ \answer{0} \\ 1 \end{smallmatrix}\right]e^{-t} + C_2\left[\begin{smallmatrix} 1 \\ \answer{-1} \\ \answer{2} \end{smallmatrix}\right]e^{3t} + C_3\left(\left[\begin{smallmatrix} 1 \\ \answer{-1} \\ \answer{2} \end{smallmatrix}\right]te^{3t} + \left[\begin{smallmatrix} \answer{0} \\ \answer{0} \\ \frac{1}{2} \end{smallmatrix}\right]e^{3t}\right)$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -314,11 +355,41 @@ Why?
             0 & -1 & 5
         \end{smallmatrix}
     \right]$.  
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of $\vec{x}\,' = A\vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{2}$, $\answer{2}$, $\answer{2}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{3}$
+        \item Find the general solution of $\vec{x}\,' = A\vec{x}$.\\
+        $\vec{x} =
+        C_1
+        \left[ \begin{smallmatrix}
+            \answer{0} \\ 3 \\ \answer{1}
+        \end{smallmatrix}\right]
+        e^{2t} + C_2
+        \left(
+            \left[ \begin{smallmatrix}
+                0 \\ \answer{-1} \\ \answer{0}
+            \end{smallmatrix}\right]
+            + t
+            \left[ \begin{smallmatrix}
+                \answer{0} \\ 3 \\ \answer{1}
+            \end{smallmatrix}\right]
+        \right)
+        e^{2t} + C_3
+        \left(
+            \left[ \begin{smallmatrix}
+                \answer{1} \\ \answer{0} \\ 0
+            \end{smallmatrix}\right]
+            + t
+            \left[ \begin{smallmatrix}
+                0 \\ \answer{-1} \\ \answer{0}
+            \end{smallmatrix}\right]
+            + \frac{t^2}{2}
+            \left[ \begin{smallmatrix}
+                \answer{0} \\ 3 \\ \answer{1}
+            \end{smallmatrix}\right]
+        \right)
+        e^{2t}$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a) $2,2,2$
@@ -374,11 +445,12 @@ Why?
             0 & 0 & -2
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of ${\vec{x}}' = A \vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{2}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{1}$
+        \item Find the general solution of ${\vec{x}}' = A \vec{x}$.\\
+            $\vec{x}(t) = C_1 \left[\begin{smallmatrix} \answer{1} \\ \answer{0} \\ 1 \end{smallmatrix}\right]e^{-2t} + C_2\left[\begin{smallmatrix} 0 \\ \answer{1} \\ \answer{2} \end{smallmatrix}\right]e^{-2t} + C_3\left( \left[\begin{smallmatrix} \answer{2} \\ -1 \\ \answer{0} \end{smallmatrix}\right]te^{-2t} + \left[\begin{smallmatrix} \answer{1} \\ \answer{0} \\ 0 \end{smallmatrix}\right]e^{-2t}\right)$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -395,11 +467,12 @@ Why?
             -1 & -2 & 4
         \end{smallmatrix} 
     \right]$.
-    \begin{tasks}
-        \task What are the eigenvalues?
-        \task What is/are the defect(s) of the eigenvalue(s)?
-        \task Find the general solution of ${\vec{x}}' = A \vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item What are the eigenvalues? $\answer{2}$
+        \item How many defect(s) are there of the eigenvalue(s)? $\answer{1}$
+        \item Find the general solution of ${\vec{x}}' = A \vec{x}$.\\
+            $\vec{x}(t) = C_1 \left[\begin{smallmatrix} \answer{0} \\ \answer{1} \\ 1 \end{smallmatrix}\right]e^{2t} + C_2\left(\left[\begin{smallmatrix} 0 \\ \answer{1} \\ \answer{1} \end{smallmatrix}\right]te^{2t} + \left[\begin{smallmatrix} \answer{-1} \\ 0 \\ \answer{0} \end{smallmatrix}\right]e^{2t}\right) + C_3\left(\left[\begin{smallmatrix} \answer{0} \\1 \\ \answer{1} \end{smallmatrix}\right]\frac{t^2}{2}e^{2t} + \left[\begin{smallmatrix} \answer{-1} \\ \answer{0} \\ 0 \end{smallmatrix}\right]te^{2t} + \left[\begin{smallmatrix} -1 \\ \answer{-1} \\ \answer{0} \end{smallmatrix}\right]e^{2t}\right)$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -431,7 +504,10 @@ Why?
             0
         \end{smallmatrix}
     \right]$ 
-    is a corresponding eigenvector.  Find $A$ and show that there is only one such matrix $A$.
+    is a corresponding eigenvector.  Find $A$ and show that there is only one such matrix $A$.\\
+        $A = \left[ \begin{smallmatrix}
+            \answer{5} & \answer{5} \\ \answer{0} & \answer{5}
+        \end{smallmatrix}\right]$
 \end{exercise}
 %\exsol{%
 %$A = \left[ \begin{smallmatrix}
@@ -441,17 +517,92 @@ Why?
 
 \begin{exercise}%
     For each system, (i) classify the system according to type as one of sink/source/saddle/center/ spiral source/spiral sink; (ii) solve the systems; (iii) sketch the phase portrait. Both real and complex eigenvalues appear. %4.4, 4.5
-    \begin{multicols}{2}
-        \begin{tasks}
-            \task $\vec{x}'=\begin{pmatrix} 2&0 \\ 1&1 \end{pmatrix}\vec{x}$ %source
-            \task $\vec{x}'=\begin{pmatrix} -2& -2\\ 8& -2\end{pmatrix}\vec{x}$ %spiral sink
-            \task $\vec{x}'=\begin{pmatrix} 3& 5\\ -5& -3  \end{pmatrix}\vec{x}$ %center
-            \task $\vec{x}' = \begin{pmatrix} -1 & -3 \\ 3 & -7 \end{pmatrix}\vec{x}$ % Improper source
-            \task $\vec{x}'=\begin{pmatrix} 3& 2\\ 0&-2 \end{pmatrix}\vec{x}$ %saddle
-            \task $\vec{x}'=\begin{pmatrix} 2& 1/2 \\-1 & 1  \end{pmatrix}\vec{x}$ %spiral source
-            \task $\vec{x}'=\begin{pmatrix} 3& 3/2\\ 3/2 & -1 \end{pmatrix}\vec{x}$ %saddle
-        \end{tasks}
-    \end{multicols}
+    \begin{itemize}
+        \item $\vec{x}'=\begin{pmatrix} 2&0 \\ 1&1 \end{pmatrix}\vec{x}$ %source
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice[correct]{source}
+                \choice{saddle}
+                \choice{center}
+                \choice{spiral source}
+                \choice{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution: $C_1\left[\begin{smallmatrix} \answer{1} \\ \answer{1} \end{smallmatrix}\right]e^{2t} + C_2\left[\begin{smallmatrix} \answer{0} \\ 1 \end{smallmatrix}\right]e^t$  \\
+            
+        \item $\vec{x}'=\begin{pmatrix} -2& -2\\ 8& -2\end{pmatrix}\vec{x}$ %spiral sink
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice{saddle}
+                \choice{center}
+                \choice{spiral source}
+                \choice[correct]{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution:  $C_1e^{-2t}\left[\begin{smallmatrix} \answer{-\sin(4t)} \\ 2\cos(4t) \end{smallmatrix}\right] + C_2e^{-2t}\left[\begin{smallmatrix} \cos(4t) \\ \answer{2\sin(4t)} \end{smallmatrix}\right]$ \\
+            
+        \item $\vec{x}'=\begin{pmatrix} 3& 5\\ -5& -3  \end{pmatrix}\vec{x}$ %center
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice{saddle}
+                \choice[correct]{center}
+                \choice{spiral source}
+                \choice{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution:  $C_1\left[\begin{smallmatrix} 5\cos(4t) \\ \answer{-3\cos(4t)} + 4\sin(4t) \end{smallmatrix}\right] + C_2 \left[\begin{smallmatrix} 5\sin(4t)\\ 4\cos(4t) - \answer{3\sin(4t)} \end{smallmatrix}\right]$ \\
+            
+        \item $\vec{x}' = \begin{pmatrix} -1 & -3 \\ 3 & -7 \end{pmatrix}\vec{x}$ % Improper source
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice{saddle}
+                \choice{center}
+                \choice{spiral source}
+                \choice{spiral sink}
+                \choice[correct]{improper source}
+            \end{multipleChoice}
+            Solution: $C_1\left[\begin{smallmatrix} \answer{1} \\ 1 \end{smallmatrix}\right]e^{4t} + C_2\left(\left[\begin{smallmatrix} 1 \\ \answer{1}  \end{smallmatrix}\right]te^{4t} + \left[\begin{smallmatrix} \answer{\frac{1}{3}} \\ 0 \end{smallmatrix}\right]e^{4t}\right)$  \\
+            
+        \item $\vec{x}'=\begin{pmatrix} 3& 2\\ 0&-2 \end{pmatrix}\vec{x}$ %saddle
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice[correct]{saddle}
+                \choice{center}
+                \choice{spiral source}
+                \choice{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution: $C_1\left[\begin{smallmatrix} 1 \\ \answer{0} \end{smallmatrix}\right]e^{3t} + C_2\left[\begin{smallmatrix} \answer{2} \\ -5 \end{smallmatrix}\right]e^{-2t}$  \\
+            
+        \item $\vec{x}'=\begin{pmatrix} 2& \frac{1}{2} \\-1 & 1  \end{pmatrix}\vec{x}$ %spiral source
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice{saddle}
+                \choice{center}
+                \choice[correct]{spiral source}
+                \choice{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution: $C_1e^{\frac{3}{2}t}\left[\begin{smallmatrix} \answer{\cos(\frac{t}{2})} \\ \cos(\frac{t}{2}) - \sin(\frac{t}{2}) \end{smallmatrix}\right] + C_2e^{\frac{3}{2}t}\left[\begin{smallmatrix} \answer{\sin(\frac{t}{2})} \\ \sin\left(\frac{t}{2}\right) + \answer{\cos(\frac{t}{2})} \end{smallmatrix}\right]$  \\
+            
+        \item $\vec{x}'=\begin{pmatrix} 3& \frac{3}{2}\\ \frac{3}{2} & -1 \end{pmatrix}\vec{x}$ %saddle
+            \begin{multipleChoice}
+                \choice{sink}
+                \choice{source}
+                \choice[correct]{saddle}
+                \choice{center}
+                \choice{spiral source}
+                \choice{spiral sink}
+                \choice{improper source}
+            \end{multipleChoice}
+            Solution: $C_1\left[\begin{smallmatrix} 3 \\ \answer{1} \end{smallmatrix}\right]e^{\frac{7}{2}t} + C_2\left[\begin{smallmatrix} \answer{-1} \\ 3 \end{smallmatrix}\right]e^{-\frac{3}{3}t}$  \\
+            
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %(a) Nodal Source,\ $C_1\left[\begin{smallmatrix} 1 \\ 1 \end{smallmatrix}\right]e^{2t} + C_2\left[\begin{smallmatrix} 0 \\ 1 \end{smallmatrix}\right]e^t$ \hfill\raisebox{-0.5\height}{\includegraphics[height=1.5in]{Images/phaseportrait_2_0_1_1_sketch.png}}\hfill\hfill \\
@@ -468,13 +619,14 @@ Why?
     \begin{equation*}
         y'' + 2y' - 8y = 0.
     \end{equation*}
-    \begin{tasks}
-        \task Find the general solution of this problem using the methods of \Chapterref{ho:chapter}.
-        \task Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. 
-        \task Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
-        \task Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
-        \task Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
-    \end{tasks}
+    \begin{itemize}
+        \item Find the general solution of this problem using the methods of chapter \ref{ho:chapter}.
+        \item Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. \\
+            ${\vec{x}}' = \left[\begin{smallmatrix} \answer{0} & 1 \\8 & \answer{-2} \end{smallmatrix}\right]\vec{x}$
+        \item Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
+        \item Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
+        \item Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -487,13 +639,14 @@ Why?
     \begin{equation*}
         y'' + 4y' + 5y = 0.
     \end{equation*}
-    \begin{tasks}
-        \task Find the general solution of this problem using the methods of \Chapterref{ho:chapter}.
-        \task Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. 
-        \task Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
-        \task Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
-        \task Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
-    \end{tasks}
+    \begin{itemize}
+        \item Find the general solution of this problem using the methods of chapter \ref{ho:chapter}.
+        \item Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. \\
+            ${\vec{x}}' = \left[\begin{smallmatrix} \answer{0} & 1 \\ \answer{-4} & \answer{-4} \end{smallmatrix}\right]\vec{x}$
+        \item Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
+        \item Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
+        \item Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -506,13 +659,14 @@ Why?
     \begin{equation*}
         y'' - 4y' + 4y = 0.
     \end{equation*} for $b$ and $c$ two real numbers.
-    \begin{tasks}
-        \task Find the general solution of this problem using the methods of \Chapterref{ho:chapter}.
-        \task Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. 
-        \task Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
-        \task Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
-        \task Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
-    \end{tasks}
+    \begin{itemize}
+        \item Find the general solution of this problem using the methods of chapter \ref{ho:chapter}.
+        \item Convert this equation into a first order linear system using the transformation $\vec{x} = \left[ \begin{smallmatrix} y \\ y' \end{smallmatrix} \right]$. \\
+            ${\vec{x}}' = \left[\begin{smallmatrix} \answer{0} & 1 \\ \answer{-4} & 4 \end{smallmatrix}\right]\vec{x}$
+        \item Find the eigenvalues and eigenvalues of the coefficient matrix and use that to find the general solution to the system.
+        \item Extract the first component of the general solution and compare that to the solution from part (a). How do they relate?
+        \item Look back through the work. How do the equation used to find the roots in (a) and the eigenvalues in (c) relate to each other?
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}

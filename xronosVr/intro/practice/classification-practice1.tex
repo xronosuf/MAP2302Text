@@ -12,55 +12,705 @@
 
 
 \begin{exercise}
-    Classify the following equations.  Are they ODE or PDE\@?  Is it an equation or a system?  What is the order?  Is it linear or nonlinear, and if it is linear, is it homogeneous, constant coefficient?  If it is an ODE\@, is it autonomous?
-    \begin{tasks}(2)
-        \task $\displaystyle \sin(t) \frac{d^2 x}{dt^2} + \cos(t) x = t^2$
-        \task $\displaystyle \frac{\partial u}{\partial x} + 3 \frac{\partial u}{\partial y} = xy$
-        \task $\displaystyle y''+3y+5x=0, \quad x''+x-y=0$
-        \task $\displaystyle \frac{\partial^2 u}{\partial t^2} + u\frac{\partial^2 u}{\partial s^2} = 0$
-        \task $\displaystyle x''+tx^2=t$
-        \task $\displaystyle \frac{d^4 x}{dt^4} = 0$
-    \end{tasks}
+    Consider the following equation:  
+    \[
+        \displaystyle \sin(t) \frac{d^2 x}{dt^2} + \cos(t) x = t^2
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice{Homogeneous}
+                        \choice[correct]{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice{Yes.}
+                            \choice[correct]{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                    
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice{Autonomous}
+            \choice[correct]{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
 \end{exercise}
-%\comboSol{%
-%}
-%{%
 %a)~ODE, equation, second order, linear, non-homogeneous, not constant coefficient, not autonomous.\\
-%b)~PDE, equation, first order, linear, constant coefficient, non-homogeneous.\\
-%c)~ODE, system, second order, linear, constant coefficient, homogeneous, autonomous.\\
-%d)~PDE, equation, second order, non-linear.\\
-%e)~ODE, equation, second order, non-linear, not autonomous.\\
-%f)~ODE, equation, fourth order, linear, constant coefficient, homogeneous, autonomous.
-%}
 
-\begin{exercise}%
-    Classify the following equations.  Are they ODE or PDE\@?  Is it an equation or a system?  What is the order?  Is it linear or nonlinear, and if it is linear, is it homogeneous, constant coefficient?  If it is an ODE\@, is it autonomous?
-    \begin{tasks}(2)
-        \task $\displaystyle \frac{\partial^2 v}{\partial x^2} + 3 \frac{\partial^2 v}{\partial y^2} = \sin(x)$
-        \task $\displaystyle \frac{d x}{dt} + \cos(t) x = t^2+t+1$
-        \task $\displaystyle \frac{d^7 F}{dx^7} = 3F(x)$
-        \task $\displaystyle y''+8y'=1$
-        \task $\displaystyle x''+tyx'=0, \quad y''+txy = 0$
-        \task $\displaystyle \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial s^2} + u^2$
-    \end{tasks}
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \displaystyle \frac{\partial u}{\partial x} + 3 \frac{\partial u}{\partial y} = xy
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice{ODE}
+        \choice[correct]{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this PDE? $\answer{1}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice{Homogeneous}
+                        \choice[correct]{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice{Autonomous}
+            \choice{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
 \end{exercise}
-%\exsol{%
-%a) 
+%b)~PDE, equation, first order, linear, constant coefficient, non-homogeneous.\\
+
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        y''+3y+5x=0, \quad x''+x-y=0
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice{Equation}
+            \choice[correct]{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice[correct]{Homogeneous}
+                        \choice{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice[correct]{Autonomous}
+            \choice{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
+%c)~ODE, system, second order, linear, constant coefficient, homogeneous, autonomous.\\
+
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{\partial^2 u}{\partial t^2} + u\frac{\partial^2 u}{\partial s^2} = 0
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice{ODE}
+        \choice[correct]{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice{Linear}
+                    \choice[correct]{Nonlinear}
+                \end{multipleChoice}
+                
+%                \begin{problem}
+%                    Is it homogeneous or non-homogeneous?
+%                    \begin{multipleChoice}
+%                        \choice{Homogeneous}
+%                        \choice{Non-Homogeneous}
+%                    \end{multipleChoice}
+%                    
+%                    \begin{problem}
+%                        Constant Coefficient?
+%                        \begin{multipleChoice}
+%                            \choice{Yes.}
+%                            \choice{No.}
+%%                        \end{multipleChoice}
+%                    \end{problem}
+%                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+%    \begin{problem}
+%        Is it autonomous or not autonomous?
+%        \begin{multipleChoice}
+%            \choice{Autonomous}
+%            \choice{Not Autonomous}
+%        \end{multipleChoice}
+%    \end{problem}
+\end{exercise}
+%d)~PDE, equation, second order, non-linear.\\
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        x''+tx^2=t
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice{Linear}
+                    \choice[correct]{Nonlinear}
+                \end{multipleChoice}
+                
+%                \begin{problem}
+%                    Is it homogeneous or non-homogeneous?
+%                    \begin{multipleChoice}
+%                        \choice{Homogeneous}
+%                        \choice{Non-Homogeneous}
+%                    \end{multipleChoice}
+%                    
+%                    \begin{problem}
+%                        Constant Coefficient?
+%                        \begin{multipleChoice}
+%                            \choice{Yes.}
+%                            \choice{No.}
+%                        \end{multipleChoice}
+%                    \end{problem}
+%                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice{Autonomous}
+            \choice[correct]{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
+%e)~ODE, equation, second order, non-linear, not autonomous.\\
+
+
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{d^4 x}{dt^4} = 0
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{4}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice[correct]{Homogeneous}
+                        \choice{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice[correct]{Autonomous}
+            \choice{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
+%f)~ODE, equation, fourth order, linear, constant coefficient, homogeneous, autonomous.
+
+
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{\partial^2 v}{\partial x^2} + 3 \frac{\partial^2 v}{\partial y^2} = \sin(x)
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice{ODE}
+        \choice[correct]{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice{Homogeneous}
+                        \choice[correct]{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+%    \begin{problem}
+%        Is it autonomous or not autonomous?
+%        \begin{multipleChoice}
+%            \choice{Autonomous}
+%            \choice{Not Autonomous}
+%        \end{multipleChoice}
+%    \end{problem}
+\end{exercise}
 %PDE\@, equation, second order, linear, nonhomogeneous, constant coefficient.\\
-%b) 
+
+
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{d x}{dt} + \cos(t) x = t^2+t+1
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{1}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice{Homogeneous}
+                        \choice[correct]{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice{Yes.}
+                            \choice[correct]{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice{Autonomous}
+            \choice[correct]{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
 %ODE\@, equation, first order, linear, nonhomogeneous, not constant coefficient, not autonomous.\\
-%c) 
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{d^7 F}{dx^7} = 3F(x)
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{7}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice[correct]{Homogeneous}
+                        \choice{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice[correct]{Autonomous}
+            \choice{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
 %ODE\@, equation, seventh order, linear, homogeneous, constant coefficient, autonomous.\\
-%d) 
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        y''+8y'=1
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice[correct]{Linear}
+                    \choice{Nonlinear}
+                \end{multipleChoice}
+                
+                \begin{problem}
+                    Is it homogeneous or non-homogeneous?
+                    \begin{multipleChoice}
+                        \choice{Homogeneous}
+                        \choice[correct]{Non-Homogeneous}
+                    \end{multipleChoice}
+                    
+                    \begin{problem}
+                        Constant Coefficient?
+                        \begin{multipleChoice}
+                            \choice[correct]{Yes.}
+                            \choice{No.}
+                        \end{multipleChoice}
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+    \begin{problem}
+        Is it autonomous or not autonomous?
+        \begin{multipleChoice}
+            \choice[correct]{Autonomous}
+            \choice{Not Autonomous}
+        \end{multipleChoice}
+    \end{problem}
+\end{exercise}
 %ODE\@, equation, second order, linear, nonhomogeneous, constant coefficient, autonomous.\\
-%e) 
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        x''+tyx'=0, \quad y''+txy = 0
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice{Equation}
+            \choice[correct]{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice{Linear}
+                    \choice[correct]{Nonlinear}
+                \end{multipleChoice}
+%                
+%                \begin{problem}
+%                    Is it homogeneous or non-homogeneous?
+%                    \begin{multipleChoice}
+%                        \choice{Homogeneous}
+%                        \choice{Non-Homogeneous}
+%                    \end{multipleChoice}
+%                    
+%                    \begin{problem}
+%                        Constant Coefficient?
+%                        \begin{multipleChoice}
+%                            \choice{Yes.}
+%                            \choice{No.}
+%                        \end{multipleChoice}
+%                    \end{problem}
+%                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+%    \begin{problem}
+%        Is it autonomous or not autonomous?
+%        \begin{multipleChoice}
+%            \choice{Autonomous}
+%            \choice{Not Autonomous}
+%        \end{multipleChoice}
+%    \end{problem}
+\end{exercise}
 %ODE\@, system, second order, nonlinear.\\
-%f) 
+
+\begin{exercise}
+    Consider the following equation:  
+    \[
+        \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial s^2} + u^2
+    \]
+    Is this an ODE or PDE?
+    \begin{multipleChoice}
+        \choice{ODE}
+        \choice[correct]{PDE}
+    \end{multipleChoice}
+    \begin{problem}
+        Is this an equation or a system?
+        \begin{multipleChoice}
+            \choice[correct]{Equation}
+            \choice{System}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order of this ODE? $\answer{2}$
+            
+            \begin{problem}
+                Is this linear or nonlinear?
+                \begin{multipleChoice}
+                    \choice{Linear}
+                    \choice[correct]{Nonlinear}
+                \end{multipleChoice}
+                
+%                \begin{problem}
+%                    Is it homogeneous or non-homogeneous?
+%                    \begin{multipleChoice}
+%                        \choice{Homogeneous}
+%                        \choice{Non-Homogeneous}
+%                    \end{multipleChoice}
+%                    
+%                    \begin{problem}
+%                        Constant Coefficient?
+%                        \begin{multipleChoice}
+%                            \choice{Yes.}
+%                            \choice{No.}
+%                        \end{multipleChoice}
+%                    \end{problem}
+%                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+%    \begin{problem}
+%        Is it autonomous or not autonomous?
+%        \begin{multipleChoice}
+%            \choice{Autonomous}
+%            \choice{Not Autonomous}
+%        \end{multipleChoice}
+%    \end{problem}
+\end{exercise}
 %PDE\@, equation, second order, nonlinear.
-%}
+
+
 
 \begin{exercise}
     If $\vec{u} = (u_1,u_2,u_3)$ is a vector, we have the divergence $\nabla \cdot \vec{u} = \frac{\partial u_1}{\partial x} + \frac{\partial u_2}{\partial y} + \frac{\partial u_3}{\partial z}$ and curl $\nabla \times \vec{u} = \Bigl( \frac{\partial u_3}{\partial y} - \frac{\partial u_2}{\partial z} , ~ \frac{\partial u_1}{\partial z} - \frac{\partial u_3}{\partial x} , ~ \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y} \Bigr)$. Notice that curl of a vector is still a vector.  Write out Maxwell's equations in terms of partial derivatives and classify the system.
+    
+    Is it a ODE or PDE?
+    \begin{multipleChoice}
+        \choice{ODE}
+        \choice[correct]{PDE}
+    \end{multipleChoice}
+    
+    \begin{problem}
+        Is it linear or non-linear?
+        \begin{multipleChoice}
+            \choice[correct]{Linear}
+            \choice{Non-linear}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order? $\answer{1}$
+            
+            \begin{problem}
+                Does it have constant coefficients?
+                \begin{multipleChoice}
+                    \choice[correct]{Yes.}
+                    \choice{No.}
+                \end{multipleChoice}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -70,6 +720,41 @@
 
 \begin{exercise}
     Suppose $F$ is a linear function, that is, $F(x,y) = ax+by$ for constants $a$ and $b$.  What is the classification of equations of the form $F(y',y) = 0$.
+
+    Is it a ODE or PDE?
+    \begin{multipleChoice}
+        \choice[correct]{ODE}
+        \choice{PDE}
+    \end{multipleChoice}
+    
+    \begin{problem}
+        Is it linear or non-linear?
+        \begin{multipleChoice}
+            \choice[correct]{Linear}
+            \choice{Non-linear}
+        \end{multipleChoice}
+        
+        \begin{problem}
+            What is the order? $\answer{1}$
+            
+            \begin{problem}
+                Homogeneous or non-homogeneous?
+                \begin{multipleChoice}
+                    \choice[correct]{Homogeneous}
+                    \choice{Non-Homogeneous}
+                \end{multipleChoice}
+
+                \begin{problem}
+                    Does it have constant coefficients?
+                    \begin{multipleChoice}
+                        \choice[correct]{Yes.}
+                        \choice{No.}
+                    \end{multipleChoice}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
+
 \end{exercise}
 %\comboSol{%
 %}
@@ -79,6 +764,8 @@
 
 \begin{exercise}
     Write down an explicit example of a third order, linear, nonconstant coefficient, nonautonomous, nonhomogeneous system of two ODE such that every derivative that could appear, does appear.
+    
+    NOTE: This will take some thought on how to write an appropriate validator. Will need to see what sage has for tools here.
 \end{exercise}
 %\comboSol{%
 %}
@@ -90,13 +777,15 @@
 
 \begin{exercise}%
     Write down the general \emph{zero}th order linear ordinary differential equation.  Write down the general solution.
+    
+    NOTE: Unclear as to what the goal is for this problem and/or what student input should look like...
 \end{exercise}
 %\exsol{%
 %equation: $a(x) y = b(x)$, solution: $y = \frac{b(x)}{a(x)}$.
 %}
 
 \begin{exercise}%
-    For which $k$ is $\frac{dx}{dt}+x^k = t^{k+2}$ linear.  Hint: there are two answers.
+    For which $k$ is $\frac{dx}{dt}+x^k = t^{k+2}$ linear.  Hint: there are two answers, enter them from furthest left on the number line to furthest right: $k = \answer{0}$, $k = \answer{1}$
 \end{exercise}
 %\exsol{%
 %$k=0$ or $k=1$
@@ -104,6 +793,8 @@
 
 \begin{exercise}
     Write out an explicit example of a non-homogeneous fourth order, linear, constant coefficient differential equation. where all possible derivatives of the unknown function $y$ appear. 
+    
+    NOTE: This will take some thought on how to write an appropriate validator. Will need to see what sage has for tools here.
 \end{exercise}
 %\comboSol{%
 %}
@@ -122,12 +813,23 @@
         u''' - 5u'' + 2u' - 3u = e^t
     \end{equation*}
     with initial conditions $u(0) = 3$, $u'(0) = -2$, and $u''(0) = 1$. 
-    \begin{tasks}
-        \task Use the substitution $u=x$, $u' = y$, and $u'' = z$ to verify that $x(t) = u(t)$ because they solve the same initial value problem.
-        \task What is the order of the system defining $x$, $y$, and $z$ and how many components does it have?
-        \task What is the order of the equation defining $u$? How many components does that have?
-        \task How do these numbers relate to each other?
-    \end{tasks}
+    First: Use the substitution $u=x$, $u' = y$, and $u'' = z$ to verify that $x(t) = u(t)$ because they solve the same initial value problem.
+
+    \begin{problem}
+        What is the order of the system defining $x$, $y$, and $z$? $\answer{1}$\\
+        How many components does it have? $\answer{3}$
+
+
+        What is the order of the equation defining $u$? How many components does that have? $\answer{3}$\\
+        How many components does it have? $\answer{1}$
+        
+        \begin{problem}
+            Notice that there is something in common with these pairs of numbers. In particular their
+            \wordChoice{\choice{sum}\choice{difference}\choice[correct]{product}\choice{division}} are both $\answer{3}$.
+        \end{problem}
+
+    \end{problem}
+
 \end{exercise}
 %\exsol{%
 %b) First order with three components.\\

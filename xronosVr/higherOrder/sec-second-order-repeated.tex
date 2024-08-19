@@ -70,7 +70,7 @@ The \emph{\myindex{reduction of order method}} applies more generally to any sec
         & = y_1 v'' + (2 y_1' + p(x) y_1) v' + \cancelto{0}{\bigl( y_1'' + p(x) y_1' + q(x) y_1 \bigr)} v .
     \end{split}
 \end{equation*}
-In other words, $y_1 v'' + (2 y_1' + p(x) y_1) v' = 0$.  Using $w = v'$ we have the first order linear equation $y_1 w' + (2 y_1' + p(x) y_1) w = 0$.  After solving this equation for $w$ (integrating factor), we find $v$ by antidifferentiating $w$.  We then form $y_2$ by computing $y_1 v$.  For example, suppose we somehow know $y_1 = x$ is a solution to $y''+x^{-1}y'-x^{-2} y=0$. The equation for $w$ is then $xw' + 3 w = 0$.  We find a solution, $w = Cx^{-3}$, and we find an antiderivative $v = \frac{-C}{2x^2}$. Hence $y_2 = y_1 v = \frac{-C}{2x}$. Any $C$ works and so $C=-2$ makes $y_2 = \nicefrac{1}{x}$.  Thus, the general solution is $y = C_1 x + C_2\nicefrac{1}{x}$.
+In other words, $y_1 v'' + (2 y_1' + p(x) y_1) v' = 0$.  Using $w = v'$ we have the first order linear equation $y_1 w' + (2 y_1' + p(x) y_1) w = 0$.  After solving this equation for $w$ (integrating factor), we find $v$ by antidifferentiating $w$.  We then form $y_2$ by computing $y_1 v$.  For example, suppose we somehow know $y_1 = x$ is a solution to $y''+x^{-1}y'-x^{-2} y=0$. The equation for $w$ is then $xw' + 3 w = 0$.  We find a solution, $w = Cx^{-3}$, and we find an antiderivative $v = \frac{-C}{2x^2}$. Hence $y_2 = y_1 v = \frac{-C}{2x}$. Any $C$ works and so $C=-2$ makes $y_2 = \frac{1}{x}$.  Thus, the general solution is $y = C_1 x + C_2\frac{1}{x}$.
 
 % Since we have a formula for the solution to the first order linear equation,
 % we can write a formula for $y_2$:

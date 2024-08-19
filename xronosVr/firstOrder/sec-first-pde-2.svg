@@ -1,0 +1,9 @@
+ <!--l. 90--><p class="noindent" >figure<a 
+ id="figure.\theHfigure "></a>
+<a 
+ id="x1-118"></a>
+<br /> </p><div class="caption" 
+><span class="id">Figure 0: </span><span  
+class="content">Example of “transport” in <script type="math/tex">u_t-u_x = 0</script> (that is, <script type="math/tex">\alpha = 1</script>) where the initial condition <script type="math/tex">f(x)</script> is a peak at the origin. On the left is a
+graph of the initial condition <script type="math/tex">u(x,0)</script>. On the right is a graph of the function <script type="math/tex">u(x,1)</script>, that is at time <script type="math/tex">t=1</script>. Notice it is the same graph
+shifted one unit to the right.<a class="ximera-label" id="fopde:transportfig"></a></span></div><!--tex4ht:label?: x1-117r -->                                                                                                                          

@@ -17,11 +17,15 @@
         \frac{dT}{dt} = k(T_0 - T)
     \end{equation*}
     where $T_0$ is the ambient temperature and $k$ is a constant depending on the object and geometry. His car is held at a constant 20$^\circ$ C, and when he receives the coffee, he measures the temperature to be 90$^\circ$ C. Two minutes later, the temperature is 81$^\circ$C.
-    \begin{tasks}
-        \task Use these two points of data to determine the value of $k$ for this coffee.
-        \task Bob only wants to drink his coffee once it reaches 65$^\circ$ C. How long does he have to wait for this to happen? 
-        \task If the coffee is too cold for Bob's taste once it reaches 35$^\circ$ C, how long is the acceptable window for Bob to drink his coffee?
-    \end{tasks} 
+    
+    Use these two points of data to determine the value of $k$ for this coffee. [Enter your answer to 5 decimal digits] $\answer{0.06681}$
+    
+    \begin{problem}
+        Bob only wants to drink his coffee once it reaches 65$^\circ$ C. How long does he have to wait for this to happen? [Enter your answer to 2 decimal digits] $\answer{6.42}$ minutes
+        \begin{problem}
+            If the coffee is too cold for Bob's taste once it reaches 35$^\circ$ C, how long is the acceptable window for Bob to drink his coffee? [Enter as a whole number] $\answer{16}$ minute(s)
+        \end{problem}
+    \end{problem} 
 \end{exercise}
 %\comboSol{%
 %}
@@ -35,11 +39,17 @@
         \frac{dv}{dt} = 9.8 - \alpha v
     \end{equation*}
     where $\alpha$ represents the drag coefficient of the object.
-    \begin{tasks}
-        \task Solve this differential equation with initial condition $v(0) = 0$ to get a solution that depends on $\alpha$. 
-        \task Assume that you drop an object from a height of 10 meters and it hits the ground after $3$ seconds. What is the value of $\alpha$ here? (Note: You solved for $v(t)$ in the previous part, and now you need to get to position. What does that require?)
-        \task Assume that a second object hits the ground in 6 seconds. How does this change the value of $\alpha$?
-    \end{tasks}
+    
+    Solve this differential equation with initial condition $v(0) = 0$ to get a solution that depends on $\alpha$. 
+    \[
+        v(t) = \answer{\frac{9.8}{\alpha}(1 - e^{-\alpha t})}
+    \]
+    \begin{problem}
+        Assume that you drop an object from a height of 10 meters and it hits the ground after $3$ seconds. What is the value of $\alpha$ here? (Note: You solved for $v(t)$ in the previous part, and now you need to get to position. What does that require?) [Enter answer to two decimal digits] $\answer{2.94}$
+        \begin{problem}
+            Assume that a second object hits the ground in 6 seconds. How does this change the value of $\alpha$? [Enter to two decimal digits] $\answer{5.88}$
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -60,10 +70,10 @@
              2.3 & 56 \\ \hline
         \end{tabular}
     \end{table}
-    \begin{tasks}
-        \task Use code to determine the best-fit value of $k$ for this data.
-        \task The restaurant determines that to avoid any potential legal issues, the coffee can be no warmer than 60 $^\circ$C when it is served. If the coffee comes out of the machine at 90 $^\circ C$, how long do they have to wait before they can serve the coffee?
-    \end{tasks}
+    Use code to determine the best-fit value of $k$ for this data. [Enter to 4 decimal digits] $\answer{0.2317}$
+    \begin{problem}
+        The restaurant determines that to avoid any potential legal issues, the coffee can be no warmer than 60 $^\circ$C when it is served. If the coffee comes out of the machine at 90 $^\circ C$, how long do they have to wait before they can serve the coffee? [Enter to 2 decimal digits] $\answer{2.51}$ minute(s).
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -80,58 +90,66 @@
     \end{equation*}
     where the velocity is in \unitfrac{m}{s} and $\alpha$ represents the drag coefficient. During a physics experiment, a student measures data for the velocity of a falling object over time given in the table below.
     
-    Use this data (and code) to estimate the value of $\alpha$ for this object. 
+    Use this data (and code) to estimate the value of $\alpha$ for this object.  [Enter your answer to 4 decimal digits] $\answer{0.1244}$.
 \end{exercise} 
 %\exsol{%
 %$\alpha = .1244$. The alpha value used before noise was added to the data is $0.124$, so very close, but not identically the same.%
 %}
 
-\begin{minipage}{0.49\textwidth}
-\centering
-    \begin{tabular}{|c|c|}\hline
-         \textbf{t} (s)& \textbf{v} (m/s)  \\ \hline
-        0 & 0 \\
-    	0.1 &1.0 \\
-    	0.2 &  1.9\\
-    	0.4 & 3.6 \\
-    	0.6 & 5.2 \\
-    	0.9 & 6.8 \\
-    	1.1 & 7.4 \\
-    	1.3 & 7.9 \\
-    	1.5 & 8.2 \\
-    	1.8 & 8.5\\
-    	2.1 & 8.8  \\ \hline
-    \end{tabular}
-    \captionof{table}{Data for \exerciseref{ex:ModelingParamVel}.}
-\end{minipage}%
-\begin{minipage}{0.49\textwidth}
-    \centering
-    \begin{tabular}{|c|c|}\hline
-         \textbf{t} (d)& \textbf{P} (thousands)  \\ \hline
-        0 & 50 \\
-       7  & 60 \\
-        14 & 70 \\
-        28 & 97 \\
-        37 & 117 \\
-         50 & 148 \\
-        78 & 220 \\
-        100 & 268
-         \\ \hline
-    \end{tabular}
-    \captionof{table}{Data for \exerciseref{ex:ModelingParamPop}.}
-\end{minipage}
+
 
 \begin{exercise}\label{ex:ModelingParamPop}
     Assume that a species of fish in a lake has a population that is modeled by the differential equation
     \begin{equation*}
         \frac{dP}{dt} = \frac{1}{100}rP(K - P) - \alpha 
     \end{equation*}
-    where $r$, $K$, and $\alpha$ are parameters, $r$ representing the growth rate, $K$ the carrying capacity, and $\alpha$ the harvesting rate, and the population $P$ is in thousands., with $t$ given in years. From previous studies, you know that the best value of $r$ is $3.12$. After studying the population over a period of time, you get the data given above.
-    \begin{tasks}
-        \task Your friend tells you that in a previous study, he found that the value of $K$ for this particular lake is $450$. Use code to determine the best value of $\alpha$ for this situation. Note that the equation expects $t$ in years, but the data is given in days. Search for $\alpha$ in the range $(0, 400)$.
-        \task That answer doesn't look great. Plot the solution with these parameters along with the data and compare them.
-        \task The fit does not look great, so maybe your friend's value was not quite right. Run code to find best values for $K$ and $\alpha$ simultaneously. Use the range $(0, 400)$ for both $\alpha$ and $K$.
-    \end{tasks}
+    where $r$, $K$, and $\alpha$ are parameters, $r$ representing the growth rate, $K$ the carrying capacity, and $\alpha$ the harvesting rate, and the population $P$ is in thousands., with $t$ given in years. From previous studies, you know that the best value of $r$ is $3.12$. After studying the population over a period of time, you get the following data:
+    
+    %\begin{minipage}{0.49\textwidth}
+    %\centering
+        \begin{tabular}{|c|c|}\hline
+             \textbf{t} (s)& \textbf{v} (m/s)  \\ \hline
+            0 & 0 \\
+        	0.1 &1.0 \\
+        	0.2 &  1.9\\
+        	0.4 & 3.6 \\
+        	0.6 & 5.2 \\
+        	0.9 & 6.8 \\
+        	1.1 & 7.4 \\
+        	1.3 & 7.9 \\
+        	1.5 & 8.2 \\
+        	1.8 & 8.5\\
+        	2.1 & 8.8  \\ \hline
+        \end{tabular}
+    %    \captionof{table}{Data for \exerciseref{ex:ModelingParamVel}.}
+    %\end{minipage}%
+    
+    %\begin{minipage}{0.49\textwidth}
+    %    \centering
+        \begin{tabular}{|c|c|}\hline
+             \textbf{t} (d)& \textbf{P} (thousands)  \\ \hline
+            0 & 50 \\
+           7  & 60 \\
+            14 & 70 \\
+            28 & 97 \\
+            37 & 117 \\
+             50 & 148 \\
+            78 & 220 \\
+            100 & 268
+             \\ \hline
+        \end{tabular}
+    %    \captionof{table}{Data for \exerciseref{ex:ModelingParamPop}.}
+    %\end{minipage}    
+    
+    Your friend tells you that in a previous study, he found that the value of $K$ for this particular lake is $450$. Use code to determine the best value of $\alpha$ for this situation. Note that the equation expects $t$ in years, but the data is given in days. Search for $\alpha$ in the range $(0, 400)$. [Enter your answer to 2 decimal places] $\alpha = \answer{337.55}$.
+    \begin{feedback}[correct]
+        That answer doesn't look great. Plot the solution with these parameters along with the data and compare them. 
+    \end{feedback}
+    \begin{problem}
+        The fit does not look great, so maybe your friend's value was not quite right. Run code to find best values for $K$ and $\alpha$ simultaneously. Use the range $(0, 400)$ for both $\alpha$ and $K$. [Enter your answer to two decimal places]\\
+        $K = \answer{350.45}$\\
+        $\alpha = \answer{3.79}$
+    \end{problem}
 
 \end{exercise}
 %\comboSol{%

@@ -18,17 +18,18 @@ Why?
 %Critical points: $(0,0,0)$, $(3\sqrt{8},3 \sqrt{8}, 27)$,
 %$(-3 \sqrt{8},-3 \sqrt{8}, 27)$.
 %Linearization at $(0,0,0)$ using $u=x$, $v=y$, $w=z$ is
-%$u' = -10u+10v$, $v'=28u-v$, $w'=-(\nicefrac{8}{3})w$.
+%$u' = -10u+10v$, $v'=28u-v$, $w'=-(\frac{8}{3})w$.
 %Linearization at $(3 \sqrt{8},3\sqrt{8},27)$ using $u=x-3\sqrt{8}$,
 %$v=y-3\sqrt{8}$, $w=z-27$ is
-%$u' = -10u+10v$, $v'=u-v-3\sqrt{8}w$, $w'=3\sqrt{8}u+3\sqrt{8}v-(\nicefrac{8}{3})w$.
+%$u' = -10u+10v$, $v'=u-v-3\sqrt{8}w$, $w'=3\sqrt{8}u+3\sqrt{8}v-(\frac{8}{3})w$.
 %Linearization at $(-3 \sqrt{8},-3\sqrt{8},27)$ using $u=x+3\sqrt{8}$,
 %$v=y+3\sqrt{8}$, $w=z-27$ is
-%$u' = -10u+10v$, $v'=u-v+3\sqrt{8}w$, $w'=-3\sqrt{8}u-3\sqrt{8}v-(\nicefrac{8}{3})w$.
+%$u' = -10u+10v$, $v'=u-v+3\sqrt{8}w$, $w'=-3\sqrt{8}u-3\sqrt{8}v-(\frac{8}{3})w$.
 %}
 
 \begin{exercise}
-    For the non-chaotic equation $x''+2p x' + \omega_0^2 x = \frac{F_0}{m} \cos (\omega t)$, suppose we strobe with frequency $\omega$ as we mentioned above.  Use the known steady periodic solution to find precisely the point which is the attractor for the Poincar\'e section.
+    For the non-chaotic equation $x''+2p x' + \omega_0^2 x = \frac{F_0}{m} \cos (\omega t)$, suppose we strobe with frequency $\omega$ as we mentioned above.  Use the known steady periodic solution to find precisely the point which is the attractor for the Poincar\'e section.\\
+    $(A, \omega B)$ for $A \answer{\cos(\omega t)} + B \answer{\sin(\omega t)}$, or $\answer{\frac{F_0/m}{(\omega_0^2 - \omega^2)^2 + (2p\omega)^2}(\omega_0^2 - \omega^2, 2p\omega^2)}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -42,14 +43,14 @@ Why?
 
 
 \begin{exercise}%[project]
-    A simple fractal attractor can be drawn via the following chaos game.  Draw the three vertices of a triangle and label them, say $p_1$, $p_2$ and $p_3$.  Draw some random point $p$ (it does not have to be one of the three points above). Roll a die to pick of the $p_1$, $p_2$, or $p_3$ randomly (for example 1 and 4 mean $p_1$, 2 and 5 mean $p_2$, and 3 and 6 mean $p_3$).  Suppose we picked $p_2$, then let $p_{\text{new}}$ be the point exactly halfway between $p$ and $p_2$.  Draw this point and let $p$ now refer to this new point $p_{\text{new}}$.  Rinse, repeat.  Try to be precise and draw as many iterations as possible.  Your points will be attracted to the so-called \emph{\myindex{Sierpinski triangle}}.  A computer was used to run the game for 10,000 iterations to obtain the picture in \figurevref{nlin:sierpinski}.
+    A simple fractal attractor can be drawn via the following chaos game.  Draw the three vertices of a triangle and label them, say $p_1$, $p_2$ and $p_3$.  Draw some random point $p$ (it does not have to be one of the three points above). Roll a die to pick of the $p_1$, $p_2$, or $p_3$ randomly (for example 1 and 4 mean $p_1$, 2 and 5 mean $p_2$, and 3 and 6 mean $p_3$).  Suppose we picked $p_2$, then let $p_{\text{new}}$ be the point exactly halfway between $p$ and $p_2$.  Draw this point and let $p$ now refer to this new point $p_{\text{new}}$.  Rinse, repeat.  Try to be precise and draw as many iterations as possible.  Your points will be attracted to the so-called \emph{\myindex{Sierpinski triangle}}.  A computer was used to run the game for 10,000 iterations to obtain the picture in the figure below.
 \end{exercise}
 
-\begin{myfig}
-    \capstart
-    \diffyincludegraphics{width=3in}{width=4.5in}{nlin-sierpinski}
-    \caption{10,000 iterations of the chaos game producing the Sierpinski triangle. \label{nlin:sierpinski}}
-\end{myfig}
+\includegraphics{nlin-sierpinski}
+%\begin{myfig}
+%    \diffyincludegraphics{width=3in}{width=4.5in}{nlin-sierpinski}
+%    \caption{10,000 iterations of the chaos game producing the Sierpinski triangle. \label{nlin:sierpinski}}
+%\end{myfig}
 
 
 \begin{exercise}%[computer project]

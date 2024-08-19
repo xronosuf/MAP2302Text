@@ -13,7 +13,8 @@ Why?
 
 
 \begin{exercise}
-    Write the system $x_1' = 2 x_1 - 3t x_2 + \sin t$, $x_2' = e^t x_1 + 3 x_2 + \cos t$ in the form ${\vec{x}}' = P(t) \vec{x} + \vec{f}(t)$.
+    Write the system $x_1' = 2 x_1 - 3t x_2 + \sin t$, $x_2' = e^t x_1 + 3 x_2 + \cos t$ in the form ${\vec{x}}' = P(t) \vec{x} + \vec{f}(t)$.\\
+    $P(t) = \left[\begin{smallmatrix} \answer{2} & \answer{-3t} \\ \answer{e^t} & \answer{3} \end{smallmatrix}\right]$, $\vec{f}(t) = \left[\begin{smallmatrix}  \answer{\sin(t)} \\ \answer{\cos(t)} \end{smallmatrix}\right]$
 \end{exercise}
 %\comboSol{%
 %}
@@ -22,7 +23,24 @@ Why?
 %}
 
 \begin{exercise}%
-    Write $x'=3x-y+e^t$, $y'=tx$ in matrix notation.
+    Write $x'=3x-y+e^t$, $y'=tx$ in matrix notation.\\
+    \[
+        \left[ \begin{smallmatrix}
+        x \\ y
+        \end{smallmatrix}\right] '
+        =
+        \left[ \begin{smallmatrix}
+        \answer{3} & \answer{-1} \\
+        \answer{t} & \answer{0}
+        \end{smallmatrix}\right]
+        \left[ \begin{smallmatrix}
+        x \\ y
+        \end{smallmatrix}\right]
+        +
+        \left[ \begin{smallmatrix}
+        \answer{e^{t}} \\ \answer{0}
+        \end{smallmatrix}\right]
+    \]
 \end{exercise}
 %\exsol{%
 %$\left[ \begin{smallmatrix}
@@ -47,7 +65,12 @@ Why?
     \begin{equation*}
         y''' + (y'+1)^2 = e^y + \sin(t+1).
     \end{equation*}
-    Convert this to a first order system and simplify as much as possible. Can you write this in the form $\vec{x}' = A\vec{x} + \vec{f}$? Why or why not?
+    Convert this to a first order system and simplify as much as possible. Can you write this in the form $\vec{x}' = A\vec{x} + \vec{f}$? 
+    \begin{multipleChoice}
+        \choice{Yes.}
+        \choice[correct]{No.}
+    \end{multipleChoice}
+    
 \end{exercise}
 %\comboSol{%
 %}
@@ -58,8 +81,8 @@ Why?
 
 \begin{exercise}
     
-    \begin{tasks}
-        \task Verify that the system ${\vec{x}}' =
+    \begin{itemize}
+        \item Verify that the system ${\vec{x}}' =
             \left[ 
                 \begin{smallmatrix}
                     1 & 3 \\ 
@@ -80,9 +103,11 @@ Why?
                 \end{smallmatrix} 
             \right] 
             e^{-2t}$.
-        \task Write down the general solution.
-        \task Write down the general solution in the form $x_1 = ?$, $x_2 = ?$ (i.e.\ write down a formula for each element of the solution).
-    \end{tasks}
+        \item Write down the general solution.\\
+        $C_1\left[\begin{smallmatrix} \answer{1} \\ 1 \end{smallmatrix}\right]e^{4t} + C_2\left[\begin{smallmatrix} \answer{1} \\ \answer{-1} \end{smallmatrix}\right]e^{-2t}$
+        \item Write down the general solution in the form $x_1 = ?$, $x_2 = ?$ (i.e.\ write down a formula for each element of the solution). [Use $A$ for $C_1$ and $B$ for $C_2$ in your answer]\\
+        $x_1(t) = \answer{Ae^{4t} + Be^{-2t}}$, $x_2(t) = \answer{Ae^{4t} - Be^{-2t}}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -91,6 +116,9 @@ Why?
 %}
 
 \begin{exercise}
+    \begin{hint}
+         Just plug in $t=0$.
+    \end{hint}
     Verify that
     $\left[ 
         \begin{smallmatrix}
@@ -105,7 +133,7 @@ Why?
             -1
         \end{smallmatrix} 
     \right] e^{t}$ 
-    are linearly independent.  Hint: Just plug in $t=0$.
+    are linearly independent. 
 \end{exercise}
 %\comboSol{%
 %}
@@ -129,14 +157,18 @@ Why?
             e^{2t}
         \end{smallmatrix}
     \right]$
-    linearly independent?  Justify.
+    linearly independent?
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %Yes.
 %}
 
 \begin{exercise}
-    Verify that
+    Are
     $\left[ 
         \begin{smallmatrix}
             1 \\ 
@@ -160,7 +192,11 @@ Why?
             1
         \end{smallmatrix} 
     \right] e^{2t}$ 
-    are linearly independent.  Hint: You must be a bit more tricky than in the previous exercises.
+    linearly independent? % Hint: You must be a bit more tricky than in the previous exercises.
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -189,7 +225,11 @@ Why?
             1
         \end{smallmatrix}
     \right]$
-    linearly independent?  Justify.
+    linearly independent?  %Justify.
+    \begin{multipleChoice}
+        \choice{Yes.}
+        \choice[correct]{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %No.
@@ -206,7 +246,7 @@ Why?
 %}
 
 \begin{exercise}
-    Verify that
+    Are 
     $\left[ 
         \begin{smallmatrix}
             t \\ 
@@ -219,7 +259,11 @@ Why?
             t^4
         \end{smallmatrix} 
     \right]$ 
-    are linearly independent.
+    linearly independent?
+    \begin{multipleChoice}
+        \choice[correct]{Yes.}
+        \choice{No.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -229,10 +273,12 @@ Why?
 
 \begin{exercise}
     Take the system $x_1' + x_2' = x_1$, $x_1' - x_2' = x_2$.
-    \begin{tasks}
-        \task Write it in the form $A {\vec{x}}' = B \vec{x}$ for matrices $A$ and $B$.
-        \task Compute $A^{-1}$ and use that to write the system in the form ${\vec{x}}' = P \vec{x}$.
-    \end{tasks}
+    \begin{itemize}
+        \item Write it in the form $A {\vec{x}}' = B \vec{x}$ for matrices $A$ and $B$.\\
+            $A = \left[\begin{smallmatrix}  \answer{1} & \answer{1} \\ 1 & \answer{-1} \end{smallmatrix}\right]$, $B = \left[\begin{smallmatrix} \answer{1} & 0 \\ \answer{0} & 1 \end{smallmatrix}\right]$
+        \item Compute $A^{-1}$ and use that to write the system in the form ${\vec{x}}' = P \vec{x}$.\\
+            $P = \left[\begin{smallmatrix} \answer{\frac{1}{2}} & \frac{1}{2} \\ \answer{\frac{1}{2}} & \answer{-\frac{1}{2}} \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}
@@ -241,10 +287,18 @@ Why?
 %}
 
 \begin{exercise}%
-    \begin{tasks}
-        \task Write $x_1'=2tx_2$, $x_2'=2tx_2$ in matrix notation.
-        \task Solve and write the solution in matrix notation.
-    \end{tasks}
+    \begin{itemize}
+        \item Write $x_1'=2tx_2$, $x_2'=2tx_2$ in matrix notation.\\
+            $\vec{x}' = \left[ \begin{smallmatrix}
+                \answer{0} & \answer{2t} \\
+                0 & \answer{2t}
+            \end{smallmatrix}\right] \vec{x}$
+        \item Solve and write the solution in matrix notation.\\
+            $\vec{x} = \left[ \begin{smallmatrix}
+                C_2 \answer{e^{t^2}} + C_1 \\
+                C_2 \answer{e^{t^2}}
+            \end{smallmatrix}\right]$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %a)

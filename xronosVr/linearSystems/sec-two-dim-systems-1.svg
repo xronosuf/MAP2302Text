@@ -1,0 +1,54 @@
+ <!--l. 23--><p class="noindent" >table<a 
+ id="table.\theHtable "></a></p>
+<div class="center" 
+>
+<!--l. 24--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1" /><col 
+id="TBL-1-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-1-1"  
+class="td01">Eigenvalues                           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-1-2"  
+class="td10"> Behavior                                              </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-2-1"  
+class="td01">real and both positive               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-2-2"  
+class="td10"> source / unstable node                           </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-3-1"  
+class="td01">real and both negative              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-3-2"  
+class="td10"> sink / asymptotically stable node             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-4-1"  
+class="td01">real and opposite signs              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-4-2"  
+class="td10"> saddle                                                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-5-1"  
+class="td01">purely imaginary                     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-5-2"  
+class="td10"> center point / ellipses                             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-6-1"  
+class="td01">complex with positive real part   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-6-2"  
+class="td10"> spiral source                                         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-7-1"  
+class="td01">complex with negative real part  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-7-2"  
+class="td10"> spiral sink                                            </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-8-1"  
+class="td01">repeated with two eigenvectors   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-8-2"  
+class="td10"> proper node (asympt. stable or unstable)   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-9-1"  
+class="td01">repeated with one eigenvector    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-1-9-2"  
+class="td10"> improper node (asympt. stable or unstable)</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-1-10-1"  
+class="td01">                            </td></tr></table></div></div>
+<a 
+ id="x1-115"></a>
+<br /> <div class="caption" 
+><span class="id">Table 0: </span><span  
+class="content">Summary of behavior of linear homogeneous two-dimensional systems.<a class="ximera-label" id="pln:behtab"></a></span></div><!--tex4ht:label?: x1-114r -->                                                     

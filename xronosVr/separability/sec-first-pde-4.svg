@@ -1,0 +1,7 @@
+ <!--l. 169--><p class="noindent" >figure<a 
+ id="figure.\theHfigure "></a>
+<a 
+ id="x1-123"></a>
+<br /> </p><div class="caption" 
+><span class="id">Figure 0: </span><span  
+class="content">Plot of the solution <script type="math/tex">u(x,t)</script> to <script type="math/tex">u_x + u_t + u = x</script>, <script type="math/tex">u(x,0) = e^{-x^2}</script>.<a class="ximera-label" id="fopde:surfaceplot"></a></span></div><!--tex4ht:label?: x1-122r -->                                                                                                               

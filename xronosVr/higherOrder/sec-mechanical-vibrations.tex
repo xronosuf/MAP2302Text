@@ -49,7 +49,7 @@ This system appears in lots of applications even if it does not at first seem li
     \noindent
     \input{figures/mv-rlc.pdf_t}
 \end{mywrapfigsimp}
-Here is an example for electrical engineers. Consider the pictured \myindex{RLC circuit}. There is a resistor with a resistance of $R$ ohms, an inductor with an inductance of $L$ henries, and a capacitor with a capacitance of $C$ farads.  There is also an electric source (such as a battery) giving a voltage of $E(t)$ volts at time $t$ (measured in seconds). Let $Q(t)$ be the charge in coulombs on the capacitor and $I(t)$ be the current in the circuit.  The relation between the two is$Q' = I$.  By elementary principles we find $L I' + RI + \nicefrac{Q}{C} = E$. Since $Q' = I$, this means that $I' = Q''$, and we can write this equation as
+Here is an example for electrical engineers. Consider the pictured \myindex{RLC circuit}. There is a resistor with a resistance of $R$ ohms, an inductor with an inductance of $L$ henries, and a capacitor with a capacitance of $C$ farads.  There is also an electric source (such as a battery) giving a voltage of $E(t)$ volts at time $t$ (measured in seconds). Let $Q(t)$ be the charge in coulombs on the capacitor and $I(t)$ be the current in the circuit.  The relation between the two is$Q' = I$.  By elementary principles we find $L I' + RI + \frac{Q}{C} = E$. Since $Q' = I$, this means that $I' = Q''$, and we can write this equation as
 \begin{equation*}
     LQ''(t) + RQ'(t) + \frac{1}{C}Q(t) = E(t).
 \end{equation*}   
@@ -94,7 +94,7 @@ In this section we only consider free or unforced motion, as we do not know yet 
 \begin{equation*}
     mx'' + kx = 0 .
 \end{equation*}
-We divide by $m$ and let $\omega_0 = \sqrt{\nicefrac{k}{m}}$ to rewrite the equation as
+We divide by $m$ and let $\omega_0 = \sqrt{\frac{k}{m}}$ to rewrite the equation as
 \begin{equation*}
     x'' + \omega_0^2 x = 0 .
 \end{equation*}
@@ -106,7 +106,7 @@ By a trigonometric identity that we discussed previously in \sectionref{complexr
 \begin{equation*}
     A \cos (\omega_0 t) + B \sin (\omega_0 t) = C \cos ( \omega_0 t - \delta ) ,
 \end{equation*}
-for two constants $C$ and $\gamma$. Earlier, we found that we can compute these constants as $C= \sqrt{A^2 + B^2}$ and $\tan \delta = \nicefrac{B}{A}$.  Therefore, we let $C$ and $\delta$ be our arbitrary constants and write $x(t) = C \cos ( \omega_0 t - \delta )$.
+for two constants $C$ and $\gamma$. Earlier, we found that we can compute these constants as $C= \sqrt{A^2 + B^2}$ and $\tan \delta = \frac{B}{A}$.  Therefore, we let $C$ and $\delta$ be our arbitrary constants and write $x(t) = C \cos ( \omega_0 t - \delta )$.
 
 \begin{exercise}
     Justify the identity $A \cos (\omega_0 t) + B \sin (\omega_0 t) = C \cos ( \omega_0 t - \delta )$ and verify the equations for $C$ and $\delta$.  Hint: Start with $\cos (\alpha-\beta) = \cos (\alpha) \cos (\beta) + \sin (\alpha)\sin (\beta)$ and multiply by $C$. Then what should $\alpha$ and $\beta$ be?
@@ -141,7 +141,7 @@ The \emph{\myindex{period}} of the motion is one over the frequency (in cycles p
     \begin{equation*}
         2 x'' + 8 x = 0 , \qquad x(0) = 0.5, \qquad x'(0) = 1.
     \end{equation*}
-    We directly compute $\omega_0 = \sqrt{\nicefrac{k}{m}} = \sqrt{4} = 2$. Hence the angular frequency is 2.  The usual frequency in Hertz (cycles per second) is $\nicefrac{2}{2\pi} = \nicefrac{1}{\pi} \approx 0.318$.
+    We directly compute $\omega_0 = \sqrt{\frac{k}{m}} = \sqrt{4} = 2$. Hence the angular frequency is 2.  The usual frequency in Hertz (cycles per second) is $\frac{2}{2\pi} = \frac{1}{\pi} \approx 0.318$.
     
     The general solution is
     \begin{equation*}
@@ -158,7 +158,7 @@ In general, for free undamped motion, a solution of the form
 \begin{equation*}
     x(t) = A \cos (\omega_0 t) + B \sin (\omega_0 t) ,
 \end{equation*}
-corresponds to the initial conditions $x(0) = A$ and $x'(0) = \omega_0 B$. Therefore, it is easy to figure out $A$ and $B$ from the initial conditions. The amplitude and the phase shift can then be computed from $A$ and $B$. In the example, we have already found the amplitude $C$.  Let us compute the phase shift.  We know that $\tan \delta = \nicefrac{B}{A} = 1$.  We take the arctangent of 1 and get $\nicefrac{\pi}{4}$ or approximately 0.785. We still need to check if this $\delta$ is in the correct quadrant (and add $\pi$ to $\delta$ if it is not). Since both $A$ and $B$ are positive, then $\delta$ should be in the first quadrant, $\nicefrac{\pi}{4}$ radians is in the first quadrant, so $\delta = \nicefrac{\pi}{4}$.
+corresponds to the initial conditions $x(0) = A$ and $x'(0) = \omega_0 B$. Therefore, it is easy to figure out $A$ and $B$ from the initial conditions. The amplitude and the phase shift can then be computed from $A$ and $B$. In the example, we have already found the amplitude $C$.  Let us compute the phase shift.  We know that $\tan \delta = \frac{B}{A} = 1$.  We take the arctangent of 1 and get $\frac{\pi}{4}$ or approximately 0.785. We still need to check if this $\delta$ is in the correct quadrant (and add $\pi$ to $\delta$ if it is not). Since both $A$ and $B$ are positive, then $\delta$ should be in the first quadrant, $\frac{\pi}{4}$ radians is in the first quadrant, so $\delta = \frac{\pi}{4}$.
 
 Note: Many calculators and computer software have not only the \texttt{atan}\index{atan} function for arctangent, but also what is sometimes called \texttt{atan2}\index{atan2}. This function takes two arguments, $B$ and $A$, and returns a $\delta$ in the correct quadrant for you.
 

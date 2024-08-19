@@ -13,12 +13,15 @@
 
 \begin{exercise}
     Consider $x' = x^2$.
-    \begin{tasks}
-        \task Draw the phase diagram, find the critical points, and mark them asymptotically stable, semistable, or unstable.
-        \task Sketch typical solutions of the equation.
-        \task Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition
-        $x(0) = -1$.
-    \end{tasks}
+    \begin{hint}
+        Draw the phase diagram, find the critical points, and mark them asymptotically stable, semistable, or unstable.
+    \end{hint}
+    \begin{hint}
+        Sketch typical solutions of the equation.
+    \end{hint}
+    
+    Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition $x(0) = -1$. $\answer{0}$
+    
 \end{exercise}
 
 %\comboSol{%
@@ -30,13 +33,17 @@
 
 \begin{exercise}
     Consider $x' = \sin x$.
-    \begin{tasks}
-        \task Draw the phase diagram for $-4\pi \leq x \leq 4\pi$.  On this interval
-        mark the critical points asymptotically stable, semistable, or unstable.
-        \task Sketch typical solutions of the equation.
-        \task Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition
-        $x(0) = 1$.
-    \end{tasks}
+    \begin{hint}
+        Draw the phase diagram for $-4\pi \leq x \leq 4\pi$.  On this interval mark the critical points asymptotically stable, semistable, or unstable.
+    \end{hint}
+    \begin{hint}
+        $x = n\pi$ are critical points. $n$ odd is asymptotically stable, $n$ even is unstable.
+    \end{hint}
+    \begin{hint}
+        Sketch typical solutions of the equation.
+    \end{hint}
+    Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition $x(0) = 1$. $\answer{\pi}$
+    
 \end{exercise}
 
 %%% TO-DO
@@ -50,12 +57,13 @@
 
 \begin{exercise}
     Let $x'=(x-1)(x-2)x^2$.
-    \begin{tasks}
-        \task Sketch the phase diagram and find critical
-        points.
-        \task Classify the critical points.
-        \task If $x(0)=0.5$, then find $\displaystyle \lim_{t\to\infty} x(t)$.
-    \end{tasks}
+    \begin{hint}
+        Sketch the phase diagram and find critical points.
+    \end{hint}
+    \begin{hint}
+        Classify the critical points.
+    \end{hint}
+    If $x(0)=0.5$, then find $\displaystyle \lim_{t\to\infty} x(t)$. $\answer{0}$.
 \end{exercise}
 
 
@@ -71,7 +79,14 @@
 %}
 
 \begin{exercise}
-    Let $y' = (y-2)(y^2 + 1)(y+3)$. Sketch a phase diagram for this differential equation. Find and classify all critical points. If $y(0) = 0$, what will happen to the solution as $t \rightarrow \infty$?
+    Let $y' = (y-2)(y^2 + 1)(y+3)$. 
+    \begin{hint}
+        Sketch the phase diagram and find critical points.
+    \end{hint}
+    \begin{hint}
+        Classify the critical points.
+    \end{hint}
+    If $y(0) = 0$, what will happen to the solution as $t \rightarrow \infty$? $\answer{-3}$
 \end{exercise}
 %%% TO-DO
 %   Ximera has it's own way of dealing with solutions, so we should return to this later.
@@ -84,6 +99,12 @@
 
 \begin{exercise}
     Find and classify all equilibrium solutions for the differential equation $x' = (x-2)^2(x+1)(x+3)^3(x+2)$.
+    \begin{itemize}
+        \item $x = \answer{2}$ is semistable (Enter DNE if there are none)
+        \item $x = \answer{-1}$ is the larger (further right) unstable.
+        \item $x = \answer{-3}$ is the smaller (further left) unstable.
+        \item $x = \answer{-2}$ is asymptotically stable. (Enter DNE if there are none)
+    \end{itemize}
 \end{exercise}
 
 %%% TO-DO
@@ -96,7 +117,20 @@
 %}
 
 \begin{exercise}
-    Let $y' = (y-3)(y+2)^2e^y$. Sketch a phase diagram for this differential equation. Find and classify all critical points. If $y(0) = 0$, what will happen to the solution as $t \rightarrow \infty$?
+    Let $y' = (y-3)(y+2)^2e^y$. 
+    \begin{hint}
+        Sketch a phase diagram for this differential equation. 
+    \end{hint}
+    
+    Find and classify all critical points. 
+    \begin{itemize}
+        \item $x = \answer{3}$ is unstable
+        \item $x = \answer{-2}$ is semistable
+        \item $x = \answer{DNE}$  is asymptotically stable (Enter DNE if there are none)
+    \end{itemize}
+    \begin{problem}
+        If $y(0) = 0$, what will happen to the solution as $t \rightarrow \infty$? It tends toward $\answer{-2}$.
+    \end{problem}
 \end{exercise}
 %%% TO-DO
 %   Ximera has it's own way of dealing with solutions, so we should return to this later.
@@ -109,7 +143,13 @@
 
 \begin{exercise}
     Consider the DE $\dfrac{dy}{dt}=y^5-3y^4+3y^3-y^2$. %1.7
-    Find and classify all equilibrium solutions of this DE. Then sketch a representative selection of solution curves.
+    
+    Find and classify all equilibrium solutions of this DE. %Then sketch a representative selection of solution curves.
+    \begin{itemize}
+        \item $y = \answer{1}$ is unstable (Enter DNE if there are none)
+        \item $y = \answer{0}$ is semistable (Enter DNE if there are none)
+        \item $y = \answer{DNE}$ is asymptotically stable (Enter DNE if there are none)
+    \end{itemize}
 \end{exercise}
 %%% TO-DO
 %   Ximera has it's own way of dealing with solutions, so we should return to this later.
@@ -122,10 +162,14 @@
 
 \begin{exercise}
     Let $x'=e^{-x}$.
-    \begin{tasks}(2)
-        \task Find and classify all critical points.
-        \task Find $\displaystyle \lim_{t\to\infty} x(t)$ given any initial condition.
-    \end{tasks}
+    
+    Find and classify all critical points.
+    \begin{itemize}
+        \item $y = \answer{DNE}$ is unstable (Enter DNE if there are none)
+        \item $y = \answer{DNE}$ is semistable (Enter DNE if there are none)
+        \item $y = \answer{DNE}$ is asymptotically stable (Enter DNE if there are none)
+    \end{itemize}
+    Find $\displaystyle \lim_{t\to\infty} x(t)$ given any initial condition. $\answer{\infty}$.
 \end{exercise}
 
 %%% TO-DO
@@ -140,11 +184,14 @@
 
 \begin{exercise}
     Suppose $f(x)$ is positive for $0 < x < 1$, it is zero when $x=0$ and $x=1$, and it is negative for all other $x$.
-    \begin{tasks}
-        \task Draw the phase diagram for $x' = f(x)$, find the critical points, and mark them asymptotically stable, semistable, or unstable.
-        \task Sketch typical solutions of the equation.
-        \task Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition $x(0) = 0.5$.
-    \end{tasks}
+    \begin{hint}
+        Draw the phase diagram for $x' = f(x)$, find the critical points, and mark them asymptotically stable, semistable, or unstable.
+    \end{hint}
+    \begin{hint}
+        Sketch typical solutions of the equation.
+    \end{hint}
+        
+    Find $\displaystyle \lim_{t\to \infty} x(t)$ for the solution with the initial condition $x(0) = 0.5$. $\answer{1}$
 \end{exercise}
 %%% TO-DO
 %   Ximera has it's own way of dealing with solutions, so we should return to this later.
@@ -157,15 +204,25 @@
 
 \begin{exercise}
     Suppose $\frac{dx}{dt} = (x-\alpha)(x-\beta)$ for two numbers $\alpha < \beta$.
-    \begin{tasks}
-        \task Find the critical points, and classify them.
-    \end{tasks}
-    For b), c), d), find $\displaystyle \lim_{t\to\infty} x(t)$ based on the phase diagram.
-    \begin{tasks}[resume](3)
-        \task $x(0) < \alpha$,
-        \task $\alpha < x(0) < \beta$,
-        \task $\beta < x(0)$.
-    \end{tasks}
+    
+    Find the critical points, and classify them.
+    \begin{itemize}
+        \item $\answer{\alpha}$ is stable (Enter DNE if there are none)
+        \item $\answer{\beta}$ is unstable (Enter DNE if there are none)
+        \item $\answer{DNE}$ is semistable (Enter DNE if there are none)
+        \item $\answer{DNE}$ is asymptotically stable (Enter DNE if there are none)
+    \end{itemize}
+    \begin{problem}
+        For each of the following, find $\displaystyle \lim_{t\to\infty} x(t)$ 
+        \begin{hint}
+            Use a phase diagram.
+        \end{hint}
+        \begin{itemize}
+            \item $x(0) < \alpha$, $\answer{\alpha}$
+            \item $\alpha < x(0) < \beta$, $\answer{\alpha}$
+            \item $\beta < x(0)$. $\answer{\infty}$
+        \end{itemize}
+    \end{problem}
 \end{exercise}
 
 %%% TO-DO
@@ -179,11 +236,11 @@
 
 \begin{exercise}
     A disease is spreading through the country.  Let $x$ be the number of people infected.  Let the constant $S$ be the number of people susceptible to infection.  The infection rate $\frac{dx}{dt}$ is proportional to the product of already infected people, $x$, and the number of susceptible but uninfected people, $S-x$.
-    \begin{tasks}
-        \task Write down the differential equation.
-        \task Supposing $x(0) > 0$, that is, some people are infected at time $t=0$, what is $\displaystyle \lim_{t\to\infty} x(t)$.
-        \task Does the solution to part b) agree with your intuition?  Why or why not?
-    \end{tasks}
+    \begin{itemize}
+        \item What is the differential equation? $\frac{dx}{dt} = \answer{k(x)(S - x)}$
+        \item Supposing $x(0) > 0$, that is, some people are infected at time $t=0$, what is $\displaystyle \lim_{t\to\infty} x(t)$. $\answer{S}$
+        \item Does the solution to part b) agree with your intuition?  Why or why not?
+    \end{itemize}
 \end{exercise}
 %%% TO-DO
 %   Ximera has it's own way of dealing with solutions, so we should return to this later.

@@ -13,11 +13,22 @@
 
 \begin{exercise} \label{mv:ex1}
     Consider a mass and spring system with a mass $m=2$, spring constant $k=3$, and damping constant $\gamma=1$.
-    \begin{tasks}
-        \task Set up and find the general solution of the system.
-        \task Is the system underdamped, overdamped or critically damped?
-        \task If the system is not critically damped, find a $\gamma$ that makes the system critically damped.
-    \end{tasks}
+    
+    Set up and find the general solution of the system. [Use $A$ and $B$ for your arbitrary constants]
+    \[
+        y = \answer{Ae^{-t/4}\cos\left(\frac{\sqrt{23}}{4}t\right) + Be^{-t/4}\sin\left(\frac{\sqrt{23}}{4}t\right)}
+    \]
+    \begin{problem}
+        The system is...
+        \begin{multipleChoice}
+            \choice[correct]{Underdamped}
+            \choice{Overdamped}
+            \choice{Critically damped}
+        \end{multipleChoice}
+        \begin{problem}
+            Find a $\gamma$ that makes the system critically damped: $\gamma = \answer{2\sqrt{6}}$.
+        \end{problem}
+    \end{problem}
 \end{exercise}
 
 %\comboSol{%
@@ -28,7 +39,23 @@
 %}
 
 \begin{exercise}
-    Do \exerciseref{mv:ex1} for $m=3$, $k=12$, and $\gamma=12$.
+    Consider a mass and spring system with a mass $m=3$, spring constant $k=12$, and damping constant $\gamma=12$.
+    
+    Set up and find the general solution of the system. [Use $A$ and $B$ for your arbitrary constants]
+    \[
+        y = \answer{Ae^{-2t} + Bte^{-2t}}
+    \]
+    \begin{problem}
+        The system is...
+        \begin{multipleChoice}
+            \choice{Underdamped}
+            \choice{Overdamped}
+            \choice[correct]{Critically damped}
+        \end{multipleChoice}
+%        \begin{problem}
+%            Find a $\gamma$ that makes the system critically damped: $\gamma = \answer{2\sqrt{6}}$.
+%        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -37,11 +64,13 @@
 %}
 
 \begin{exercise} \label{mv:exwt1}
-    Using the mks units (meters-kilograms-seconds)\index{mks units}, suppose you have a spring with spring constant \unitfrac[4]{N}{m}. You want to use it to weigh items.  Assume no friction.  You place the mass on the spring and put it in motion. 
-    \begin{tasks}
-        \task You count and find that the frequency is \unit[0.8]{Hz} (cycles per second).  What is the mass? (Be careful with the units here, the frequency is given in cycles per second, not radians per second.)
-        \task Find a formula for the mass $m$ given the frequency $\omega$ in \unit{Hz}.
-    \end{tasks}
+    Using the mks units (meters-kilograms-seconds), suppose you have a spring with spring constant \unitfrac[4]{N}{m}. You want to use it to weigh items.  Assume no friction.  You place the mass on the spring and put it in motion. 
+    
+    You count and find that the frequency is \unit[0.8]{Hz} (cycles per second).  What is the mass? (Be careful with the units here, the frequency is given in cycles per second, not radians per second.)
+    $\answer{6.317}$kg [Enter to 3 decimal places]
+    \begin{problem}
+        Find a formula for the mass $m$ given the frequency $\omega$ in \unit{Hz}. $m = \answer{\frac{(2\pi \omega)^2}{4}}$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -50,19 +79,22 @@
 %}
 
 \begin{exercise}%
-    A mass of $2$ kilograms is on a spring with spring constant $k$ newtons per meter with no damping.  Suppose the system is at rest and at time $t=0$ the mass is kicked and starts traveling at 2 meters per second.  How large does $k$ have to be to so that the mass does not go further than 3 meters from the rest position?
+    A mass of $2$ kilograms is on a spring with spring constant $k$ newtons per meter with no damping.  Suppose the system is at rest and at time $t=0$ the mass is kicked and starts traveling at 2 meters per second.  What's the minimum that $k$ has to be so that the mass does not go further than 3 meters from the rest position? $k = \answer{\frac{8}{9}}$
 \end{exercise}
 %\exsol{%
-%$k=\nicefrac{8}{9}$ (and larger)
+%$k=\frac{8}{9}$ (and larger)
 %}
 
 \begin{exercise}
-    Suppose we add possible friction to \exerciseref{mv:exwt1}. Further, suppose you do not know the spring constant, but you have two reference weights \unit[1]{kg} and \unit[2]{kg} to calibrate your setup. You put each in motion on your spring and measure the quasi-frequency.  For the \unit[1]{kg} weight you measured \unit[1.1]{Hz}, for the \unit[2]{kg} weight you measured \unit[0.8]{Hz}.
-    \begin{tasks}
-        \task Find $k$ (spring constant) and $\gamma$ (damping constant).
-        \task Find a formula for the mass in terms of the frequency in Hz.  \emph{Note that there may be more than one possible mass for a given frequency.}
-        \task For an unknown object you measured \unit[0.2]{Hz}, what is the mass of the object?  Suppose that you know that the mass of the unknown object is more than a kilogram.
-    \end{tasks}
+    Suppose we add possible friction to problem \ref{mv:exwt1} above. Further, suppose you do not know the spring constant, but you have two reference weights \unit[1]{kg} and \unit[2]{kg} to calibrate your setup. You put each in motion on your spring and measure the quasi-frequency.  For the \unit[1]{kg} weight you measured \unit[1.1]{Hz}, for the \unit[2]{kg} weight you measured \unit[0.8]{Hz}.
+    
+    Find $k$ (spring constant) and $\gamma$ (damping constant). $k = \answer{5.4\pi^2}$, $\gamma = \answer{\pi\sqrt{2.24}}$
+    \begin{problem}
+        Find a formula for the mass in terms of the frequency in Hz.  \emph{Note that there may be more than one possible mass for a given frequency.} [Use $H$ for the frequency in Hz] $m = \answer{\frac{21.6 \pm \sqrt{466.56 - 143.36H^2}}{32H^2}}$
+        \begin{problem}
+            For an unknown object you measured \unit[0.2]{Hz}, what is the mass of the object?  Suppose that you know that the mass of the unknown object is more than a kilogram. $\answer{33.65}$kg
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -73,7 +105,7 @@
 %}
 
 \begin{exercise}
-    Suppose you wish to measure the friction a mass of \unit[0.1]{kg} experiences as it slides along a floor (you wish to find $\gamma$).  You have a spring with spring constant $k=\unitfrac[5]{N}{m}$.  You take the spring, you attach it to the mass and fix it to a wall.  Then you pull on the spring and let the mass go.  You find that the mass oscillates with quasi-frequency \unit[1]{Hz}. What is the friction?
+    Suppose you wish to measure the friction a mass of \unit[0.1]{kg} experiences as it slides along a floor (you wish to find $\gamma$).  You have a spring with spring constant $k=\unitfrac[5]{N}{m}$.  You take the spring, you attach it to the mass and fix it to a wall.  Then you pull on the spring and let the mass go.  You find that the mass oscillates with quasi-frequency \unit[1]{Hz}. What is the friction? [Enter answer to 4 decimal digits] $\gamma = \answer{0.6487}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -83,12 +115,17 @@
 
 \begin{exercise}%
     A \unit[5000]{kg} railcar hits a bumper (a spring) at \unitfrac[1]{m}{s}, and the spring compresses by \unit[0.1]{m}.  Assume no damping.
-    \begin{tasks}
-        \task Find $k$.
-        \task How far does the spring compress when a \unit[10000]{kg} railcar hits the spring at the same speed?
-        \task If the spring would break if it compresses further than \unit[0.3]{m}, what is the maximum mass of a railcar that can hit it at \unitfrac[1]{m}{s}?
-        \task What is the maximum mass of a railcar that can hit the spring without breaking at \unitfrac[2]{m}{s}?
-    \end{tasks}
+    
+    Find $k$. $k=\answer{500000}$
+    \begin{problem}
+        How far does the spring compress when a \unit[10000]{kg} railcar hits the spring at the same speed? $\answer{\frac{1}{5\sqrt{2}}}$
+        \begin{problem}
+            If the spring would break if it compresses further than \unit[0.3]{m}, what is the maximum mass of a railcar that can hit it at \unitfrac[1]{m}{s}? $\answer{45000}$kg
+            \begin{problem}
+                What is the maximum mass of a railcar that can hit the spring without breaking at \unitfrac[2]{m}{s}? $\answer{11250}$kg
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %a) $k=500000$
@@ -102,11 +139,22 @@
 
 \begin{exercise}
     When attached to a spring, a \unit[2]{kg} mass stretches the spring by \unit[0.49]{m}. 
-    \begin{tasks}
-        \task What is the spring constant of this spring? Use \unitfrac[9.8]{m}{$s^2$} as the gravity constant.  
-        \task This mass is allowed to come to rest, lifted up by \unit[0.4]{m} and then released. If there is no damping, set up and solve an initial value problem for the position of the mass as a function of time.
-        \task For a next experiment, you attach a dampener of coefficient \unitfrac[16]{Ns}{m} to the system, and give the same initial condition. Set up and solve an initial value problem for the position of the mass. What type of ``dampening'' would be used to characterize this situation?
-    \end{tasks}
+    
+    What is the spring constant of this spring? Use \unitfrac[9.8]{m}{$s^2$} as the gravity constant. $k = \answer{40}$ N/m
+    \begin{problem}
+        This mass is allowed to come to rest, lifted up by \unit[0.4]{m} and then released. If there is no damping, set up and solve an initial value problem for the position of the mass as a function of time. $y = \answer{0.4 \cos(\sqrt{20}t)}$
+        \begin{problem}
+            For a next experiment, you attach a dampener of coefficient \unitfrac[16]{Ns}{m} to the system, and give the same initial condition. Set up and solve an initial value problem for the position of the mass. $y = \answer{0.4 e^{-4t}\cos(2t) + 0.8e^{-4t}\sin(2t)}$
+            \begin{problem}
+                What type of ``dampening'' would be used to characterize this situation?
+                \begin{multipleChoice}
+                    \choice[correct]{Underdamped}
+                    \choice{Overdamped}
+                    \choice{Critically damped}
+                \end{multipleChoice}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -116,7 +164,14 @@
 %}
 
 \begin{exercise}%
-    A mass of $m$ \unit{kg} is on a spring with $k=\unitfrac[3]{N}{m}$ and $c=\unitfrac[2]{Ns}{m}$.  Find the mass $m_0$ for which there is critical damping.  If $m < m_0$, does the system oscillate or not, that is, is it underdamped or overdamped?
+    A mass of $m$ \unit{kg} is on a spring with $k=\unitfrac[3]{N}{m}$ and $c=\unitfrac[2]{Ns}{m}$.  Find the mass $m_0$ for which there is critical damping. $m_0 = \answer{\frac{1}{3}}$
+    \begin{problem}
+        If $m < m_0$, does the system oscillate or not, that is, is it underdamped or overdamped?
+        \begin{multipleChoice}
+            \choice{Underdamped}
+            \choice[correct]{Overdamped}
+        \end{multipleChoice}
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %$m_0 = \frac{1}{3}$.  If $m < m_0$, then the system is overdamped and will
@@ -125,31 +180,48 @@
 
 \begin{exercise}%
     Suppose we have an RLC circuit with a resistor of 100 milliohms (0.1 ohms), inductor of inductance of 50 millihenries (0.05 henries), and a capacitor of 5 farads, with constant voltage.
-    \begin{tasks}
-        \task Set up the ODE equation for the current $I$.
-        \task Find the general solution.
-        \task Solve for $I(0) = 10$ and $I'(0) = 0$.
-    \end{tasks}
+    
+    Set up the ODE equation for the current $I$. $\answer{0.05}I'' + \answer{0.1}I' + \answer{\frac{1}{5}} I = 0$
+    \begin{problem}
+        Find the general solution. [Use $A$ and $B$ as arbitrary constants]
+        \[
+            I = \answer{Ae^{-t}\cos(\sqrt{3} t) + Be^{-t}\sin(\sqrt{3} t)}
+        \]
+        \begin{problem}
+            Solve for $I(0) = 10$ and $I'(0) = 0$. $I = \answer{10 e^{-t} \cos(\sqrt{3}  t) + \frac{10}{\sqrt{3}} e^{-t} \sin(\sqrt{3}  t)}$
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\exsol{%
-%a) $0.05 I'' + 0.1 I' + (\nicefrac{1}{5}) I = 0$
+%a) $0.05 I'' + 0.1 I' + (\frac{1}{5}) I = 0$
 %\quad
-%b) $I = C e^{-t} \cos(\sqrt{3} \, t - \gamma)$ or $I = C_1e^{-t}\cos(\sqrt{3} t) + C_2e^{-t}\sin(\sqrt{3} t)$
+%b) $I = C e^{-t} \cos(\sqrt{3}  t - \gamma)$ or $I = C_1e^{-t}\cos(\sqrt{3} t) + C_2e^{-t}\sin(\sqrt{3} t)$
 %\quad
-%c) $I = 10 e^{-t} \cos(\sqrt{3} \, t) + \frac{10}{\sqrt{3}} e^{-t}
-%\sin(\sqrt{3} \, t)$
+%c) $I = 10 e^{-t} \cos(\sqrt{3}  t) + \frac{10}{\sqrt{3}} e^{-t}
+%\sin(\sqrt{3}  t)$
 %}
 
 \begin{exercise}
     For RLC circuits, we can use either charge or current to set up the equation. Let's see how the two of those compare.
-    \begin{tasks}
-        \task Assume that we have an RLC circuit with a 30 millihenry inductor, a 120 milliohm resistor, and a capacitor with capacitance $\nicefrac{20}{3}$ F. Set up a differential equation for the charge on the capacitor as a function of time.
-        \task Use the same circuit to set up a differential equation for the current through the circuit as a function of time. How do these equations relate?
-        \task Find the general solution to each of these equations. 
-        \task Solve the initial value problem for the charge with $Q(0) = \nicefrac{1}{2} C$ and $Q'(0) = 0$.
-        \task Using the fact that $I = Q'$, determine the appropriate initial conditions needed for $I$ in order to solve for the current in this same setup (with those initial values for charge).
-        \task Now, we'll do the same in the other direction. Solve the initial value problem for current with $I(0) = 2 A$ and $I'(0) = 1 \unitfrac{A}{s}$, and see what the initial conditions would be for $Q(t)$ for this setup.    
-    \end{tasks}
+    
+    Assume that we have an RLC circuit with a 30 millihenry inductor, a 120 milliohm resistor, and a capacitor with capacitance $\frac{20}{3}$ F. Set up a differential equation for the charge on the capacitor as a function of time.
+    $\answer{0.03}Q'' + \answer{0.12}Q' + \answer{\frac{3}{20}}Q = 0$
+    \begin{problem} 
+        Use the same circuit to set up a differential equation for the current through the circuit as a function of time. How do these equations relate? $\answer{0.03}I'' + \answer{0.12}I' + \answer{\frac{3}{20}}I = 0$
+        \begin{problem}
+            Find the general solution to each of these equations. [Use $A$ and $B$ for arbitrary constants] $Q(t) = \answer{Ae^{-2t}\cos(t) + Be^{-2t}\sin(t)}$
+            \begin{problem}
+                Solve the initial value problem for the charge with $Q(0) = \frac{1}{2} C$ and $Q'(0) = 0$. $Q(t) = \answer{\frac{1}{2}e^{-2t}\cos(t) + e^{-2t}\sin(t)}$
+                \begin{problem}
+                    Using the fact that $I = Q'$, determine the appropriate initial conditions needed for $I$ in order to solve for the current in this same setup (with those initial values for charge). $I(0) = \answer{0}$, $I'(0) = \answer{-\frac{5}{2}}$
+                    \begin{problem}
+                        Now, we'll do the same in the other direction. Solve the initial value problem for current with $I(0) = 2 A$ and $I'(0) = 1 \unitfrac{A}{s}$, and see what the initial conditions would be for $Q(t)$ for this setup.
+                        $I(t) = \answer{2e^{-2t}\cos(t) + 5e^{-2t}\sin(t)}$, $Q(0) = \answer{-\frac{9}{5}}$, $Q'(0) = \answer{2}$
+                    \end{problem}
+                \end{problem}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -163,7 +235,11 @@
 %}
 
 \begin{exercise}
-Assume that the system $my'' + \gamma y' + ky = 0$ is either critically or overdamped. Prove that the solution can pass through zero \emph{at most once}, regardless of initial conditions. \emph{Hint:} Try to find all values of $t$ for which $y(t) = 0$, given the form of the solution.
+    Assume that the system $my'' + \gamma y' + ky = 0$ is either critically or overdamped. Prove that the solution can pass through zero \emph{at most once}, regardless of initial conditions. \emph{Hint:} Try to find all values of $t$ for which $y(t) = 0$, given the form of the solution. [Use $A$ and $B$ for arbitrary constants]
+    \begin{itemize}
+        \item For overdamped system: $t = \answer{\frac{1}{r_2 - r_1}\ln\left(-\frac{A}{B}\right)}$
+        \item For Critically damped system: $t = \answer{-\frac{A}{B}}$
+    \end{itemize}
 \end{exercise}
 %\comboSol{%
 %}

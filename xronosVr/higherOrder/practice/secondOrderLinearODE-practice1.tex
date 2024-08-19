@@ -12,7 +12,13 @@
 
 
 \begin{exercise}
-    Show that $y=e^x$ and $y=e^{2x}$ are linearly independent.
+    How can you show that $y=e^x$ and $y=e^{2x}$ are linearly independent?
+    \begin{multipleChoice}
+        \choice{Take their derivative}
+        \choice{Find their indefinite integral}
+        \choice[correct]{Find their ratio and show it is non-constant.}
+        \choice{Find their ratio and show it is constant.}
+    \end{multipleChoice}
 \end{exercise}
 %\comboSol{%
 %}
@@ -22,6 +28,12 @@
 
 \begin{exercise}%
     Are $\sin(x)$ and $e^x$ linearly independent?  Justify.
+    \begin{multipleChoice}
+        \choice[correct]{Yes, since $e^x$ is monotonic and $\sin(x)$ is periodic.}
+        \choice{Yes, since they are both transcendental functions.}
+        \choice{No, since they are both transcendental functions.}
+        \choice{No, since you can find a constant, $A$, such that $\sin(x)=Ae^x$}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %Yes.  To justify try to find a constant $A$ such that $\sin(x) = A e^x$
@@ -31,20 +43,27 @@
 
 \begin{exercise}%
     Are $e^x$ and $e^{x+2}$ linearly independent?  Justify.
+    \begin{multipleChoice}
+        \choice{Yes, since - if we plug in $x$ values, we get different numbers for each function.}
+        \choice{Yes, since they are both transcendental functions.}
+        \choice[correct]{No, since they are equal.}
+        \choice{No, since they are both transcendental functions.}
+        \choice{No, since you can find a constant, $A$, such that $e^{x+2}=A + e^x$}
+    \end{multipleChoice}
 \end{exercise}
 %\exsol{%
 %No.  $e^{x+2} = e^2 e^x$.
 %}
 
 \begin{exercise}%
-    Guess a solution to $y'' + y' + y= 5$.
+    Guess a solution to $y'' + y' + y= 5$. $y = \answer{5}$
 \end{exercise}
 %\exsol{%
 %$y=5$
 %}
 
 \begin{exercise}
-    Take $y'' + 5 y = 10 x + 5$.  Find (guess!) a solution.
+    Take $y'' + 5 y = 10 x + 5$.  Find (guess!) a solution. [Make sure to enter the full equality] $\answer{y = 2x+1}$ 
 \end{exercise}
 %\comboSol{%
 %}
@@ -53,7 +72,25 @@
 %}
 
 \begin{exercise}
-    Verify that $y_1(t) = e^t \cos(2t)$ and $y_2(t) = e^t \sin(2t)$ both solve $y'' - 2y' + 5y = 0$. Are these two solutions linearly independent? What does that mean about the general solution to $y'' - 2y' + 5y = 0$?
+    Verify that $y_1(t) = e^t \cos(2t)$ and $y_2(t) = e^t \sin(2t)$ both solve $y'' - 2y' + 5y = 0$. 
+    
+    \begin{itemize}
+        \item $y_1' = \answer{-2e^t\sin(2t) + e^t\cos(2t)}$
+        \item $y_2' = \answer{2e^t\cos(2t) + e^t\sin(2t)}$
+        \item $y_1'' = \answer{-e^t (4 \sin(2t) + 3 \cos(2t))}$
+        \item $y_2'' = \answer{e^t (4 \cos(2t) - 3 \sin(2t))}$
+    \end{itemize}
+    
+    \begin{problem}
+        Are these two solutions linearly independent? 
+        \begin{multipleChoice}
+            \choice[correct]{Yes.}
+            \choice{No.}
+        \end{multipleChoice}
+        \begin{problem}
+            Using the above, what is the general solution to $y'' - 2y' + 5y = 0$? [Use $A$ and $B$ as your arbitrary constants] $\answer{Ae^{t}\cos(2t) + B\sin(2t)}$
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -61,6 +98,7 @@
 %Yes. This means the general solution is $C_1e^{t}\cos(2t) + C_2\sin(2t)$.
 %}
 
+%% Not sure how to validate this question.
 \begin{exercise}
     Prove the superposition principle for nonhomogeneous equations.  Suppose that $y_1$ is a solution to $L y_1 = f(x)$ and $y_2$ is a solution to $L y_2 = g(x)$ (same linear operator $L$).  Show that $y = y_1+y_2$ solves $Ly = f(x) + g(x)$.
 \end{exercise}
@@ -75,7 +113,11 @@
     \[ 
         (t - 5)y'' + \frac{1}{t+1}y' + e^t y = \frac{\cos(t)}{t^2 + 1} 
     \] 
-    with initial condition $y(3) = 8$. What about if the initial condition is $y(-3) = 4$?
+    with initial condition $y(3) = 8$. $\left( \answer{-1},\answer{5} \right)$
+    
+    \begin{problem}
+        What about if the initial condition is $y(-3) = 4$? $\left( \answer{-\infty},\answer{-1} \right)$
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -85,7 +127,9 @@
 
 \begin{exercise}
     For the equation $x^2 y'' - x y' = 0$, find two solutions, show that they are linearly independent and find the general solution.
-Hint: Try $y = x^r$.
+    Hint: Try $y = x^r$.
+    
+    The general solution is [use $A$ and $B$ for arbitrary constants] $\answer{A + Bx^2}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -94,14 +138,14 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}%
-    Find the general solution to $x y'' + y' = 0$.  Hint: It is a first order ODE in $y'$.
+    Find the general solution to $x y'' + y' = 0$.  Hint: It is a first order ODE in $y'$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{A\ln(x) + B}$.
 \end{exercise}
 %\exsol{%
 %$y=C_1 \ln(x) + C_2$
 %}
 
 \begin{exercise}
-    Find the general solution of $2y'' + 2y' -4 y = 0$.
+    Find the general solution of $2y'' + 2y' -4 y = 0$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{Ae^{-2t} + Be^{t}}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -110,7 +154,7 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}
-    Solve $y'' + 9y' = 0$ with $y(0) = 1$, $y'(0) = 1$.
+    Solve $y'' + 9y' = 0$ with $y(0) = 1$, $y'(0) = 1$. $y = \answer{\frac{10}{9} - \frac{1}{9}e^{-9t}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -118,7 +162,7 @@ Hint: Try $y = x^r$.
 %$y = \frac{10}{9} - \frac{1}{9}e^{-9t}$
 %}
 \begin{exercise}
-    Find the general solution of $y'' + 9y' - 10 y = 0$.
+    Find the general solution of $y'' + 9y' - 10 y = 0$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{Ae^{-10t} + Be^t}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -127,7 +171,7 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}
-    Find the general solution to $y'' - 3y' - 4y = 0$.
+    Find the general solution to $y'' - 3y' - 4y = 0$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{Ae^{4t} + Be^{-t}}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -136,7 +180,7 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}
-    Find the general solution to $y'' + 6y' + 8y = 0$.
+    Find the general solution to $y'' + 6y' + 8y = 0$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{Ae^{-2t} + Be^{-4t}}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -145,7 +189,7 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}
-    Find the solution to $y'' - 3y' + 2y = 0$ with $y(0) = 3$ and $y'(0) = -1$.
+    Find the solution to $y'' - 3y' + 2y = 0$ with $y(0) = 3$ and $y'(0) = -1$. $y = \answer{7e^t - 4e^{2t}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -154,7 +198,7 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}
-    Find the solution to $y'' + y' -12y = 0$ with $y(0) = 1$ and $y'(0) = -2$.
+    Find the solution to $y'' + y' -12y = 0$ with $y(0) = 1$ and $y'(0) = -2$. $y = \answer{\frac{5}{7}e^{-4t} + \frac{2}{7}e^{3t}}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -162,7 +206,7 @@ Hint: Try $y = x^r$.
 %$y = \frac{5}{7}e^{-4t} + \frac{2}{7}e^{3t}$
 %}
 \begin{exercise}%
-    Find the general solution to $y''+4y'+2y=0$.
+    Find the general solution to $y''+4y'+2y=0$. [Use $A$ and $B$ for the arbitrary constants] $y = \answer{A e^{(-2+\sqrt{2}) x} + B e^{(-2-\sqrt{2}) x}}$.
 \end{exercise}
 %\exsol{%
 %$y =
@@ -172,14 +216,18 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}%
-    Find the solution to $2y''+y'-3y=0$, $y(0) = a$, $y'(0)=b$.
+    Find the solution to $2y''+y'-3y=0$, $y(0) = a$, $y'(0)=b$. $y = \answer{\frac{2(a-b)}{5} e^{-3x/2}+\frac{3 a+2 b}{5} e^x}$
 \end{exercise}
 %\exsol{%
 %$y = \frac{2(a-b)}{5} \, e^{-3x/2}+\frac{3 a+2 b}{5} \, e^x$
 %}
 
 \begin{exercise}%
-    Find the solution to $y''-(\alpha+\beta) y' + \alpha \beta y=0$, $y(0) = a$, $y'(0)=b$, where $\alpha$, $\beta$, $a$, and $b$ are real numbers, and $\alpha \not= \beta$.
+    Find the solution to $y''-(\alpha+\beta) y' + \alpha \beta y=0$, $y(0) = a$, $y'(0)=b$, where $\alpha$, $\beta$, $a$, and $b$ are real numbers, and $\alpha \neq \beta$. 
+    
+    \[
+        y = \answer{\frac{a \beta-b}{\beta-\alpha} e^{\alpha x} + \frac{b-a \alpha}{\beta-\alpha} e^{\beta x}}
+    \]
 \end{exercise}
 %\exsol{%
 %$y =
@@ -188,21 +236,21 @@ Hint: Try $y = x^r$.
 %}
 
 \begin{exercise}%
-    Write down an equation (guess) for which we have the solutions $e^x$ and $e^{2x}$.  Hint: Try an equation of the form $y''+Ay'+By = 0$ for constants $A$ and $B$, plug in both $e^x$ and $e^{2x}$ and solve for $A$ and $B$.
+    Write down an equation (guess) for which we have the solutions $e^x$ and $e^{2x}$.  Hint: Try an equation of the form $y''+Ay'+By = 0$ for constants $A$ and $B$, plug in both $e^x$ and $e^{2x}$ and solve for $A$ and $B$. [Use $\frac{d^2y}{dx^2}$ notation for $y''$ and $\frac{dy}{dx}$ notation for $y'$. Make sure to enter a full equality for your answer]. $\answer{\frac{d^2y}{dx^2} - 3\frac{dy}{dx} + 2y = 0}$
 \end{exercise}
 %\exsol{%
 %$y''-3y'+2y = 0$
 %}
 
 \begin{exercise}%
-    Construct an equation such that $y = C_1 e^{3x} + C_2 e^{-2x}$ is the general solution.
+    Construct an equation such that $y = C_1 e^{3x} + C_2 e^{-2x}$ is the general solution. [Use $\frac{d^2y}{dx^2}$ notation for $y''$ and $\frac{dy}{dx}$ notation for $y'$. Make sure to enter a full equality for your answer]. $\answer{\frac{d^2y}{dx^2} - \frac{dy}{dx} - 6y = 0}$
 \end{exercise}
 %\exsol{%
 %$y'' -y'-6y=0$
 %}
 
 \begin{exercise}
-    Give an example of a 2nd-order DE whose general solution is $y=c_1e^{-2t}+c_2e^{-4t}$.
+    Give an example of a 2nd-order DE whose general solution is $y=c_1e^{-2t}+c_2e^{-4t}$. [Use $\frac{d^2y}{dx^2}$ notation for $y''$ and $\frac{dy}{dx}$ notation for $y'$. Make sure to enter a full equality for your answer]. $\answer{\frac{d^2y}{dx^2} + 6\frac{dy}{dx} + 8y = 0}$
 \end{exercise}
 %\comboSol{%
 %}
@@ -211,14 +259,35 @@ Hint: Try $y = x^r$.
 %}
 
 
-Equations of the form $a x^2 y'' + b x y' + c y = 0$ are called \emph{Euler's equations\index{Euler's equation}} or \emph{Cauchy--Euler equations\index{Cauchy--Euler equation}}. They are solved by trying $y=x^r$ and solving for $r$ (assume that $x \geq 0$ for simplicity).
+Equations of the form $a x^2 y'' + b x y' + c y = 0$ are called \emph{Euler's equations} or \emph{Cauchy--Euler equations}. They are solved by trying $y=x^r$ and solving for $r$ (assume that $x \geq 0$ for simplicity).
 
 \begin{exercise} \label{sol:eulerex}
     Suppose that ${(b-a)}^2-4ac > 0$.
-    \begin{tasks}
-        \task Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Try $y=x^r$ and find a formula for $r$.
-        \task What happens when ${(b-a)}^2-4ac = 0$ or ${(b-a)}^2-4ac < 0$?
-    \end{tasks}
+    Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Try $y=x^r$ and find a formula for $r$. 
+    \begin{itemize}
+        \item $r_1 = \answer{\frac{(a-b) + \sqrt{(b-a)^2 - 4ac}}{2a}}$,
+        \item $r_2 = \answer{\frac{(a-b) - \sqrt{(b-a)^2 - 4ac}}{2a}}$
+        \item General Solution [Use $A$ and $B$ as your arbitrary constants]: $y = \answer{Ax^{r_1} + Bx^{r_2}}$
+    \end{itemize}
+    \begin{problem}
+        What happens when ${(b-a)}^2-4ac = 0$ 
+        \begin{multipleChoice}
+            \choice{There are two distinct real solutions.}
+            \choice[correct]{There is one repeated real solution.}
+            \choice{There are only complex solutions.}
+        \end{multipleChoice}
+        \begin{problem}
+            What happens when ${(b-a)}^2-4ac < 0$?
+            \begin{multipleChoice}
+                \choice{There are two distinct real solutions.}
+                \choice{There is one repeated real solution.}
+                \choice[correct]{There are only complex solutions.}
+            \end{multipleChoice}
+            \begin{feedback}[correct]
+                We will revisit the case when ${(b-a)}^2-4ac < 0$ later.
+            \end{feedback}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -227,10 +296,10 @@ Equations of the form $a x^2 y'' + b x y' + c y = 0$ are called \emph{Euler's eq
 %b)~ Only one solution or complex solutions.
 %}
 
-We will revisit the case when ${(b-a)}^2-4ac < 0$ later.
+
 
 \begin{exercise} \label{sol:eulerexln}
-    Same equation as in \exerciseref{sol:eulerex}. Suppose ${(b-a)}^2-4ac = 0$.  Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Try $y=x^r \ln x$ for the second solution.
+    Same equation as in the previous problem. Suppose ${(b-a)}^2-4ac = 0$.  Find a formula for the general solution of $a x^2 y'' + b x y' + c y = 0$.  Hint: Try $y=x^r \ln x$ for the second solution. [Use $A$ and $B$ for your arbitrary constants] $y = \answer{Ax^{\frac{a-b}{2a}} + Bx^{\frac{a-b}{2a}}ln(x)}$
 \end{exercise}
 %\comboSol{%
 %}

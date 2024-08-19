@@ -111,7 +111,7 @@ Define $A$ by
 \begin{equation*}
     A = \lim_{n\to\infty} \left \lvert \frac{a_{k+1}}{a_k} \right \rvert .
 \end{equation*}
-Then if $1 > L = A \lvert x - x_0 \rvert$ the series \eqref{ps:sereq1} converges absolutely. If $A = 0$, then the series always converges.  If $A > 0$, then the series converges absolutely if $\lvert x - x_0 \rvert < \nicefrac{1}{A}$, and diverges if $\lvert x - x_0 \rvert > \nicefrac{1}{A}$.  That is, the radius of convergence is $\nicefrac{1}{A}$.
+Then if $1 > L = A \lvert x - x_0 \rvert$ the series \eqref{ps:sereq1} converges absolutely. If $A = 0$, then the series always converges.  If $A > 0$, then the series converges absolutely if $\lvert x - x_0 \rvert < \frac{1}{A}$, and diverges if $\lvert x - x_0 \rvert > \frac{1}{A}$.  That is, the radius of convergence is $\frac{1}{A}$.
 
 A similar test is the \emph{root test}\index{root test for series}. Suppose
 \begin{equation*}
@@ -130,7 +130,7 @@ exists.  Then $\sum_{k=0}^\infty c_k$ converges absolutely if $L < 1$ and diverg
         \qquad \text{or} \qquad 
         A = \lim_{k\to\infty} \sqrt[k]{\lvert a_k \rvert}
     \end{equation*}
-    exists. If $A = 0$, then the radius of convergence of the series is $\infty$.  Otherwise, the radius of convergence is $\nicefrac{1}{A}$.
+    exists. If $A = 0$, then the radius of convergence of the series is $\infty$.  Otherwise, the radius of convergence is $\frac{1}{A}$.
 \end{theorem}
 
 \begin{example}
@@ -145,13 +145,13 @@ exists.  Then $\sum_{k=0}^\infty c_k$ converges absolutely if $L < 1$ and diverg
     \begin{equation*}
     A = \lim_{k\to\infty} \left \lvert \frac{a_{k+1}}{a_k} \right \rvert
     =\lim_{k\to\infty} \left \lvert \frac{2^{-k-1}}{2^{-k}} \right \rvert
-    = \lim_{k\to\infty} 2^{-1} = \nicefrac{1}{2}.
+    = \lim_{k\to\infty} 2^{-1} = \frac{1}{2}.
     \end{equation*}
     Therefore the radius of convergence is $2$, and the series converges absolutely on the interval $(-1,3)$. And we could just as well have used the root test:
     \begin{equation*}
         A = \lim_{k\to\infty} \lim_{k\to\infty} \sqrt[k]{\lvert a_k \rvert} 
         = \lim_{k\to\infty} \sqrt[k]{\lvert 2^{-k} \rvert} 
-        = \lim_{k\to\infty} 2^{-1} = \nicefrac{1}{2}.
+        = \lim_{k\to\infty} 2^{-1} = \frac{1}{2}.
     \end{equation*}
 \end{exampleSol}
 

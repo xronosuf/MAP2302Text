@@ -12,7 +12,7 @@
 
 
 \begin{exercise}
-    Consider $\dfrac{dx}{dt} = {(2t-x)}^2$, $x(0)=2$.  Use Euler's method with step size $h=0.5$ to approximate $x(1)$.
+    Consider $\dfrac{dx}{dt} = {(2t-x)}^2$, $x(0)=2$.  Use Euler's method with step size $h=0.5$ to approximate $x(1)$. [Enter your answer exactly] $\answer{\frac{17}{2}}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -21,7 +21,17 @@
 %}
 
 \begin{exercise}
-    Consider the differential equation $\frac{dy}{dt} = t^2 - 3y + 1$ with $y(1) = 4$. Approximate the solution at $t=3$ using Euler's method with a step size of $h=1$ and $h=0.5$. Compare these values with the actual solution at $t=3$. 
+    Consider the differential equation $\frac{dy}{dt} = t^2 - 3y + 1$ with $y(1) = 4$. Approximate the solution at $t=3$ using Euler's method with a step size of: 
+    \begin{itemize}
+        \item $h=1$, $\answer{17}$
+        \item $h=0.5$, $\answer{\frac{85}{32}}$
+    \end{itemize}
+    \begin{problem}
+        Compute the actual solution at $t=3$, [Enter the exact value, not a decimal approximation] $\answer{\frac{52}{27} + \frac{94}{27}e^{-6}}$
+        \begin{feedback}[correct]
+            Compare the actual solution to the approximations!
+        \end{feedback}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -31,6 +41,16 @@
 
 \begin{exercise}
     Consider the differential equation $\frac{dy}{dt} = 2ty + y^2$ with $y(0) = 1$. Approximate the solution at $t=2$ using Euler's method with a step size of $h=1$ and $h=0.5$.
+    \begin{itemize}
+        \item $h=1$, $\answer{10}$
+        \item $h=0.5$, [Enter your answer to two decimal places] $\answer{108.56}$
+    \end{itemize}
+%    \begin{problem}
+%        Compute the actual solution at $t=3$, [Enter the exact value, not a decimal approximation] $\answer{\frac{52}{27} + \frac{94}{27}e^{-6}}$
+%        \begin{feedback}[correct]
+%            Compare the actual solution to the approximations!
+%        \end{feedback}
+%    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -38,26 +58,46 @@
 %$h=1$: 10, $h=0.5$: $y(2) \approx 108.56$
 %}
 
-\begin{samepage}
-    \begin{exercise}
-        Consider $\dfrac{dx}{dt} = t-x$, $x(0)=1$.
-        \begin{tasks}
-            \task Use Euler's method with step sizes $h = 1, \nicefrac{1}{2}, \nicefrac{1}{4}, \nicefrac{1}{8}$ to approximate $x(1)$. 
-            \task Solve the equation exactly.
-            \task Describe what happens to the errors for each $h$ you used.  That is, find the factor by which the error changed each time you halved the interval.
-        \end{tasks}
-    \end{exercise}
-\end{samepage}
+\begin{exercise}
+    Consider $\dfrac{dx}{dt} = t-x$, $x(0)=1$.
+    
+    Use Euler's method to approximate $x(1)$, with step sizes: 
+    \begin{itemize}
+        \item $h = 1$, $\answer{0}$
+        \item $h = \frac{1}{2}$, $\answer{\frac{1}{2}}$
+        \item $h = \frac{1}{4}$, $\answer{\frac{81}{128}}$
+        \item $h = \frac{1}{8}$, [Enter your answer to four decimal places] $\answer{0.6872}$
+    \end{itemize}
+    
+    \begin{problem}
+        Solve the equation exactly. $x(t) = \answer{t-1+2e^{-t}}$
+        \begin{problem}
+            Describe what happens to the errors for each $h$ you used.  That is, find the factor by which the error changed each time you halved the interval.
+            
+            Error \wordChoice{\choice{increases}\choice{stays the same}\choice[correct]{decreases}} by factors of: 
+            \begin{itemize}
+                \item When going from $h=1$ to $h=\frac{1}{2}$: [Enter to two decimal places] $\answer{0.32}$.
+                \item When going from $h=\frac{1}{2}$ to $h=\frac{1}{4}$: [Enter to four decimal places] $\answer{0.4365}$.
+                \item When going from $h=\frac{1}{4}$ to $h=\frac{1}{8}$: [Enter to four decimal places] $\answer{0.4723}$.
+            \end{itemize}
+        \end{problem}
+    \end{problem}
+\end{exercise}
 %\comboSol{%
 %}
 %{%
-%a)~ $h=1$, 0. $h=\nicefrac{1}{2}$, 0.5. $h = \nicefrac{1}{4}$,$ \frac{81}{128}$. $h = \nicefrac{1}{8}$ $x(1) \approx .6872$. \\
+%a)~ $h=1$, 0. $h=\frac{1}{2}$, 0.5. $h = \frac{1}{4}$,$ \frac{81}{128}$. $h = \frac{1}{8}$ $x(1) \approx .6872$. \\
 %b)~$x(t) = t-1+2e^{-t}$\\
 %c)~Error decreases by factors of 0.32, 0.4365, 0.4723.
 %}
 
 \begin{exercise}%
-    Let $x' = \sin(xt)$, and $x(0)=1$. Approximate $x(1)$ using Euler's method with step sizes 1, 0.5, 0.25. Use a calculator and compute up to 4 decimal digits.
+    Let $x' = \sin(xt)$, and $x(0)=1$. Approximate [up to four decimal digits] $x(1)$ using Euler's method with step sizes:
+    \begin{itemize}
+        \item $h = 1$, $\answer{1}$
+        \item $h = \frac{1}{2}$, $\answer{1.2397}$
+        \item $h = \frac{1}{4}$, $\answer{1.3829}$
+    \end{itemize}
 \end{exercise}
 %\exsol{%
 %Approximately: 1.0000, 1.2397, 1.3829
@@ -65,7 +105,7 @@
 
 
 \begin{exercise}
-    Approximate the value of $e$ by looking at the initial value problem $y'=y$ with $y(0)=1$ and approximating $y(1)$ using Euler's method with a step size of $0.2$.
+    Approximate the value of $e$ by looking at the initial value problem $y'=y$ with $y(0)=1$ and approximating $y(1)$ using Euler's method with a step size of $0.2$. [Enter your answer to four decimal places] $\answer{2.4883}$.
 \end{exercise}
 %\comboSol{%
 %}
@@ -75,11 +115,32 @@
 
 \begin{exercise}%
     Let $x' = 2t$, and $x(0)=0$.
-    \begin{tasks}
-        \task Approximate $x(4)$ using Euler's method with step sizes 4, 2, and 1.
-        \task Solve exactly, and compute the errors.
-        \task Compute the factor by which the errors changed.
-    \end{tasks}
+    
+    Approximate $x(4)$ using Euler's method with step sizes:
+    \begin{itemize}
+        \item $h = 4$, $\answer{0}$
+        \item $h = 2$, $\answer{8}$
+        \item $h = 1$, $\answer{12}$
+    \end{itemize}
+    \begin{problem}
+        Solve exactly, $x(4) = \answer{16}$ 
+        \begin{problem}
+            compute the errors: 
+            \begin{itemize}
+                \item $h = 4$, $\answer{16}$
+                \item $h = 2$, $\answer{8}$
+                \item $h = 1$, $\answer{4}$
+            \end{itemize}
+            \begin{problem}
+                Compute the factor by which the errors changed.
+                \begin{itemize}
+                    \item $h = 4$, $\answer{\frac{1}{2}}$
+                    \item $h = 2$, $\answer{\frac{1}{2}}$
+                    \item $h = 1$, $\answer{\frac{1}{2}}$
+                \end{itemize}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\exsol{%
 %a) 0, 8, 12
@@ -89,15 +150,28 @@
 %c) Factors are 0.5, 0.5, 0.5.
 %}
 
-\begin{samepage}
-    \begin{exercise}%
-        Let $x' = x e^{xt+1}$, and $x(0)=0$.
-        \begin{tasks}
-            \task Approximate $x(4)$ using Euler's method with step sizes 4, 2, and 1.
-            \task Guess an exact solution based on part a) and compute the errors.
-        \end{tasks}
-    \end{exercise}
-\end{samepage}
+
+\begin{exercise}%
+    Let $x' = x e^{xt+1}$, and $x(0)=0$.
+    
+    Approximate $x(4)$ using Euler's method with step sizes:
+    \begin{itemize}
+        \item $h = 4$, $\answer{0}$
+        \item $h = 2$, $\answer{0}$
+        \item $h = 1$, $\answer{0}$
+    \end{itemize}
+    \begin{problem}
+        Guess an exact solution based on the previous part: $x = \answer{0}$ 
+        \begin{problem}
+            Compute the errors.
+        \begin{itemize}
+            \item $h = 4$, $\answer{0}$
+            \item $h = 2$, $\answer{0}$
+            \item $h = 1$, $\answer{0}$
+        \end{itemize}
+        \end{problem}
+    \end{problem}
+\end{exercise}
 %\exsol{%
 %a) 0, 0, 0
 %\quad
@@ -106,7 +180,15 @@
 
 
 \begin{exercise}
-    Example of numerical instability: Take $y' = -5y$, $y(0) = 1$.  We know that the solution should decay to zero as $x$ grows. Using Euler's method, start with $h=1$ and compute $y_1, y_2, y_3, y_4$ to try to approximate $y(4)$.  What happened? Now halve the interval.  Keep halving the interval and approximating $y(4)$ until the numbers you are getting start to stabilize (that is, until they start going towards zero). Note: You might want to use a calculator.
+    Example of numerical instability: Take $y' = -5y$, $y(0) = 1$.  We know that the solution should decay to zero as $x$ grows. Using Euler's method, start with $h=1$ and compute $y_1, y_2, y_3, y_4$ to try to approximate $y(4)$.\\
+    $y(4) = \answer{256}$
+    
+    \begin{problem}
+        What happened? Now halve the interval and re-approximate $y(4)$: [Enter your answer to 4 decimal digits] $y(4) = \answer{25.6289}$
+        \begin{feedback}[correct]
+            Keep halving the interval and approximating $y(4)$ until the numbers you are getting start to stabilize (that is, until they start going towards zero). Note: You might want to use a calculator.
+        \end{feedback}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
@@ -125,31 +207,66 @@ There is a simple way to improve Euler's method to make it a second order method
 
 \begin{exercise}%
     Consider $\dfrac{dy}{dx} = x+y$, $y(0)=1$.
-    \begin{tasks}
-        \task Use the improved Euler's method (see above) with step sizes $h=\nicefrac{1}{4}$ and $h=\nicefrac{1}{8}$ to approximate $y(1)$.
-        \task Use Euler's method with $h=\nicefrac{1}{4}$ and $h=\nicefrac{1}{8}$.
-        \task Solve exactly, find the exact value of $y(1)$.
-        \task Compute the errors, and the factors by which the errors changed.
-    \end{tasks}
+    
+    Use the improved Euler's method (see above) with step sizes $h=\frac{1}{4}$ and $h=\frac{1}{8}$ to approximate $y(1)$.
+    \begin{itemize}
+        \item $h = \frac{1}{4}$, [Enter your answer to four decimal places] $y(1) ~ \answer{3.3897}$
+        \item $h = \frac{1}{8}$, [Enter your answer to four decimal places] $y(1) ~ \answer{3.4237}$
+    \end{itemize}
+    \begin{problem}
+        Use Euler's method with $h=\frac{1}{4}$ and $h=\frac{1}{8}$.
+        \begin{itemize}
+            \item $h = \frac{1}{4}$, [Enter your answer to four decimal places] $y(1) ~ \answer{2.8828}$
+            \item $h = \frac{1}{8}$, [Enter your answer to four decimal places] $y(1) ~ \answer{3.1316}$
+        \end{itemize}
+        \begin{problem}
+            Solve exactly, find the exact value of $y(1)$. $y(1) = \answer{2e^x-x-1}$
+            \begin{feedback}[correct]
+                So the exact value is approximately: $y(1) = 3.4366$
+            \end{feedback}
+            \begin{problem}
+                Compute the errors:
+                \begin{itemize}
+                    \item Improved Euler's Method: [Enter answers up to six decimal places]
+                    \begin{itemize}
+                        \item $h=\frac{1}{4}$, $\answer{0.046852}$
+                        \item $h=\frac{1}{8}$, $\answer{0.012881}$
+                    \end{itemize}
+                    \item Standard Euler's Method: [Enter answers up to five decimal places]
+                    \begin{itemize}
+                        \item $h=\frac{1}{4}$, $\answer{0.55375}$
+                        \item $h=\frac{1}{8}$, $\answer{0.30499}$
+                    \end{itemize}
+                    \begin{problem}
+                        Compute the factors by which the errors changed: [Enter to two decimal places]
+                        \begin{itemize}
+                            \item Improved Euler's Method: $\answer{0.27}$
+                            \item Standard Euler's Method: $\answer{0.55}$
+                        \end{itemize}
+                    \end{problem}
+                \end{itemize}
+            \end{problem}
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\exsol{%
-%a) Improved Euler: $y(1) \approx 3.3897$ for $h=\nicefrac{1}{4}$, 
-%$y(1) \approx 3.4237$ for $h=\nicefrac{1}{8}$, 
+%a) Improved Euler: $y(1) \approx 3.3897$ for $h=\frac{1}{4}$, 
+%$y(1) \approx 3.4237$ for $h=\frac{1}{8}$, 
 %\quad
-%b) Standard Euler: $y(1) \approx 2.8828$ for $h=\nicefrac{1}{4}$, 
-%$y(1) \approx 3.1316$ for $h=\nicefrac{1}{8}$, 
+%b) Standard Euler: $y(1) \approx 2.8828$ for $h=\frac{1}{4}$, 
+%$y(1) \approx 3.1316$ for $h=\frac{1}{8}$, 
 %\quad
 %c) $y = 2e^x-x-1$, so $y(2)$ is approximately $3.4366$.
 %\quad
 %d) Approximate errors for improved Euler:
-%$0.046852$ for $h=\nicefrac{1}{4}$, 
+%$0.046852$ for $h=\frac{1}{4}$, 
 %and
-%$0.012881$ for $h=\nicefrac{1}{8}$. 
+%$0.012881$ for $h=\frac{1}{8}$. 
 %\quad
 %For standard Euler:
-%$0.55375$ for $h=\nicefrac{1}{4}$, 
+%$0.55375$ for $h=\frac{1}{4}$, 
 %and
-%$0.30499$ for $h=\nicefrac{1}{8}$. 
+%$0.30499$ for $h=\frac{1}{8}$. 
 %\quad
 %Factor is approximately $0.27$ for improved Euler, and
 %$0.55$ for standard Euler.
@@ -159,10 +276,10 @@ There is a simple way to improve Euler's method to make it a second order method
 The simplest method used in practice is the \emph{Runge--Kutta method}. Consider $\frac{dy}{dx}=f(x,y)$, $y(x_0) = y_0$, and a step size $h$.  Everything is the same as in Euler's method, except the computation of $y_{i+1}$ and $x_{i+1}$.
 \begin{align*}
     & k_1 = f(x_i,y_i) , & & \\
-    & k_2 = f\bigl(x_i + \nicefrac{h}{2},y_i + k_1 (\nicefrac{h}{2})\bigr) ,
+    & k_2 = f\bigl(x_i + \frac{h}{2},y_i + k_1 (\frac{h}{2})\bigr) ,
     & & 
     x_{i+1} = x_i + h , \\
-    & k_3 = f\bigl(x_i + \nicefrac{h}{2},y_i + k_2 (\nicefrac{h}{2})\bigr) ,
+    & k_3 = f\bigl(x_i + \frac{h}{2},y_i + k_2 (\frac{h}{2})\bigr) ,
     & &
     y_{i+1} = y_i + \frac{k_1 + 2k_2 + 2k_3 + k_4}{6}\,h ,  \\
     & k_4 = f(x_i + h,y_i + k_3 h) .
@@ -171,11 +288,19 @@ The simplest method used in practice is the \emph{Runge--Kutta method}. Consider
 
 \begin{exercise}
     Consider $\dfrac{dy}{dx} = yx^2$, $y(0)=1$.
-    \begin{tasks}
-        \task Use Runge--Kutta (see above) with step sizes $h=1$ and $h=\nicefrac{1}{2}$ to approximate $y(1)$.
-        \task Use Euler's method with $h=1$ and $h=\nicefrac{1}{2}$.
-        \task Solve exactly, find the exact value of $y(1)$, and compare.
-    \end{tasks}
+    
+    Use Runge--Kutta (see above) with step sizes $h=1$ and $h=\frac{1}{2}$ to approximate $y(1)$.
+    
+    \begin{problem}
+        Use Euler's method with:
+        \begin{itemize}
+            \item $h=1$, [Enter up to 4 decimal digits] $\answer{1.3906}$
+            \item $h=\frac{1}{2}$, [Enter up to 3 decimal digits] $\answer{1.125}$
+        \end{itemize} 
+        \begin{problem}
+            Solve exactly, find the exact value of $y(1)$: [Enter up to 3 decimal digits] $\answer{1.3956}$%, and compare.
+        \end{problem}
+    \end{problem}
 \end{exercise}
 %\comboSol{%
 %}
